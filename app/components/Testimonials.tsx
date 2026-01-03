@@ -8,13 +8,13 @@ type Props = {
 export default function Testimonials({ className }: Props) {
   return (
     <section className={`px-4 py-8 dark lg:px-8 lg:py-32 ${className}`}>
-      <h2 className="lg:text-center lg:!text-2xl tracking-wide">
-        Wir haben über{" "}
-        <span className="text-custom-red">500 Firmenwebsites auf Platz 1</span>{" "}
+      <h1 className="text-center lg:!text-2xl tracking-wide">
+        Wir haben über 500 Firmenwebsites{" "}
+        <span className="text-custom-red"> auf Platz 1</span>{" "}
         optimiert
-      </h2>
+      </h1>
       <div className="pt-8 lg:pt-12 grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl lg:mx-auto">
-        <div className="lg:bg-white p-8 lg:p-8 rounded-xl shadow-lg">
+        <div className="lg:bg-white p-8 rounded-xl shadow-lg">
           <Rating />
           <h2 className="mt-4">Schwabinger Wahrheit Hotel in München</h2>
           <p>
@@ -53,7 +53,7 @@ export default function Testimonials({ className }: Props) {
             </div>
           </div>
         </div>
-        <div className="lg:bg-white p-4 lg:p-8 rounded-xl shadow-lg">
+        <div className="lg:bg-white p-8 rounded-xl shadow-lg">
           <Rating />
           <h2 className="mt-4">
             IT Dienstleister Kramer Systems GmbH aus Landsberg
@@ -97,7 +97,7 @@ export default function Testimonials({ className }: Props) {
             </div>
           </div>
         </div>
-        <div className="lg:bg-white p-4 lg:p-8 rounded-xl shadow-lg">
+        <div className="lg:bg-white p-8 rounded-xl shadow-lg">
           <Rating />
           <h2 className="mt-4">
             Kunststoff-Firma Gregor Hofbauer GmbH aus Türkheim
@@ -139,7 +139,7 @@ export default function Testimonials({ className }: Props) {
             </div>
           </div>
         </div>
-        <div className="lg:bg-white p-4 lg:p-8 rounded-xl shadow-lg">
+        <div className="lg:bg-white p-8 rounded-xl shadow-lg">
           <Rating />
           <h2 className="mt-4 bg-green-500">//TODO 4. Testimonial einfügen</h2>
           <p>

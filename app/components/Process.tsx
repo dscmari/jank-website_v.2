@@ -1,5 +1,3 @@
-import { div } from "framer-motion/client";
-import React from "react";
 
 type ProcessItem = {
   title: string;
@@ -27,8 +25,8 @@ export default function Process({ className, circles }: Props) {
                 <span className="block text-xl">{index + 1}</span>
               </div>
               <div>
-                <h2 className="text-center text-custom-red">{e.title}</h2>
-                <p className="w-3/4 mx-auto text-center">{e.text}</p>
+                <h1 className="text-center text-custom-red">{e.title}</h1>
+                <p className="pt-4 w-3/4 mx-auto text-center font-light text-sm">{e.text}</p>
               </div>
             </div>
           </div>
