@@ -89,11 +89,14 @@ export default function Home() {
         imgPathMobile="/images/portraits/39321-4133web.jpg"
         imgPathDesktop="/images/portraits/39321-4000_02.jpg"
       />
-      <section className="bg-custom-white mx-4 mt-8 p-8 rounded-lg lg:hidden">
+      <section className="bg-custom-white rounded-xl mx-4 mt-8 p-8 rounded-lg lg:hidden">
+               <button className="block bg-custom-purple mb-8 px-4 py-2 text-custom-black rounded-lg cursor-pointer hover:bg-custom-red hover:text-custom-white">
+          Dein Team
+        </button>
         <h2>
-          Seit 2017 haben wir über{" "}
-          <span className="underline">500 Firmen-Websites</span> auf Platz 1 bei
-          Google katapultiert.
+          Über{" "}
+          <span className="text-custom-red">500 Websites</span> auf Platz 1 bei
+          Google seit 2017
         </h2>
         <p className="pt-4">
           Jan Krösche & Team sind Deine SEO, GEO und ADS Spezialisten, damit Du

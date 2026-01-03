@@ -24,7 +24,7 @@ body {
   --color-custom-black: #2d3436; /* us pallete */
   --color-custom-white: #f5f6fa;
   --color-custom-grey: #636e72; /* us */
-  --color-custom-purple: #00e7b2; /* us */
+  --color-custom-purple: #ffeaa7; /* us */
 
   --font-poppins:var(--font-poppins);
   --font-inter:var(--font-inter);
@@ -44,12 +44,12 @@ button {
 }
 
 h1 {
-  font-size: 1.5rem;
-  line-height: 1;
+  font-size: 2rem;
+  line-height: 1.4;
 }
 
 h2 {
-  font-size: 1.25em;
+  font-size: 1.5rem;
   line-height: 1.5;
   margin-bottom: 0.5rem;
 }
