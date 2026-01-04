@@ -10,7 +10,7 @@ import { BsFillStarFill } from "react-icons/bs";
 import { GrOptimize } from "react-icons/gr";
 import { LuScreenShare } from "react-icons/lu";
 import { FiArrowRight } from "react-icons/fi";
-import sections from "@/app/utils/referencesList";
+import sections from "@/app/content/referencesList";
 import WebsiteCheck from "@/app/components/WebsiteCheck";
 import { GoDiamond } from "react-icons/go";
 import ATF from "@/app/components/ATF";

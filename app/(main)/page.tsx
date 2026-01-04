@@ -1,7 +1,6 @@
-import { LuNotebookText, LuScreenShare } from "react-icons/lu";
+import { LuNotebookText } from "react-icons/lu";
 import { FaGears } from "react-icons/fa6";
 import { HiMagnifyingGlass } from "react-icons/hi2";
-import { FiArrowRight, FiMail, FiPhone } from "react-icons/fi";
 import LinkSeoCheck from "../components/LinkSeoCheck";
 import ATF from "../components/ATF";
 import Contact from "../components/Contact";
@@ -9,85 +8,26 @@ import Testimonials from "../components/Testimonials";
 import Pricing from "../components/Pricing";
 import Process from "../components/Process";
 import WebsiteCheck from "../components/WebsiteCheck";
-import { GiAirplaneDeparture, GiArtificialHive } from "react-icons/gi";
-import { GrOptimize } from "react-icons/gr";
+import { GiAirplaneDeparture} from "react-icons/gi";
 import FourBoxLayout from "../components/FourBoxLayout";
 import SEOCheckBtn from "../components/buttons/SEOCheckBtn";
 import InfoBtn from "../components/buttons/InfoBtn";
 import Workshops from "../components/Workshops";
+import { colabCircles, processCircles } from "../content/processUi";
+import homeATF from "../content/ATFContents";
+import { standardFourBoxContent } from "../content/FourBoxLayoutContent";
 
 //TODO Metatag also muss server component sein
 //Lösung für das cache problem finden: delete tailwind cache rm -rf .next
 
 export default function Home() {
-  const titleATF = "Endlich Platz 1 bei Google & ChatGPT mit Deiner Website!";
-  const subtitleATF =
-    "Seit 2017 haben wir über 500 Firmen-Websites auf Platz 1 bei Google katapultiert";
-  const textATF =
-    "Jan Krösche & Team sind Deine SEO und SEA-Spezialisten, damit  Du die Nr. 1 im Netz wirst. Und mehr Neukunden gewinnst als Deine Wettbewerber.";
-
-  const processCircles = [
-    {
-      title: "Analyse",
-      text: "Wir analysieren die Suchbegriffe, die genau Deine Kunden bei Google & ChatGPT eingeben",
-    },
-    {
-      title: "Optimierung",
-      text: "Wir optimieren Deine Website und setzen bei Bedarf Deine Google Werbeanzeigen auf",
-    },
-    {
-      title: "Pflege",
-      text: "Wir verbessern deine Website und Deine Anzeigen laufend, damit du an deinen Wettbewerbern vorbeiziehs",
-    },
-  ];
-  const colabCircles = [
-    {
-      title: "Gespräch",
-      text: "Du meldest Dich bei mir per Telefon oder per Mail und wir vereinbaren ein kostenloses Kennenlernen",
-    },
-    {
-      title: "Start",
-      text: "Wir starten zeitnah mit der bestmöglichen Optimierung Deiner Website",
-    },
-    {
-      title: "Betreuung",
-      text: "Wir stehen fortlaufend im Austausch, analysieren den Status Quo und bereiten neue Optimierungsvorschläge vor",
-    },
-  ];
-
-  const boxes = [
-    {
-      icon: <GiArtificialHive color="rgb(231,0,53)" size="3rem" />,
-      title: "Wir helfen Dir und Deiner Firma",
-      text: "Menschen suchen etwas bei Google oder ChatGPT und klicken auf die Websites, die ganz oben stehen. Die Firmen, die auf Platz 1 ranken, gewinnen die meisten Website-Besucher und ergattern sich die meisten Neukunden. Wir helfen Dir mehr Anfragen zu generieren, damit du Dich als Branchenführer langfristig am Markt etablierst.",
-      link: "",
-    },
-    {
-      icon: <GrOptimize color="rgb(231,0,53)" size="3rem" />,
-      title: "Unsere Mission",
-      text: "Unsere Mission ist es, Dich auf Platz 1 bei Google und ChatGPT zu bringen, damit Deine Website endlich funktioniert.",
-      link: "",
-    },
-    {
-      icon: <LuScreenShare color="rgb(231,0,53)" size="3rem" />,
-      title: "Reichweite",
-      text: "Von Google- und YouTube-Optimierung über Sichtbarkeit in ChatGPT bis hin zu Google Ads und Bing bieten wir das volle Spektrum für Deinen digitalen Erfolg.",
-      link: "",
-    },
-    {
-      icon: <GiAirplaneDeparture color="rgb(231,0,53)" size="3rem" />,
-      title: "Unsere Erfahrung auf einen Blick",
-      text: " Wir optimieren Deinen Webauftritt, damit Du bei Google, ChatGPT, Perplexity und anderen KI-Maschinen bestens gefunden werden kannst. Wir kennen die Algorithmen und haben das „SEO Spiel“ seit 2017 schon Hundertfach durchgespielt.",
-      link: "",
-    },
-  ];
 
   return (
     <>
       <ATF
-        title={titleATF}
-        subtitle={subtitleATF}
-        text={textATF}
+        title={homeATF.title}
+        subtitle={homeATF.subtitle}
+        text={homeATF.text}
         LinkComponent={<LinkSeoCheck />}
         imgPathMobile="/images/portraits/39321-4133web.jpg"
         imgPathDesktop="/images/portraits/39321-4000_02.jpg"
@@ -281,7 +221,7 @@ export default function Home() {
         <SEOCheckBtn className="mt-12"/>
         </div>
       </section>
-      <Pricing className="mt-24 mx-4" />
+      <Pricing className="px-4 pt-12 mt-24 lg:py-24 lg:px-8 2xl:px-32" />
       <Workshops/>              
       <section className="mt-24 lg:mt-32">
         <div className="mx-4 lg:mx-0 lg:max-w-2/3 lg:mx-auto text-center">
@@ -315,7 +255,7 @@ export default function Home() {
         <h2 className="mt-4 text-center">Wir stärken deine Sichtbarkeit</h2>
       </section>
       <div className="bg-custom-white">
-        <FourBoxLayout boxes={boxes} className="mx-4 lg:mx-0" />
+        <FourBoxLayout boxes={standardFourBoxContent} className="mx-4 lg:mx-0" />
       </div>
     </>
   );

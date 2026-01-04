@@ -1,5 +1,5 @@
 import { GoDiamond } from "react-icons/go";
-import sections from "../../utils/referencesList";
+import sections from "../../content/referencesList";
 import { BsFillStarFill } from "react-icons/bs";
 
 export default function page() {
