@@ -15,15 +15,12 @@ export default function Workshops({ className }: Props) {
             {" "}
             Wir geben unsere <span className="text-custom-red">Expertise </span>
             weiter und schulen Firmen aus der ganzen DACH-Region.
-            Suchmaschinenmarketing ist ein schnelllebiges Feld.{" "}
           </h2>
-          <h2>
-            Seit 2017 geben wir Firmen aus der gesamten DACH-Region Schulungen
-            in den Bereichen <span className="text-red-500">SEO</span>,
-            <span className="text-red-500"> Google Ads</span>,{" "}
-            <span className="text-red-500"> Kundengewinnung im Internet</span>.
-          </h2>
-          <InfoBtn content="Workshops" className="mx-auto lg:mx-0 mt-4 mb-8 lg:mb-16"/>
+          <p>
+            Suchmaschinenmarketing ist ein schnelllebiges Feld. Seit 2017 geben
+            wir Firmen aus der gesamten DACH-Region Schulungen in den Bereichen
+            SEO, Google Ads Kundengewinnung im Internet
+          </p>
         </div>
         <h1 className="hidden lg:block pb-8 tracking-wide font-semibold text-center">
           Wir geben unsere <span className="text-custom-red">Expertise </span>
@@ -34,14 +31,14 @@ export default function Workshops({ className }: Props) {
           <span className="text-red-500"> Google Ads</span>,{" "}
           <span className="text-red-500"> Kundengewinnung im Internet</span>.
         </h1>
-          <InfoBtn content="Workshops" className="mx-auto mt-4 mb-8 lg:mb-16"/>
+        <InfoBtn content="Workshops" className="mx-auto mt-4 mb-8 lg:mb-16" />
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4 pt-12 max-w-7xl lg:mx-auto">
         {workshops.map((e, index) => (
           <div key={index} className="flex flex-col p-8 bg-white rounded-xl">
             <div className="flex flex-col items-start gap-2">
-              <span className="text-white bg-custom-red font-semibold tracking-tight py-1 px-2 rounded-lg">
+              <span className="text-white bg-custom-red font-semibold tracking-tight py-2 px-4 rounded-lg">
                 Workshop
               </span>
               <span className="font-semibold tracking-tight">{e.keyword}</span>

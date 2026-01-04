@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { LuNotebookText } from "react-icons/lu";
 import { FaGears } from "react-icons/fa6";
 import { HiMagnifyingGlass } from "react-icons/hi2";
@@ -8,7 +9,7 @@ import Testimonials from "../components/Testimonials";
 import Pricing from "../components/Pricing";
 import Process from "../components/Process";
 import WebsiteCheck from "../components/WebsiteCheck";
-import { GiAirplaneDeparture} from "react-icons/gi";
+import { GiAirplaneDeparture } from "react-icons/gi";
 import FourBoxLayout from "../components/FourBoxLayout";
 import SEOCheckBtn from "../components/buttons/SEOCheckBtn";
 import InfoBtn from "../components/buttons/InfoBtn";
@@ -16,12 +17,15 @@ import Workshops from "../components/Workshops";
 import { colabCircles, processCircles } from "../content/processUi";
 import homeATF from "../content/ATFContents";
 import { standardFourBoxContent } from "../content/FourBoxLayoutContent";
+import { Metadata } from "next";
 
 //TODO Metatag also muss server component sein
 //Lösung für das cache problem finden: delete tailwind cache rm -rf .next
+export const metadata: Metadata = {
+  title: "Platz 1 bei Google & ChatGPT | SEO – GEO – Ads Berater",
+};
 
 export default function Home() {
-
   return (
     <>
       <ATF
@@ -33,17 +37,51 @@ export default function Home() {
         imgPathDesktop="/images/portraits/39321-4000_02.jpg"
       />
       <section className="bg-custom-white rounded-xl mx-4 mt-8 p-8 rounded-lg lg:hidden">
-        <InfoBtn content="Dein Team"/>
+        <InfoBtn content="Dein Team" />
         <h2 className="mt-8">
-          Über 500 Websites auf <span className="text-custom-red">Platz 1
-          bei Google</span> seit 2017
+          Über 500 Websites auf{" "}
+          <span className="text-custom-red">Platz 1 bei Google</span> seit 2017
         </h2>
         <p className="pt-4 font-light">
           Jan Krösche & Team sind Deine SEO, GEO und ADS Spezialisten, damit Du
           bei Google und ChatGPT die sichtbarste Firma Deiner Branche wirst. Und
           endlich mehr Neukunden-Anfragen über die Website erhälst.
         </p>
-      <SEOCheckBtn className="mt-12"/>
+        <SEOCheckBtn className="mt-12" />
+      </section>
+      <section className="lg:hidden mt-24 flex flex-col px-4 bg-white rounded-xl">
+        <h1 className="text-center">
+          Was bringt es mir bei Google oben zu stehen?
+        </h1>
+        <InfoBtn content="Erfolge" className="mt-12 mx-auto" />
+        <h2 className="mt-4 text-center">
+          Unterschiedliche Branchen, echte Ergebnisse
+        </h2>
+        <div className="mt-8 flex flex-col items-start gap-2 ">
+          <h3 className="font-semibold">Bauindustrie</h3>
+          <p>
+            Wir haben durch die gesteigerte Google Sichtbarkeit zu mehr als 500
+            zusätzlichen Anfragen über die Website beigetragen. Das
+            Auftragsvolumen lag bei mehr als 8 Millionen Euro. Allein über
+            Google!
+          </p>
+        </div>
+        <div className="mt-8 flex flex-col items-start gap-2">
+          <h3 className="font-semibold">Informationstechnologie</h3>
+          <p>
+            Durch unsere Arbeit werden jede Woche mindestens zwei neue Kunden
+            durch die Google Rankings gewonnen. Mit einem durchschnittlichem
+            Auftragswert von 7.000 Euro.
+          </p>
+        </div>
+        <div className="mt-8 flex flex-col items-start gap-2">
+          <h3 className="font-semibold">Werbemittelgeschäft</h3>
+          <p>
+            Mithilfe unserer Optimierung, wurden letztes Jahr neun große
+            Firmenkunden allein über ChatGPT neu gewonnen: Das gesamte
+            Auftragsvolumen lag über 200.000 Euro.
+          </p>
+        </div>
       </section>
       <section className="mt-24 lg:hidden">
         <img
@@ -68,15 +106,64 @@ export default function Home() {
             einem spezialisierten Team selbständig.
           </h2>
         </div>
-      <InfoBtn content="Über uns" className="mt-24 lg:mt-16 mx-auto"/>
+        <InfoBtn content="Über uns" className="mt-24 lg:mt-16 mx-auto" />
         <h2 className="mt-4 text-center">
-          Bewährte Prozesse, echte Ergebnisse
+          Bewährte Prozesse, sichtbare Erfolge
         </h2>
       </section>
       <Process
         className="lg:pt-12 px-4 lg:px-32 lg:pb-48"
         circles={processCircles}
       />
+      <section className="hidden lg:flex flex-col lg:flex-row gap-12 mt-32 lg:bg-custom-white px-32 pt-24 pb-48 2xl:gap-32 2xl:justify-center ">
+        <div className="lg:min-w-1/2 2xl:min-w-1/3 lg:relative">
+          <div className="lg:absolute lg:-top-48">
+            <Image
+              src="/images/portraits/39321-3997.jpg"
+              style={{ width: "600px" }}
+              alt="Portrait Jan Kroesche"
+              height={800}
+              width={400}
+            />
+            <p className="p-8 italic mx-auto text-center font-light">
+              "Wir helfen Unternehmen dabei, die Nummer 1 ihrer Branche werden"
+            </p>
+          </div>
+        </div>
+        <div className="mx-4 lg:mx-0 2xl:max-w-1/2 3xl:max-w-1/3">
+          <h1 className="text-center">Was bringt es mir bei <span className="text-custom-red">Google</span> oben zu stehen?</h1>
+           <InfoBtn content="Erfolge" className="mx-auto mt-12" />
+          <h2 className="text-center mt-4">
+            Unterschiedliche Branchen, echte Ergebnisse
+          </h2>
+           <div className="mt-8 flex flex-col items-start gap-2 ">
+          <h3 className="font-semibold">Bauindustrie</h3>
+          <p>
+            Wir haben durch die gesteigerte Google Sichtbarkeit zu mehr als 500
+            zusätzlichen Anfragen über die Website beigetragen. Das
+            Auftragsvolumen lag bei mehr als 8 Millionen Euro. Allein über
+            Google!
+          </p>
+        </div>
+        <div className="mt-8 flex flex-col items-start gap-2">
+          <h3 className="font-semibold">Informationstechnologie</h3>
+          <p>
+            Durch unsere Arbeit werden jede Woche mindestens zwei neue Kunden
+            durch die Google Rankings gewonnen. Mit einem durchschnittlichem
+            Auftragswert von 7.000 Euro.
+          </p>
+        </div>
+        <div className="mt-8 flex flex-col items-start gap-2">
+          <h3 className="font-semibold">Werbemittelgeschäft</h3>
+          <p>
+            Mithilfe unserer Optimierung, wurden letztes Jahr neun große
+            Firmenkunden allein über ChatGPT neu gewonnen: Das gesamte
+            Auftragsvolumen lag über 200.000 Euro.
+          </p>
+        </div>
+          <SEOCheckBtn className="mt-12" />
+        </div>
+      </section>
       <Contact className="p-8 mt-24 lg:mt-0" />
       <Testimonials className="bg-custom-white py-24 lg:pb-48 " />
       <section className=" flex flex-col lg:flex-row gap-12 lg:p-32 lg:py-24 2xl:gap-32 2xl:justify-center ">
@@ -218,11 +305,11 @@ export default function Home() {
             Wir arbeiten ohne Branchenfokus und sind in Deutschland, Österreich,
             Norditalien & der Schweiz für unsere Kunden unterwegs.
           </p>
-        <SEOCheckBtn className="mt-12"/>
+          <SEOCheckBtn className="mt-12" />
         </div>
       </section>
       <Pricing className="px-4 pt-12 mt-24 lg:py-24 lg:px-8 2xl:px-32" />
-      <Workshops/>              
+      <Workshops />
       <section className="mt-24 lg:mt-32">
         <div className="mx-4 lg:mx-0 lg:max-w-2/3 lg:mx-auto text-center">
           <h2 className="lg:!text-3xl/10 lg:tracking-wide ">
@@ -231,7 +318,7 @@ export default function Home() {
             So läuft unsere Zusammenarbeit ab
           </h2>
         </div>
-      <InfoBtn content="Kontakt" className="mx-auto mt-16 " />
+        <InfoBtn content="Kontakt" className="mx-auto mt-16 " />
         <h2 className="mt-4 text-center">Direkter Kontakt, keine Umwege</h2>
       </section>
       <Process
@@ -251,11 +338,14 @@ export default function Home() {
             hinterherzulaufen?
           </h2>
         </div>
-      <InfoBtn content="Unser Ziel" className="mx-auto mt-16 " />
+        <InfoBtn content="Unser Ziel" className="mx-auto mt-16 " />
         <h2 className="mt-4 text-center">Wir stärken deine Sichtbarkeit</h2>
       </section>
       <div className="bg-custom-white">
-        <FourBoxLayout boxes={standardFourBoxContent} className="mx-4 lg:mx-0 max-w-7xl" />
+        <FourBoxLayout
+          boxes={standardFourBoxContent}
+          className="mx-4 lg:mx-0 max-w-7xl"
+        />
       </div>
     </>
   );
