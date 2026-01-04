@@ -1,4 +1,5 @@
 import { FiPhone, FiMail } from "react-icons/fi";
+import workshops from "../content/workshopsContent";
 
 type Props = {
   className?: string;
@@ -34,51 +35,20 @@ export default function Workshops({ className }: Props) {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4 pt-12 max-w-7xl lg:mx-auto">
-        <div className="flex flex-col p-8 bg-white rounded-xl">
-          <h3 className="text-xl font-semibold tracking-wide mb-4">
-            Workshop für die Bauer AG aus Schrobenhausen
-          </h3>
-          <p className="">
-            Für das Marketing- und PR-Team der Bauer AG haben wir einen Workshop
-            durchgeführt zum Thema Suchmaschinenoptimierung. Ziel des Workshops
-            war es, das Wissen zu vermitteln, wie Inhalte auf der Website
-            eingebunden werden können, um die Reichweite und die Rankings bei
-            Google zu erhöhen
-          </p>
-        </div>
-        <div className="flex flex-col p-8 bg-white rounded-xl">
-          <h3 className="text-xl font-semibold tracking-wide mb-4">
-            Workshop für die Software-Firma rocom
-          </h3>
-          <p className="">
-            Für die Software-Firma rocom haben wir einen SEO Workshop vor Ort
-            gehalten. Ziel war es, den Mitarbeitenden einen Überblick zu den SEO
-            Grundlagen zu vermitteln: Title Tags, Backlinks,
-            Überschriftenstruktur etc..
-          </p>
-        </div>
-        <div className="flex flex-col p-8 bg-white rounded-xl">
-          <h3 className="text-xl font-semibold tracking-wide mb-4">
-            Workshop für das Hotel Bayerischer Hof in München
-          </h3>
-          <p className="">
-            Für das renommierte Hotel Bayerischer Hof haben wir einen Workshop
-            zum Thema Suchmaschinenmarketing durchgeführt. Dabei haben wir uns
-            im Vorfeld die Website des Hotels angeschaut und konkrete
-            Verbesserungen ausgearbeitet und im Workshop vorgeführt und erklärt.
-          </p>
-        </div>
-        <div className="flex flex-col p-8 bg-white rounded-xl">
-          <h3 className="text-xl font-semibold tracking-wide mb-4">
-            Workshop für den Hersteller BH Sens zur ChatGPT-Optimierung
-          </h3>
-          <p className="">
-            Für die Hersteller Firma BH Sens haben wir einen KI SEO Workshop
-            durchgeführt. Ziel war es, den Marketingverantwortlichen der Firma
-            zu zeigen, wie man mit der Website bei ChatGPT besser gefunden
-            werden kann und in den Antworten zitiert wird.
-          </p>
-        </div>
+        {workshops.map((e, index) => (
+          <div key={index} className="flex flex-col p-8 bg-white rounded-xl">
+            <div className="flex flex-col items-start gap-2">
+              <span className="text-white bg-custom-red font-semibold tracking-tight py-1 px-2 rounded-lg">
+                Workshop
+              </span>
+              <span className="font-semibold tracking-tight">{e.keyword}</span>
+            </div>
+            <h2 className="text-xl font-semibold tracking-wide mt-8 mb-4">
+              {e.title}
+            </h2>
+            <p>{e.text}</p>
+          </div>
+        ))}
       </div>
       <div className="py-12 lg:py-0 flex flex-col items-center lg:items-start gap-4 lg:flex-row lg:gap-8 text-custom-red p-2 mt-4 lg:mt-12">
         <div className="flex gap-2 items-center">

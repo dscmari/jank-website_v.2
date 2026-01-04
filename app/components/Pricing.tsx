@@ -8,7 +8,7 @@ type Props = {
 export default function Pricing({ className }: Props) {
   return (
     <div className={`bg-custom-white ${className}`}>
-      <h2 className="px-4 lg:mx-0 !mb-8 lg:!text-3xl lg:mt-16 lg:!pb-8">
+      <h2 className="text-center lg:text-start px-4 lg:mx-0 !mb-8 mt-24 lg:mt-16 lg:!pb-8">
         Unsere 3 Preispakete
       </h2>
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-4 lg:justify-around">

@@ -136,13 +136,13 @@ export default function Home() {
                 Website erhälst
               </p>
             </div>
-            <div className="lg:hidden mt-4 flex items-end gap-4">
+            <div className="lg:hidden mt-8 flex items-end gap-4">
               <GiAirplaneDeparture
                 color="rgb(231,0,53)"
                 size={48}
                 className="max-w-8 lg:max-w-full lg:min-w-8"
               />
-              <h2>Platz 1 bei Google & ChatGPT</h2>
+              <h2>Google & ChatGPT Platz 1</h2>
             </div>
             <p className="lg:hidden font-light">
               {" "}
@@ -161,7 +161,7 @@ export default function Home() {
                 und ChatGPT katapultiert
               </p>
             </div>
-            <div className="lg:hidden mt-4 flex items-end gap-4">
+            <div className="lg:hidden mt-8 flex items-end gap-4">
               <LuNotebookText
                 color="rgb(231,0,53)"
                 size={48}
@@ -188,7 +188,7 @@ export default function Home() {
                 Handwerker, Hoteliers, Steuerberater, Designer)
               </p>
             </div>
-            <div className="lg:hidden mt-4 flex items-end gap-4">
+            <div className="lg:hidden mt-8 flex items-end gap-4">
               <FaGears
                 color="rgb(231,0,53)"
                 size={48}
@@ -255,7 +255,7 @@ export default function Home() {
         <h2 className="mt-4 text-center">Wir stärken deine Sichtbarkeit</h2>
       </section>
       <div className="bg-custom-white">
-        <FourBoxLayout boxes={standardFourBoxContent} className="mx-4 lg:mx-0" />
+        <FourBoxLayout boxes={standardFourBoxContent} className="mx-4 lg:mx-0 max-w-7xl" />
       </div>
     </>
   );

@@ -13,7 +13,7 @@ const google = {
     "Mind. ein Text im Monat",
     "Erstellung neuer SEO-Landingpages",
     "Wettbewerbsanalysen",
-    "Strategie Anpassungen bei Updates",
+    "Strategische Anpassungen",
   ],
 };
 const chatGPT = {
@@ -31,7 +31,7 @@ const chatGPT = {
     "Mind. ein Text im Monat",
     "Content Optimierung",
     "Mind. eine digitale PR Aktion im Monat",
-    "Strategie Anpassungen bei Updates",
+    "Strategische Anpassungen",
   ],
 };
 
@@ -50,7 +50,7 @@ const googleAds = {
     "Ausschluss falscher Keywords",
     "Erstellung passender Landingpages",
     "Wettbewerbsanalysen",
-    "Strategie Anpassungen bei Updates",
+    "Strategische Anpassungen",
   ],
 };
 

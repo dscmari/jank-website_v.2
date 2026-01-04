@@ -14,7 +14,7 @@ type Props = {
 
 export default function FourBoxLayout({className, boxes}: Props) {
   return (
-    <section className={`pt-8 lg:pt-16 lg:pb-32 grid lg:grid-cols-3 gap-8 lg:gap-4 max-w-7xl lg:mx-auto ${className}`}>
+    <section className={`pt-8 lg:pt-16 lg:pb-32 grid lg:grid-cols-3 gap-8 lg:gap-4 lg:mx-auto ${className}`}>
         {boxes.map((e, index) => (
           <div
             key={index}
