@@ -122,7 +122,7 @@ export default function GEOBerater() {
             der neuen Welt unter
           </h2>
         </div>
-        <div className="text-lg px-4 lg:px-0">
+        <div className="lg:text-lg px-4 lg:px-0">
           <p>
             Ja, es ist immer noch wichtig, im Internet und vor allem bei Google
             präsent zu sein. Mit 90 Prozent hat Google immer noch den größten
@@ -184,14 +184,15 @@ export default function GEOBerater() {
       <section className="mt-24 mx-4 lg:m-0 lg:p-32 relative lg:bg-custom-white">
         <div className="lg:max-w-2/3">
           <h2 className="lg:!text-3xl/10 tracking-wide font-semibold">
+            Persönliche 
             <span className="text-custom-red">
               {" "}
-              Persönliche GEO Dienstleistung
+            GEO Dienstleistung
             </span>{" "}
             aus einer Hand
           </h2>
         </div>
-        <div className="text-lg">
+        <div className="lg:text-lg">
           <p>
             Wir wissen, dass unsere Kunden keine GEO Profis sind und dass die
             Thematik erklärungsbedürftig ist. Aus diesem Grund verstehen wir als
@@ -520,7 +521,7 @@ export default function GEOBerater() {
           </p>
         </div>
       </section>
-      <section className="lg:bg-custom-white lg:mt-48 lg:flex gap-12 lg:p-32 lg:pb-48 xl:pb-64 2xl:gap-32 2xl:justify-center ">
+      <section className="lg:bg-custom-white lg:mt-48 lg:flex gap-12 lg:p-32 lg:pb-48 xl:pb-64 2xl:pb-80 2xl:gap-32 2xl:justify-center ">
         <div className="mt-12 lg:m-0 min-w-1/2 2xl:min-w-1/3 lg:relative">
           <div className="lg:absolute -top-48">
             <img
