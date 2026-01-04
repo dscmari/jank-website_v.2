@@ -1,5 +1,6 @@
 import { FiPhone, FiMail } from "react-icons/fi";
 import workshops from "../content/workshopsContent";
+import InfoBtn from "./buttons/InfoBtn";
 
 type Props = {
   className?: string;
@@ -9,7 +10,7 @@ export default function Workshops({ className }: Props) {
   return (
     <section className={`px-4 pt-24 lg:p-32 bg-custom-white ${className}`}>
       <div className="">
-        <div className="lg:hidden">
+        <div className="lg:hidden text-center">
           <h2>
             {" "}
             Wir geben unsere <span className="text-custom-red">Expertise </span>
@@ -22,8 +23,9 @@ export default function Workshops({ className }: Props) {
             <span className="text-red-500"> Google Ads</span>,{" "}
             <span className="text-red-500"> Kundengewinnung im Internet</span>.
           </h2>
+          <InfoBtn content="Workshops" className="mx-auto lg:mx-0 mt-4 mb-8 lg:mb-16"/>
         </div>
-        <p className="hidden lg:block pb-8 lg:text-3xl/10 tracking-wide font-semibold">
+        <h1 className="hidden lg:block pb-8 tracking-wide font-semibold text-center">
           Wir geben unsere <span className="text-custom-red">Expertise </span>
           weiter und schulen Firmen aus der ganzen DACH-Region.
           Suchmaschinenmarketing ist ein schnelllebiges Feld. Seit 2017 geben
@@ -31,7 +33,8 @@ export default function Workshops({ className }: Props) {
           <span className="text-red-500">SEO</span>,
           <span className="text-red-500"> Google Ads</span>,{" "}
           <span className="text-red-500"> Kundengewinnung im Internet</span>.
-        </p>
+        </h1>
+          <InfoBtn content="Workshops" className="mx-auto mt-4 mb-8 lg:mb-16"/>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4 pt-12 max-w-7xl lg:mx-auto">

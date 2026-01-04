@@ -1,4 +1,5 @@
 import testimonals from "../content/testimonialsList";
+import InfoBtn from "./buttons/InfoBtn";
 import FiveStarRating from "./FiveStarRating";
 
 type Props = {
@@ -8,11 +9,15 @@ type Props = {
 export default function Testimonials({ className }: Props) {
   return (
     <section className={`px-4 py-8 dark lg:px-8 lg:py-32 ${className}`}>
-      <h1 className="text-center lg:!text-2xl tracking-wide">
+      <h1 className="text-center tracking-wide">
         Wir haben über 500 Firmenwebsites{" "}
         <span className="text-custom-red"> auf Platz 1</span> optimiert
       </h1>{" "}
-      <div className="pt-8 lg:pt-12 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4 max-w-7xl lg:mx-auto">
+      <InfoBtn content="Erfolgsgeschichten" className="mx-auto mt-24 lg:mt-16"/>
+      <h2 className="mt-4 text-center">
+          Messbarer Erfolg und nachhaltiges Wachstum durch SEO & SEA
+        </h2>
+      <div className="pt-8 lg:pt-24 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4 max-w-7xl lg:mx-auto">
         {" "}
         {testimonals.map((e, index) => (
           <div key={index} className="bg-white p-8 rounded-xl">

@@ -1,5 +1,6 @@
 import { IoIosCheckmarkCircle } from "react-icons/io";
 import pricingBoxes from "../content/pricingBoxes";
+import InfoBtn from "./buttons/InfoBtn";
 
 type Props = {
   className?: string;
@@ -8,9 +9,10 @@ type Props = {
 export default function Pricing({ className }: Props) {
   return (
     <div className={`bg-custom-white ${className}`}>
-      <h2 className="text-center lg:text-start px-4 lg:mx-0 !mb-8 mt-24 lg:mt-16 lg:!pb-8">
+      <h2 className="text-center lg:text-start px-4 lg:px-0 lg:mx-0 mt-24 lg:mt-16">
         Unsere 3 Preispakete
       </h2>
+      <InfoBtn content="Angebot" className="mx-auto lg:mx-0 mt-4 mb-8 lg:mb-16"/>
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-4 lg:justify-around">
         {pricingBoxes.map((e, index) => (
           <div
