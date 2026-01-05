@@ -35,7 +35,8 @@ export default function FourBoxLayout({ className, boxes }: Props) {
                 <span className="font-light">{e.subtitle}</span>
               </div>
               <div>
-                <h1 className="text-center mt-12">{e.title}</h1>
+                <h2 className="lg:hidden text-center mt-12">{e.title}</h2>
+                <h1 className="hidden lg:block text-center mt-12">{e.title}</h1>
                 <p className="mt-4 mb-8 lg:mb-12 font-light text-base/5">
                   {e.text}
                 </p>
