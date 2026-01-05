@@ -9,7 +9,7 @@ type Props = {
 export default function Testimonials({ className }: Props) {
   return (
     <section className={`px-4 py-8 dark lg:px-8 lg:py-32 ${className}`}>
-      <h1 className="text-center tracking-wide">
+      <h1 className="!text-3xl text-center">
         Wir haben über 500 Firmenwebsites{" "}
         <span className="text-custom-red"> auf Platz 1</span> optimiert
       </h1>{" "}

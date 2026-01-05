@@ -29,7 +29,7 @@ export default function ATF({
           alt="Portrait von Jan Kroesche"
         />
         <Breadcrumbs className="lg:hidden pl-4 pt-4" />
-        <h1 className="p-4 text-center">{title}</h1>
+        <h1 className="!text-3xl p-4 text-center">{title}</h1>
       </div>
       <div
         className="hidden lg:block h-screen relative bg-cover bg-center"

@@ -26,17 +26,15 @@ body {
   --color-custom-grey: #636e72; /* us */
   --color-custom-purple: #ffeaa7; /* us */
 
-  --font-poppins:var(--font-poppins);
-  --font-inter:var(--font-inter);
+  --font-poppins: var(--font-poppins);
+  --font-inter: var(--font-inter);
 }
-
-
 
 h1,
 h2,
 button {
- font-family: var(--font-poppins),  "sans-serif";
- font-weight: 700;
+  font-family: var(--font-poppins), "sans-serif";
+  font-weight: 700;
 }
 
 .poppins {
@@ -44,14 +42,22 @@ button {
 }
 
 h1 {
-  font-size: 2rem;
-  line-height: 1.4;
+  font-size: 1.5rem; /*text-2-xl*/
+  line-height: calc(2 / 1.5);
   margin-bottom: 1rem;
+  letter-spacing: 0.025em; /*tracking wide*/
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 1.875rem; /*text-3-xl*/
+    line-height: calc(2.25 / 1.875);
+  }
 }
 
 h2 {
-  font-size: 1.5rem;
-  line-height: 1.5;
+  font-size: 1.25rem; /*text-xl*/
+  line-height: calc(1.75 / 1.25);
   margin-bottom: 0.5rem;
 }
 

@@ -258,12 +258,12 @@ export default function Home() {
       <WebsiteCheck className="mt-32 lg:max-w-[1500px] lg:mx-auto" />
       <section className="pt-24 lg:pt-0 lg:mt-32 flex flex-col item-center bg-custom-white">
         <div className="px-4 lg:px-0 text-center lg:mt-32">
-          <h2 className="lg:!text-3xl/10 lg:tracking-wide ">
+          <h1 className="">
             {" "}
             Keine Lust mehr, hinter Deinem{" "}
             <span className="text-custom-red">größten Wettbewerber</span>{" "}
             hinterherzulaufen?
-          </h2>
+          </h1>
         </div>
         <InfoBtn content="Unser Ziel" className="mx-auto mt-16 " />
         <h2 className="mt-4 text-center">Wir stärken deine Sichtbarkeit</h2>

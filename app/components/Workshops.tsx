@@ -49,7 +49,7 @@ export default function Workshops({ className }: Props) {
             <p>{e.text}</p>
           </div>
         ))}
-        <div className="py-12 lg:py-0 flex flex-col items-center lg:items-start gap-4 lg:flex-row lg:gap-8 text-custom-red p-2 mt-4 lg:mt-12">
+        <div className="pb-12 lg:py-0 flex flex-col items-center lg:items-start gap-4 lg:flex-row lg:gap-8 text-custom-red p-2 mt-4 lg:mt-12">
           <div className="flex gap-2 items-center">
             <FiPhone color="rgb(231,0,53)" />
             <span className="text-xl font-semibold">+49 176 55109383</span>
