@@ -4,9 +4,9 @@ import Breadcrumbs from "./Breadcrumps";
 
 type Props = {
   title?: React.ReactNode;
-  subtitle: string;
-  text: string;
-  LinkComponent: React.ReactNode;
+  subtitle?: string;
+  text?: string;
+  LinkComponent?: React.ReactNode;
   imgPathMobile: string;
   imgPathDesktop: string;
 };

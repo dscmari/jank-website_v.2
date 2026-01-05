@@ -1,5 +1,5 @@
 import { FiArrowRight } from "react-icons/fi";
-import LinkSeoCheck from "@/app/components/LinkSeoCheck";
+import LinkSeoCheck from "@/app/components/links/LinkSeoCheck";
 import { LuSquareArrowOutUpRight } from "react-icons/lu";
 
 export default function Videos() {

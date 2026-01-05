@@ -1,4 +1,4 @@
-const sections = [
+const references= [
   {
     title: `Platz 1 Ranking bei Google für den Suchbegriff „Familienhotel Schwabing“`,
     text: `Seit mehreren Jahren optimieren wir die Website des Stadthotels „Schwabinger Wahrheit“ aus München mit dem Ziel, das Hotel bei Google ganz oben zu positionieren, um mehr Hotelgäste zu gewinnen. Das Hotel rankt durch die Optimierungen für viele wichtige Suchbegriffe auf Platz 1 bei Google.`,
@@ -89,4 +89,4 @@ const sections = [
   },
 ];
 
-export default sections;
+export default references;

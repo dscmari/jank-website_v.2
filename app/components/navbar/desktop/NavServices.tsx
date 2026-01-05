@@ -1,6 +1,6 @@
 import { FiArrowRight } from "react-icons/fi";
-import LinkSeoCheck from "../../LinkSeoCheck";
-import LinkGeoCheck from "../../LinkGeoCheck";
+import LinkSeoCheck from "../../links/LinkSeoCheck";
+import LinkGeoCheck from "../../links/LinkGeoCheck";
 import Link from "next/link";
 
 const NavServices = () => {
@@ -9,36 +9,39 @@ const NavServices = () => {
       <div className="flex gap-16 p-8">
         <div className="flex flex-col gap-2">
           <h3 className="text-xl  mb-2 font-medium">Google Platz 1</h3>
-          <a href="#" className="mb-1 block text-neutral-400">
+          <a href="#" className="mb-1 block font-light">
             SEO Berater für Google Rankings
           </a>
-          <div className="text-neutral-400">
+          <div className="font-light">
             <LinkSeoCheck />
           </div>
         </div>
         <div className="flex flex-col gap-2">
           <h3 className="text-xl mb-2 font-medium">ChatGPT Platz 1</h3>
-          <div className="text-neutral-400">
+          <div className="font-light">
             <Link href="/geo-berater/">GEO Berater für KI Sichtbarkeit</Link>
           </div>
-          <a href="#" className="block text-neutral-400">
+          <a href="#" className="block font-light">
             GEO Tracker
           </a>
-          <div className="text-neutral-400">
+          <div className="font-light">
             <Link href="/geo-berater/kostenloser-geo-kurs/">
               Kostenloser GEO Kurs
             </Link>
           </div>
-          <div className="text-neutral-400">
+          <div className="font-light">
             <LinkGeoCheck />
           </div>
         </div>
         <div className="flex flex-col gap-2">
           <h3 className="text-xl font-semibold mb-2">Google Werbung</h3>
-          <a href="#" className="block text-neutral-400">
-            Google Ads Berater für Google-Klicks
-          </a>
-          <a href="#" className="block text-neutral-400">
+          <div className="font-light">
+            <Link href="/google-ads-berater/">
+              Google Ads Berater für Google-Klicks
+            </Link>
+          </div>
+
+          <a href="#" className="block font-light">
             Kostenloser Google-Ads-Kurs
           </a>
         </div>

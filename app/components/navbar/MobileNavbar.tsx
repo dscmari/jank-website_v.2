@@ -4,10 +4,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { FiArrowRight, FiChevronDown, FiMail, FiPhone } from "react-icons/fi";
-import LinkSeoCheck from "../LinkSeoCheck";
+import LinkSeoCheck from "../links/LinkSeoCheck";
 import { SlClose } from "react-icons/sl";
 import { AnimatePresence, motion } from "framer-motion";
-import LinkGeoCheck from "../LinkGeoCheck";
+import LinkGeoCheck from "../links/LinkGeoCheck";
 
 type Props = {
     className?: string
@@ -123,12 +123,14 @@ export default function Navbar({className} : Props) {
                       </div>
                       <div className="flex flex-col gap-1 mr-8">
                         <h3 className="font-semibold mt-2">Google Werbung</h3>
-                        <a
-                          href="#"
-                          className="block pb-1 text-neutral-400 border-b-2 border-slate-200"
+                               <div
+                          className="pb-1 text-neutral-400 border-b-2 border-slate-200"
+                          onClick={() => setIsMenuOpen((prev) => !prev)}
                         >
-                          Google Ads Berater für Google-Klicks
-                        </a>
+                          <Link href="/google-ads-berater/">
+                            Google Ads Berater für Google-Klicks
+                          </Link>
+                        </div>
                         <a
                           href="#"
                           className="block pb-1 text-neutral-400 border-b-2 border-slate-200"

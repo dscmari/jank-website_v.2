@@ -31,7 +31,7 @@ const TABS = [
   {
     title: "Preispakete",
     Component: NavPricing,
-    link: "/preise"
+    link: "/preise/"
   },
     {
     title: "Referenzen",
@@ -41,7 +41,7 @@ const TABS = [
   {
     title: "Videos",
     Component: NavVideos,
-    link: "videos/"
+    link: "/videos/"
   },
     {
     title: "GEO Tracker",

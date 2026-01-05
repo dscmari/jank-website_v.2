@@ -1,26 +1,25 @@
-import Image from "next/image";
+
 import { LuNotebookText } from "react-icons/lu";
 import { FaGears } from "react-icons/fa6";
 import { HiMagnifyingGlass } from "react-icons/hi2";
-import LinkSeoCheck from "../components/LinkSeoCheck";
+import LinkSeoCheck from "../components/links/LinkSeoCheck";
 import ATF from "../components/ATF";
 import Contact from "../components/Contact";
 import Testimonials from "../components/Testimonials";
 import Pricing from "../components/Pricing";
-import Process from "../components/Process";
+import Process from "../components/layouts/Process";
 import WebsiteCheck from "../components/WebsiteCheck";
 import { GiAirplaneDeparture } from "react-icons/gi";
-import FourBoxLayout from "../components/FourBoxLayout";
+import FourBoxLayout from "../components/layouts/FourBoxLayout";
 import SEOCheckBtn from "../components/buttons/SEOCheckBtn";
 import InfoBtn from "../components/buttons/InfoBtn";
 import Workshops from "../components/Workshops";
 import { colabCircles, processCircles } from "../content/processUi";
-import homeATF from "../content/ATFContents";
+import atf from "../content/ATFContents";
 import { standardFourBoxContent } from "../content/FourBoxLayoutContent";
 import { Metadata } from "next";
+import MiniTestimonals from "../components/MiniTestimonals";
 
-//TODO Metatag also muss server component sein
-//Lösung für das cache problem finden: delete tailwind cache rm -rf .next
 export const metadata: Metadata = {
   title: "Platz 1 bei Google & ChatGPT | SEO – GEO – Ads Berater",
 };
@@ -29,9 +28,9 @@ export default function Home() {
   return (
     <>
       <ATF
-        title={homeATF.title}
-        subtitle={homeATF.subtitle}
-        text={homeATF.text}
+        title={atf.homeATF.title}
+        subtitle={atf.homeATF.subtitle}
+        text={atf.homeATF.text}
         LinkComponent={<LinkSeoCheck />}
         imgPathMobile="/images/portraits/39321-4133web.jpg"
         imgPathDesktop="/images/portraits/39321-4000_02.jpg"
@@ -49,40 +48,7 @@ export default function Home() {
         </p>
         <SEOCheckBtn className="mt-12" />
       </section>
-      <section className="lg:hidden mt-24 flex flex-col px-4 bg-white rounded-xl">
-        <h1 className="text-center">
-          Was bringt es mir bei Google oben zu stehen?
-        </h1>
-        <InfoBtn content="Erfolge" className="mt-12 mx-auto" />
-        <h2 className="mt-4 text-center">
-          Unterschiedliche Branchen, echte Ergebnisse
-        </h2>
-        <div className="mt-8 flex flex-col items-start gap-2 ">
-          <h3 className="font-semibold">Bauindustrie</h3>
-          <p>
-            Wir haben durch die gesteigerte Google Sichtbarkeit zu mehr als 500
-            zusätzlichen Anfragen über die Website beigetragen. Das
-            Auftragsvolumen lag bei mehr als 8 Millionen Euro. Allein über
-            Google!
-          </p>
-        </div>
-        <div className="mt-8 flex flex-col items-start gap-2">
-          <h3 className="font-semibold">Informationstechnologie</h3>
-          <p>
-            Durch unsere Arbeit werden jede Woche mindestens zwei neue Kunden
-            durch die Google Rankings gewonnen. Mit einem durchschnittlichem
-            Auftragswert von 7.000 Euro.
-          </p>
-        </div>
-        <div className="mt-8 flex flex-col items-start gap-2">
-          <h3 className="font-semibold">Werbemittelgeschäft</h3>
-          <p>
-            Mithilfe unserer Optimierung, wurden letztes Jahr neun große
-            Firmenkunden allein über ChatGPT neu gewonnen: Das gesamte
-            Auftragsvolumen lag über 200.000 Euro.
-          </p>
-        </div>
-      </section>
+      <MiniTestimonals /> {/* lg:hidden */}
       <section className="mt-24 lg:hidden">
         <img
           src="/images/portraits/39321-3981.jpg"
@@ -115,55 +81,7 @@ export default function Home() {
         className="lg:pt-12 px-4 lg:px-32 lg:pb-48"
         circles={processCircles}
       />
-      <section className="hidden lg:flex flex-col lg:flex-row gap-12 mt-32 lg:bg-custom-white px-32 pt-24 pb-48 2xl:gap-32 2xl:justify-center ">
-        <div className="lg:min-w-1/2 2xl:min-w-1/3 lg:relative">
-          <div className="lg:absolute lg:-top-48">
-            <Image
-              src="/images/portraits/39321-3997.jpg"
-              style={{ width: "600px" }}
-              alt="Portrait Jan Kroesche"
-              height={800}
-              width={400}
-            />
-            <p className="p-8 italic mx-auto text-center font-light">
-              "Wir helfen Unternehmen dabei, die Nummer 1 ihrer Branche werden"
-            </p>
-          </div>
-        </div>
-        <div className="mx-4 lg:mx-0 2xl:max-w-1/2 3xl:max-w-1/3">
-          <h1 className="text-center">Was bringt es mir bei <span className="text-custom-red">Google</span> oben zu stehen?</h1>
-           <InfoBtn content="Erfolge" className="mx-auto mt-12" />
-          <h2 className="text-center mt-4">
-            Unterschiedliche Branchen, echte Ergebnisse
-          </h2>
-           <div className="mt-8 flex flex-col items-start gap-2 ">
-          <h3 className="font-semibold">Bauindustrie</h3>
-          <p>
-            Wir haben durch die gesteigerte Google Sichtbarkeit zu mehr als 500
-            zusätzlichen Anfragen über die Website beigetragen. Das
-            Auftragsvolumen lag bei mehr als 8 Millionen Euro. Allein über
-            Google!
-          </p>
-        </div>
-        <div className="mt-8 flex flex-col items-start gap-2">
-          <h3 className="font-semibold">Informationstechnologie</h3>
-          <p>
-            Durch unsere Arbeit werden jede Woche mindestens zwei neue Kunden
-            durch die Google Rankings gewonnen. Mit einem durchschnittlichem
-            Auftragswert von 7.000 Euro.
-          </p>
-        </div>
-        <div className="mt-8 flex flex-col items-start gap-2">
-          <h3 className="font-semibold">Werbemittelgeschäft</h3>
-          <p>
-            Mithilfe unserer Optimierung, wurden letztes Jahr neun große
-            Firmenkunden allein über ChatGPT neu gewonnen: Das gesamte
-            Auftragsvolumen lag über 200.000 Euro.
-          </p>
-        </div>
-          <SEOCheckBtn className="mt-12" />
-        </div>
-      </section>
+      <MiniTestimonals /> {/* hidden lg:flex */}
       <Contact className="p-8 mt-24 lg:mt-0" />
       <Testimonials className="bg-custom-white py-24 lg:pb-48 " />
       <section className=" flex flex-col lg:flex-row gap-12 lg:p-32 lg:py-24 2xl:gap-32 2xl:justify-center ">
@@ -308,7 +226,16 @@ export default function Home() {
           <SEOCheckBtn className="mt-12" />
         </div>
       </section>
-      <Pricing className="px-4 pt-12 mt-24 lg:py-24 lg:px-8 2xl:px-32" />
+      <section>
+        <h2 className="text-center lg:text-start px-4 lg:px-32 lg:mx-0 mt-24 lg:mt-16">
+          Unsere 3 Preispakete
+        </h2>
+        <InfoBtn
+          content="Angebot"
+          className="mx-auto lg:mx-32 mt-4 mb-8 lg:mb-16"
+        />
+        <Pricing className="bg-custom-white px-4 pt-12 mt-24 lg:py-24 lg:px-8 2xl:px-32" />
+      </section>
       <Workshops />
       <section className="mt-24 lg:mt-32">
         <div className="mx-4 lg:mx-0 lg:max-w-2/3 lg:mx-auto text-center">

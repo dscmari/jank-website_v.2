@@ -4,7 +4,7 @@ import { redirect } from "next/navigation";
 
 
 export async function submitForm(formData: FormData) {
-  const apiKey = process.env.STATIC_FORMS_KEY_DEV!;
+  const apiKey = process.env.STATIC_FORMS_KEY!;
   
   formData.append('apiKey', apiKey);
   

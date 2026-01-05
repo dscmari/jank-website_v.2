@@ -5,7 +5,7 @@ export default function WebsiteBoostingBox() {
     <div className="flex-1 bg-custom-white leading-8 p-8 rounded-lg lg:mx-0 flex flex-col justify-center">
       <div className="flex justify-around max-w-screen">
         <Image
-          src="/images/website_boosting.jpg"
+          src="/images/Website_Boosting_Logo.png"
           alt="Website Boosting Logo"
           className="max-w-1/2"
           width={300}
