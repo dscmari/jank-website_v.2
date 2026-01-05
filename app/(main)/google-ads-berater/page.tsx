@@ -147,9 +147,9 @@ export default function page() {
           </button>
         </div>
       </section>
-      <section className="lg:mt-32  py-12 lg:py-24 px-4 lg:px-32 bg-custom-white">
+      <section className="mt-24 lg:mt-32 py-12 lg:py-24 px-4 lg:px-32 bg-custom-white">
         <div className="lg:max-w-2/3">
-          <h1 className="text-center lg:text-start tracking-wide mb-4">
+          <h1 className="text-start tracking-wide">
             Persönliche
             <span className="text-custom-red">
               {" "}
@@ -172,14 +172,19 @@ export default function page() {
         <TwoBoxLayout boxes={adsBerater} className="mt-12 lg:mt-24" />
       </section>
       <section className="pt-24 pb-12 lg:pt-16 px-4 lg:px-32 bg-custom-white">
-        <h1 className="text-center tracking-wide">
+        <h2 className="lg:hidden">
+          {" "}
+          So bringen wir Dich bei{" "}
+          <span className="text-custom-red">Google</span> ganz nach oben
+        </h2>
+        <h1 className="hidden lg:block lg:text-center tracking-wide">
           So bringen wir Dich bei{" "}
           <span className="text-custom-red">Google</span> ganz nach oben
         </h1>
         <SixBoxLayout boxes={adsBeraterSixBox} className="" />
       </section>
       <section className="px-4 pt-24 pb-12 lg:pb-32 lg:px-32 bg-custom-white">
-        <h1 className="text-center lg:text-start tracking-wide mb-4">
+        <h1 className="text-start tracking-wide mb-4">
           Seit 2017 haben wir schon über
           <span className="text-custom-red"> 500 Firmen </span>
           geholfen
@@ -241,7 +246,14 @@ export default function page() {
       </section>
       <section className="flex flex-col 2xl:flex-row 2xl:items-center gap-12 px-4 pt-24 lg:p-32 lg:py-32 2xl:gap-32 2xl:justify-center">
         <div className="flex-1 flex flex-col gap-4">
-          <h1 className="text-center lg:text-start tracking-wide">
+          <h2 className="lg:hidden">
+            Noch unsicher? Dann schau Dir den{" "}
+            <span className="text-custom-red">
+              kostenloser Google Ads Kurs{" "}
+            </span>{" "}
+            von Jan Krösche an
+          </h2>
+          <h1 className="hidden lg:block tracking-wide">
             Noch unsicher? Dann schau Dir den{" "}
             <span className="text-custom-red">
               kostenloser Google Ads Kurs{" "}
@@ -293,8 +305,13 @@ export default function page() {
         </div>
       </section>
       <section className="mt-24 lg:px-32">
-        <div className="px-4 lg:px-0 text-center">
-          <h1 className=" tracking-wide">
+        <div className="px-4 lg:px-0 lg:text-center">
+          <h2 className="lg:hidden ">
+            Es ärgert Dich, dass Du{" "}
+            <span className="text-custom-red"> bei Google nicht oben </span>{" "}
+            stehst?
+          </h2>
+          <h1 className="hidden lg:block tracking-wide">
             Es ärgert Dich, dass Du{" "}
             <span className="text-custom-red"> bei Google nicht oben </span>{" "}
             stehst?
@@ -313,9 +330,13 @@ export default function page() {
         </div>
         <div className="lg:max-w-2/3 px-4 lg:px-0 mt-12"></div>
       </section>
-      <section className="mx-4 mt-24 lg:mx-32 lg:mt-32">
+      <section className="mx-4 lg:mt-24 lg:mx-32 lg:mt-32">
         <div className="lg:max-w-2/3">
-          <h1 className="tracking-wide text-center lg:text-start">
+             <h2 className="lg:hidden">
+            Was bringen <span className="text-custom-red">Google Ads</span>{" "}
+            Werbeanzeigen eigentlich?
+          </h2>
+          <h1 className="hidden lg:block tracking-wide">
             Was bringen <span className="text-custom-red">Google Ads</span>{" "}
             Werbeanzeigen eigentlich?
           </h1>
