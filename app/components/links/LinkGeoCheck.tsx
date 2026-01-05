@@ -1,5 +1,9 @@
 import Link from "next/link";
 
-export default function LinkGeoCheck() {
-  return <Link href="/geo-berater/kostenloser-geo-check/">Kostenloser GEO Check</Link>;
+type Props = {
+  className?:string
+}
+
+export default function LinkGeoCheck({className}:Props) {
+  return <Link href="/geo-berater/kostenloser-geo-check/" className={className}>Kostenloser GEO Check</Link>;
 }

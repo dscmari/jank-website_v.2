@@ -1,5 +1,9 @@
 import Link from "next/link";
 
-export default function LinkAdsKurs() {
-  return <Link href="/google-ads-berater/kostenloser-google-ads-kurs/">Kostenloser Google Ads Kurs</Link>
+type Props = {
+  className?:string
+}
+
+export default function LinkAdsKurs({className}:Props) {
+  return <Link href="/google-ads-berater/kostenloser-google-ads-kurs/" className={className}>Kostenloser Google Ads Kurs</Link>
 }

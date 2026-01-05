@@ -1,5 +1,9 @@
 import Link from "next/link";
 
-export default function LinkSeoCheck() {
-  return <Link href="/seo-berater/kostenloser-seo-check/">Kostenloser SEO Check</Link>;
+type Props = {
+  className?:string
+}
+
+export default function LinkSEOCheck({className}:Props) {
+  return <Link href="/seo-berater/kostenloser-seo-check/" className={className}>Kostenloser SEO Check</Link>;
 }
