@@ -1,4 +1,4 @@
-const references= [
+const references = [
   {
     title: `Platz 1 Ranking bei Google für den Suchbegriff „Familienhotel Schwabing“`,
     text: `Seit mehreren Jahren optimieren wir die Website des Stadthotels „Schwabinger Wahrheit“ aus München mit dem Ziel, das Hotel bei Google ganz oben zu positionieren, um mehr Hotelgäste zu gewinnen. Das Hotel rankt durch die Optimierungen für viele wichtige Suchbegriffe auf Platz 1 bei Google.`,
@@ -6,6 +6,7 @@ const references= [
     preAIresults: "KI: ",
     aiResults: `Platz 1 in der KI-Antwort von ChatGPT für „Bestes Familienhotel in Schwabing“`,
     company: `Schwabinger Wahrheit - Hotel in München`,
+    image: "/images/screenshots/reference.png",
   },
   {
     title: `Platz 1 Ranking bei Google für den Suchbegriff „Immobilienberatung für Investoren“`,
@@ -14,6 +15,7 @@ const references= [
     preAIresults: "Google: ",
     aiResults: `Platz 1 bei Google für „Immobilienberatung für Investoren“`,
     company: `Ergoneon Management GmbH`,
+    image: "/images/screenshots/reference.png",
   },
   {
     title: `Platz 1 Ranking bei Google für das Keyword „Immobilienbetreuung Griechenland“`,
@@ -79,7 +81,7 @@ const references= [
     aiResults: `Platz 1 in der KI-Antwort von ChatGPT für „Tiefgaragensanierung“`,
     company: `HBS Bau`,
   },
-          {
+  {
     title: `Platz 1 Ranking bei Google für „Pflegesessel Hersteller“`,
     text: `Der Firma Steinmann Selection helfen wir seit mehreren Jahren, bei Google auffindbarer zu sein. Durch unsere SEO-Arbeiten an der Website haben wir es geschafft, die Firma für „Pflegesessel Hersteller“ auf Platz 1 bei Google zu positionieren. Die Firma erhält nun deutlich mehr Anfragen von potentiellen Kunden.`,
     googleResults: `Platz 1 bei Google für „Pflegesessel Hersteller“`,
