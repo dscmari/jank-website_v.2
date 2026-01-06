@@ -12,9 +12,13 @@ const NavServices = () => {
           <a href="#" className="mb-1 block font-light">
             SEO Berater für Google Rankings
           </a>
-          <div className="font-light">
-            <LinkSeoCheck />
-          </div>
+          <LinkSeoCheck className="font-light" />
+          <Link
+            href="/seo-berater/kostenloser-seo-kurs/"
+            className="font-light"
+          >
+            Kostenloser SEO Kurs
+          </Link>
         </div>
         <div className="flex flex-col gap-2">
           <h3 className="text-xl mb-2 font-medium">ChatGPT Platz 1</h3>

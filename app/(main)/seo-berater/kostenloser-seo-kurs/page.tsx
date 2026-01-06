@@ -4,11 +4,11 @@ import InfoBtn from "@/app/components/buttons/InfoBtn";
 import { IoIosCheckmarkCircle } from "react-icons/io";
 
 export const metadata: Metadata = {
-  title: "Kostenloser GEO Kurs | GEO Schulung & GEO Seminar"
+  title: "Tag: Kostenloser SEO Kurs | SEO Seminar mit Jan Krösche",
 };
 
-const geoKursBullets = [
-  "Der GEO Kurs findet nur mit Dir oder in kleinen Gruppen statt (je nach Auslastung)",
+const seoKursBullets = [
+  "Der SEO Kurs findet nur mit Dir oder in kleinen Gruppen statt (je nach Auslastung)",
   "Der Kurs ist live – Du kannst Fragen stellen",
   "Du kannst Dich per Mail anmelden jan@jankroesche.de",
   "Du erhältst passende Terminvorschläge per Mail",
@@ -17,35 +17,44 @@ const geoKursBullets = [
 export default function page() {
   return (
     <div>
-        <div className="hidden lg:block lg:px-32 px-4 lg:pt-32 lg:pb-16 lg:max-w-2/3">
-             <h1 className="!text-5xl/14">Kostenloser <span className="text-custom-red">GEO </span> Kurs</h1>
-            <h2>Im kostenlosen GEO Kurs zeigt Dir der GEO Experte Jan Krösche, wie Du Deine Website in die KI-Antworten von ChatGPT, Gemini & Co. bekommst und auch in Zukunft mit Deiner Firma sichtbar bist. Damit Dein Geschäft für die Zukunft gewappnet ist.</h2>
-        </div>
-               
+      <div className="hidden lg:block lg:px-32 px-4 lg:pt-32 lg:pb-16 lg:max-w-2/3">
+        <h1 className="!text-5xl/14">
+          Kostenloser <span className="text-custom-red">SEO </span> Kurs
+        </h1>
+        <h2>
+          Im kostenlosen SEO Kurs zeigt Dir der SEO Experte Jan Krösche, wie Du
+          Deine Homepage bei Google nach vorne bringst, um mehr Neukundegeschäft
+          zu machen. Damit Deine Website zur Vertriebsmaschine wird und für Dich
+          atbeitet.
+        </h2>
+      </div>
+
       <section className="flex flex-col lg:flex-row gap-8 lg:px-32">
         <div className="px-4 lg:p-8 flex-1">
           <h1 className="mt-4 text-center">
-            Dein kostenloser <span className="text-custom-red">GEO </span>Kurs
+            Dein kostenloser <span className="text-custom-red">SEO </span>Kurs
           </h1>
-          <InfoBtn content="Geo Kurs" className="mx-auto mt-12" />
+          <InfoBtn content="SEO Kurs" className="mx-auto mt-12" />
           <h2 className="text-center mt-4">
-            KI-Marketing verstehen – Neukunden über ChatGPT & Co. gewinnen.
+            Suchmaschinenoptimierung verstehen und Neukunden über Google
+            gewinnen
           </h2>
           <div className="flex flex-col gap-4 mt-12">
             <p>
-              Im kostenlosen GEO Kurs von Jan Krösche lernst Du, wie Du Deine
-              Website in die KI-Antworten von ChatGPT, Gemini, Copilot und
-              Perplexity bringst.
+              Im kostenlosen SEO Kurs von Jan Krösche lernst Du, wie Du Deine
+              Website verbessern kannst, um bei Google besser zu ranken.
             </p>
             <p>
-              Das Ziel des kostenlosen GEO Kurses ist es, Dir die GEO-Grundlagen
-              praxisnah zu vermitteln, damit Du einen Überblick hast und Deinen
-              Webauftritt optimieren kannst, um über die KI mehr Neukunden zu
-              erreichen.
+              Mit starken Rankings erhöhst Du die Wahrscheinlichkeit, dass
+              potentielle Kunden auf Dich stoßen, wenn sie bei Google unterwegs
+              sind. SEO ist daher nicht nice-to-have, sondern ein Neukunden- und
+              Umsatzlieferant.
             </p>
             <p>
-              Der GEO Kurs ist komplett kostenlos, dauert ca. 1 h und richtet
-              sich an Unternehmen, die in der KI sichtbarer sein wollen.
+              Ich zeige Dir im kostenlosen SEO Kurs, was Du konkret tun kannst,
+              um bei Google oben zu stehen. Der Kurs ist komplett kostenlos,
+              praxisorientiert und einfach aufgebaut. Du brauchst keine
+              Vorkenntnisse.
             </p>
           </div>
         </div>
@@ -53,17 +62,17 @@ export default function page() {
           <div>
             <div className="flex flex-col items-start gap-2 pt-8">
               <span className="text-white bg-custom-red font-semibold tracking-tight py-1 px-2 rounded-lg">
-                Dein GEO Kurs
+                Dein SEO Kurs
               </span>
               <span className="font-semibold tracking-tight">
-                Der GEO Kurs auf einen Blick
+                Der SEO Kurs auf einen Blick
               </span>
               <span className="font-light">
-                Werde die Top-Empfehlung der KI
+                Komme nach ganz oben in der Google Suche
               </span>
             </div>
 
-            <h1 className="text-center mt-8 lg:mt-16">GEO Kurs</h1>
+            <h1 className="text-center mt-8 lg:mt-16">SEO Kurs</h1>
             <p className="mt-4 mb-8 font-light text-base/5">
               Der Kurs ist für Dich komplett kostenfrei. Wir nehmen uns eine
               Stunde Zeit – davon 45 Minuten für intensives Lernen und 15
@@ -73,7 +82,7 @@ export default function page() {
             </p>
             <span className="font-semibold tracking-tight">Leistungen</span>
             <div className="flex flex-col gap-2 mt-2">
-              {geoKursBullets.map((e, index) => (
+              {seoKursBullets.map((e, index) => (
                 <div key={index} className="flex items-start gap-2">
                   <IoIosCheckmarkCircle
                     color="rgb(231,0,53)"
@@ -101,31 +110,32 @@ export default function page() {
         </div>
       </section>
       <section className="lg:hidden mt-12 p-4">
-        <InfoBtn content="GEO Kurs" />
+        <InfoBtn content="SEO Kurs" />
         <h1 className="mt-8">
-          Im GEO Kurs lernst Du, wie Deine Website in den{" "}
-          <span className="text-custom-red">KI-Antworten </span> zitiert wird
+          Mit dem kostenlosen SEO Kurs bringst Du Deine Website auf{" "}
+          <span className="text-custom-red"> Platz 1 bei Google</span>
         </h1>
-        <h2>Verpasse nicht den Anschluss an die neue Suche</h2>
+        <h2>So dominierst Du die Google-Suche in Deiner Branche</h2>
         <div className="flex flex-col gap-4">
           <p>
-            KI-Systeme wie ChatGPT, Copilot oder Gemini werden in den nächsten
-            Jahren zu einem festen Bestandteil unseres täglichen Tuns werden.
-            Sowohl im privaten als auch im beruflichen Umfeld.
+            SEO gehört zu den wichtigsten Marketing- und Vertriebswerkzeugen, um
+            über die eigene Website Anfragen zu bekommen.
           </p>
           <p>
-            Es liegt daher klar auf der Hand: Firmen, die diesen digitalen Trend
-            verpassen, werden Marktanteile verlieren oder bedrohen gar ihre
-            Existenz. Denn: Menschen nutzen die Chatsysteme, um nach Anbietern
-            und Produkten zu suchen. Firmen, die in den Antworten auftauchen und
-            zitiert werden, bekommen automatisch die meisten Anfragen und
-            Neukunden.
+            Das „SEO Spiel“ ist dabei ganz einfach: Firmen, die bei Google zu
+            Schlüssel-Suchbegriffen schlecht gerankt sind, werden von
+            Google-Suchenden, die gleichzeitig auch potentielle Kunden sind,
+            nicht wahrgenommen.
           </p>
           <p>
-            Im kostenlosen GEO Kurs zeigt Dir der GEO Experte Jan Krösche, wie
-            Du Deine Website in die KI-Antworten von ChatGPT, Gemini & Co.
-            bekommst und auch in Zukunft mit Deiner Firma sichtbar bist. Damit
-            Dein Geschäft für die Zukunft gewappnet ist.
+            Die Firmen, die bei Google auf Platz 1 stehen, gewinnen die meisten
+            Neukunden und machen richtig Umsatz über die Seite.
+          </p>
+          <p>
+            Im kostenlosen SEO Kurs von Jan Krösche lernst Du konkret, wie Du
+            Deine Homepage bei Google nach vorne bringst, um mehr
+            Neukundegeschäft zu machen. Damit Deine Website zur
+            Vertriebsmaschine wird und für Dich atbeitet.
           </p>
           <p>
             Kursanmeldung per Mail unter{" "}
@@ -150,33 +160,33 @@ export default function page() {
         </div>
         <div className="mx-4 lg:mx-0 2xl:max-w-1/2 3xl:max-w-1/3">
           <h1 className="text-center">
-            Im GEO Kurs lernst Du, wie Deine Website in den{" "}
-            <span className="text-custom-red">KI-Antworten </span> zitiert wird
+            Mit dem kostenlosen SEO Kurs bringst Du Deine Website auf{" "}
+            <span className="text-custom-red"> Platz 1 bei Google</span>
           </h1>
-          <InfoBtn content="GEO Kurs" className="mx-auto mt-12" />
+          <InfoBtn content="SEO Kurs" className="mx-auto mt-12" />
           <h2 className="text-center mt-4">
-            KI-Sichtbarkeit sichern: Verpasse nicht den Anschluss an die neue
-            Suche
+            So dominierst Du die Google-Suche in Deiner Branche
           </h2>
           <div className="flex flex-col gap-4 mt-12">
             <p>
-              KI-Systeme wie ChatGPT, Copilot oder Gemini werden in den nächsten
-              Jahren zu einem festen Bestandteil unseres täglichen Tuns werden.
-              Sowohl im privaten als auch im beruflichen Umfeld.
+              SEO gehört zu den wichtigsten Marketing- und Vertriebswerkzeugen,
+              um über die eigene Website Anfragen zu bekommen.
             </p>
             <p>
-              Es liegt daher klar auf der Hand: Firmen, die diesen digitalen
-              Trend verpassen, werden Marktanteile verlieren oder bedrohen gar
-              ihre Existenz. Denn: Menschen nutzen die Chatsysteme, um nach
-              Anbietern und Produkten zu suchen. Firmen, die in den Antworten
-              auftauchen und zitiert werden, bekommen automatisch die meisten
-              Anfragen und Neukunden.
+              Das „SEO Spiel“ ist dabei ganz einfach: Firmen, die bei Google zu
+              Schlüssel-Suchbegriffen schlecht gerankt sind, werden von
+              Google-Suchenden, die gleichzeitig auch potentielle Kunden sind,
+              nicht wahrgenommen.
             </p>
             <p>
-              Im kostenlosen GEO Kurs zeigt Dir der GEO Experte Jan Krösche, wie
-              Du Deine Website in die KI-Antworten von ChatGPT, Gemini & Co.
-              bekommst und auch in Zukunft mit Deiner Firma sichtbar bist. Damit
-              Dein Geschäft für die Zukunft gewappnet ist.
+              Die Firmen, die bei Google auf Platz 1 stehen, gewinnen die
+              meisten Neukunden und machen richtig Umsatz über die Seite.
+            </p>
+            <p>
+              Im kostenlosen SEO Kurs von Jan Krösche lernst Du konkret, wie Du
+              Deine Homepage bei Google nach vorne bringst, um mehr
+              Neukundegeschäft zu machen. Damit Deine Website zur
+              Vertriebsmaschine wird und für Dich atbeitet.
             </p>
           </div>
           <p className="mt-4">
@@ -188,32 +198,27 @@ export default function page() {
       <section className="flex flex-col 2xl:flex-row 2xl:items-center px-4 pt-8 lg:gap-12 lg:p-32 lg:py-32 2xl:gap-32 2xl:justify-center">
         <div className="flex-1 flex flex-col">
           <h1>
-            Du willst den Anschluss nicht verlieren und bei{" "}
-            <span className="text-custom-red">
-              ChatGPT, Gemini, Perplexity{" "}
-            </span>{" "}
-            & Co. auffindbar sein?
+            Du willst die Nummer 1 bei Google werden und endlich{" "}
+            <span className="text-custom-red">mehr Anfragen</span> bekommen?
           </h1>
           <p>
-            Jahrelang war es entscheidend, bei Google auf den top Positionen mit
-            der Website zu ranken. Das ist zwar nach wie vor extrem wichtig,
-            aber Suchsysteme verändern sich aufgrund der umfassenden
-            KI-Entwicklungen.
+            Dann ist der kostenlose SEO Kurs genau richtig für Dich. Seit 2017
+            haben wir schon über 500 Firmen-Websites auf Platz 1 bei Google
+            gebracht. Immer mit dem Ziel, dass dadurch mehr Anfragen generiert
+            werden.
           </p>
           <p className="py-4">
-            Menschen nutzen zunehmend KI-Systeme wie ChatGPT, Gemini & Copilot,
-            um nach Informationen und Firmen im Internet zu suchen. Firmen, die
-            als erstes in den KI-Antworten erscheinen, bekommen die meisten
-            Neukunden und machen den meisten Umsatz.
+            Zum Beispiel für unseren Kunden Kramer Systems – einem IT
+            Dienstleister aus Bayern. Für das Keyword „IT Dienstleister
+            Landsberg“ rankt die Website unseres Kunden auf Platz 1 bei Google.
+            Allein durch diese Top Position kommen regelmäßig Anfragen von neuen
+            Kunden rein. Genau darum geht es im SEO. Bei Google oben zu stehen
+            und mehr Neukunden zu erreichen.
           </p>
           <p>
-            Der kostenlose GEO Kurs richtet sich an Selbständige, Marketing- und
-            Vertriebsverantwortliche und Website-Verantwortliche in Unternehmen.
-          </p>
-          <p>
-            Referent Jan Krösche arbeitet seit 2017 als SEO & GEO Berater. Seit
-            einigen Jahren berät er Firmen aus dem deutschsprachigen Raum im
-            Bereich GEO.
+            Wir geben unser SEO-Wissen im kostenlosen Kurs gern an Dich weiter.
+            Der Kurs richtet sich an Selbstständige, Marketing- und
+            Vertriebsverantwortliche und Website-Verantwortliche im Unternehmen.
           </p>
           <p className="mt-4">
             Kursanmeldung per Mail unter{" "}
@@ -222,16 +227,17 @@ export default function page() {
         </div>
         <div className="mt-12 lg:mt-0 xl:min-w-1/3">
           <Image
-            src="/images/screenshots/geo-kurs.png"
+            src="/images/screenshots/seo-kurs.png"
             style={{ width: "600px" }}
             alt="Screenshot einer ChatGPT Suche"
             height={300}
             width={500}
           />
           <p className="p-8 max-w-xl 2xl:mx-auto text-center lg:text-start 2xl:text-center">
-            "Das Hotel Schwabinger Wahrheit erscheint in der KI Antwort von
-            ChatGPT ganz oben. Durch geziete GEO-Umsetzungen haben wir das für
-            unseren Kunden erreicht.“
+            "Der IT Dienstleister Kramer Systems wird bei Google für den
+            Suchbegriff „IT Dienstleister Landsberg“ bei Google ganz oben
+            gefunden. Durch diese Top Platzierung gewinnt die Firma jede Woche
+            mehrere Neukunden. Allein durch SEO.“
           </p>
         </div>
       </section>
@@ -246,14 +252,13 @@ export default function page() {
               <span className="text-white bg-custom-red font-semibold tracking-tight py-2 px-4 rounded-lg">
                 Kursteilnehmer
               </span>
-              <span className="font-semibold tracking-tight">Webdesign</span>
+              <span className="font-semibold tracking-tight">Handwerk</span>
             </div>
             <p className="mt-4">
-              „Der kostenlose GEO Kurs von Jan Krösche hat mir geholfen, die
-              Mechanismen von LLMs wie ChatGPT und Gemini zu verstehen. Vieles
-              war mir wirklich nicht bewusst. Ich habe nun einen Plan, wie ich
-              meine Dienstleister-Website verbessern kann, um mehr KI
-              Sichtbarkeit zu bekommen.“
+              „Im kostenlosen SEO Kurs von Jan Krösche habe ich viel zum Thema
+              Google Optimierung gelernt. Der Kurs ist ideal, wenn man einen
+              Überblick zum Thema SEO bekommen will und ein paar Tipps braucht,
+              wie man damit anfangen soll.
             </p>
             <div className="flex items-center gap-4 mt-4">
               <img
@@ -262,8 +267,8 @@ export default function page() {
                 style={{ width: "40px" }}
               />
               <div className="pt-2">
-                <span className="font-semibold block">Marian N.</span>
-                <span>Webdesigner</span>
+                <span className="font-semibold block">Elias F.</span>
+                <span>Handwerker</span>
               </div>
             </div>
           </div>
@@ -275,12 +280,10 @@ export default function page() {
               <span className="font-semibold tracking-tight">Marketing</span>
             </div>
             <p className="mt-4">
-              „Meine Marketingkollegin und ich wollten wissen, was GEO
-              eigentlich genau ist. Daher haben wir den Kurs gemacht. Der Kurs
-              dauert zwar nur eine Stunde, ist aber komplett kostenlos und
-              vollgepackt mit Informationen. Besonders gut hat mir gefallen,
-              dass ich praktische GEO Tipps mitnehmen konnte, die wir auf
-              unserer Website nun umsetzen können."
+              „Wir haben von einem Bekannten vom kostenlosen SEO Kurs erfahren.
+              Das wollten wir uns dann selbst anschauen. Die SEO Sitzung dauert
+              nicht lange, ist aber wirklich tiefgehend und nützlich. Danke an
+              Jan Krösche für den kostenlosen Input."
             </p>
             <div className="flex items-center gap-4 mt-4">
               <img
@@ -289,8 +292,8 @@ export default function page() {
                 style={{ width: "40px" }}
               />
               <div className="pt-2">
-                <span className="font-semibold block">Susanne K.</span>
-                <span>Marketingverantwortliche</span>
+                <span className="font-semibold block">Sandra S.</span>
+                <span>Werbemittelbranche</span>
               </div>
             </div>
           </div>
@@ -300,42 +303,48 @@ export default function page() {
         <div className="p-8 mx-4 flex-1">
           <h1 className="mt-4 text-center">
             Das lernst Du im kostenlosen{" "}
-            <span className="text-custom-red">GEO Kurs </span> von Jan Krösche
+            <span className="text-custom-red">SEO Kurs </span> von Jan Krösche
           </h1>
-          <InfoBtn content="Geo Kurs" className="mx-auto mt-12" />
-          <h2 className="text-center mt-4">Akutelles Fachwissen rund um GEO</h2>
+          <InfoBtn content="SEO Kurs" className="mx-auto mt-12" />
+          <h2 className="text-center mt-4">Akutelles Fachwissen rund um SEO</h2>
           <div className="flex flex-col gap-4 mt-12">
             <p>
-              Im kostenlosen GEO Kurs erhältst Du aktuelles Fachwissen sowie
-              praktische Tipps, die Du später selbst umsetzen kannst. Das Ziel
-              des Kurses ist es, dass Du mit Deiner Firmenwebsite in KI-Systemen
-              besser gefunden wirst und einen fundierten Überblick über die
-              wichtigsten GEO-Maßnahmen wie llms.txt oder schema.org bekommst.
+              Im kostenlosen SEO Kurs erhältst Du aktuelles Fachwissen und einen
+              fundierten Überblick über die entscheidenden Bausteine wie Title
+              Tags, Überschriften und die Funktionsweise moderner Algorithmen.
+              Dabei stehen praktische Tipps im Vordergrund, die Du direkt auf
+              Deine eigene Strategie anwenden kannst, um die technischen und
+              inhaltlichen Grundlagen Deiner Seite zu festigen.
+            </p>
+            <p>
+              Das klare Ziel des Kurses ist es, Deine Firmenwebsite bei Google
+              auf Platz 1 zu ranken und sie in einen echten Kundenmagneten zu
+              verwandeln.
             </p>
             <p>
               Da der Kurs live per Teams stattfindet, kannst Du direkt Fragen an
               den Referenten stellen und profitierst von einem interaktiven
-              Austausch. Der GEO Kurs ist dabei komplett kostenlos und Du
+              Austausch. Der SEO Kurs ist dabei komplett kostenlos und Du
               bekommst alle verwendeten Folien im Anschluss an die Sitzung
               bequem per Mail zugeschickt.
             </p>
           </div>
         </div>
-        <div className="flex-1 bg-custom-white flex flex-col justify-between lg:flex-1 py-12 lg:pt-0 p-8 rounded-lg">
+        <div className="flex-1 bg-custom-white flex flex-col justify-between py-12 lg:pt-0 px-4 lg:p-8 rounded-lg">
           <div>
             <div className="flex flex-col items-start gap-2 pt-8">
               <span className="text-white bg-custom-red font-semibold tracking-tight py-1 px-2 rounded-lg">
-                Dein GEO Kurs
+                Dein SEO Kurs
               </span>
               <span className="font-semibold tracking-tight">
-                Der GEO Kurs auf einen Blick
+                Der SEO Kurs auf einen Blick
               </span>
               <span className="font-light">
-                Werde die Top-Empfehlung der KI
+                Komme nach ganz oben in der Google Suche
               </span>
             </div>
 
-            <h1 className="text-center mt-8 lg:mt-16">GEO Kurs</h1>
+            <h1 className="text-center mt-8 lg:mt-16">SEO Kurs</h1>
             <p className="mt-4 mb-8 font-light text-base/5">
               Der Kurs ist für Dich komplett kostenfrei. Wir nehmen uns eine
               Stunde Zeit – davon 45 Minuten für intensives Lernen und 15
@@ -345,7 +354,7 @@ export default function page() {
             </p>
             <span className="font-semibold tracking-tight">Leistungen</span>
             <div className="flex flex-col gap-2 mt-2">
-              {geoKursBullets.map((e, index) => (
+              {seoKursBullets.map((e, index) => (
                 <div key={index} className="flex items-start gap-2">
                   <IoIosCheckmarkCircle
                     color="rgb(231,0,53)"
@@ -390,16 +399,16 @@ export default function page() {
         <div className="mx-4 lg:mx-0 2xl:max-w-1/2 3xl:max-w-1/3">
           <h1 className="text-center">
             Hier kannst Du Dich zum{" "}
-            <span className="text-custom-red"> kostenlosen </span>GEO Kurs mit
+            <span className="text-custom-red"> kostenlosen </span>SEO Kurs mit
             Jan Krösche anmelden
           </h1>
-          <InfoBtn content="GEO Kurs" className="mx-auto mt-12" />
+          <InfoBtn content="SEO Kurs" className="mx-auto mt-12" />
           <h2 className="text-center mt-4">
-        Lass uns über Deine Sichbarkeit in der KI sprechen
+            Lass uns über Deine Sichbarkeit sprechen
           </h2>
           <div className="flex flex-col gap-4 mt-12">
             <p>
-              Der kostenlose GEO Kurs ist komplett kostenlos, dauert insgesamt
+              Der kostenlose SEO Kurs ist komplett kostenlos, dauert insgesamt
               60 Minuten und findet über Teams statt. Der Kurs wird allein mit
               Dir oder in kleinen Gruppen durchgeführt.
             </p>
@@ -411,9 +420,9 @@ export default function page() {
               teilnehmen kannst.
             </p>
           </div>
-         <div className="mt-4">
+          <div className="mt-4">
             <p className="pb-8 border-b-1 border-slate-700">
-               Ich freue mich auf alle GEO-Interessierten und auf den Austausch
+              Ich freue mich auf alle SEO-Interessierten und auf den Austausch
               mit Dir.
             </p>
             <span className="mt-4 block text-center text-base/5 font-light">
