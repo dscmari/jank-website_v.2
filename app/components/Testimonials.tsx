@@ -15,7 +15,7 @@ export default function Testimonials({ className }: Props) {
       </h1>{" "}
       <InfoBtn content="Erfolgsgeschichten" className="mx-auto mt-24 lg:mt-16"/>
       <h2 className="mt-4 text-center">
-          Messbarer Erfolg und nachhaltiges Wachstum durch SEO & SEA
+          Messbarer Erfolg und nachhaltiges Wachstum durch SEO, GEO & SEA
         </h2>
       <div className="pt-8 lg:pt-24 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4 max-w-7xl lg:mx-auto">
         {" "}

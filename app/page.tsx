@@ -2,23 +2,23 @@
 import { LuNotebookText } from "react-icons/lu";
 import { FaGears } from "react-icons/fa6";
 import { HiMagnifyingGlass } from "react-icons/hi2";
-import LinkSeoCheck from "../components/links/LinkSeoCheck";
-import ATF from "../components/ATF";
-import Contact from "../components/Contact";
-import Testimonials from "../components/Testimonials";
-import Pricing from "../components/Pricing";
-import Process from "../components/layouts/Process";
-import WebsiteCheck from "../components/WebsiteCheck";
+import LinkSeoCheck from "./components/links/LinkSeoCheck";
+import ATF from "./components/ATF";
+import Contact from "./components/Contact";
+import Testimonials from "./components/Testimonials";
+import Pricing from "./components/Pricing";
+import Process from "./components/layouts/Process";
+import WebsiteCheck from "./components/WebsiteCheck";
 import { GiAirplaneDeparture } from "react-icons/gi";
-import FourBoxLayout from "../components/layouts/FourBoxLayout";
-import SEOCheckBtn from "../components/buttons/SEOCheckBtn";
-import InfoBtn from "../components/buttons/InfoBtn";
-import Workshops from "../components/Workshops";
-import { colabCircles, processCircles } from "../content/processUi";
-import atf from "../content/ATFContents";
-import { standardFourBoxContent } from "../content/FourBoxLayoutContent";
+import FourBoxLayout from "./components/layouts/FourBoxLayout";
+import SEOCheckBtn from "./components/buttons/SEOCheckBtn";
+import InfoBtn from "./components/buttons/InfoBtn";
+import Workshops from "./components/Workshops";
+import { colabCircles, processCircles } from "./content/processUi";
+import atf from "./content/ATFContents";
+import { standardFourBoxContent } from "./content/FourBoxLayoutContent";
 import { Metadata } from "next";
-import MiniTestimonals from "../components/MiniTestimonals";
+import MiniTestimonals from "./components/MiniTestimonals";
 
 export const metadata: Metadata = {
   title: "Platz 1 bei Google & ChatGPT | SEO – GEO – Ads Berater",
@@ -36,10 +36,10 @@ export default function Home() {
         imgPathDesktop="/images/portraits/39321-4000_02.jpg"
       />
       <section className="bg-custom-white rounded-xl mx-4 mt-8 p-8 rounded-lg lg:hidden">
-        <InfoBtn content="Dein Team" />
+        <InfoBtn content="Das tun wir" />
         <h2 className="mt-8">
-          Über 500 Websites auf{" "}
-          <span className="text-custom-red">Platz 1 bei Google</span> seit 2017
+          Seit 2017 über 500 Websites auf{" "}
+          <span className="text-custom-red">Platz 1 bei Google</span> katapultiert
         </h2>
         <p className="pt-4 font-light">
           Jan Krösche & Team sind Deine SEO, GEO und ADS Spezialisten, damit Du
@@ -72,7 +72,7 @@ export default function Home() {
             einem spezialisierten Team selbständig.
           </h2>
         </div>
-        <InfoBtn content="Über uns" className="mt-24 lg:mt-16 mx-auto" />
+        <InfoBtn content="Der Ablauf" className="mt-24 lg:mt-16 mx-auto" />
         <h2 className="mt-4 text-center">
           Bewährte Prozesse, sichtbare Erfolge
         </h2>
@@ -81,7 +81,6 @@ export default function Home() {
         className="lg:pt-12 px-4 lg:px-32 lg:pb-48"
         circles={processCircles}
       />
-      <MiniTestimonals /> {/* hidden lg:flex */}
       <Contact className="p-8 mt-24 lg:mt-0" />
       <Testimonials className="bg-custom-white py-24 lg:pb-48 " />
       <section className=" flex flex-col lg:flex-row gap-12 lg:p-32 lg:py-24 2xl:gap-32 2xl:justify-center ">
@@ -226,15 +225,15 @@ export default function Home() {
           <SEOCheckBtn className="mt-12" />
         </div>
       </section>
-      <section>
-        <h2 className="text-center lg:text-start px-4 lg:px-32 lg:mx-0 mt-24 lg:mt-16">
+      <section className="bg-custom-white">
+        <h2 className="text-center lg:text-start px-4 lg:px-32 pt-12 lg:pt-32 lg:mx-0 mt-24 lg:mt-16">
           Unsere 3 Preispakete
         </h2>
         <InfoBtn
           content="Angebot"
           className="mx-auto lg:mx-32 mt-4 mb-8 lg:mb-16"
         />
-        <Pricing className="bg-custom-white px-4 pt-12 mt-24 lg:py-24 lg:px-8 2xl:px-32" />
+        <Pricing className="bg-custom-white px-4 pt-12 lg:pb-24 lg:pt-0 lg:px-8 2xl:px-32" />
       </section>
       <Workshops />
       <section className="mt-24 lg:mt-32">
@@ -245,7 +244,7 @@ export default function Home() {
             So läuft unsere Zusammenarbeit ab
           </h2>
         </div>
-        <InfoBtn content="Kontakt" className="mx-auto mt-16 " />
+        <InfoBtn content="Persönlicher Ansprechpartner" className="mx-auto mt-16 " />
         <h2 className="mt-4 text-center">Direkter Kontakt, keine Umwege</h2>
       </section>
       <Process

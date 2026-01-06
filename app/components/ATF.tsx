@@ -28,7 +28,7 @@ export default function ATF({
           height={500}
           alt="Portrait von Jan Kroesche"
         />
-        <Breadcrumbs className="lg:hidden pl-4 pt-4" />
+        {/* <Breadcrumbs className="lg:hidden pl-4 pt-4" /> */}
         <h1 className="!text-3xl p-4 text-center">{title}</h1>
       </div>
       <div
@@ -45,7 +45,7 @@ export default function ATF({
           </button>
         </div>
       </div>
-      <Breadcrumbs className="hidden lg:block mt-12 mx-8 font-semibold" />
+      {/* <Breadcrumbs className="hidden lg:block mt-12 mx-8 font-semibold" /> */}
     </div>
   );
 }

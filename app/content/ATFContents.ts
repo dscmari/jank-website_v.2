@@ -1,8 +1,8 @@
 
 const homeATF = {
-  title: "Endlich Platz 1 bei Google & ChatGPT mit Deiner Website!",
+  title: "Platz 1 bei Google & ChatGPT mit Deiner Website!",
   subtitle: "Seit 2017 haben wir über 500 Firmen-Websites auf Platz 1 bei Google katapultiert",
-  text:"Jan Krösche & Team sind Deine SEO und SEA-Spezialisten, damit  Du die Nr. 1 im Netz wirst. Und mehr Neukunden gewinnst als Deine Wettbewerber."
+  text:"Jan Krösche & Team sind Deine SEO, GEO und SEA-Spezialisten, damit  Du die Nr. 1 im Netz wirst. Und mehr Neukunden gewinnst als Deine Wettbewerber."
 }
 
 const geoBeraterATF = {

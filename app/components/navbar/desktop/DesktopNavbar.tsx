@@ -15,7 +15,7 @@ export default function DesktopNavbar({className} : Props) {
       <div className="flex gap-8 justify-end items-center">
         <div className="flex gap-2 items-center">
           <FiPhone />
-          <span>+49 0176 55109383</span>
+          <span>+49 176 55109383</span>
         </div>
         <div className="flex gap-2 items-center">
           <FiMail />

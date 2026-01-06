@@ -1,5 +1,4 @@
 const google = {
-  packageNr: 1,
   title: "Google Platz 1",
   subTitle: "Website Optimierungen",
   introText:
@@ -17,7 +16,6 @@ const google = {
   ],
 };
 const chatGPT = {
-  packageNr: 2,
   title: "ChatGPT Platz 1",
   subTitle: "Website Optimierungen",
   introText:
@@ -36,7 +34,6 @@ const chatGPT = {
 };
 
 const googleAds = {
-  packageNr: 2,
   title: "Google Ads",
   subTitle: "Kurzfr. Steigerung der Sichtbarkeit",
   introText:

@@ -17,7 +17,7 @@ export default function Pricing({ className }: Props) {
             <div>
               <div className="flex flex-col items-start gap-2">
                 <span className="text-white bg-custom-red font-semibold tracking-tight py-1 px-2 rounded-lg">
-                  Paket {e.packageNr}
+                  Paket {index + 1}
                 </span>
                 <span className="font-semibold tracking-tight">{e.title}</span>
                 <span className="font-light">{e.subTitle}</span>

@@ -8,8 +8,8 @@
       text: "Wir optimieren Deine Website und setzen bei Bedarf Deine Google Werbeanzeigen auf",
     },
     {
-      title: "Pflege",
-      text: "Wir verbessern deine Website und Deine Anzeigen laufend, damit du an deinen Wettbewerbern vorbeiziehs",
+      title: "Sichtbarkeit",
+      text: "Wir verbessern deine Website und Deine Anzeigen laufend, damit du an deinen Wettbewerbern vorbeiziehst",
     },
   ];
   const colabCircles = [

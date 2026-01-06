@@ -8,15 +8,15 @@ import ScrollToTopBtn from "../components/ScrollToTopBtn";
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-inter"
+  variable: "--font-inter",
 });
 
- const poppins = Poppins({
-   variable: "--font-poppins",
-   subsets: ["latin"],
-   weight: ["400", "600", "700"],
-   display: "swap",
- });
+const poppins = Poppins({
+  variable: "--font-poppins",
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  display: "swap",
+});
 
 export default function LegalLayout({
   children,
@@ -25,13 +25,8 @@ export default function LegalLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-            className={`${inter.variable} ${poppins.variable} antialiased`}
-      >
-        <Navbar/>
+      <body className={`${inter.variable} ${poppins.variable} antialiased`}>
         {children}
-        <Footer/>
-        <ScrollToTopBtn/>
       </body>
     </html>
   );

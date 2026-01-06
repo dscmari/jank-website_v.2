@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
-import "../globals.css";
-import Navbar from "../components/navbar/Navbar";
-import Footer from "../components/footer/Footer";
-import PreFooter from "../components/footer/PreFooter";
-import ScrollToTopBtn from "../components/ScrollToTopBtn";
-import Breadcrumbs from "../components/Breadcrumps";
+import "./globals.css";
+import Footer from "./components/footer/Footer";
+import PreFooter from "./components/footer/PreFooter";
+import Navbar from "./components/navbar/Navbar";
+import ScrollToTopBtn from "./components/ScrollToTopBtn";
+
 
 const inter = Inter({
   subsets: ["latin"],
@@ -35,9 +35,10 @@ export default function MainLayout({
       <body
         className={`${inter.variable} ${poppins.variable} antialiased`}
       >
-        <Breadcrumbs className="hidden lg:block pt-12 mx-8 font-semibold bg-custom-white" />
+        <Navbar/>
         {children}
-        <PreFooter/>
+        <Footer/>
+        <ScrollToTopBtn/>
       </body>
     </html>
   );
