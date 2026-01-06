@@ -35,9 +35,10 @@ export default function MainLayout({
       <body
         className={`${inter.variable} ${poppins.variable} antialiased`}
       >
-        <Breadcrumbs className="hidden lg:block pt-12 mx-8 font-semibold bg-custom-white" />
+        <Navbar/>
         {children}
         <PreFooter/>
+        <Footer/>
       </body>
     </html>
   );

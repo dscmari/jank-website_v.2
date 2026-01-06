@@ -1,6 +1,9 @@
+"use client";
 import Image from "next/image";
 import { FiArrowRight } from "react-icons/fi";
 import Breadcrumbs from "./Breadcrumps";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 type Props = {
   title?: React.ReactNode;
@@ -19,6 +22,13 @@ export default function ATF({
   imgPathMobile,
   imgPathDesktop,
 }: Props) {
+  const routePath = usePathname();
+  const [isHome, setIsHome] = useState(false);
+
+  useEffect(() => {
+    routePath === "/" ? setIsHome(true) : setIsHome(false)
+  }, [routePath]);
+
   return (
     <div>
       <div className="lg:hidden">
@@ -36,7 +46,7 @@ export default function ATF({
         style={{ backgroundImage: `url(${imgPathDesktop})` }}
       >
         <div className="p-8 rounded text-custom-white max-w-2/5 absolute top-1/2 -translate-y-1/2 left-1/8">
-          <h1 className="mb-8 !text-5xl/14 tracking-wide">{title}</h1>
+          <h1 className="mb-8 !text-5xl/14">{title}</h1>
           <h2>{subtitle}</h2>
           <p>{text}</p>
           <button className="mt-16 p-4 bg-custom-red text-custom-white rounded w-2/3 flex items-center justify-between">
@@ -45,7 +55,9 @@ export default function ATF({
           </button>
         </div>
       </div>
-      {/* <Breadcrumbs className="hidden lg:block mt-12 mx-8 font-semibold" /> */}
+      {!isHome && (
+        <Breadcrumbs className="hidden lg:block pt-4 px-32 font-semibold" />
+      )}
     </div>
   );
 }

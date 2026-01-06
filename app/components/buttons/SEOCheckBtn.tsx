@@ -1,4 +1,4 @@
-import React from "react";
+
 import LinkSeoCheck from "../links/LinkSeoCheck";
 import { FiArrowRight } from "react-icons/fi";
 
