@@ -19,7 +19,7 @@ export default function page() {
       </div>
 
       <div className="flex flex-col gap-24 lg:gap-32 mt-12 lg:mt-24">
-        {sections.slice(0, 2).map((s, index) => (
+        {sections.map((s, index) => (
           <section
             key={index}
             className="flex flex-col 2xl:flex-row items-center lg:gap-12 bg-custom-white p-8 lg:p-12 rounded-xl"
@@ -52,26 +52,8 @@ export default function page() {
                   />
                   <span>{s.aiResults}</span>
                 </div>
-                   <div className="flex items-center gap-4">
-                  <GoDiamond
-                    color="rgb(231,0,53)"
-                    className="h-4 flex-shrink-0"
-                  />
-                  <span>Anzahl der konstanten Anfragen wirklich rein tun?</span>
-                </div>
-                {/* <div className="flex items-center gap-4">
-                  <GoDiamond
-                    color="rgb(231,0,53)"
-                    className="h-4 flex-shrink-0"
-                  />
-                  <span>{s.company}</span>
-                </div> */}
               </div>
-              <p className="mt-8 lg:mt-12">
-                Das Hotel Schwabinger Wahrheit erscheint in der Google Suche
-                ganz oben. Durch geziete SEO-Umsetzungen haben wir das für
-                unseren Kunden erreicht.
-              </p>
+              <p className="mt-8 lg:mt-12">{s.subtext}</p>
             </div>
             <div className="mt-12 lg:mt-0 xl:min-w-1/3">
               {s.image && (

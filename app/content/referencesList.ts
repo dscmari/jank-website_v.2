@@ -6,6 +6,8 @@ const references = [
     preAIresults: "KI: ",
     aiResults: `Platz 1 in der KI-Antwort von ChatGPT für „Bestes Familienhotel in Schwabing“`,
     company: `Schwabinger Wahrheit - Hotel in München`,
+    subtext:
+      "Das Hotel Schwabinger Wahrheit erscheint in der Google Suche ganz oben. Durch die gezielten Website Optimierungen erhält das Hotel nun laufend Anfragen von neuen Gästen.",
     image: "/images/screenshots/reference.png",
   },
   {
@@ -15,7 +17,9 @@ const references = [
     preAIresults: "Google: ",
     aiResults: `Platz 1 bei Google für „Immobilienberatung für Investoren“`,
     company: `Ergoneon Management GmbH`,
-    image: "/images/screenshots/reference.png",
+    subtext:
+      "Ergoneon rankt durch unsere SEO-Maßnahmen für viele Suchbegriffe auf Platz 1 bei Google. Die Website ist daher für potentielle Kunden sichtbar und generiert deutlich mehr Leads.",
+    image: "/images/screenshots/reference_2.png",
   },
   {
     title: `Platz 1 Ranking bei Google für das Keyword „Immobilienbetreuung Griechenland“`,
@@ -23,7 +27,10 @@ const references = [
     googleResults: `Platz 1 bei Google für „Immobilienbetreuung Griechenland“`,
     preAIresults: "KI: ",
     aiResults: `Platz 2 in der ChatGPT-Antwort für „Deutscher Makler für Immobilienkauf in Griechenland“`,
+    subtext:
+      "Durch die gesteigerte Sichtbarkeit bei Google und ChatGPT wird die Website unseres Kunden von viel mehr Neukunden gefunden. Die Anfragen konnten dadurch deutlich gesteigert werden.",
     company: `greco-immobilien.com`,
+    image: "/images/screenshots/reference_3.png",
   },
   {
     title: `Platz 1 Ranking bei Google für das Keyword „Eventagentur Bad Tölz“`,
@@ -31,7 +38,10 @@ const references = [
     googleResults: `Platz 1 bei Google für „Eventagentur Bad Tölz“`,
     preAIresults: "KI: ",
     aiResults: `Platz 1 in der ChatGPT-Antwort für „Eventagentur für Weihnachtsfeier in Bad Tölz“`,
+    subtext:
+      "Die Eventagentur Crossing Mind ist für viele geschäftsrelevante Keywords auf Platz 1 bei Google. Durch die Rankings kann die Eventagentur deutlich mehr Anfragen von Geschäftskunden verzeichnen.",
     company: `Crossing Mind aus Bad Tölz`,
+    image: "/images/screenshots/reference_4.png",
   },
   {
     title: `Platz 1 Ranking bei Google für „Statiker Wolfratshausen“`,
@@ -39,7 +49,10 @@ const references = [
     googleResults: `Platz 1 bei Google für „Statiker Wolfratshausen“`,
     preAIresults: "KI: ",
     aiResults: `Platz 1 in der KI-Antwort von ChatGPT für „Bester Statiker in Wolfratshausen“`,
+    subtext:
+      " Der Statik-Firma Eisenhut-Statik rankt für viele Suchbegriffe (Prompts) ganz oben in den KI Antworten von ChatGPT. Dadurch erhält die Firma immer mehr Anfragen von potentiellen Kunden aus der Zielregion.",
     company: `Eisenhut-Statik GmbH`,
+    image: "/images/screenshots/reference_5.png",
   },
   {
     title: `Platz 1 Ranking bei Google für „EDV Firma Geretsried“`,
@@ -47,7 +60,10 @@ const references = [
     googleResults: `Platz 1 bei Google für „EDV Firma Geretsried“`,
     preAIresults: "KI: ",
     aiResults: `Platz 1 in der KI-Antwort von ChatGPT für „EDV Firma Geretsried“`,
-    company: `nfoteQ EDV Service GmbH`,
+    company: `InfoteQ EDV Service GmbH`,
+    subtext:
+      "Für „EDV Firma Geretsried“ und andere Keywords erscheint die Website des IT Dienstleisters ganz oben bei Google. Mit der Top Platzierung konnte die Anfragenqualität stark verbessert werden.",
+    image: "/images/screenshots/reference_6.png",
   },
   {
     title: `Platz 1 Ranking bei Google für „Unternehmensberater Wolfratshausen“`,
@@ -56,6 +72,9 @@ const references = [
     preAIresults: "KI: ",
     aiResults: `Platz 1 in der KI-Antwort von ChatGPT für „Unternehmensberater Wolfratshausen“`,
     company: `Unternehmensberater Wilfried Fröhlich`,
+    subtext:
+      "Die gesteigerte Auffindbarkeit bei Google und der KI führt dazu, dass die Unternehmensberatung mehr Neukunden aus der Region bekommt.",
+    image: "/images/screenshots/reference_7.png",
   },
   {
     title: `Platz 3 Ranking bei Google für „Erodiertechnik“`,
@@ -64,6 +83,9 @@ const references = [
     preAIresults: "KI: ",
     aiResults: `Platz 1 in der KI-Antwort von ChatGPT für „Erodiertechnik Firma Bayern“`,
     company: `SR-Erodiertechnik Repert & Leppmeier GmbH`,
+    subtext:
+      "Unser Job war es, die Firma zum Thema „Erodiertechnik“ zur Nummer 1 in der KI zu machen. Das haben wir geschafft.",
+    image: "/images/screenshots/reference_8.png",
   },
   {
     title: `Platz 1 Ranking bei Google für „Antriebstechnik München“`,
@@ -71,7 +93,10 @@ const references = [
     googleResults: `Platz 1 bei Google für „Antriebstechnik München“`,
     preAIresults: "KI: ",
     aiResults: `Platz 1 in der KI-Antwort von ChatGPT für „Antriebstechnik München“`,
+    subtext:
+      "Die Firma erhält durch die erzielten Google Rankings deutlich mehr Anfragen von Firmenkunden.",
     company: `JBW GmbH`,
+    image: "/images/screenshots/reference_9.png",
   },
   {
     title: `Platz 1 Ranking für „Tiefgaragensanierung“`,
@@ -80,15 +105,18 @@ const references = [
     preAIresults: "KI: ",
     aiResults: `Platz 1 in der KI-Antwort von ChatGPT für „Tiefgaragensanierung“`,
     company: `HBS Bau`,
+    subtext:
+      "HBS Bau ist durch die starke Google Sichtbarkeit zur Nummer 1 in der Region geworden.",
+    image: "/images/screenshots/reference_10.png",
   },
-  {
-    title: `Platz 1 Ranking bei Google für „Pflegesessel Hersteller“`,
-    text: `Der Firma Steinmann Selection helfen wir seit mehreren Jahren, bei Google auffindbarer zu sein. Durch unsere SEO-Arbeiten an der Website haben wir es geschafft, die Firma für „Pflegesessel Hersteller“ auf Platz 1 bei Google zu positionieren. Die Firma erhält nun deutlich mehr Anfragen von potentiellen Kunden.`,
-    googleResults: `Platz 1 bei Google für „Pflegesessel Hersteller“`,
-    preAIresults: "KI: ",
-    aiResults: `Platz 1 in der KI-Antwort von ChatGPT für „Pflegesessel Hersteller“`,
-    company: `Steinmann Selection`,
-  },
+  // {
+  //   title: `Platz 1 Ranking bei Google für „Pflegesessel Hersteller“`,
+  //   text: `Der Firma Steinmann Selection helfen wir seit mehreren Jahren, bei Google auffindbarer zu sein. Durch unsere SEO-Arbeiten an der Website haben wir es geschafft, die Firma für „Pflegesessel Hersteller“ auf Platz 1 bei Google zu positionieren. Die Firma erhält nun deutlich mehr Anfragen von potentiellen Kunden.`,
+  //   googleResults: `Platz 1 bei Google für „Pflegesessel Hersteller“`,
+  //   preAIresults: "KI: ",
+  //   aiResults: `Platz 1 in der KI-Antwort von ChatGPT für „Pflegesessel Hersteller“`,
+  //   company: `Steinmann Selection`,
+  // },
 ];
 
 export default references;
