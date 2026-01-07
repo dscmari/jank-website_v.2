@@ -4,11 +4,11 @@ import InfoBtn from "@/app/components/buttons/InfoBtn";
 import { IoIosCheckmarkCircle } from "react-icons/io";
 
 export const metadata: Metadata = {
-  title: "Kostenloser SEO Kurs | SEO Seminar mit Jan Krösche",
+  title: "Kostenloser Google Ads Kurs | Google Werbung Kurs",
 };
 
-const seoKursBullets = [
-  "Der SEO Kurs findet nur mit Dir oder in kleinen Gruppen statt (je nach Auslastung)",
+const googleAdsBullets = [
+  "Der Kurs findet nur mit Dir oder in kleinen Gruppen statt (je nach Auslastung)",
   "Der Kurs ist live – Du kannst Fragen stellen",
   "Du kannst Dich per Mail anmelden jan@jankroesche.de",
   "Du erhältst passende Terminvorschläge per Mail",
@@ -19,42 +19,42 @@ export default function page() {
     <div>
       <div className="hidden lg:block lg:px-32 px-4 lg:pt-32 lg:pb-16 lg:max-w-2/3">
         <h1 className="!text-5xl/14">
-          Kostenloser <span className="text-custom-red">SEO </span> Kurs
+          Kostenloser <span className="text-custom-red">Google Ads </span> Kurs
         </h1>
         <h2>
-          Im kostenlosen SEO Kurs zeigt Dir der SEO Experte Jan Krösche, wie Du
-          Deine Homepage bei Google nach vorne bringst, um mehr Neukundegeschäft
-          zu machen. Damit Deine Website zur Vertriebsmaschine wird und für Dich
-          atbeitet.
+          Im kostenlosen Google Ads Kurs lernst Du, was Google Ads eigentlich
+          ist und wie Du selbst auf Google Werbung schalten kannst. Wir schauen
+          uns gemeinsam eine echte Google Ads Kampagne an, damit Du einen guten
+          Überblick bekommst
         </h2>
       </div>
 
       <section className="flex flex-col lg:flex-row gap-8 lg:px-32">
         <div className="px-4 lg:p-8 flex-1">
           <h1 className="mt-4 text-center">
-            Dein kostenloser <span className="text-custom-red">SEO </span>Kurs
+            Dein kostenloser{" "}
+            <span className="text-custom-red">Google Ads </span>Kurs
           </h1>
-          <InfoBtn content="SEO Kurs" className="mx-auto mt-12" />
+          <InfoBtn content="Google Ads Kurs" className="mx-auto mt-12" />
           <h2 className="text-center mt-4">
-            Suchmaschinenoptimierung verstehen und Neukunden über Google
-            gewinnen
+            Google Ads verstehen und Neukunden gewinnen
           </h2>
           <div className="flex flex-col gap-4 mt-12">
             <p>
-              Im kostenlosen SEO Kurs von Jan Krösche lernst Du, wie Du Deine
-              Website verbessern kannst, um bei Google besser zu ranken.
+              Im kostenlosen Google Ads Kurs von Jan Krösche lernst Du die
+              Grundlagen zum Thema Google Werbung.
             </p>
             <p>
-              Mit starken Rankings erhöhst Du die Wahrscheinlichkeit, dass
-              potentielle Kunden auf Dich stoßen, wenn sie bei Google unterwegs
-              sind. SEO ist daher nicht nice-to-have, sondern ein Neukunden- und
-              Umsatzlieferant.
+              Du hast keine Lust mehr, bei Google hinter Deinen Konkurrenten zu
+              stehen? Du brauchst endlich mehr Anfragen über die Website und
+              mehr Neukunden, um die Fixkosten weiterhin bezahlen zu können?
+              Oder Du suchst nach einem neuen Absatzkanal, der Neukunden liefern
+              soll?
             </p>
             <p>
-              Ich zeige Dir im kostenlosen SEO Kurs, was Du konkret tun kannst,
-              um bei Google oben zu stehen. Der Kurs ist komplett kostenlos,
-              praxisorientiert und einfach aufgebaut. Du brauchst keine
-              Vorkenntnisse.
+              Dann könnte Google Ads für Dich die richtige Wahl sein. Im Kurs
+              zeige ich Dir, wie Du Werbung bei Google schalten kannst und
+              worauf Du bei der Anzeigenausspielung achten musst.
             </p>
           </div>
         </div>
@@ -62,17 +62,17 @@ export default function page() {
           <div>
             <div className="flex flex-col items-start gap-2 pt-8">
               <span className="text-white bg-custom-red font-semibold tracking-tight py-1 px-2 rounded-lg">
-                Dein SEO Kurs
+                Dein Google Ads Kurs
               </span>
               <span className="font-semibold tracking-tight">
-                Der SEO Kurs auf einen Blick
+                Der Google Ads Kurs auf einen Blick
               </span>
               <span className="font-light">
                 Komme nach ganz oben in der Google Suche
               </span>
             </div>
 
-            <h1 className="text-center mt-8 lg:mt-16">SEO Kurs</h1>
+            <h1 className="text-center mt-8 lg:mt-16">Google Ads Kurs</h1>
             <p className="mt-4 mb-8 font-light text-base/5">
               Der Kurs ist für Dich komplett kostenfrei. Wir nehmen uns eine
               Stunde Zeit – davon 45 Minuten für intensives Lernen und 15
@@ -82,7 +82,7 @@ export default function page() {
             </p>
             <span className="font-semibold tracking-tight">Leistungen</span>
             <div className="flex flex-col gap-2 mt-2">
-              {seoKursBullets.map((e, index) => (
+              {googleAdsBullets.map((e, index) => (
                 <div key={index} className="flex items-start gap-2">
                   <IoIosCheckmarkCircle
                     color="rgb(231,0,53)"
@@ -110,32 +110,34 @@ export default function page() {
         </div>
       </section>
       <section className="lg:hidden mt-12 p-4">
-        <InfoBtn content="SEO Kurs" />
+        <InfoBtn content="Google Ads Kurs" />
         <h1 className="mt-8">
-          Mit dem kostenlosen SEO Kurs bringst Du Deine Website auf{" "}
-          <span className="text-custom-red"> Platz 1 bei Google</span>
+          Mehr Sichtbarkeit und{" "}
+          <span className="text-custom-red">mehr Kunden </span> mit gezielter
+          Google Werbung
         </h1>
         <h2>So dominierst Du die Google-Suche in Deiner Branche</h2>
         <div className="flex flex-col gap-4">
           <p>
-            SEO gehört zu den wichtigsten Marketing- und Vertriebswerkzeugen, um
-            über die eigene Website Anfragen zu bekommen.
+            Für viele Unternehmen ist Google Ads der wichtigste Kanal, um
+            Anfragen über die Website zu erhalten.
           </p>
           <p>
-            Das „SEO Spiel“ ist dabei ganz einfach: Firmen, die bei Google zu
-            Schlüssel-Suchbegriffen schlecht gerankt sind, werden von
-            Google-Suchenden, die gleichzeitig auch potentielle Kunden sind,
-            nicht wahrgenommen.
+            Im kostenlosen Google Ads Kurs lernst Du, was Google Ads eigentlich
+            ist und wie Du selbst auf Google Werbung schalten kannst. Wir
+            schauen uns gemeinsam eine echte Google Ads Kampagne an, damit Du
+            einen guten Überblick bekommst.
           </p>
           <p>
-            Die Firmen, die bei Google auf Platz 1 stehen, gewinnen die meisten
-            Neukunden und machen richtig Umsatz über die Seite.
+            Zudem lernst Du im Kurs wichtige Kennzahlen und Einstellungen
+            kennen, die Deine Google Werbung effizient machen.
           </p>
           <p>
-            Im kostenlosen SEO Kurs von Jan Krösche lernst Du konkret, wie Du
-            Deine Homepage bei Google nach vorne bringst, um mehr
-            Neukundegeschäft zu machen. Damit Deine Website zur
-            Vertriebsmaschine wird und für Dich atbeitet.
+            Der kostenlose Google Ads Kurs ist ideal für Dich, wenn Du Deine
+            Website bei Google sichtbarer machen willst und mehr Anfragen
+            brauchst. Der Kurs richtet sich an alle, die ihr Geschäft
+            voranbringen wollen und nach Werbemöglichkeiten suchen, um digital
+            stärker zu werden.
           </p>
           <p>
             Kursanmeldung per Mail unter{" "}
@@ -160,33 +162,35 @@ export default function page() {
         </div>
         <div className="mx-4 lg:mx-0 2xl:max-w-1/2 3xl:max-w-1/3">
           <h1 className="text-center">
-            Mit dem kostenlosen SEO Kurs bringst Du Deine Website auf{" "}
-            <span className="text-custom-red"> Platz 1 bei Google</span>
+            Mehr Sichtbarkeit und{" "}
+            <span className="text-custom-red">mehr Kunden </span> mit gezielter
+            Google Werbung
           </h1>
-          <InfoBtn content="SEO Kurs" className="mx-auto mt-12" />
+          <InfoBtn content="Google Ads Kurs" className="mx-auto mt-12" />
           <h2 className="text-center mt-4">
             So dominierst Du die Google-Suche in Deiner Branche
           </h2>
           <div className="flex flex-col gap-4 mt-12">
             <p>
-              SEO gehört zu den wichtigsten Marketing- und Vertriebswerkzeugen,
-              um über die eigene Website Anfragen zu bekommen.
+              Für viele Unternehmen ist Google Ads der wichtigste Kanal, um
+              Anfragen über die Website zu erhalten.
             </p>
             <p>
-              Das „SEO Spiel“ ist dabei ganz einfach: Firmen, die bei Google zu
-              Schlüssel-Suchbegriffen schlecht gerankt sind, werden von
-              Google-Suchenden, die gleichzeitig auch potentielle Kunden sind,
-              nicht wahrgenommen.
+              Im kostenlosen Google Ads Kurs lernst Du, was Google Ads
+              eigentlich ist und wie Du selbst auf Google Werbung schalten
+              kannst. Wir schauen uns gemeinsam eine echte Google Ads Kampagne
+              an, damit Du einen guten Überblick bekommst.
             </p>
             <p>
-              Die Firmen, die bei Google auf Platz 1 stehen, gewinnen die
-              meisten Neukunden und machen richtig Umsatz über die Seite.
+              Zudem lernst Du im Kurs wichtige Kennzahlen und Einstellungen
+              kennen, die Deine Google Werbung effizient machen.
             </p>
             <p>
-              Im kostenlosen SEO Kurs von Jan Krösche lernst Du konkret, wie Du
-              Deine Homepage bei Google nach vorne bringst, um mehr
-              Neukundegeschäft zu machen. Damit Deine Website zur
-              Vertriebsmaschine wird und für Dich atbeitet.
+              Der kostenlose Google Ads Kurs ist ideal für Dich, wenn Du Deine
+              Website bei Google sichtbarer machen willst und mehr Anfragen
+              brauchst. Der Kurs richtet sich an alle, die ihr Geschäft
+              voranbringen wollen und nach Werbemöglichkeiten suchen, um digital
+              stärker zu werden.
             </p>
           </div>
           <p className="mt-4">
@@ -197,26 +201,32 @@ export default function page() {
       </section>
       <section className="flex flex-col 2xl:flex-row 2xl:items-center px-4 pt-8 lg:gap-12 lg:p-32 lg:py-32 2xl:gap-32 2xl:justify-center">
         <div className="flex-1 flex flex-col">
-          <h1>
-            Die <span className="text-custom-red">sichtbarsten</span> Firmen
-            gewinnen die meisten Kunden
+           <h1 className="text-center">
+            Mehr Sichtbarkeit und{" "}
+            <span className="text-custom-red">mehr Kunden </span> mit gezielter
+            Google Werbung
           </h1>
-          <p>
-            Du hast viel Geld in Deine Website gesteckt, es kommt aber einfach
-            zu wenig rum? Dann könnte Google Ads für Dich eine gute Möglichkeit
-            sein, um über Google an Neukunden ranzukommen.
-          </p>
-          <p className="py-4">
-            Firmen, die bei Google und im Internet kaum Sichtbarkeit haben,
-            werden von potentiellen Kunden nicht wahrgenommen. Potentielle
-            Kunden wissen einfach nicht, dass es Dich überhaupt gibt.
-          </p>
-          <p>
-            Im kostenlosen Google Ads Kurs lernst Du, wie Du für wichtige
-            Keywords Anzeigen schalten kannst. Der Kurs richtet sich an
-            Selbstständige, Gründer, Marketing- und Vertriebsverantwortliche
-            sowie an Website-Verantwortliche im Unternehmen.
-          </p>
+                <p>
+              Für viele Unternehmen ist Google Ads der wichtigste Kanal, um
+              Anfragen über die Website zu erhalten.
+            </p>
+            <p>
+              Im kostenlosen Google Ads Kurs lernst Du, was Google Ads
+              eigentlich ist und wie Du selbst auf Google Werbung schalten
+              kannst. Wir schauen uns gemeinsam eine echte Google Ads Kampagne
+              an, damit Du einen guten Überblick bekommst.
+            </p>
+            <p>
+              Zudem lernst Du im Kurs wichtige Kennzahlen und Einstellungen
+              kennen, die Deine Google Werbung effizient machen.
+            </p>
+            <p>
+              Der kostenlose Google Ads Kurs ist ideal für Dich, wenn Du Deine
+              Website bei Google sichtbarer machen willst und mehr Anfragen
+              brauchst. Der Kurs richtet sich an alle, die ihr Geschäft
+              voranbringen wollen und nach Werbemöglichkeiten suchen, um digital
+              stärker zu werden.
+            </p>
           <p className="mt-4">
             Kursanmeldung per Mail unter{" "}
             <span className="text-custom-red">jan@jankroesche.de</span>{" "}
@@ -224,17 +234,16 @@ export default function page() {
         </div>
         <div className="mt-12 lg:mt-0 xl:min-w-1/3">
           <Image
-            src="/images/screenshots/seo-kurs.png"
+            src="/images/screenshots/ads-kurs.png"
             style={{ width: "600px" }}
             alt="Screenshot einer Google Suche"
             height={300}
             width={500}
           />
           <p className="p-8 max-w-xl 2xl:mx-auto text-center lg:text-start 2xl:text-center">
-            "Der IT Dienstleister Kramer Systems wird bei Google für den
-            Suchbegriff „IT Dienstleister Landsberg“ bei Google ganz oben
-            gefunden. Durch diese Top Platzierung gewinnt die Firma jede Woche
-            mehrere Neukunden. Allein durch SEO.“
+            "Gibt man bei Google „Anwalt München“ ein, erscheinen ganz oben die
+            bezahlten Suchanzeigen – auch Google Ads genannt. Mit Google Ads
+            kannst Du in kurzer Zeit nach oben kommen.“
           </p>
         </div>
       </section>
@@ -249,13 +258,15 @@ export default function page() {
               <span className="text-white bg-custom-red font-semibold tracking-tight py-2 px-4 rounded-lg">
                 Kursteilnehmer
               </span>
-              <span className="font-semibold tracking-tight">Handwerk</span>
+              <span className="font-semibold tracking-tight">
+                EDV Dienstleister
+              </span>
             </div>
             <p className="mt-4">
-              „Im kostenlosen SEO Kurs von Jan Krösche habe ich viel zum Thema
-              Google Optimierung gelernt. Der Kurs ist ideal, wenn man einen
-              Überblick zum Thema SEO bekommen will und ein paar Tipps braucht,
-              wie man damit anfangen soll.
+              „Der Google Ads Kurs war wirklich klasse. Ich weiß jetzt, welche
+              Keyword-Einstellungen wichtig sind und wie viel Werbebudget ich
+              einplanen muss – also was das Ganze kostet. Der Kurs ist komplett
+              kostenlos gewesen. Danke an Jan Krösche für seine Zeit.“
             </p>
             <div className="flex items-center gap-4 mt-4">
               <img
@@ -264,23 +275,24 @@ export default function page() {
                 style={{ width: "40px" }}
               />
               <div className="pt-2">
-                <span className="font-semibold block">Elias F.</span>
-                <span>Handwerker</span>
+                <span className="font-semibold block">Manuel S.</span>
+                <span>Fachinformatiker</span>
               </div>
             </div>
           </div>
           <div className="flex flex-col p-8 bg-white rounded-xl">
             <div className="flex flex-col items-start gap-2">
               <span className="text-white bg-custom-red font-semibold tracking-tight py-2 px-4 rounded-lg">
-                Kursteilnehmerin
+                Kursteilnehmer
               </span>
-              <span className="font-semibold tracking-tight">Marketing</span>
+              <span className="font-semibold tracking-tight">Maschinenbau</span>
             </div>
             <p className="mt-4">
-              „Wir haben von einem Bekannten vom kostenlosen SEO Kurs erfahren.
-              Das wollten wir uns dann selbst anschauen. Die SEO Sitzung dauert
-              nicht lange, ist aber wirklich tiefgehend und nützlich. Danke an
-              Jan Krösche für den kostenlosen Input."
+              „In unserem Familienbetrieb kümmere ich mich um Marketing und
+              Vertriebsthemen. Ich habe mich aber bislang nie so richtig an
+              Google Ads rangetraut. Der kostenlose Kurs von Jan Krösche war
+              ideal, um einen Einstieg zu finden. Ich konnte auch direkt
+              konkrete Fragen stellen.“
             </p>
             <div className="flex items-center gap-4 mt-4">
               <img
@@ -289,8 +301,8 @@ export default function page() {
                 style={{ width: "40px" }}
               />
               <div className="pt-2">
-                <span className="font-semibold block">Sandra S.</span>
-                <span>Werbemittelbranche</span>
+                <span className="font-semibold block">Steffan L.</span>
+                <span>Maschinenbauer</span>
               </div>
             </div>
           </div>
@@ -300,48 +312,46 @@ export default function page() {
         <div className="p-8 mx-4 flex-1">
           <h1 className="mt-4 text-center">
             Das lernst Du im kostenlosen{" "}
-            <span className="text-custom-red">SEO Kurs </span> von Jan Krösche
+            <span className="text-custom-red">Google Ads Kurs </span> von Jan
+            Krösche
           </h1>
-          <InfoBtn content="SEO Kurs" className="mx-auto mt-12" />
-          <h2 className="text-center mt-4">Akutelles Fachwissen rund um SEO</h2>
+          <InfoBtn content="Google Ads Kurs" className="mx-auto mt-12" />
+          <h2 className="text-center mt-4">
+            Akutelles Fachwissen rund um Google Ads
+          </h2>
           <div className="flex flex-col gap-4 mt-12">
             <p>
-              Im kostenlosen SEO Kurs erhältst Du aktuelles Fachwissen und einen
-              fundierten Überblick über die entscheidenden Bausteine wie Title
-              Tags, Überschriften und die Funktionsweise moderner Algorithmen.
-              Dabei stehen praktische Tipps im Vordergrund, die Du direkt auf
-              Deine eigene Strategie anwenden kannst, um die technischen und
-              inhaltlichen Grundlagen Deiner Seite zu festigen.
-            </p>
-            <p>
-              Das klare Ziel des Kurses ist es, Deine Firmenwebsite bei Google
-              auf Platz 1 zu ranken und sie in einen echten Kundenmagneten zu
-              verwandeln.
+              Im kostenlosen Google Ads Kurs erhältst Du aktuelles Fachwissen und einen
+              fundierten Überblick über die entscheidenden Bausteine wie
+              Keywords und Anzeigentexte. Dabei stehen praktische Tipps im
+              Vordergrund, die Du direkt auf Deine eigene Strategie anwenden
+              kannst, um die technischen und inhaltlichen Grundlagen Deiner
+              Seite zu festigen.
             </p>
             <p>
               Da der Kurs live per Teams stattfindet, kannst Du direkt Fragen an
               den Referenten stellen und profitierst von einem interaktiven
-              Austausch. Der SEO Kurs ist dabei komplett kostenlos und Du
+              Austausch. Der Google Ads Kurs ist dabei komplett kostenlos und Du
               bekommst alle verwendeten Folien im Anschluss an die Sitzung
               bequem per Mail zugeschickt.
             </p>
           </div>
         </div>
-        <div className="flex-1 bg-custom-white flex flex-col justify-between py-12 lg:pt-0 px-4 lg:p-8 rounded-lg">
+     <div className="flex-1 bg-custom-white flex flex-col justify-between py-12 lg:pt-0 px-4 lg:p-8 rounded-lg">
           <div>
             <div className="flex flex-col items-start gap-2 pt-8">
               <span className="text-white bg-custom-red font-semibold tracking-tight py-1 px-2 rounded-lg">
-                Dein SEO Kurs
+                Dein Google Ads Kurs
               </span>
               <span className="font-semibold tracking-tight">
-                Der SEO Kurs auf einen Blick
+                Der Google Ads Kurs auf einen Blick
               </span>
               <span className="font-light">
                 Komme nach ganz oben in der Google Suche
               </span>
             </div>
 
-            <h1 className="text-center mt-8 lg:mt-16">SEO Kurs</h1>
+            <h1 className="text-center mt-8 lg:mt-16">Google Ads Kurs</h1>
             <p className="mt-4 mb-8 font-light text-base/5">
               Der Kurs ist für Dich komplett kostenfrei. Wir nehmen uns eine
               Stunde Zeit – davon 45 Minuten für intensives Lernen und 15
@@ -351,7 +361,7 @@ export default function page() {
             </p>
             <span className="font-semibold tracking-tight">Leistungen</span>
             <div className="flex flex-col gap-2 mt-2">
-              {seoKursBullets.map((e, index) => (
+              {googleAdsBullets.map((e, index) => (
                 <div key={index} className="flex items-start gap-2">
                   <IoIosCheckmarkCircle
                     color="rgb(231,0,53)"
@@ -396,16 +406,16 @@ export default function page() {
         <div className="mx-4 lg:mx-0 2xl:max-w-1/2 3xl:max-w-1/3">
           <h1 className="text-center">
             Hier kannst Du Dich zum{" "}
-            <span className="text-custom-red"> kostenlosen </span>SEO Kurs mit
+            <span className="text-custom-red"> kostenlosen </span>Google Ads Kurs mit
             Jan Krösche anmelden
           </h1>
-          <InfoBtn content="SEO Kurs" className="mx-auto mt-12" />
+          <InfoBtn content="Google Ads Kurs" className="mx-auto mt-12" />
           <h2 className="text-center mt-4">
             Lass uns über Deine Sichbarkeit sprechen
           </h2>
           <div className="flex flex-col gap-4 mt-12">
             <p>
-              Der kostenlose SEO Kurs ist komplett kostenlos, dauert insgesamt
+              Der kostenlose Google Ads Kurs ist komplett kostenlos, dauert insgesamt
               60 Minuten und findet über Teams statt. Der Kurs wird allein mit
               Dir oder in kleinen Gruppen durchgeführt.
             </p>
@@ -419,7 +429,7 @@ export default function page() {
           </div>
           <div className="mt-4">
             <p className="pb-8 border-b-1 border-slate-700">
-              Ich freue mich auf alle SEO-Interessierten und auf den Austausch
+              Ich freue mich auf alle Ads Interessierten und auf den Austausch
               mit Dir.
             </p>
             <span className="mt-4 block text-center text-base/5 font-light">

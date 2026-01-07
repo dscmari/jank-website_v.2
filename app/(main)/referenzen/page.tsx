@@ -7,14 +7,14 @@ export default function page() {
   return (
     <div className="mx-4 lg:mx-32 lg:mt-32">
       <div className="lg:max-w-2/3 lg:mb-8">
-        <h1 className="!text-5xl/14"> Unsere Referenzen</h1>
-        <h2>
+        <h1 className="hidden lg:block !text-5xl/14"> Unsere Referenzen</h1>
+        <h2 className="mt-12 lg:mt-0">
           {" "}
           Seit 2017 haben wir schon{" "}
           <span className="text-custom-red">
             über 500 Firmen-Websites auf Platz 1
           </span>{" "}
-          bei Google und in die ChatGPT-Antworten katapultiert
+          bei Google und in die ChatGPT Antworten katapultiert
         </h2>
       </div>
 

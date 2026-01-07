@@ -39,15 +39,13 @@ const NavServices = () => {
         </div>
         <div className="flex flex-col gap-2">
           <h3 className="text-xl font-semibold mb-2">Google Werbung</h3>
-          <div className="font-light">
-            <Link href="/google-ads-berater/">
+            <Link href="/google-ads-berater/" className="font-light">
               Google Ads Berater für Google-Klicks
             </Link>
-          </div>
 
-          <a href="#" className="block font-light">
-            Kostenloser Google-Ads-Kurs
-          </a>
+          <Link href="/google-ads-berater/kostenloser-google-ads-kurs" className="font-light">
+              Kostenloser Google Ads Kurs
+            </Link>
         </div>
       </div>
 

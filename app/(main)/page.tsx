@@ -73,7 +73,7 @@ export default function Home() {
           </h2>
         </div>
         <InfoBtn content="Der Ablauf" className="mt-24 lg:mt-16 mx-auto" />
-        <h2 className="mt-4 text-center">
+        <h2 className="mt-4 mx-4 lg:mx-0 text-center">
           Bewährte Prozesse, sichtbare Erfolge
         </h2>
       </section>

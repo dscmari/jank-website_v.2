@@ -28,8 +28,8 @@ export default function Pricing({ className }: Props) {
               <span className="font-semibold tracking-tight">Leistungen</span>
               <div key={index} className="flex flex-col gap-2 mt-2">
                 {e.services.map((service, index) => (
-                  <div key={index} className="flex items-center gap-2">
-                    <IoIosCheckmarkCircle color="rgb(231,0,53)" size={24} />
+                  <div key={index} className="flex items-start gap-2">
+                    <IoIosCheckmarkCircle color="rgb(231,0,53)" size={24} className="shrink-0"/>
                     <span>{service}</span>
                   </div>
                 ))}
