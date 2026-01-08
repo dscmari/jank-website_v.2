@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "../globals.css";
 import Navbar from "../components/navbar/Navbar";
@@ -26,7 +25,10 @@ export default function LegalLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${poppins.variable} antialiased`}>
+        <Navbar/>
         {children}
+        <Footer/>
+        <ScrollToTopBtn/>
       </body>
     </html>
   );

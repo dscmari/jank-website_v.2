@@ -9,7 +9,9 @@ import {
 } from "react-icons/gi";
 import { GrOptimize } from "react-icons/gr";
 import { LuScreenShare } from "react-icons/lu";
+import { PiLighthouse } from "react-icons/pi";
 
+//GEO Berater
 export const geoBeraterSixBox = [
   {
     icon: <GiArtificialHive color="rgb(231,0,53)" size="3rem" />,
@@ -49,8 +51,9 @@ export const geoBeraterSixBox = [
   },
 ];
 
+//Ads Berater
 export const adsBeraterSixBox = [
-    {
+  {
     icon: <GiPodiumWinner color="rgb(231,0,53)" size="3rem" />,
     title: "Platz 1 bei Google",
     text: "Komme mit unserer Hilfe bei Google ganz nach oben und sichere dir langfristig die Marktführerschaft in Deiner Region.",
@@ -87,6 +90,48 @@ export const adsBeraterSixBox = [
     title: "Kontakt",
     text: "Wir stehen laufend mit Dir in Kontakt, stehen für Fragen zur Verfügung und zeigen Dir immer den Status Quo Deiner Kampagne",
     link: "",
-  }
+  },
+];
+
+//GEO Workshop für Agenturen
+export const geoWorkshopAgenturenSixBoxContent = [
+    {
+    icon: <PiLighthouse color="rgb(231,0,53)" size="3rem" />,
+    title: "Erfahrung",
+    text: "In den letzten Jahren habe ich eine der größten Onlinemarketing Agenturen in Süddeutschland geleitet. Von dieser Erfahrung kannst Du profitieren.",
+    link: "",
+  },
+  {
+    icon: <GiPodiumWinner color="rgb(231,0,53)" size="3rem" />,
+    title: "Google bleibt relevant",
+    text: "Google lebt. Wir schauen uns den aktuellen Suchmaschinen-Markt und die jüngsten Entwicklungen an, die Du kennen musst.",
+    link: "",
+  },
+  {
+    icon: <GiArchiveResearch color="rgb(231,0,53)" size="3rem" />,
+    title: "Sichtbarkeit erhöhen",
+    text: "Von Textoptimierung über llms.txt und schema.org bis hin zu Digital PR gibt es viele Rankingfaktoren im GEO. Du lernst, wie eine Website bei ChatGPT sichtbar wird und Neukunden gewinnt. ",
+    link: "",
+  },
+  {
+    icon: <LuScreenShare color="rgb(231,0,53)" size="3rem" />,
+    title: "Gemeinsamer GEO Audit",
+    text: "Wir führen zusammen einen GEO Audit einer Kundenwebseite von Dir an, den Du Deinem Kunden präsentieren kannst. Alternativ können wir Deine eigene Seite verwenden.",
+    link: "",
+  },
+
+  {
+    icon: <GrOptimize color="rgb(231,0,53)" size="3rem" />,
+    title: "Heikle Kundenfragen",
+    text: "Wir schauen uns unangenehme Kundenanfragen an und beantworten sie zusammen. Damit Du und Deine Mitarbeitenden für das nächste Kundengespräch ideal vorbereitet seid.",
+    link: "",
+  },
+
+  {
+    icon: <BsFillPencilFill color="rgb(231,0,53)" size="3rem" />,
+    title: "Diskussionsrunde",
+    text: "Zum Abschluss des GEO Workshops gibt es eine gemeinsame Diskussionsrunde, um relevante KI-Fragestellungen durchzudenken. Zum Beispiel: Wird es in 5 Jahren noch Websites geben?",
+    link: "",
+  },
 
 ];

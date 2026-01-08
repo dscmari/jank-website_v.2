@@ -118,6 +118,14 @@ export default function Navbar({ className }: Props) {
                         className="pb-1 text-neutral-400 border-b-2 border-slate-200"
                         onClick={() => setIsMenuOpen((prev) => !prev)}
                       >
+                        <Link href="/geo-berater/geo-workshop-fuer-werbeagenturen/">
+                          GEO Workshop für Werbeagenturen
+                        </Link>
+                      </div>
+                      <div
+                        className="pb-1 text-neutral-400 border-b-2 border-slate-200"
+                        onClick={() => setIsMenuOpen((prev) => !prev)}
+                      >
                         <Link href="/geo-berater/kostenloser-geo-kurs/">
                           Kostenloser GEO Kurs
                         </Link>

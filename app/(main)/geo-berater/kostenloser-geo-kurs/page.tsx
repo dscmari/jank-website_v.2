@@ -2,9 +2,11 @@ import { Metadata } from "next";
 import Image from "next/image";
 import InfoBtn from "@/app/components/buttons/InfoBtn";
 import { IoIosCheckmarkCircle } from "react-icons/io";
+import KroescheWorkshopIntroLayout from "@/app/components/layouts/KroescheWorkshopIntroLayout";
+import { geoKurs } from "@/app/content/KroescheKurseContent";
 
 export const metadata: Metadata = {
-  title: "Kostenloser GEO Kurs | GEO Schulung & GEO Seminar"
+  title: "Kostenloser GEO Kurs | GEO Schulung & GEO Seminar",
 };
 
 const geoKursBullets = [
@@ -17,89 +19,19 @@ const geoKursBullets = [
 export default function page() {
   return (
     <div>
-        <div className="hidden lg:block lg:px-32 px-4 lg:pt-32 lg:pb-16 lg:max-w-2/3">
-             <h1 className="!text-5xl/14">Kostenloser <span className="text-custom-red">GEO </span> Kurs</h1>
-            <h2>Im kostenlosen GEO Kurs zeigt Dir der GEO Experte Jan Krösche, wie Du Deine Website in die KI-Antworten von ChatGPT, Gemini & Co. bekommst und auch in Zukunft mit Deiner Firma sichtbar bist. Damit Dein Geschäft für die Zukunft gewappnet ist.</h2>
-        </div>
-               
-      <section className="flex flex-col lg:flex-row gap-8 lg:px-32">
-        <div className="px-4 lg:p-8 flex-1">
-          <h1 className="mt-4 text-center">
-            Dein kostenloser <span className="text-custom-red">GEO </span>Kurs
-          </h1>
-          <InfoBtn content="Geo Kurs" className="mx-auto mt-12" />
-          <h2 className="text-center mt-4">
-            KI-Marketing verstehen – Neukunden über ChatGPT & Co. gewinnen.
-          </h2>
-          <div className="flex flex-col gap-4 mt-12">
-            <p>
-              Im kostenlosen GEO Kurs von Jan Krösche lernst Du, wie Du Deine
-              Website in die KI-Antworten von ChatGPT, Gemini, Copilot und
-              Perplexity bringst.
-            </p>
-            <p>
-              Das Ziel des kostenlosen GEO Kurses ist es, Dir die GEO-Grundlagen
-              praxisnah zu vermitteln, damit Du einen Überblick hast und Deinen
-              Webauftritt optimieren kannst, um über die KI mehr Neukunden zu
-              erreichen.
-            </p>
-            <p>
-              Der GEO Kurs ist komplett kostenlos, dauert ca. 1 h und richtet
-              sich an Unternehmen, die in der KI sichtbarer sein wollen.
-            </p>
-          </div>
-        </div>
-        <div className="flex-1 bg-custom-white flex flex-col justify-between py-12 lg:pt-0 px-4 lg:p-8 rounded-lg">
-          <div>
-            <div className="flex flex-col items-start gap-2 pt-8">
-              <span className="text-white bg-custom-red font-semibold tracking-tight py-1 px-2 rounded-lg">
-                Dein GEO Kurs
-              </span>
-              <span className="font-semibold tracking-tight">
-                Der GEO Kurs auf einen Blick
-              </span>
-              <span className="font-light">
-                Werde die Top-Empfehlung der KI
-              </span>
-            </div>
+      <div className="hidden lg:block lg:px-32 px-4 lg:pt-32 lg:pb-16 lg:max-w-2/3">
+        <h1 className="!text-5xl/14">
+          Kostenloser <span className="text-custom-red">GEO </span> Kurs
+        </h1>
+        <h2>
+          Im kostenlosen GEO Kurs zeigt Dir der GEO Experte Jan Krösche, wie Du
+          Deine Website in die KI-Antworten von ChatGPT, Gemini & Co. bekommst
+          und auch in Zukunft mit Deiner Firma sichtbar bist. Damit Dein
+          Geschäft für die Zukunft gewappnet ist.
+        </h2>
+      </div>
 
-            <h1 className="text-center mt-8 lg:mt-16">GEO Kurs</h1>
-            <p className="mt-4 mb-8 font-light text-base/5">
-              Der Kurs ist für Dich komplett kostenfrei. Wir nehmen uns eine
-              Stunde Zeit – davon 45 Minuten für intensives Lernen und 15
-              Minuten für Deine individuellen Fragen. Ob per Video-Call oder vor
-              Ort in Bad Wörishofen: Du entscheidest, wie Du dabei sein
-              möchtest.
-            </p>
-            <span className="font-semibold tracking-tight">Leistungen</span>
-            <div className="flex flex-col gap-2 mt-2">
-              {geoKursBullets.map((e, index) => (
-                <div key={index} className="flex items-start gap-2">
-                  <IoIosCheckmarkCircle
-                    color="rgb(231,0,53)"
-                    size={24}
-                    className="shrink-0"
-                  />
-                  <span>{e}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="mt-8">
-            <p className="pb-8 font-semibold  border-b-1 border-slate-700">
-              Als Bonus Wir können uns im Kurs auch Deine Website anschauen und
-              Optimierungen erarbeiten
-            </p>
-            <span className="mt-4 block text-center text-base/5 font-light">
-              Kursanmeldung per Mail an
-            </span>
-            <span className="block text-center text-custom-red">
-              {" "}
-              jan@jankroesche.de
-            </span>
-          </div>
-        </div>
-      </section>
+      <KroescheWorkshopIntroLayout workshop={geoKurs} />
       <section className="lg:hidden mt-12 p-4">
         <InfoBtn content="GEO Kurs" />
         <h1 className="mt-8">
@@ -296,82 +228,7 @@ export default function page() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col lg:flex-row py-12 gap-8 lg:mt-32 lg:px-32">
-        <div className="p-8 mx-4 flex-1">
-          <h1 className="mt-4 text-center">
-            Das lernst Du im kostenlosen{" "}
-            <span className="text-custom-red">GEO Kurs </span> von Jan Krösche
-          </h1>
-          <InfoBtn content="Geo Kurs" className="mx-auto mt-12" />
-          <h2 className="text-center mt-4">Akutelles Fachwissen rund um GEO</h2>
-          <div className="flex flex-col gap-4 mt-12">
-            <p>
-              Im kostenlosen GEO Kurs erhältst Du aktuelles Fachwissen sowie
-              praktische Tipps, die Du später selbst umsetzen kannst. Das Ziel
-              des Kurses ist es, dass Du mit Deiner Firmenwebsite in KI-Systemen
-              besser gefunden wirst und einen fundierten Überblick über die
-              wichtigsten GEO-Maßnahmen wie llms.txt oder schema.org bekommst.
-            </p>
-            <p>
-              Da der Kurs live per Teams stattfindet, kannst Du direkt Fragen an
-              den Referenten stellen und profitierst von einem interaktiven
-              Austausch. Der GEO Kurs ist dabei komplett kostenlos und Du
-              bekommst alle verwendeten Folien im Anschluss an die Sitzung
-              bequem per Mail zugeschickt.
-            </p>
-          </div>
-        </div>
-        <div className="flex-1 bg-custom-white flex flex-col justify-between lg:flex-1 py-12 lg:pt-0 p-8 rounded-lg">
-          <div>
-            <div className="flex flex-col items-start gap-2 pt-8">
-              <span className="text-white bg-custom-red font-semibold tracking-tight py-1 px-2 rounded-lg">
-                Dein GEO Kurs
-              </span>
-              <span className="font-semibold tracking-tight">
-                Der GEO Kurs auf einen Blick
-              </span>
-              <span className="font-light">
-                Werde die Top-Empfehlung der KI
-              </span>
-            </div>
-
-            <h1 className="text-center mt-8 lg:mt-16">GEO Kurs</h1>
-            <p className="mt-4 mb-8 font-light text-base/5">
-              Der Kurs ist für Dich komplett kostenfrei. Wir nehmen uns eine
-              Stunde Zeit – davon 45 Minuten für intensives Lernen und 15
-              Minuten für Deine individuellen Fragen. Ob per Video-Call oder vor
-              Ort in Bad Wörishofen: Du entscheidest, wie Du dabei sein
-              möchtest.
-            </p>
-            <span className="font-semibold tracking-tight">Leistungen</span>
-            <div className="flex flex-col gap-2 mt-2">
-              {geoKursBullets.map((e, index) => (
-                <div key={index} className="flex items-start gap-2">
-                  <IoIosCheckmarkCircle
-                    color="rgb(231,0,53)"
-                    size={24}
-                    className="shrink-0"
-                  />
-                  <span>{e}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="mt-8">
-            <p className="pb-8 font-semibold  border-b-1 border-slate-700">
-              Als Bonus Wir können uns im Kurs auch Deine Website anschauen und
-              Optimierungen erarbeiten
-            </p>
-            <span className="mt-4 block text-center text-base/5 font-light">
-              Kursanmeldung per Mail an
-            </span>
-            <span className="block text-center text-custom-red">
-              {" "}
-              jan@jankroesche.de
-            </span>
-          </div>
-        </div>
-      </section>
+      <KroescheWorkshopIntroLayout workshop={geoKurs} />
       <section className="hidden lg:flex flex-col lg:flex-row gap-12 mt-64 lg:bg-custom-white px-32 pt-24 pb-48 2xl:gap-32 2xl:justify-center ">
         <div className="lg:min-w-1/2 2xl:min-w-1/3 lg:relative">
           <div className="lg:absolute lg:-top-48">
@@ -395,7 +252,7 @@ export default function page() {
           </h1>
           <InfoBtn content="GEO Kurs" className="mx-auto mt-12" />
           <h2 className="text-center mt-4">
-        Lass uns über Deine Sichbarkeit in der KI sprechen
+            Lass uns über Deine Sichbarkeit in der KI sprechen
           </h2>
           <div className="flex flex-col gap-4 mt-12">
             <p>
@@ -411,9 +268,9 @@ export default function page() {
               teilnehmen kannst.
             </p>
           </div>
-         <div className="mt-4">
+          <div className="mt-4">
             <p className="pb-8 border-b-1 border-slate-700">
-               Ich freue mich auf alle GEO-Interessierten und auf den Austausch
+              Ich freue mich auf alle GEO-Interessierten und auf den Austausch
               mit Dir.
             </p>
             <span className="mt-4 block text-center text-base/5 font-light">

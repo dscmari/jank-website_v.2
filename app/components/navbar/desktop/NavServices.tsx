@@ -9,43 +9,45 @@ const NavServices = () => {
       <div className="flex gap-16 p-8">
         <div className="flex flex-col gap-2">
           <h3 className="text-xl  mb-2 font-medium">Google Platz 1</h3>
-          <a href="#" className="mb-1 block font-light">
+          <a href="#" className="mb-1 block text-neutral-400">
             SEO Berater für Google Rankings
           </a>
-          <LinkSeoCheck className="font-light" />
+          <LinkSeoCheck className="text-neutral-400" />
           <Link
             href="/seo-berater/kostenloser-seo-kurs/"
-            className="font-light"
+            className="text-neutral-400"
           >
             Kostenloser SEO Kurs
           </Link>
         </div>
         <div className="flex flex-col gap-2">
           <h3 className="text-xl mb-2 font-medium">ChatGPT Platz 1</h3>
-          <div className="font-light">
-            <Link href="/geo-berater/">GEO Berater für KI Sichtbarkeit</Link>
-          </div>
-          <a href="#" className="block font-light">
+ 
+            <Link href="/geo-berater/" className="text-neutral-400">GEO Berater für KI Sichtbarkeit</Link>
+     
+          <a href="#" className="block text-neutral-400">
             GEO Tracker
           </a>
-          <div className="font-light">
-            <Link href="/geo-berater/kostenloser-geo-kurs/">
+          <Link href="/geo-berater/geo-workshop-fuer-werbeagenturen/" className="text-neutral-400">
+            GEO Workshop für Werbeagenturen
+          </Link>
+            <Link href="/geo-berater/kostenloser-geo-kurs/" className="text-neutral-400">
               Kostenloser GEO Kurs
             </Link>
-          </div>
-          <div className="font-light">
-            <LinkGeoCheck />
-          </div>
+            <LinkGeoCheck className="text-neutral-400"/>
         </div>
         <div className="flex flex-col gap-2">
           <h3 className="text-xl font-semibold mb-2">Google Werbung</h3>
-            <Link href="/google-ads-berater/" className="font-light">
-              Google Ads Berater für Google-Klicks
-            </Link>
+          <Link href="/google-ads-berater/" className="text-neutral-400">
+            Google Ads Berater für Google-Klicks
+          </Link>
 
-          <Link href="/google-ads-berater/kostenloser-google-ads-kurs" className="font-light">
-              Kostenloser Google Ads Kurs
-            </Link>
+          <Link
+            href="/google-ads-berater/kostenloser-google-ads-kurs"
+            className="text-neutral-400"
+          >
+            Kostenloser Google Ads Kurs
+          </Link>
         </div>
       </div>
 

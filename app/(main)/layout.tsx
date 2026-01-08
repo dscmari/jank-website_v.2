@@ -5,7 +5,6 @@ import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
 import PreFooter from "../components/footer/PreFooter";
 import ScrollToTopBtn from "../components/ScrollToTopBtn";
-import Breadcrumbs from "../components/Breadcrumps";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -39,6 +38,7 @@ export default function MainLayout({
         {children}
         <PreFooter/>
         <Footer/>
+        <ScrollToTopBtn/>
       </body>
     </html>
   );

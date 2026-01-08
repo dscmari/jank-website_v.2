@@ -2,17 +2,12 @@ import { Metadata } from "next";
 import Image from "next/image";
 import InfoBtn from "@/app/components/buttons/InfoBtn";
 import { IoIosCheckmarkCircle } from "react-icons/io";
+import KroescheWorkshopIntroLayout from "@/app/components/layouts/KroescheWorkshopIntroLayout";
+import { seoKurs } from "@/app/content/KroescheKurseContent";
 
 export const metadata: Metadata = {
   title: "Kostenloser SEO Kurs | SEO Seminar mit Jan Krösche",
 };
-
-const seoKursBullets = [
-  "Der SEO Kurs findet nur mit Dir oder in kleinen Gruppen statt (je nach Auslastung)",
-  "Der Kurs ist live – Du kannst Fragen stellen",
-  "Du kannst Dich per Mail anmelden jan@jankroesche.de",
-  "Du erhältst passende Terminvorschläge per Mail",
-];
 
 export default function page() {
   return (
@@ -29,86 +24,7 @@ export default function page() {
         </h2>
       </div>
 
-      <section className="flex flex-col lg:flex-row gap-8 lg:px-32">
-        <div className="px-4 lg:p-8 flex-1">
-          <h1 className="mt-4 text-center">
-            Dein kostenloser <span className="text-custom-red">SEO </span>Kurs
-          </h1>
-          <InfoBtn content="SEO Kurs" className="mx-auto mt-12" />
-          <h2 className="text-center mt-4">
-            Suchmaschinenoptimierung verstehen und Neukunden über Google
-            gewinnen
-          </h2>
-          <div className="flex flex-col gap-4 mt-12">
-            <p>
-              Im kostenlosen SEO Kurs von Jan Krösche lernst Du, wie Du Deine
-              Website verbessern kannst, um bei Google besser zu ranken.
-            </p>
-            <p>
-              Mit starken Rankings erhöhst Du die Wahrscheinlichkeit, dass
-              potentielle Kunden auf Dich stoßen, wenn sie bei Google unterwegs
-              sind. SEO ist daher nicht nice-to-have, sondern ein Neukunden- und
-              Umsatzlieferant.
-            </p>
-            <p>
-              Ich zeige Dir im kostenlosen SEO Kurs, was Du konkret tun kannst,
-              um bei Google oben zu stehen. Der Kurs ist komplett kostenlos,
-              praxisorientiert und einfach aufgebaut. Du brauchst keine
-              Vorkenntnisse.
-            </p>
-          </div>
-        </div>
-        <div className="flex-1 bg-custom-white flex flex-col justify-between py-12 lg:pt-0 px-4 lg:p-8 rounded-lg">
-          <div>
-            <div className="flex flex-col items-start gap-2 pt-8">
-              <span className="text-white bg-custom-red font-semibold tracking-tight py-1 px-2 rounded-lg">
-                Dein SEO Kurs
-              </span>
-              <span className="font-semibold tracking-tight">
-                Der SEO Kurs auf einen Blick
-              </span>
-              <span className="font-light">
-                Komme nach ganz oben in der Google Suche
-              </span>
-            </div>
-
-            <h1 className="text-center mt-8 lg:mt-16">SEO Kurs</h1>
-            <p className="mt-4 mb-8 font-light text-base/5">
-              Der Kurs ist für Dich komplett kostenfrei. Wir nehmen uns eine
-              Stunde Zeit – davon 45 Minuten für intensives Lernen und 15
-              Minuten für Deine individuellen Fragen. Ob per Video-Call oder vor
-              Ort in Bad Wörishofen: Du entscheidest, wie Du dabei sein
-              möchtest.
-            </p>
-            <span className="font-semibold tracking-tight">Leistungen</span>
-            <div className="flex flex-col gap-2 mt-2">
-              {seoKursBullets.map((e, index) => (
-                <div key={index} className="flex items-start gap-2">
-                  <IoIosCheckmarkCircle
-                    color="rgb(231,0,53)"
-                    size={24}
-                    className="shrink-0"
-                  />
-                  <span>{e}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="mt-8">
-            <p className="pb-8 font-semibold  border-b-1 border-slate-700">
-              Als Bonus Wir können uns im Kurs auch Deine Website anschauen und
-              Optimierungen erarbeiten
-            </p>
-            <span className="mt-4 block text-center text-base/5 font-light">
-              Kursanmeldung per Mail an
-            </span>
-            <span className="block text-center text-custom-red">
-              {" "}
-              jan@jankroesche.de
-            </span>
-          </div>
-        </div>
-      </section>
+      <KroescheWorkshopIntroLayout workshop={seoKurs} />
       <section className="lg:hidden mt-12 p-4">
         <InfoBtn content="SEO Kurs" />
         <h1 className="mt-8">
@@ -296,88 +212,7 @@ export default function page() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col lg:flex-row py-12 gap-8 lg:mt-32 lg:px-32">
-        <div className="p-8 mx-4 flex-1">
-          <h1 className="mt-4 text-center">
-            Das lernst Du im kostenlosen{" "}
-            <span className="text-custom-red">SEO Kurs </span> von Jan Krösche
-          </h1>
-          <InfoBtn content="SEO Kurs" className="mx-auto mt-12" />
-          <h2 className="text-center mt-4">Akutelles Fachwissen rund um SEO</h2>
-          <div className="flex flex-col gap-4 mt-12">
-            <p>
-              Im kostenlosen SEO Kurs erhältst Du aktuelles Fachwissen und einen
-              fundierten Überblick über die entscheidenden Bausteine wie Title
-              Tags, Überschriften und die Funktionsweise moderner Algorithmen.
-              Dabei stehen praktische Tipps im Vordergrund, die Du direkt auf
-              Deine eigene Strategie anwenden kannst, um die technischen und
-              inhaltlichen Grundlagen Deiner Seite zu festigen.
-            </p>
-            <p>
-              Das klare Ziel des Kurses ist es, Deine Firmenwebsite bei Google
-              auf Platz 1 zu ranken und sie in einen echten Kundenmagneten zu
-              verwandeln.
-            </p>
-            <p>
-              Da der Kurs live per Teams stattfindet, kannst Du direkt Fragen an
-              den Referenten stellen und profitierst von einem interaktiven
-              Austausch. Der SEO Kurs ist dabei komplett kostenlos und Du
-              bekommst alle verwendeten Folien im Anschluss an die Sitzung
-              bequem per Mail zugeschickt.
-            </p>
-          </div>
-        </div>
-        <div className="flex-1 bg-custom-white flex flex-col justify-between py-12 lg:pt-0 px-4 lg:p-8 rounded-lg">
-          <div>
-            <div className="flex flex-col items-start gap-2 pt-8">
-              <span className="text-white bg-custom-red font-semibold tracking-tight py-1 px-2 rounded-lg">
-                Dein SEO Kurs
-              </span>
-              <span className="font-semibold tracking-tight">
-                Der SEO Kurs auf einen Blick
-              </span>
-              <span className="font-light">
-                Komme nach ganz oben in der Google Suche
-              </span>
-            </div>
-
-            <h1 className="text-center mt-8 lg:mt-16">SEO Kurs</h1>
-            <p className="mt-4 mb-8 font-light text-base/5">
-              Der Kurs ist für Dich komplett kostenfrei. Wir nehmen uns eine
-              Stunde Zeit – davon 45 Minuten für intensives Lernen und 15
-              Minuten für Deine individuellen Fragen. Ob per Video-Call oder vor
-              Ort in Bad Wörishofen: Du entscheidest, wie Du dabei sein
-              möchtest.
-            </p>
-            <span className="font-semibold tracking-tight">Leistungen</span>
-            <div className="flex flex-col gap-2 mt-2">
-              {seoKursBullets.map((e, index) => (
-                <div key={index} className="flex items-start gap-2">
-                  <IoIosCheckmarkCircle
-                    color="rgb(231,0,53)"
-                    size={24}
-                    className="shrink-0"
-                  />
-                  <span>{e}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="mt-8">
-            <p className="pb-8 font-semibold  border-b-1 border-slate-700">
-              Als Bonus Wir können uns im Kurs auch Deine Website anschauen und
-              Optimierungen erarbeiten
-            </p>
-            <span className="mt-4 block text-center text-base/5 font-light">
-              Kursanmeldung per Mail an
-            </span>
-            <span className="block text-center text-custom-red">
-              {" "}
-              jan@jankroesche.de
-            </span>
-          </div>
-        </div>
-      </section>
+      <KroescheWorkshopIntroLayout workshop={seoKurs} />
       <section className="hidden lg:flex flex-col lg:flex-row gap-12 mt-64 lg:bg-custom-white px-32 pt-24 pb-48 2xl:gap-32 2xl:justify-center ">
         <div className="lg:min-w-1/2 2xl:min-w-1/3 lg:relative">
           <div className="lg:absolute lg:-top-48">
