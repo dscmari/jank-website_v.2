@@ -1,4 +1,5 @@
 import { BsFillPencilFill } from "react-icons/bs";
+import { FaMagnifyingGlassChart } from "react-icons/fa6";
 import { FiPhone } from "react-icons/fi";
 import {
   GiArtificialHive,
@@ -6,9 +7,11 @@ import {
   GiAirplaneDeparture,
   GiGears,
   GiPodiumWinner,
+  GiTalk,
 } from "react-icons/gi";
 import { GrOptimize } from "react-icons/gr";
 import { LuScreenShare } from "react-icons/lu";
+import { MdPhoneInTalk } from "react-icons/md";
 import { PiLighthouse } from "react-icons/pi";
 
 //GEO Berater
@@ -108,27 +111,27 @@ export const geoWorkshopAgenturenSixBoxContent = [
     link: "",
   },
   {
-    icon: <GiArchiveResearch color="rgb(231,0,53)" size="3rem" />,
+    icon: <LuScreenShare color="rgb(231,0,53)" size="3rem" />,
     title: "Sichtbarkeit erhöhen",
     text: "Von Textoptimierung über llms.txt und schema.org bis hin zu Digital PR gibt es viele Rankingfaktoren im GEO. Du lernst, wie eine Website bei ChatGPT sichtbar wird und Neukunden gewinnt. ",
     link: "",
   },
   {
-    icon: <LuScreenShare color="rgb(231,0,53)" size="3rem" />,
+    icon: <FaMagnifyingGlassChart color="rgb(231,0,53)" size="3rem" />,
     title: "Gemeinsamer GEO Audit",
     text: "Wir führen zusammen einen GEO Audit einer Kundenwebseite von Dir an, den Du Deinem Kunden präsentieren kannst. Alternativ können wir Deine eigene Seite verwenden.",
     link: "",
   },
 
   {
-    icon: <GrOptimize color="rgb(231,0,53)" size="3rem" />,
+    icon: <MdPhoneInTalk color="rgb(231,0,53)" size="3rem" />,
     title: "Heikle Kundenfragen",
     text: "Wir schauen uns unangenehme Kundenanfragen an und beantworten sie zusammen. Damit Du und Deine Mitarbeitenden für das nächste Kundengespräch ideal vorbereitet seid.",
     link: "",
   },
 
   {
-    icon: <BsFillPencilFill color="rgb(231,0,53)" size="3rem" />,
+    icon: <GiTalk color="rgb(231,0,53)" size="3rem" />,
     title: "Diskussionsrunde",
     text: "Zum Abschluss des GEO Workshops gibt es eine gemeinsame Diskussionsrunde, um relevante KI-Fragestellungen durchzudenken. Zum Beispiel: Wird es in 5 Jahren noch Websites geben?",
     link: "",
