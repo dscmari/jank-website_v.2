@@ -141,3 +141,15 @@ span {
   -o-transform: rotate(-135deg);
   transform: rotate(-135deg);
 }
+
+.agbs p {
+  margin-bottom: 1rem;
+}
+.agbs ol {
+  list-style: disc;
+  margin: 1rem 0 1rem 0;
+  padding-left: 2rem;
+}
+.agbs h2 {
+  margin-top: 2rem;
+}

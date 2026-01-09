@@ -25,9 +25,9 @@ export default function Footer() {
           <LinkAdsKurs className="underline"/>
         </div>
         <div className="flex flex-col items-center lg:items-start gap-2">
-          <a href="#" className="underline">
+            <Link href={"/allgemeine-geschaeftsbedingungen/"} className="underline">
             Allgemeine Geschäftsbedingungen
-          </a>
+          </Link>
           <Link href={"/datenschutz/"} className="underline">
             Datenschutzerklärung
           </Link>
