@@ -1,11 +1,10 @@
 "use server";
-
-import { submitForm } from "@/actions/submit-form-action";
+import { submitWebsiteCheck } from "@/actions/submit-webiste-check-action";
 
 export default async function ContactForm() {
   return (
    <form
-      action={submitForm}
+      action={submitWebsiteCheck}
       className="my-4 lg:mb-0 flex flex-col gap-4"
     >
       <div className="flex flex-col gap-4">

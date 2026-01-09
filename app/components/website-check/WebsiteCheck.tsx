@@ -1,6 +1,7 @@
 import Image from "next/image";
-import StaticForms from "./StaticForms";
-import InfoBtn from "./buttons/InfoBtn";
+import InfoBtn from "../buttons/InfoBtn";
+import WebsiteCheckForm from "./WebsiteCheckForm";
+
 
 type Props = {
   isGeo?: boolean;
@@ -55,7 +56,7 @@ export default function WebsiteCheck({ isGeo, className }: Props) {
                 kostenlos.
               </p>
             )}
-            <StaticForms />
+          <WebsiteCheckForm/>
           </div>
         </div>
       </div>

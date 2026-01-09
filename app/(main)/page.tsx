@@ -8,7 +8,7 @@ import Contact from "../components/Contact";
 import Testimonials from "../components/Testimonials";
 import Pricing from "../components/Pricing";
 import Process from "../components/layouts/Process";
-import WebsiteCheck from "../components/WebsiteCheck";
+
 import { GiAirplaneDeparture } from "react-icons/gi";
 import FourBoxLayout from "../components/layouts/FourBoxLayout";
 import SEOCheckBtn from "../components/buttons/SEOCheckBtn";
@@ -19,6 +19,7 @@ import atf from "../content/ATFContents";
 import { standardFourBoxContent } from "../content/FourBoxLayoutContent";
 import { Metadata } from "next";
 import MiniTestimonals from "../components/MiniTestimonals";
+import WebsiteCheck from "../components/website-check/WebsiteCheck";
 
 export const metadata: Metadata = {
   title: "Platz 1 bei Google & ChatGPT | SEO – GEO – Ads Berater",

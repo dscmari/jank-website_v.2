@@ -1,4 +1,5 @@
-import WebsiteCheck from "@/app/components/WebsiteCheck";
+import WebsiteCheck from "@/app/components/website-check/WebsiteCheck";
+
 
 export default function page() {
   return (

@@ -1,6 +1,4 @@
-import ATF from "@/app/components/ATF";
-import LinkSeoCheck from "@/app/components/links/LinkSeoCheck";
-import WebsiteCheck from "@/app/components/WebsiteCheck";
+import WebsiteCheck from "@/app/components/website-check/WebsiteCheck";
 
 export default function page() {
   return (

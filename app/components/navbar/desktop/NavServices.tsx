@@ -22,19 +22,30 @@ const NavServices = () => {
         </div>
         <div className="flex flex-col gap-2">
           <h3 className="text-xl mb-2 font-medium">ChatGPT Platz 1</h3>
- 
-            <Link href="/geo-berater/" className="text-neutral-400">GEO Berater für KI Sichtbarkeit</Link>
-     
+
+          <Link href="/geo-berater/" className="text-neutral-400">
+            GEO Berater für KI Sichtbarkeit
+          </Link>
+
           <a href="#" className="block text-neutral-400">
             GEO Tracker
           </a>
-          <Link href="/geo-berater/geo-workshop-fuer-werbeagenturen/" className="text-neutral-400">
+          <Link href="/geo-berater/geo-webinare/" className="text-neutral-400">
+            GEO Webinare
+          </Link>
+          <Link
+            href="/geo-berater/geo-workshop-fuer-werbeagenturen/"
+            className="text-neutral-400"
+          >
             GEO Workshop für Werbeagenturen
           </Link>
-            <Link href="/geo-berater/kostenloser-geo-kurs/" className="text-neutral-400">
-              Kostenloser GEO Kurs
-            </Link>
-            <LinkGeoCheck className="text-neutral-400"/>
+          <Link
+            href="/geo-berater/kostenloser-geo-kurs/"
+            className="text-neutral-400"
+          >
+            Kostenloser GEO Kurs
+          </Link>
+          <LinkGeoCheck className="text-neutral-400" />
         </div>
         <div className="flex flex-col gap-2">
           <h3 className="text-xl font-semibold mb-2">Google Werbung</h3>

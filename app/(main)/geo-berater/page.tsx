@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { FiArrowRight } from "react-icons/fi";
 import references from "@/app/content/referencesList";
-import WebsiteCheck from "@/app/components/WebsiteCheck";
+import WebsiteCheck from "@/app/components/website-check/WebsiteCheck";
 import { GoDiamond } from "react-icons/go";
 import ATF from "@/app/components/ATF";
 import Contact from "@/app/components/Contact";
