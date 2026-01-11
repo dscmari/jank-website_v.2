@@ -6,7 +6,7 @@ import LinkSeoCheck from "../components/links/LinkSeoCheck";
 import ATF from "../components/ATF";
 import Contact from "../components/Contact";
 import Testimonials from "../components/Testimonials";
-import Pricing from "../components/Pricing";
+import Pricing from "../components/pricing/Pricing";
 import Process from "../components/layouts/Process";
 
 import { GiAirplaneDeparture } from "react-icons/gi";
@@ -20,6 +20,7 @@ import { standardFourBoxContent } from "../content/FourBoxLayoutContent";
 import { Metadata } from "next";
 import MiniTestimonals from "../components/MiniTestimonals";
 import WebsiteCheck from "../components/website-check/WebsiteCheck";
+import {pricingBoxes} from "../content/pricingBoxes";
 
 export const metadata: Metadata = {
   title: "Platz 1 bei Google & ChatGPT | SEO – GEO – Ads Berater",
@@ -234,7 +235,7 @@ export default function Home() {
           content="Angebot"
           className="mx-auto lg:mx-32 mt-4 mb-8 lg:mb-16"
         />
-        <Pricing className="bg-custom-white px-4 pt-12 lg:pb-24 lg:pt-0 lg:px-8 2xl:px-32" />
+        <Pricing pricingBoxes={pricingBoxes} className="bg-custom-white px-4 pt-12 lg:pb-24 lg:pt-0 lg:px-8 2xl:px-32" />
       </section>
       <Workshops />
       <section className="mt-24 lg:mt-32">

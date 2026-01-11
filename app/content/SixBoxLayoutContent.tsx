@@ -1,6 +1,6 @@
 import { BsFillPencilFill } from "react-icons/bs";
 import { FaMagnifyingGlassChart } from "react-icons/fa6";
-import { FiPhone } from "react-icons/fi";
+import { FiMail, FiPhone } from "react-icons/fi";
 import {
   GiArtificialHive,
   GiArchiveResearch,
@@ -9,10 +9,10 @@ import {
   GiPodiumWinner,
   GiTalk,
 } from "react-icons/gi";
-import { GrOptimize } from "react-icons/gr";
+import { GrNotes, GrOptimize } from "react-icons/gr";
 import { LuScreenShare } from "react-icons/lu";
 import { MdPhoneInTalk } from "react-icons/md";
-import { PiLighthouse } from "react-icons/pi";
+import { PiFingerprint, PiLighthouse } from "react-icons/pi";
 
 //GEO Berater
 export const geoBeraterSixBox = [
@@ -98,7 +98,7 @@ export const adsBeraterSixBox = [
 
 //GEO Workshop für Agenturen
 export const geoWorkshopAgenturenSixBoxContent = [
-    {
+  {
     icon: <PiLighthouse color="rgb(231,0,53)" size="3rem" />,
     title: "Erfahrung",
     text: "In den letzten Jahren habe ich eine der größten Onlinemarketing Agenturen in Süddeutschland geleitet. Von dieser Erfahrung kannst Du profitieren.",
@@ -136,5 +136,44 @@ export const geoWorkshopAgenturenSixBoxContent = [
     text: "Zum Abschluss des GEO Workshops gibt es eine gemeinsame Diskussionsrunde, um relevante KI-Fragestellungen durchzudenken. Zum Beispiel: Wird es in 5 Jahren noch Websites geben?",
     link: "",
   },
+];
 
+//geo-tracker
+export const geoTrackerSixBoxContent = [
+  {
+    icon: <FaMagnifyingGlassChart color="rgb(231,0,53)" size="3rem" />,
+    title: "Prompt Tracking",
+    text: "Der Tracker hält wichtige Prompts im Blick und prüft, ob Deine Website in den Antworten bei ChatGPT & Co. zitiert wird.",
+    link: "",
+  },
+  {
+    icon: <GiArtificialHive color="rgb(231,0,53)" size="3rem" />,
+    title: "Alle wichtigen KI Systeme",
+    text: "Das Tracking wird für ChatGPT, Gemini, Copilot & Perplexity durchgeführt. Bei Bedarf können weitere KI-Tools zugebucht werden.",
+    link: "",
+  },
+  {
+    icon: <PiFingerprint color="rgb(231,0,53)" size="3rem" />,
+    title: "Individuelles Tracking",
+    text: "Wir messen genau die Prompts, die Du um Blick halten willst. Falls Du Unterstützung benötigst, richten wir das Tool anhand Deiner Website für Dich ein. Kostenlos.",
+    link: "",
+  },
+  {
+    icon: <FiMail color="rgb(231,0,53)" size="3rem" />,
+    title: "Report",
+    text: "Du bekommst den GEO Bericht Deiner Prompts ganz einfach alle 2 Wochen per Mail zugeschickt. Ohne Fachchinesisch oder Statistiken, die sowieso niemand versteht.",
+    link: "",
+  },
+  {
+    icon: <GrNotes color="rgb(231,0,53)" size="3rem" />,
+    title: "Verstehbarkeit",
+    text: "Der Bericht besteht nur aus einer Seite, die Du als pdf-Datei bekommst. Du siehst hier alle getrackten Prompts (= Keywords), nachvollziehbar aufbereitet.",
+    link: "",
+  },
+  {
+    icon: <MdPhoneInTalk color="rgb(231,0,53)" size="3rem" />,
+    title: "Persönlicher Ansprechpartner",
+    text: "Unser GEO Experte Jan Krösche steht Dir jederzeit zur Seite, wenn Du Fragen zum GEO Tracker hast.",
+    link: "",
+  },
 ];

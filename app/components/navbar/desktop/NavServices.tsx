@@ -22,14 +22,12 @@ const NavServices = () => {
         </div>
         <div className="flex flex-col gap-2">
           <h3 className="text-xl mb-2 font-medium">ChatGPT Platz 1</h3>
-
           <Link href="/geo-berater/" className="text-neutral-400">
             GEO Berater für KI Sichtbarkeit
           </Link>
-
-          <a href="#" className="block text-neutral-400">
+          <Link href="/geo-berater/geo-tracker/" className="text-neutral-400">
             GEO Tracker
-          </a>
+          </Link>
           <Link href="/geo-berater/geo-webinare/" className="text-neutral-400">
             GEO Webinare
           </Link>
@@ -52,7 +50,6 @@ const NavServices = () => {
           <Link href="/google-ads-berater/" className="text-neutral-400">
             Google Ads Berater für Google-Klicks
           </Link>
-
           <Link
             href="/google-ads-berater/kostenloser-google-ads-kurs"
             className="text-neutral-400"
@@ -61,7 +58,6 @@ const NavServices = () => {
           </Link>
         </div>
       </div>
-
       <button className="ml-auto mt-4 flex items-center gap-1 text-sm text-indigo-300">
         <span>View more</span>
         <FiArrowRight />

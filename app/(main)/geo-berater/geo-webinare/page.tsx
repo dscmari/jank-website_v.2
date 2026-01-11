@@ -31,11 +31,11 @@ export default function page() {
           dir jetzt deinen Wissensvorsprung.
         </p>
       </div>
-      <div className="flex flex-col lg:flex-row justify-center gap-16 lg:gap-32 px-4 lg:px-32 mt-12 lg:mt-0">
+      <div className="flex flex-col lg:flex-row justify-center gap-16 lg:gap-32 px-4 lg:px-32 mt-12">
         <div className="bg-white max-w-xl rounded-lg">
           <div className="relative">
             <Image
-              src="/images/portraits/39321-4127_01.jpg"
+              src="/images/portraits/39321-4211_02.jpg"
               width={600}
               height={400}
               alt="Portrait von Jan Kroesche"

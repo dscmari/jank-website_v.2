@@ -1,11 +1,18 @@
 import { IoIosCheckmarkCircle } from "react-icons/io";
-import pricingBoxes from "../content/pricingBoxes";
+
+type PricingBox = {
+  title: string;
+  subTitle: string;
+  introText: string;
+  services: string[];
+}
 
 type Props = {
   className?: string;
+  pricingBoxes: PricingBox[]
 };
 
-export default function Pricing({ className }: Props) {
+export default function Pricing({ className, pricingBoxes }: Props) {
   return (
     <div className={`${className}`}>
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-4 lg:justify-around">
@@ -52,7 +59,6 @@ export default function Pricing({ className }: Props) {
           </div>
         ))}
       </div>
-      <div className="flex flex-col lg:flex-row gap-24 lg:gap-8 lg:justify-around"></div>
     </div>
   );
 }

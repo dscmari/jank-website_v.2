@@ -9,12 +9,16 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   min-width: 320px;
   min-height: 100vh;
   max-width: 2048px;
   margin: 0 auto 0 auto;
+
 }
 
 @theme {
@@ -152,4 +156,13 @@ span {
 }
 .agbs h2 {
   margin-top: 2rem;
+}
+.rechnungsForm label {
+  font-size: var(--text-sm);
+  line-height: var(--text-sm--line-height);
+  font-weight: 300;
+}
+.rechnungsForm input {
+  font-size: var(--text-sm);
+  line-height: var(--text-sm--line-height);
 }
