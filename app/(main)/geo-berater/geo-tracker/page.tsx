@@ -118,8 +118,8 @@ export default function page() {
         </div>
       </section>
 
-      <section className="bg-custom-white flex flex-col lg:flex-row lg:items-center gap-12 mt-24 lg:p-32 2xl:gap-32 2xl:justify-center ">
-        <div className="flex-1 px-4 lg:px-0">
+      <section className="bg-custom-white flex flex-col lg:flex-row lg:items-center gap-12 mt-24 px-4 lg:p-32 2xl:gap-32 2xl:justify-center ">
+        <div className="flex-1 lg:px-0">
           <h1 className="text-center">
             Der <span className="text-custom-red">Krösche GEO Tracker</span> -
             die beste Datenquelle, um Deine KI Sichtbarkeit zu messen
@@ -469,7 +469,7 @@ export default function page() {
                   <input
                     type="text"
                     name="company"
-                    className="lg:lg:w-60 bg-slate-200 px-2 py-1"
+                    className="lg:lg:w-60 bg-slate-200 p-2 rounded-lg"
                   />
                 </div>
                 <div className="flex flex-col gap-1">
@@ -480,7 +480,7 @@ export default function page() {
                     name="anrede"
                     id="anrede"
                     required
-                    className="lg:w-60 h-8 rounded-lg bg-slate-200 px-2 px-1"
+                    className="lg:w-60 h-10 rounded-lg bg-slate-200 p-2 rounded-lg"
                   >
                     <option value="male">Herr</option>
                     <option value="female">Frau</option>
@@ -493,7 +493,7 @@ export default function page() {
                   <input
                     type="text"
                     name="firstName"
-                    className="lg:w-60 bg-slate-200 px-2 py-1"
+                    className="lg:w-60 bg-slate-200 p-2 rounded-lg"
                   />
                 </div>
                 <div className="flex flex-col gap-1">
@@ -503,7 +503,7 @@ export default function page() {
                   <input
                     type="text"
                     name="lastName"
-                    className="lg:w-60 bg-slate-200 px-2 py-1"
+                    className="lg:w-60 bg-slate-200 p-2 rounded-lg"
                   />
                 </div>
               </div>
@@ -515,7 +515,7 @@ export default function page() {
                   <input
                     type="text"
                     name="street"
-                    className="lg:w-60 bg-slate-200 px-2 py-1"
+                    className="lg:w-60 bg-slate-200 p-2 rounded-lg"
                   />
                 </div>
                 <div className="flex flex-col gap-1">
@@ -525,7 +525,7 @@ export default function page() {
                   <input
                     type="text"
                     name="plz"
-                    className="lg:w-60 bg-slate-200 px-2 py-1"
+                    className="lg:w-60 bg-slate-200 p-2 rounded-lg"
                   />
                 </div>
                 <div className="flex flex-col gap-1">
@@ -535,7 +535,7 @@ export default function page() {
                   <input
                     type="text"
                     name="city"
-                    className="lg:w-60 bg-slate-200 px-2 py-1"
+                    className="lg:w-60 bg-slate-200 p-2 rounded-lg"
                   />
                 </div>
                 <div className="flex flex-col gap-1">
@@ -547,7 +547,7 @@ export default function page() {
                     name="country"
                     defaultValue="DE"
                     required
-                    className="lg:w-60 bg-slate-200 h-8 px-2 py-1"
+                    className="lg:w-60 bg-slate-200 rounded-lg h-10 p-2"
                   >
                     <option value="">Bitte wählen...</option>
                     {countries.map((c) => (
@@ -566,7 +566,7 @@ export default function page() {
                   <input
                     type="email"
                     name="email"
-                    className="lg:w-60 bg-slate-200 px-2 py-1"
+                    className="lg:w-60 bg-slate-200 p-2 rounded-lg"
                   />
                 </div>
                 <div className="flex flex-col gap-1">
@@ -576,7 +576,7 @@ export default function page() {
                   <input
                     type="email"
                     name="invoiceEemail"
-                    className="lg:w-60 bg-slate-200 px-2 py-1"
+                    className="lg:w-60 bg-slate-200 p-2 rounded-lg"
                   />
                 </div>
                 <div className="flex flex-col gap-1">
@@ -586,7 +586,7 @@ export default function page() {
                   <input
                     type="text"
                     name="usstID"
-                    className="lg:w-60 bg-slate-200 px-2 py-1"
+                    className="lg:w-60 bg-slate-200 p-2 rounded-lg"
                   />
                 </div>
               </div>
