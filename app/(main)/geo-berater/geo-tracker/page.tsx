@@ -22,8 +22,8 @@ export default function page() {
   ];
   return (
     <div>
-      <div className="pt-12 lg:px-32 px-4 lg:pt-32 lg:pb-16 lg:max-w-2/3">
-        <h1 className="lg:!text-5xl/14">
+      <div className="pt-12 lg:px-32 px-4 lg:pt-32 lg:pb-16 xl:max-w-3/4 2xl:max-w-2/3">
+        <h1 className="2xl:!text-5xl/14">
           Mit dem <span className="text-custom-red">Krösche GEO Tracker</span>{" "}
           misst Du Deine KI Sichtbarkeit bei ChatGPT & Co.
         </h1>
@@ -34,7 +34,7 @@ export default function page() {
         </h2>
       </div>
 
-      <section className="flex flex-col 2xl:flex-row 2xl:items-center  px-4 lg:pt-8 lg:gap-12 lg:p-32 lg:mt-16 2xl:gap-32 2xl:justify-center">
+      <section className="flex flex-col xl:flex-row xl:items-center px-4 lg:pt-8 lg:gap-12 lg:p-32 lg:mt-16 2xl:gap-32 2xl:justify-center">
         <div className="flex-1">
           <h1 className="text-center hidden lg:block ">
             Der <span className="text-custom-red">Krösche GEO Tracker</span>{" "}
@@ -61,17 +61,18 @@ export default function page() {
               Tracker ist monatlich kündbar.
             </p>
           </div>
-          <GEOTrackerInstallBtn className="mt-16 p-4 lg:w-2/3" />
+          <GEOTrackerInstallBtn className="mt-16 p-4 md:w-2/3 mx-auto lg:mx-0" />
         </div>
-        <div className="mt-12 lg:mt-0 2xl:min-w-1/3">
+        <div className="mt-24 lg:mt-12 xl:min-w-1/3">
           <Image
             src="/images/screenshots/geo-tracker.png"
             style={{ width: "600px" }}
             alt="Screenshot von Statistiken zu Prompts"
             height={300}
             width={500}
+            className="mx-auto"
           />
-          <p className="text-sm font-light p-8 max-w-xl 2xl:mx-auto text-center lg:text-start 2xl:text-center">
+          <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
             Du siehst auf einen Blick, ob Du in den KI Antworten aller wichtigen
             KI-Systemen genannt wirst oder nicht.
           </p>
@@ -101,17 +102,18 @@ export default function page() {
               Tracker ist monatlich kündbar.
             </p>
           </div>
-          <GEOTrackerInstallBtn className="mt-16 p-4 lg:w-2/3" />
+          <GEOTrackerInstallBtn className="mt-16 p-4 md:w-2/3 mx-auto lg:mx-0" />
         </div>
-        <div className="mt-12 lg:mt-0 2xl:min-w-1/3">
+        <div className="mt-24 lg:mt-12 xl:min-w-1/3">
           <Image
             src="/images/screenshots/geo-tracker_2.png"
             style={{ width: "600px" }}
             alt="Screenshot von Statistiken zu Prompts"
             height={300}
             width={500}
+            className="mx-auto"
           />
-          <p className="text-sm font-light p-8 max-w-xl 2xl:mx-auto text-center lg:text-start 2xl:text-center">
+          <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
             Du siehst auf einen Blick, ob Du in den KI Antworten aller wichtigen
             KI-Systemen genannt wirst oder nicht.
           </p>
@@ -119,8 +121,8 @@ export default function page() {
       </section>
 
       <section className="bg-custom-white flex flex-col lg:flex-row lg:items-center gap-12 mt-24 px-4 lg:p-32 2xl:gap-32 2xl:justify-center ">
-        <div className="flex-1 lg:px-0">
-          <h1 className="text-center">
+        <div className="pt-24 lg:pt-0 flex-1 lg:px-0">
+          <h1 className="text-center md:px-16 lg:px-0">
             Der <span className="text-custom-red">Krösche GEO Tracker</span> -
             die beste Datenquelle, um Deine KI Sichtbarkeit zu messen
           </h1>
@@ -146,14 +148,17 @@ export default function page() {
               Tracker ist monatlich kündbar.
             </p>
           </div>
-          <GEOTrackerInstallBtn className="mt-16 p-4 lg:w-2/3" />
+          <GEOTrackerInstallBtn className="mt-16 p-4 md:w-2/3 mx-auto lg:mx-0" />
         </div>
         <div className="flex-1 lg:min-w-1/2 2xl:min-w-1/3 ">
-          <div className="">
-            <img
+          <div className="mt-24 lg:mt-12 xl:min-w-1/3">
+            <Image
               src="/images/screenshots/geo-tracker_3.png"
               style={{ width: "600px" }}
-              alt="Screenshot von Statistiken zu Prompts"
+              alt="Screenshot eines Prompts"
+              height={300}
+              width={500}
+              className="mx-auto"
             />
             <p className="lg:hidden p-8 italic mx-auto text-center text-sm font-light">
               Firmen und Anbieter, die in den KI Antworten erscheinen, werden
@@ -168,7 +173,7 @@ export default function page() {
       </section>
 
       <section className="bg-custom-white px-4 lg:px-32 py-24 lg:pb-8">
-        <h2 className="lg:text-center">
+        <h2 className="md:text-center">
           Was macht der Krösche GEO Tracker genau?
         </h2>
         <SixBoxLayout boxes={geoTrackerSixBoxContent} />
@@ -195,24 +200,25 @@ export default function page() {
               Tracker ist monatlich kündbar.
             </p>
           </div>
-          <GEOTrackerInstallBtn className="mt-16 p-4 lg:w-2/3" />
+          <GEOTrackerInstallBtn className="mt-16 p-4 md:w-2/3 mx-auto lg:mx-0" />
         </div>
-        <div className="mt-12 lg:mt-0 2xl:min-w-1/3">
+        <div className="mt-24 lg:mt-12 xl:min-w-1/3">
           <Image
             src="/images/screenshots/geo-tracker_4.png"
             style={{ width: "600px" }}
             alt="Screenshot von Statistiken zu Prompts"
             height={300}
             width={500}
+            className="mx-auto"
           />
-          <p className="text-sm font-light p-8 max-w-xl 2xl:mx-auto text-center lg:text-start 2xl:text-center">
+          <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
             Du siehst auf einen Blick, ob Du in den KI Antworten aller wichtigen
             KI-Systemen genannt wirst oder nicht.
           </p>
         </div>
       </section>
 
-      <section className="bg-custom-white flex flex-col lg:flex-row lg:items-center gap-12 mt-24 px-4 py-24 lg:p-32 2xl:gap-32 2xl:justify-center ">
+      <section className="bg-custom-white flex flex-col xl:flex-row xl:items-center gap-12 mt-24 px-4 py-24 lg:p-32 2xl:gap-32 2xl:justify-center ">
         <div className="flex-1">
           <h1 className="text-center">
             Was sind <span className="text-custom-red">Prompts </span> und warum
@@ -245,14 +251,17 @@ export default function page() {
               Tracker ist monatlich kündbar.
             </p>
           </div>
-          <GEOTrackerInstallBtn className="mt-16 p-4 lg:w-2/3" />
+     <GEOTrackerInstallBtn className="mt-16 p-4 md:w-2/3 mx-auto lg:mx-0" />
         </div>
         <div className="flex-1 lg:min-w-1/2 2xl:min-w-1/3 ">
-          <div className="">
-            <img
+          <div className="mt-24 lg:mt-12 xl:min-w-1/3">
+            <Image
               src="/images/screenshots/geo-tracker_5.png"
               style={{ width: "600px" }}
               alt="Screenshot von einem Prompt"
+              height={300}
+              width={500}
+              className="mx-auto"
             />
             <p className="lg:hidden p-8 italic mx-auto text-center text-sm font-light">
               Menschen suchen bei ChatGPT, indem sie mit dem Chatfeld
@@ -348,7 +357,7 @@ export default function page() {
             height={300}
             width={500}
           />
-          <p className="text-sm font-light p-8 max-w-xl 2xl:mx-auto text-center lg:text-start 2xl:text-center">
+          <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
             Du siehst auf einen Blick, ob Du in den KI Antworten aller wichtigen
             KI-Systemen genannt wirst oder nicht.
           </p>
@@ -369,7 +378,7 @@ export default function page() {
             auf das, was Dir wichtig ist. Schnell und einfach zu sehen, wie gut
             Du bei ChatGPT & Co. für Deine Prompts rankst.
           </p>
-          <GEOTrackerInstallBtn className="mt-16 p-4 lg:w-2/3" />
+     <GEOTrackerInstallBtn className="mt-16 p-4 md:w-2/3 mx-auto lg:mx-0" />
         </div>
         <div className="pt-24 lg:pb-32 bg-custom-white">
           <PricingGEOTracker

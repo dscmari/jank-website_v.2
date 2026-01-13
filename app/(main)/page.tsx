@@ -1,4 +1,4 @@
-
+import Image from "next/image";
 import { LuNotebookText } from "react-icons/lu";
 import { FaGears } from "react-icons/fa6";
 import { HiMagnifyingGlass } from "react-icons/hi2";
@@ -20,7 +20,7 @@ import { standardFourBoxContent } from "../content/FourBoxLayoutContent";
 import { Metadata } from "next";
 import MiniTestimonals from "../components/MiniTestimonals";
 import WebsiteCheck from "../components/website-check/WebsiteCheck";
-import {pricingBoxes} from "../content/pricingBoxes";
+import { pricingBoxes } from "../content/pricingBoxes";
 
 export const metadata: Metadata = {
   title: "Platz 1 bei Google & ChatGPT | SEO – GEO – Ads Berater",
@@ -41,7 +41,8 @@ export default function Home() {
         <InfoBtn content="Das tun wir" />
         <h2 className="mt-8">
           Seit 2017 über 500 Websites auf{" "}
-          <span className="text-custom-red">Platz 1 bei Google</span> katapultiert
+          <span className="text-custom-red">Platz 1 bei Google</span>{" "}
+          katapultiert
         </h2>
         <p className="pt-4 font-light">
           Jan Krösche & Team sind Deine SEO, GEO und ADS Spezialisten, damit Du
@@ -52,11 +53,14 @@ export default function Home() {
       </section>
       <MiniTestimonals /> {/* lg:hidden */}
       <section className="mt-24 lg:hidden">
-        <img
+        <Image
           src="/images/portraits/39321-3981.jpg"
           alt="Portrait Jan Krösche"
+          width={400}
+          height={600}
+          className="w-full"
         />
-        <p className="mx-4 mt-2 text-light text-center">
+        <p className="mx-4 mt-2 text-sm font-light text-center">
           Jan Krösche hat bis 2025 eine der größten Onlinemarketing-Agenturen in
           Deutschland aufgebaut und geleitet. Seit 2025 arbeitet er mit einem
           spezialisierten Team selbständig.
@@ -84,16 +88,28 @@ export default function Home() {
         circles={processCircles}
       />
       <Contact className="p-8 mt-24 lg:mt-0" />
-      <Testimonials className="bg-custom-white py-24 lg:pb-48 " />
+      <section className="bg-custom-white px-4 pt-24 md:pt-32 lg:px-32 lg:py-32 ">
+        <h1 className="text-center">
+          Wir haben über 500 Firmenwebsites{" "}
+          <span className="text-custom-red"> auf Platz 1</span> optimiert
+        </h1>{" "}
+        <InfoBtn content="Erfolgsgeschichten" className="mx-auto mt-16" />
+        <h2 className="mt-4 text-center">
+          Messbarer Erfolg und nachhaltiges Wachstum durch SEO, GEO & SEA
+        </h2>
+        <Testimonials className="py-24 lg:pb-48 " />
+      </section>
       <section className=" flex flex-col lg:flex-row gap-12 lg:p-32 lg:py-24 2xl:gap-32 2xl:justify-center ">
         <div className="lg:min-w-1/2 2xl:min-w-1/3 lg:relative">
           <div className="lg:absolute lg:-top-48">
-            <img
+            <Image
               src="/images/portraits/39321-4133web.jpg"
-              style={{ width: "600px" }}
-              alt="Portrait Jan Kroesche"
+              alt="Portrait Jan Krösche"
+              width={400}
+              height={600}
+              className="w-full"
             />
-            <p className="p-8 italic mx-auto text-center font-light">
+            <p className="p-4 italic mx-auto text-center font-light text-sm">
               "Wir helfen Unternehmen dabei, die Nummer 1 ihrer Branche werden"
             </p>
           </div>
@@ -228,14 +244,17 @@ export default function Home() {
         </div>
       </section>
       <section className="bg-custom-white">
-        <h2 className="text-center lg:text-start px-4 lg:px-32 pt-12 lg:pt-32 lg:mx-0 mt-24 lg:mt-16">
+        <h2 className="text-center lg:text-start px-4 lg:px-32 pt-24 md:pt-32 lg:mx-0 mt-24 lg:mt-16">
           Unsere 3 Preispakete
         </h2>
         <InfoBtn
           content="Angebot"
           className="mx-auto lg:mx-32 mt-4 mb-8 lg:mb-16"
         />
-        <Pricing pricingBoxes={pricingBoxes} className="bg-custom-white px-4 pt-12 lg:pb-24 lg:pt-0 lg:px-8 2xl:px-32" />
+        <Pricing
+          pricingBoxes={pricingBoxes}
+          className="bg-custom-white px-4 pt-12 lg:pb-24 lg:pt-0 lg:px-8 2xl:px-32"
+        />
       </section>
       <Workshops />
       <section className="mt-24 lg:mt-32">
@@ -246,7 +265,10 @@ export default function Home() {
             So läuft unsere Zusammenarbeit ab
           </h2>
         </div>
-        <InfoBtn content="Persönlicher Ansprechpartner" className="mx-auto mt-16 " />
+        <InfoBtn
+          content="Persönlicher Ansprechpartner"
+          className="mx-auto mt-16 "
+        />
         <h2 className="mt-4 text-center">Direkter Kontakt, keine Umwege</h2>
       </section>
       <Process
@@ -257,7 +279,7 @@ export default function Home() {
         <Contact className="p-8 mt-24 lg:mt-0 lg:mx-32" />
       </div>
       <WebsiteCheck className="mt-32 lg:max-w-[1500px] lg:mx-auto" />
-      <section className="pt-24 lg:pt-0 lg:mt-32 flex flex-col item-center bg-custom-white">
+      <section className="py-24 md:py-32 lg:py-0 lg:py-32 flex flex-col item-center bg-custom-white">
         <div className="px-4 lg:px-0 text-center lg:mt-32">
           <h1 className="">
             {" "}
@@ -268,13 +290,13 @@ export default function Home() {
         </div>
         <InfoBtn content="Unser Ziel" className="mx-auto mt-16 " />
         <h2 className="mt-4 text-center">Wir stärken deine Sichtbarkeit</h2>
+        <div className="bg-custom-white">
+          <FourBoxLayout
+            boxes={standardFourBoxContent}
+            className="mx-4 lg:mx-0 max-w-7xl"
+          />
+        </div>
       </section>
-      <div className="bg-custom-white">
-        <FourBoxLayout
-          boxes={standardFourBoxContent}
-          className="mx-4 lg:mx-0 max-w-7xl"
-        />
-      </div>
     </>
   );
 }

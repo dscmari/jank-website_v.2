@@ -17,11 +17,11 @@ type Props = {
 export default function PricingGEOTracker({ className, pricingBoxes }: Props) {
   return (
     <div className={`${className}`}>
-      <div className="flex flex-col lg:flex-row gap-8 lg:gap-4 lg:justify-around">
+      <div className="flex flex-col xl:flex-row gap-8 xl:gap-4 xl:justify-around">
         {pricingBoxes.map((e, index) => (
           <div
             key={index}
-            className="bg-white flex flex-col justify-between lg:flex-1 lg:m-0 p-8 rounded-lg"
+            className="bg-white flex flex-col justify-between xl:flex-1 xl:m-0 p-8 rounded-lg"
           >
             <div>
               <div className="flex flex-col items-start gap-2">
@@ -35,7 +35,7 @@ export default function PricingGEOTracker({ className, pricingBoxes }: Props) {
               <h1 className="text-center mt-16">{e.title}</h1>
               <p className="mt-4 mb-8 font-light text-base/5">{e.introText}</p>
               <span className="font-semibold tracking-tight">Leistungen</span>
-              <div key={index} className="flex flex-col gap-2 mt-2">
+              <div key={index} className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1 gap-2 mt-2">
                 {e.services.map((service, index) => (
                   <div key={index} className="flex items-start gap-2">
                     <IoIosCheckmarkCircle
