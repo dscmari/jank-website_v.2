@@ -301,12 +301,15 @@ export default function page() {
           </div>
         </div>
         <div className="flex-1 lg:min-w-1/2 2xl:min-w-1/3 ">
-          <div className="">
-            <img
-              src="/images/screenshots/geo-tracker_6.png"
-              style={{ width: "600px" }}
-              alt="Screenshot von einem Prompt"
-            />
+  <div className="mt-12 xl:min-w-1/3">
+                      <Image
+            src="/images/screenshots/geo-tracker_6.png"
+            style={{ width: "600px" }}
+ alt="Screenshot von einem Prompt"
+            height={300}
+            width={500}
+            className="mx-auto"
+          />
             <p className="lg:hidden p-8 italic mx-auto text-center text-sm font-light">
               Unter GEO versteht man die Optimierung einer Firmen-Website, um
               sie in den KI-Antworten von ChatGPT, Gemini & Co. für bestimmte
@@ -349,13 +352,14 @@ export default function page() {
           </div>
           <GEOTrackerInstallBtn className="mt-16 p-4 lg:w-2/3" />
         </div>
-        <div className="mt-12 lg:mt-0 2xl:min-w-1/3">
+<div className="mt-12 xl:min-w-1/3">
           <Image
             src="/images/screenshots/geo-tracker_4.png"
             style={{ width: "600px" }}
             alt="Screenshot von Statistiken zu Prompts"
             height={300}
             width={500}
+            className="mx-auto"
           />
           <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
             Du siehst auf einen Blick, ob Du in den KI Antworten aller wichtigen
