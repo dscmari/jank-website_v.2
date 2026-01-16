@@ -19,7 +19,7 @@ type Props = {
 export default function FourBoxLayout({ className, boxes }: Props) {
   return (
     <div className={`${className}`}>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4 lg:justify-around">
+      <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 xl:gap-16 lg:justify-around">
         {boxes.map((e, index) => (
           <div
             key={index}
@@ -41,11 +41,8 @@ export default function FourBoxLayout({ className, boxes }: Props) {
                 </p>
               </div>
               <span className="font-semibold tracking-tight">Leistungen</span>
-              <div className="flex flex-col lg:flex-row gap-4 mt-4">
-                <div className="flex flex-col gap-4">
-                  {e.services
-                    .slice(0, Math.ceil(e.services.length / 2))
-                    .map((service, index) => (
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1 gap-2 mt-2">
+                  {e.services.map((service, index) => (
                       <div key={index} className="flex gap-4 lg:gap-2">
                         <div className="shrink-0">
                           <IoIosCheckmarkCircle
@@ -57,22 +54,6 @@ export default function FourBoxLayout({ className, boxes }: Props) {
                         <span>{service}</span>
                       </div>
                     ))}
-                </div>
-                <div className="flex flex-col gap-4">
-                  {e.services
-                    .slice(Math.ceil(e.services.length / 2))
-                    .map((service, index) => (
-                      <div key={index} className="flex gap-4 lg:gap-2">
-                        <div className="shrink-0">
-                          <IoIosCheckmarkCircle
-                            color="rgb(231,0,53)"
-                            size={24}
-                          />
-                        </div>
-                        <span>{service}</span>
-                      </div>
-                    ))}
-                </div>
               </div>
             </div>
             <div className="mt-8 lg:mt-12">

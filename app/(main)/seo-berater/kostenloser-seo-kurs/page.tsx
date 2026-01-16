@@ -145,8 +145,9 @@ export default function page() {
             alt="Screenshot einer Google Suche"
             height={300}
             width={500}
+            className="mx-auto"
           />
-          <p className="p-8 max-w-xl 2xl:mx-auto text-center lg:text-start 2xl:text-center">
+                   <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
             "Der IT Dienstleister Kramer Systems wird bei Google für den
             Suchbegriff „IT Dienstleister Landsberg“ bei Google ganz oben
             gefunden. Durch diese Top Platzierung gewinnt die Firma jede Woche
@@ -212,7 +213,7 @@ export default function page() {
           </div>
         </div>
       </section>
-      <KroescheWorkshopIntroLayout workshop={seoKurs} />
+      <KroescheWorkshopIntroLayout className="mt-24 lg:m-0" workshop={seoKurs} />
       <section className="hidden lg:flex flex-col lg:flex-row gap-12 mt-64 lg:bg-custom-white px-32 pt-24 pb-48 2xl:gap-32 2xl:justify-center ">
         <div className="lg:min-w-1/2 2xl:min-w-1/3 lg:relative">
           <div className="lg:absolute lg:-top-48">

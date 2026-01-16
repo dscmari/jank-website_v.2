@@ -13,6 +13,7 @@ import { geoBeraterSixBox } from "../../content/SixBoxLayoutContent";
 import FiveStarRating from "@/app/components/FiveStarRating";
 import TwoBoxLayout from "@/app/components/layouts/TwoBoxLayout";
 import { geoBeraterTwoBox } from "@/app/content/TwoBoxLayoutContent";
+import GEOCheckBtn from "@/app/components/buttons/GEOCheckBtn";
 
 export const metadata: Metadata = {
   title: "GEO Berater für KI Sichtbarkeit | GEO Agentur Jan Krösche",
@@ -31,10 +32,10 @@ export default function GEOBerater() {
       />
       <section className="flex flex-col 2xl:flex-row 2xl:items-center px-4 pt-8 lg:gap-12 lg:p-32 lg:py-32 2xl:gap-32 2xl:justify-center">
         <div className="flex-1 flex flex-col">
-          <h2 className="lg:!text-3xl/10 tracking-wide font-semibold">
+          <h1>
             Mit unserer <span className="text-custom-red">GEO Beratung</span>{" "}
             wirst Du bei ChatGPT, Gemini & Co. am häufigsten zitiert
-          </h2>
+          </h1>
           <p>
             Unter „GEO“ versteht man die Optimierung für generative
             Suchmaschinen. Einfach ausgedrückt: Man optimiert Firmen-Websites
@@ -53,20 +54,18 @@ export default function GEOBerater() {
             Schweiz als GEO Berater zur Seite. Wir helfen Dir, die Nummer 1 in
             der KI zu werden.
           </p>
-          <button className="mt-4 lg:mt-12 p-4 bg-custom-red text-custom-white rounded-lg lg:w-1/3 2xl:w-2/3 flex items-center justify-between">
-            <LinkGeoCheck />
-            <FiArrowRight />
-          </button>
+          <GEOCheckBtn className="mt-8" />
         </div>
-        <div className="mt-12 lg:mt-0 xl:min-w-1/2 2xl:min-w-1/3">
+        <div className="mt-24 lg:mt-12 xl:min-w-1/3">
           <Image
             src="/images/screenshots/ki_screenshot.png"
             style={{ width: "600px" }}
             alt="Screenshot einer KI Antwort"
             height={300}
             width={500}
+            className="mx-auto"
           />
-          <p className="p-8 italic 2xl:mx-auto text-center lg:text-start 2xl:text-center">
+          <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
             "Wir helfen Unternehmen dabei, die Nummer 1 ihrer Branche werden"
           </p>
         </div>
@@ -92,22 +91,23 @@ export default function GEOBerater() {
         </div>
         <Contact className="p-4 lg:p-8 mt-12" />
       </section>
-      <section className="mt-24 lg:mt-12 flex flex-col lg:flex-row gap-8 lg:gap-12 lg:p-32 lg:py-24 2xl:gap-32 2xl:justify-center ">
+      <section className="mt-24 xl:mt-12 flex flex-col xl:flex-row gap-8 xl:gap-12 xl:p-32 xl:py-24 2xl:gap-32 2xl:justify-center ">
         <div className="min-w-1/2 2xl:min-w-1/3 relative">
-          <div className="lg:absolute -top-48">
+          <div className="xl:absolute -top-48">
             <Image
               src="/images/portraits/39321-4133web.jpg"
               style={{ width: "600px" }}
               alt="Portrait Jan Kroesche"
               height={500}
               width={300}
+              className="mx-auto"
             />
-            <p className="text-center lg:text-start p-8 italic mx-auto text-lg">
+            <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
               "Wir helfen Unternehmen dabei, die Nummer 1 ihrer Branche werden"
             </p>
           </div>
         </div>
-        <div className="mx-4 lg:m-0 flex flex-col gap-4 2xl:max-w-1/2 3xl:max-w-1/3">
+        <div className="mx-4 xl:m-0 flex flex-col gap-4 2xl:max-w-1/2 3xl:max-w-1/3">
           <h2 className="lg:!text-3xl/10 tracking-wide font-semibold">
             Jan Krösche & Team: Deine GEO Berater für mehr{" "}
             <span className="text-custom-red">Sichtbarkeit in KI Systemen</span>
@@ -133,19 +133,16 @@ export default function GEOBerater() {
             helfen Dir, dass Deine Firmen-Website am häufigsten in den
             KI-Antworten auftauchen.
           </p>
-          <button className="mt-8 lg:mt-12 p-4 bg-custom-red text-custom-white rounded-lg lg:w-2/3 flex items-center justify-between">
-            <LinkGeoCheck />
-            <FiArrowRight />
-          </button>
+          <GEOCheckBtn className="mt-8" />
         </div>
       </section>
-      <section className="mt-24 px-4 lg:m-0 lg:p-32 relative bg-custom-white">
+      <section className="mt-24 px-4 py-24 xl:m-0 xl:p-32 relative bg-custom-white">
         <div className="lg:max-w-2/3">
-          <h2 className="lg:!text-3xl/10 tracking-wide font-semibold">
+          <h1>
             Persönliche
             <span className="text-custom-red"> GEO Dienstleistung</span> aus
             einer Hand
-          </h2>
+          </h1>
         </div>
         <div className="lg:text-lg">
           <p>
@@ -171,8 +168,7 @@ export default function GEOBerater() {
       <section className="px-4 pt-24 pb-12 lg:pb-32 lg:px-32 bg-custom-white">
         <h1 className="text-center tracking-wide">
           Seit 2017 haben wir schon über
-          <span className="text-custom-red"> 500 Firmen</span> im SEO
-          geholfen
+          <span className="text-custom-red"> 500 Firmen</span> im SEO geholfen
         </h1>
         <div className="pt-4 lg:pt-16 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4 items-stretch">
           {references.slice(0, 4).map((s: any, index: number) => (
@@ -249,20 +245,18 @@ export default function GEOBerater() {
             Deine Website an und schickt Dir ein paar Tipps als pdf-Datei per
             Mail zu. Komplett kostenlos.
           </p>
-          <button className="mt-12 p-4 bg-custom-red text-custom-white rounded-lg lg:w-2/3 flex items-center justify-between">
-            <LinkGeoCheck />
-            <FiArrowRight />
-          </button>
+          <GEOCheckBtn className="mt-8" />
         </div>
-        <div className="min-w-1/2 2xl:min-w-1/3 relative">
+        <div className="mt-24 lg:mt-12 xl:min-w-1/3">
           <Image
             src="/images/screenshots/ki_screenshot_2.png"
             style={{ width: "600px" }}
             alt="Screenshot einer KI Antwort"
             height={300}
             width={500}
+            className="mx-auto"
           />
-          <p className="p-8 italic 2xl:mx-auto 2xl:text-center">
+          <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
             "Wir helfen Unternehmen dabei, die Nummer 1 ihrer Branche werden"
           </p>
         </div>
@@ -323,10 +317,10 @@ export default function GEOBerater() {
               alt="Portrait Jan Kroesche"
               height={500}
               width={300}
+              className="mx-auto"
             />
-            <p className="p-8 px-24 text-center italic text-lg">
-              "Wir sind für Dich erreichbar und kümmern uns persönlich um deine
-              Sichtbarkeit"
+            <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
+              "Wir helfen Unternehmen dabei, die Nummer 1 ihrer Branche werden"
             </p>
           </div>
         </div>
@@ -350,10 +344,7 @@ export default function GEOBerater() {
             in Kontakt und erhältst immer einen Überblick, welche Arbeiten
             anstehen.
           </p>
-          <button className="mt-12 p-4 bg-custom-red text-custom-white rounded-lg lg:w-2/3 flex items-center justify-between">
-            <LinkGeoCheck />
-            <FiArrowRight />
-          </button>
+          <GEOCheckBtn className="mt-8" />
         </div>
       </section>
     </div>

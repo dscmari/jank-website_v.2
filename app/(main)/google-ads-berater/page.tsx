@@ -12,6 +12,7 @@ import { adsBeraterSixBox } from "@/app/content/SixBoxLayoutContent";
 import references from "@/app/content/referencesList";
 import FiveStarRating from "@/app/components/FiveStarRating";
 import { GoDiamond } from "react-icons/go";
+import AdsKursBtn from "@/app/components/buttons/AdsKursBtn";
 
 export const metadata: Metadata = {
   title: "Google Ads Berater Jan Krösche | Experte für Google Werbung",
@@ -28,7 +29,7 @@ export default function page() {
         imgPathMobile={"/images/portraits/39321-4190.jpg"}
         imgPathDesktop={"/images/portraits/39321-4211_02.jpg"}
       />
-      <section className="flex flex-col 2xl:flex-row 2xl:items-center px-4 pt-8 lg:gap-12 lg:p-32 lg:py-32 2xl:gap-32 2xl:justify-center">
+      <section className="flex flex-col xl:flex-row xl:items-center px-4 pt-8 lg:gap-12 lg:p-32 lg:py-32 2xl:gap-32 2xl:justify-center">
         <div className="flex-1 flex flex-col">
           <h2 className="lg:!text-3xl/10 tracking-wide font-semibold">
             Mit unserer{" "}
@@ -52,26 +53,20 @@ export default function page() {
             Schweiz als Google Ads Berater zur Seite. Wir helfen Dir, die Nummer
             1 auf Google zu werden und mehr Neukundenumsatz zu machen.
           </p>
-          <button className="mt-4 lg:mt-12 p-4 bg-custom-red text-custom-white rounded-lg lg:w-1/3 2xl:w-2/3 flex items-center justify-between">
-            <LinkAdsKurs />
-            <FiArrowRight />
-          </button>
+          <AdsKursBtn className="mt-8 xl:max-w-full 2xl:max-w-2/3" />
         </div>
-        <div className="mt-12 lg:mt-0 xl:min-w-1/3">
+        <div className="mt-12 md:mt-24 xl:mt-0 xl:min-w-1/3">
           <Image
             src="/images/screenshots/ads-beraters_.png"
             style={{ width: "600px" }}
             alt="Screenshot einer Google Ads Werbung"
             height={300}
             width={500}
+            className="mx-auto"
           />
-          <p className="lg:hidden p-8 italic 2xl:mx-auto text-center lg:text-start 2xl:text-center">
+          <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
             „Mit der richtigen Google Werbung stehst Du schon in kurzer Zeit
             ganz oben in der Google Suche!“
-          </p>
-          <p className="hidden lg:block p-8 italic 2xl:mx-auto text-center lg:text-start 2xl:text-center">
-            „Mit der richtigen Google Werbung stehst Du schon in kurzer <br />{" "}
-            Zeit ganz oben in der Google Suche!“
           </p>
         </div>
       </section>
@@ -109,8 +104,9 @@ export default function page() {
               alt="Portrait Jan Kroesche"
               height={500}
               width={300}
+              className="mx-auto"
             />
-            <p className="text-center p-8 italic mx-auto text-lg">
+            <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
               "Wir helfen Unternehmen dabei, die Nummer 1 ihrer Branche werden"
             </p>
           </div>
@@ -269,10 +265,7 @@ export default function page() {
             kannst, wie Du möchtest. Dann hast Du später eine bessere
             Entscheidungsgrundlage.
           </p>
-          <button className="mt-12 p-4 bg-custom-red text-custom-white rounded-lg lg:w-2/3 flex items-center justify-between">
-            <LinkAdsKurs />
-            <FiArrowRight />
-          </button>
+          <AdsKursBtn className="mt-8" />
         </div>
         <div className="min-w-1/2 2xl:min-w-1/3 relative">
           <Image
@@ -281,14 +274,11 @@ export default function page() {
             alt="Screenshot einer KI Antwort"
             height={300}
             width={500}
+            className="mx-auto"
           />
-          <p className="lg:hidden p-8 text-center">
+          <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
             „Wir halten die Zahlen Deiner Google Ads Kampagne im Blick und
             optimieren sie laufend weiter“
-          </p>
-          <p className="hidden lg:block p-8 2xl:mx-auto lg:text-start 2xl:text-center">
-            „Wir halten die Zahlen Deiner Google Ads Kampagne im <br />
-            Blick und optimieren sie laufend weiter“
           </p>
         </div>
       </section>
@@ -331,7 +321,7 @@ export default function page() {
         </p>
       </section>
       <section className="lg:bg-custom-white lg:mt-48 lg:flex gap-12 lg:p-32 lg:pb-48 xl:pb-80 2xl:gap-32 2xl:justify-center ">
-        <div className="mt-12 lg:m-0 min-w-1/2 2xl:min-w-1/3 lg:relative">
+        <div className="mt-24 lg:m-0 min-w-1/2 2xl:min-w-1/3 lg:relative">
           <div className="lg:absolute -top-48">
             <Image
               src="/images/portraits/39321-4194.jpg"
@@ -339,14 +329,15 @@ export default function page() {
               alt="Portrait Jan Kroesche"
               height={500}
               width={300}
+              className="mx-auto"
             />
-            <p className="p-8 px-24 text-center">
+            <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
               "Wir sind für Dich erreichbar und kümmern uns persönlich um deine
               Sichtbarkeit"
             </p>
           </div>
         </div>
-        <div className="mx-4 lg:m-0 flex flex-col gap-4 2xl:max-w-1/2 3xl:max-w-1/3">
+        <div className="mx-4 mt-12 lg:m-0 flex flex-col gap-4 2xl:max-w-1/2 3xl:max-w-1/3">
           <h1 className="tracking-wide text-center lg:text-start mb-4 lg:mb-0">
             Dein <span className="text-custom-red">Google Ads Berater </span>{" "}
             kümmert sich persönlich um Dich
@@ -365,10 +356,7 @@ export default function page() {
             Deiner Google Ads Kampagne verbessert hat. Wir halten Dich immer auf
             dem Laufenden und stehen Dir persönlich zur Seite.
           </p>
-          <button className="mt-12 p-4 bg-custom-red text-custom-white rounded-lg lg:w-2/3 flex items-center justify-between">
-            <LinkAdsKurs />
-            <FiArrowRight />
-          </button>
+          <AdsKursBtn className="mt-8" />
         </div>
       </section>
     </div>

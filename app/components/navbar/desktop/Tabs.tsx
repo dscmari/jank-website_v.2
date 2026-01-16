@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import Tab from "./Tab";
@@ -19,35 +19,35 @@ const Tabs = () => {
     } else if (val === null) {
       setDir(null);
     }
-
     setSelected(val);
   };
 
-const TABS = [
-   {
-    title: "Leistungen",
-    Component: NavServices,
-  },
-  {
-    title: "Preispakete",
-    Component: NavPricing,
-    link: "/preise/"
-  },
+  const TABS = [
     {
-    title: "Referenzen",
-    Component: NavReferences,
-    link: "/referenzen/"
-  },
-  {
-    title: "Videos",
-    Component: NavVideos,
-    link: "/videos/"
-  },
+      title: "Leistungen",
+      Component: NavServices,
+    },
     {
-    title: "GEO Tracker",
-    Component: NavKITracker,
-  },
-].map((n, idx) => ({ ...n, id: idx + 1 }));
+      title: "Preispakete",
+      Component: NavPricing,
+      link: "/preise/",
+    },
+    {
+      title: "Referenzen",
+      Component: NavReferences,
+      link: "/referenzen/",
+    },
+    {
+      title: "Videos",
+      Component: NavVideos,
+      link: "/videos/",
+    },
+    {
+      title: "GEO Tracker",
+      Component: NavKITracker,
+      link: "/geo-berater/geo-tracker/",
+    },
+  ].map((n, idx) => ({ ...n, id: idx + 1 }));
 
   return (
     <div

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function page() {
   return (
     <div className="bg-custom-white pb-32">
-      <div className="pt-12 lg:px-32 px-4 lg:pt-32 lg:pb-16 lg:max-w-2/3">
+      <div className="pt-12 lg:px-32 px-4 xl:pr-0 lg:pt-32 lg:pb-16 xl:max-w-2/3">
         <h1 className="lg:!text-5xl/14">
           Aktuelle <span className="text-custom-red">GEO </span> Webinare
         </h1>
@@ -31,7 +31,7 @@ export default function page() {
           dir jetzt deinen Wissensvorsprung.
         </p>
       </div>
-      <div className="flex flex-col lg:flex-row justify-center gap-16 lg:gap-32 px-4 lg:px-32 mt-12">
+      <div className="flex flex-col items-center xl:flex-row justify-center gap-16 lg:gap-32 px-4 lg:px-32 mt-12">
         <div className="bg-white max-w-xl rounded-lg">
           <div className="relative">
             <Image

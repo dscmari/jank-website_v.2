@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import InfoBtn from "@/app/components/buttons/InfoBtn";
-import { IoIosCheckmarkCircle } from "react-icons/io";
 import KroescheWorkshopIntroLayout from "@/app/components/layouts/KroescheWorkshopIntroLayout";
 import { googleAdsKurs } from "@/app/content/KroescheKurseContent";
 
@@ -26,7 +25,7 @@ export default function page() {
 
       <KroescheWorkshopIntroLayout workshop={googleAdsKurs} />
       <section className="lg:hidden mt-12 p-4">
-        <InfoBtn content="Google Ads Kurs" />
+        <InfoBtn className="mx-auto" content="Google Ads Kurs" />
         <h1 className="mt-8">
           Mehr Sichtbarkeit und{" "}
           <span className="text-custom-red">mehr Kunden </span> mit gezielter
@@ -55,10 +54,21 @@ export default function page() {
             voranbringen wollen und nach Werbemöglichkeiten suchen, um digital
             stärker zu werden.
           </p>
-          <p>
-            Kursanmeldung per Mail unter{" "}
-            <span className="text-custom-red">jan@jankroesche.de</span>{" "}
+          <div className="mt-12 lg:mt-0 xl:min-w-1/3">
+          <Image
+            src="/images/screenshots/ads-kurs.png"
+            style={{ width: "600px" }}
+            alt="Screenshot einer Google Suche"
+            height={300}
+            width={500}
+            className="mx-auto"
+          />
+          <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
+            "Gibt man bei Google „Anwalt München“ ein, erscheinen ganz oben die
+            bezahlten Suchanzeigen – auch Google Ads genannt. Mit Google Ads
+            kannst Du in kurzer Zeit nach oben kommen.“
           </p>
+        </div>
         </div>
       </section>
       <section className="hidden lg:flex flex-col lg:flex-row gap-12 mt-64 lg:bg-custom-white px-32 pt-24 pb-48 2xl:gap-32 2xl:justify-center ">
@@ -115,61 +125,13 @@ export default function page() {
           </p>
         </div>
       </section>
-      <section className="flex flex-col 2xl:flex-row 2xl:items-center px-4 pt-8 lg:gap-12 lg:p-32 lg:py-32 2xl:gap-32 2xl:justify-center">
-        <div className="flex-1 flex flex-col">
-          <h1 className="text-center">
-            Mehr Sichtbarkeit und{" "}
-            <span className="text-custom-red">mehr Kunden </span> mit gezielter
-            Google Werbung
-          </h1>
-          <p>
-            Für viele Unternehmen ist Google Ads der wichtigste Kanal, um
-            Anfragen über die Website zu erhalten.
-          </p>
-          <p>
-            Im kostenlosen Google Ads Kurs lernst Du, was Google Ads eigentlich
-            ist und wie Du selbst auf Google Werbung schalten kannst. Wir
-            schauen uns gemeinsam eine echte Google Ads Kampagne an, damit Du
-            einen guten Überblick bekommst.
-          </p>
-          <p>
-            Zudem lernst Du im Kurs wichtige Kennzahlen und Einstellungen
-            kennen, die Deine Google Werbung effizient machen.
-          </p>
-          <p>
-            Der kostenlose Google Ads Kurs ist ideal für Dich, wenn Du Deine
-            Website bei Google sichtbarer machen willst und mehr Anfragen
-            brauchst. Der Kurs richtet sich an alle, die ihr Geschäft
-            voranbringen wollen und nach Werbemöglichkeiten suchen, um digital
-            stärker zu werden.
-          </p>
-          <p className="mt-4">
-            Kursanmeldung per Mail unter{" "}
-            <span className="text-custom-red">jan@jankroesche.de</span>{" "}
-          </p>
-        </div>
-        <div className="mt-12 lg:mt-0 xl:min-w-1/3">
-          <Image
-            src="/images/screenshots/ads-kurs.png"
-            style={{ width: "600px" }}
-            alt="Screenshot einer Google Suche"
-            height={300}
-            width={500}
-          />
-          <p className="p-8 max-w-xl 2xl:mx-auto text-center lg:text-start 2xl:text-center">
-            "Gibt man bei Google „Anwalt München“ ein, erscheinen ganz oben die
-            bezahlten Suchanzeigen – auch Google Ads genannt. Mit Google Ads
-            kannst Du in kurzer Zeit nach oben kommen.“
-          </p>
-        </div>
-      </section>
-      <section className="bg-custom-white mt-12 px-4 lg:px-32 py-24 lg:py-32">
+      <section className="bg-custom-white mt-12 lg:m-0 px-4 lg:px-32 py-24 lg:py-32">
         <h1 className="text-center lg:text-start !mb-8 lg:!mb-12">
           Das sagen <span className="text-custom-red">zufriedene </span>
           Kursteilnehmer
         </h1>
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-2">
-          <div className="flex flex-col p-8 bg-white rounded-xl">
+        <div className="flex flex-col lg:flex-row gap-8">
+          <div className="lg:flex-1 flex flex-col p-8 bg-white rounded-xl">
             <div className="flex flex-col items-start gap-2">
               <span className="text-white bg-custom-red font-semibold tracking-tight py-2 px-4 rounded-lg">
                 Kursteilnehmer
@@ -196,7 +158,7 @@ export default function page() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col p-8 bg-white rounded-xl">
+          <div className="lg:flex-1 flex flex-col p-8 bg-white rounded-xl">
             <div className="flex flex-col items-start gap-2">
               <span className="text-white bg-custom-red font-semibold tracking-tight py-2 px-4 rounded-lg">
                 Kursteilnehmer
@@ -224,12 +186,15 @@ export default function page() {
           </div>
         </div>
       </section>
-      <KroescheWorkshopIntroLayout workshop={googleAdsKurs} />
+      <KroescheWorkshopIntroLayout
+        className="mt-24 lg:mt-0"
+        workshop={googleAdsKurs}
+      />
       <section className="hidden lg:flex flex-col lg:flex-row gap-12 mt-64 lg:bg-custom-white px-32 pt-24 pb-48 2xl:gap-32 2xl:justify-center ">
         <div className="lg:min-w-1/2 2xl:min-w-1/3 lg:relative">
           <div className="lg:absolute lg:-top-48">
             <Image
-              src="/images/portraits/39321-4319.jpg"
+              src="/images/portraits/39321-3997.jpg"
               style={{ width: "600px" }}
               alt="Portrait Jan Kroesche"
               height={800}

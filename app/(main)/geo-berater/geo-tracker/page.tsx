@@ -23,7 +23,7 @@ export default function page() {
   return (
     <div>
       <div className="pt-12 lg:px-32 px-4 lg:pt-32 lg:pb-16 xl:max-w-3/4 2xl:max-w-2/3">
-        <h1 className="2xl:!text-5xl/14">
+        <h1 className="text-center md:px-32 lg:px-0 lg:text-start 2xl:!text-5xl/14">
           Mit dem <span className="text-custom-red">Krösche GEO Tracker</span>{" "}
           misst Du Deine KI Sichtbarkeit bei ChatGPT & Co.
         </h1>

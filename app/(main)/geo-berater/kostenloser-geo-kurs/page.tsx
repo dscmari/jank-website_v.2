@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import InfoBtn from "@/app/components/buttons/InfoBtn";
-import { IoIosCheckmarkCircle } from "react-icons/io";
 import KroescheWorkshopIntroLayout from "@/app/components/layouts/KroescheWorkshopIntroLayout";
 import { geoKurs } from "@/app/content/KroescheKurseContent";
 
@@ -9,17 +8,11 @@ export const metadata: Metadata = {
   title: "Kostenloser GEO Kurs | GEO Schulung & GEO Seminar",
 };
 
-const geoKursBullets = [
-  "Der GEO Kurs findet nur mit Dir oder in kleinen Gruppen statt (je nach Auslastung)",
-  "Der Kurs ist live – Du kannst Fragen stellen",
-  "Du kannst Dich per Mail anmelden jan@jankroesche.de",
-  "Du erhältst passende Terminvorschläge per Mail",
-];
 
 export default function page() {
   return (
     <div>
-      <div className="hidden lg:block lg:px-32 px-4 lg:pt-32 lg:pb-16 lg:max-w-2/3">
+      <div className="hidden lg:block lg:px-32 xl:pr-0 px-4 lg:pt-32 lg:pb-16 xl:max-w-2/3">
         <h1 className="!text-5xl/14">
           Kostenloser <span className="text-custom-red">GEO </span> Kurs
         </h1>
@@ -65,9 +58,9 @@ export default function page() {
           </p>
         </div>
       </section>
-      <section className="hidden lg:flex flex-col lg:flex-row gap-12 mt-64 lg:bg-custom-white px-32 pt-24 pb-48 2xl:gap-32 2xl:justify-center ">
-        <div className="lg:min-w-1/2 2xl:min-w-1/3 lg:relative">
-          <div className="lg:absolute lg:-top-48">
+      <section className="hidden xl:flex flex-col xl:flex-row gap-12 mt-64 xl:bg-custom-white px-32 pt-24 pb-48 2xl:gap-32 2xl:justify-center ">
+        <div className="lg:min-w-1/2 2xl:min-w-1/3 xl:relative">
+          <div className="xl:absolute xl:-top-48">
             <Image
               src="/images/portraits/39321-4319.jpg"
               style={{ width: "600px" }}
@@ -159,8 +152,9 @@ export default function page() {
             alt="Screenshot einer ChatGPT Suche"
             height={300}
             width={500}
+            className="mx-auto"
           />
-          <p className="p-8 max-w-xl 2xl:mx-auto text-center lg:text-start 2xl:text-center">
+       <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
             "Das Hotel Schwabinger Wahrheit erscheint in der KI Antwort von
             ChatGPT ganz oben. Durch geziete GEO-Umsetzungen haben wir das für
             unseren Kunden erreicht.“
@@ -172,8 +166,8 @@ export default function page() {
           Das sagen <span className="text-custom-red">zufriedene </span>
           Kursteilnehmer
         </h1>
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-2">
-          <div className="flex flex-col p-8 bg-white rounded-xl">
+        <div className="flex flex-col lg:flex-row gap-8">
+          <div className="lg:flex-1 flex flex-col p-8 bg-white rounded-xl">
             <div className="flex flex-col items-start gap-2">
               <span className="text-white bg-custom-red font-semibold tracking-tight py-2 px-4 rounded-lg">
                 Kursteilnehmer
@@ -199,7 +193,7 @@ export default function page() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col p-8 bg-white rounded-xl">
+          <div className="lg:flex-1 flex flex-col p-8 bg-white rounded-xl">
             <div className="flex flex-col items-start gap-2">
               <span className="text-white bg-custom-red font-semibold tracking-tight py-2 px-4 rounded-lg">
                 Kursteilnehmerin

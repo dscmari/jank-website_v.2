@@ -35,7 +35,7 @@ export default function PricingGEOTracker({ className, pricingBoxes }: Props) {
               <h1 className="text-center mt-16">{e.title}</h1>
               <p className="mt-4 mb-8 font-light text-base/5">{e.introText}</p>
               <span className="font-semibold tracking-tight">Leistungen</span>
-              <div key={index} className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1 gap-2 mt-2">
+              <div key={index} className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1 gap-2 mt-4">
                 {e.services.map((service, index) => (
                   <div key={index} className="flex items-start gap-2">
                     <IoIosCheckmarkCircle

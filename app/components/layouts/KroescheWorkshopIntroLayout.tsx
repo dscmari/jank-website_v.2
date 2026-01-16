@@ -25,12 +25,13 @@ type Workshop = {
 
 type Props = {
   workshop: Workshop;
+  className?: string;
 };
 
-export default function KroescheWorkshopIntroLayout({ workshop }: Props) {
+export default function KroescheWorkshopIntroLayout({ className, workshop }: Props) {
   return (
     <div>
-      <section className="flex flex-col lg:flex-row gap-8 lg:px-32 lg:mt-24">
+      <section className={`flex flex-col lg:flex-row gap-8 lg:px-32 lg:mt-24 ${className}`}>
         <div className="px-4 lg:p-8 flex-1">
           {workshop.introduction.title}
           <InfoBtn
@@ -45,7 +46,7 @@ export default function KroescheWorkshopIntroLayout({ workshop }: Props) {
             {workshop.introduction.textBoxFour}
           </div>
         </div>
-        <div className="flex-1 bg-custom-white flex flex-col justify-between py-12 lg:pt-0 px-4 lg:p-8 rounded-lg">
+        <div className="flex-1 bg-custom-white flex flex-col justify-between py-12 lg:pt-0 px-4 lg:p-8 mt-12 md:mx-4 lg:m-0 rounded-lg">
           <div>
             <div className="flex flex-col items-start gap-2 pt-8">
               {workshop.content.iconText}

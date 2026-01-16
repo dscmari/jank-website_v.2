@@ -22,7 +22,7 @@ export default function page() {
 
   return (
     <div>
-      <div className="hidden lg:block lg:px-32 px-4 lg:pt-32 lg:pb-16 lg:max-w-2/3">
+      <div className="hidden lg:block lg:px-32 px-4 lg:pt-32 lg:pb-16 xl:pr-0 xl:max-w-2/3">
         <h1 className="!text-5xl/14">
           GEO Workshop für{" "}
           <span className="text-custom-red"> Werbeagenturen</span>
@@ -41,7 +41,7 @@ export default function page() {
           und <span className="text-custom-red"> GEO </span> Entwicklungen nicht
           mehr hinterherzukommen?
         </h1>
-        <h2>Mit GEO-Expertise Kunden halten und Agentur-Wachstum sichern</h2>
+        <h2>Mit GEO Expertise Kunden halten und Agentur-Wachstum sichern</h2>
         <div className="flex flex-col gap-4">
           <p>
             Die Fragen Deiner Kunden werden komplexer rund um KI? Dein Kopf
@@ -353,7 +353,7 @@ export default function page() {
             </p>
           </div>
         </div>
-        <div className="flex-1 bg-custom-white flex flex-col justify-between py-12 lg:pt-0 px-4 lg:p-8 rounded-lg">
+        <div className="flex-1 bg-custom-white flex flex-col justify-between py-12 lg:pt-0 px-4 md:mx-4 lg:mx-0 lg:p-8 rounded-lg">
           <div>
             <div className="flex flex-col items-start gap-2 pt-8">
               <span className="text-white bg-custom-red font-semibold tracking-tight py-1 px-2 rounded-lg">
