@@ -9,7 +9,7 @@ type Props = {
 export default function AdsKursBtn({ className }: Props) {
   return (
     <button
-      className={`md:w-1/2 md:mx-auto lg:mx-0 lg:w-full lg:max-w-2/3 p-4 bg-custom-red text-lg text-white rounded-xl flex items-center justify-between ${className}`}
+      className={`md:w-1/2 md:mx-auto lg:mx-0 lg:w-full p-4 bg-custom-red text-lg text-white rounded-xl flex items-center justify-between ${className}`}
     >
       <LinkAdsKurs/>
       <FiArrowRight color="white" />

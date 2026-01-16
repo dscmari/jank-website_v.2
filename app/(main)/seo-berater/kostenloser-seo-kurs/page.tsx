@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import InfoBtn from "@/app/components/buttons/InfoBtn";
-import { IoIosCheckmarkCircle } from "react-icons/io";
 import KroescheWorkshopIntroLayout from "@/app/components/layouts/KroescheWorkshopIntroLayout";
 import { seoKurs } from "@/app/content/KroescheKurseContent";
 
@@ -11,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function page() {
   return (
-    <div>
+    <div className="dark:pt-12">
       <div className="hidden lg:block lg:px-32 px-4 lg:pt-32 lg:pb-16 lg:max-w-2/3">
         <h1 className="!text-5xl/14">
           Kostenloser <span className="text-custom-red">SEO </span> Kurs
@@ -26,7 +25,7 @@ export default function page() {
 
       <KroescheWorkshopIntroLayout workshop={seoKurs} />
       <section className="lg:hidden mt-12 p-4">
-        <InfoBtn content="SEO Kurs" />
+        <InfoBtn content="SEO Kurs" className="dark:bg-darkmode-blue" />
         <h1 className="mt-8">
           Mit dem kostenlosen SEO Kurs bringst Du Deine Website auf{" "}
           <span className="text-custom-red"> Platz 1 bei Google</span>
@@ -79,7 +78,7 @@ export default function page() {
             Mit dem kostenlosen SEO Kurs bringst Du Deine Website auf{" "}
             <span className="text-custom-red"> Platz 1 bei Google</span>
           </h1>
-          <InfoBtn content="SEO Kurs" className="mx-auto mt-12" />
+          <InfoBtn content="SEO Kurs" className="mx-auto mt-12 dark:bg-darkmode-blue" />
           <h2 className="text-center mt-4">
             So dominierst Du die Google-Suche in Deiner Branche
           </h2>
@@ -161,7 +160,7 @@ export default function page() {
           Kursteilnehmer
         </h1>
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-2">
-          <div className="flex flex-col p-8 bg-white rounded-xl">
+          <div className="flex flex-col p-8 bg-white rounded-xl dark">
             <div className="flex flex-col items-start gap-2">
               <span className="text-white bg-custom-red font-semibold tracking-tight py-2 px-4 rounded-lg">
                 Kursteilnehmer
@@ -186,7 +185,7 @@ export default function page() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col p-8 bg-white rounded-xl">
+          <div className="flex flex-col p-8 bg-white rounded-xl dark">
             <div className="flex flex-col items-start gap-2">
               <span className="text-white bg-custom-red font-semibold tracking-tight py-2 px-4 rounded-lg">
                 Kursteilnehmerin
@@ -214,7 +213,7 @@ export default function page() {
         </div>
       </section>
       <KroescheWorkshopIntroLayout className="mt-24 lg:m-0" workshop={seoKurs} />
-      <section className="hidden lg:flex flex-col lg:flex-row gap-12 mt-64 lg:bg-custom-white px-32 pt-24 pb-48 2xl:gap-32 2xl:justify-center ">
+      <section className="hidden lg:flex flex-col lg:flex-row gap-12 mt-64 lg:bg-custom-white px-32 pt-24 pb-48 2xl:gap-32 2xl:justify-center dark">
         <div className="lg:min-w-1/2 2xl:min-w-1/3 lg:relative">
           <div className="lg:absolute lg:-top-48">
             <Image

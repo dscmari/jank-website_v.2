@@ -53,7 +53,7 @@ export default function page() {
             Schweiz als Google Ads Berater zur Seite. Wir helfen Dir, die Nummer
             1 auf Google zu werden und mehr Neukundenumsatz zu machen.
           </p>
-          <AdsKursBtn className="mt-8 xl:max-w-full 2xl:max-w-2/3" />
+          <AdsKursBtn className="mt-8 2xl:max-w-2/3" />
         </div>
         <div className="mt-12 md:mt-24 xl:mt-0 xl:min-w-1/3">
           <Image
@@ -70,7 +70,7 @@ export default function page() {
           </p>
         </div>
       </section>
-      <section className="pt-24 lg:p-32 lg:pb-48 relative lg:bg-custom-white">
+      <section className="pt-24 lg:p-32 dark:pt-16 lg:pb-48 relative lg:bg-custom-white">
         <div className="px-4 lg:px-0 lg:max-w-2/3">
           <h2 className="lg:!text-3xl/10 tracking-wide font-semibold">
             Du kannst es Dir nicht mehr leisten, dass{" "}
@@ -95,7 +95,7 @@ export default function page() {
         </div>
         <Contact className="p-4 lg:p-8 mt-12" />
       </section>
-      <section className="mt-24 lg:mt-12 flex flex-col lg:flex-row gap-8 lg:gap-12 lg:p-32 lg:py-24 2xl:gap-32 2xl:justify-center ">
+      <section className="mt-24 lg:mt-12 flex flex-col lg:flex-row gap-8 lg:gap-12 lg:p-32 lg:py-24 2xl:gap-32 2xl:justify-center dark">
         <div className="min-w-1/2 2xl:min-w-1/3 relative">
           <div className="lg:absolute -top-48">
             <Image
@@ -111,7 +111,7 @@ export default function page() {
             </p>
           </div>
         </div>
-        <div className="mx-4 lg:m-0 flex flex-col gap-4 2xl:max-w-1/2 3xl:max-w-1/3">
+        <div className="mx-4 lg:m-0 flex flex-col gap-4 2xl:max-w-1/2 3xl:max-w-1/3 dark:pb-24 dark:lg:pb-0">
           <h2 className="lg:!text-3xl/10 tracking-wide font-semibold">
             Jan Krösche & Team: Deine Google Ads Berater für{" "}
             <span className="text-custom-red">
@@ -137,13 +137,10 @@ export default function page() {
             Als Google Ads Berater helfen wir Firmen, die Reichweite bei Google
             zu steigern und mehr Neukunden zu gewinnen.
           </p>
-          <button className="mt-8 lg:mt-12 p-4 bg-custom-red text-custom-white rounded-lg lg:w-2/3 flex items-center justify-between">
-            <LinkAdsKurs />
-            <FiArrowRight />
-          </button>
+          <AdsKursBtn className="mt-8 2xl:max-w-2/3" />
         </div>
       </section>
-      <section className="mt-24 lg:mt-32 py-12 lg:py-24 px-4 lg:px-32 bg-custom-white">
+      <section className="mt-24 lg:mt-32 dark:mt-16 py-12 lg:py-24 px-4 lg:px-32 bg-custom-white">
         <div className="lg:max-w-2/3">
           <h1 className="text-start tracking-wide">
             Persönliche
@@ -167,14 +164,14 @@ export default function page() {
         </p>
         <TwoBoxLayout boxes={adsBerater} className="mt-12 lg:mt-24" />
       </section>
-      <section className="pt-24 pb-12 lg:pt-16 px-4 lg:px-32 bg-custom-white">
+      <section className="pt-24 pb-12 lg:pt-32 px-4 lg:px-32 bg-custom-white">
         <h1 className="lg:text-center lg:tracking-wide">
           So bringen wir Dich bei{" "}
           <span className="text-custom-red">Google</span> ganz nach oben
         </h1>
-        <SixBoxLayout boxes={adsBeraterSixBox} className="" />
+        <SixBoxLayout boxes={adsBeraterSixBox} className="mt-16" />
       </section>
-      <section className="px-4 pt-24 pb-12 lg:pb-32 lg:px-32 bg-custom-white">
+      <section className="px-4 pt-24 dark:pt-16 pb-12 lg:pb-32 lg:px-32 bg-custom-white">
         <h1 className="text-start tracking-wide mb-4">
           Seit 2017 haben wir schon über
           <span className="text-custom-red"> 500 Firmen </span>
@@ -190,10 +187,10 @@ export default function page() {
           generiert. Google Ads ist daher nicht nice to have, sondern ein
           Umsatzbringer.{" "}
         </p>
-        <div className="pt-4 lg:pt-16 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4 items-stretch">
+        <div className="pt-16 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4 items-stretch">
           {references.slice(0, 4).map((s: any, index: number) => (
             <section key={index} className="flex flex-col">
-              <div className="h-full bg-white p-8 rounded-xl">
+              <div className="h-full bg-white p-8 rounded-xl dark">
                 <FiveStarRating />
                 <h2 className="mt-8">{s.title}</h2>
                 <p>{s.text}</p>
@@ -235,7 +232,7 @@ export default function page() {
           ))}
         </div>
       </section>
-      <section className="flex flex-col 2xl:flex-row 2xl:items-center gap-12 px-4 pt-24 lg:p-32 lg:py-32 2xl:gap-32 2xl:justify-center">
+      <section className="flex flex-col 2xl:flex-row 2xl:items-center gap-12 px-4 pt-24 dark:pt-16 lg:px-32 lg:py-32 2xl:gap-32 2xl:justify-center">
         <div className="flex-1 flex flex-col gap-4">
           <h1 className="lg:tracking-wide">
             Noch unsicher? Dann schau Dir den{" "}
@@ -304,12 +301,10 @@ export default function page() {
         <div className="lg:max-w-2/3 px-4 lg:px-0 mt-12"></div>
       </section>
       <section className="mx-4 lg:mt-24 lg:mx-32 lg:mt-32">
-        <div className="lg:max-w-2/3">
-          <h1 className="lg:tracking-wide">
-            Was bringen <span className="text-custom-red">Google Ads</span>{" "}
-            Werbeanzeigen eigentlich?
-          </h1>
-        </div>
+        <h1 className="text-center">
+          Was bringen <span className="text-custom-red">Google Ads</span>{" "}
+          Werbeanzeigen eigentlich?
+        </h1>
         <p>
           Firmen, die bei Google ganz oben stehen, gewinnen die meisten
           Neukunden. Google Ads hat daher nur einen Zweck: Dein Geschäft durch
@@ -320,12 +315,12 @@ export default function page() {
           messbarsten Kanal für Dein Unternehmenswachstum.
         </p>
       </section>
-      <section className="lg:bg-custom-white lg:mt-48 lg:flex gap-12 lg:p-32 lg:pb-48 xl:pb-80 2xl:gap-32 2xl:justify-center ">
-        <div className="mt-24 lg:m-0 min-w-1/2 2xl:min-w-1/3 lg:relative">
+      <section className="lg:bg-custom-white lg:mt-64 lg:flex gap-12 lg:p-32 lg:pb-48 2xl:gap-32 2xl:justify-center dark">
+        <div className="mt-24 lg:m-0 min-w-1/2 2xl:min-w-1/3 lg:relative dark:pt-8 dark:lg:pt-0">
           <div className="lg:absolute -top-48">
             <Image
               src="/images/portraits/39321-4194.jpg"
-              style={{ width: "600px" }}
+              style={{ width: "400px" }}
               alt="Portrait Jan Kroesche"
               height={500}
               width={300}
@@ -337,7 +332,7 @@ export default function page() {
             </p>
           </div>
         </div>
-        <div className="mx-4 mt-12 lg:m-0 flex flex-col gap-4 2xl:max-w-1/2 3xl:max-w-1/3">
+        <div className="mx-4 mt-12 lg:m-0 flex flex-col gap-4 2xl:max-w-1/2 3xl:max-w-1/3 dark:pb-24 dark:lg:pb-0">
           <h1 className="tracking-wide text-center lg:text-start mb-4 lg:mb-0">
             Dein <span className="text-custom-red">Google Ads Berater </span>{" "}
             kümmert sich persönlich um Dich
@@ -356,7 +351,7 @@ export default function page() {
             Deiner Google Ads Kampagne verbessert hat. Wir halten Dich immer auf
             dem Laufenden und stehen Dir persönlich zur Seite.
           </p>
-          <AdsKursBtn className="mt-8" />
+          <AdsKursBtn className="mt-8 2xl:max-w-2/3" />
         </div>
       </section>
     </div>

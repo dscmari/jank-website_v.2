@@ -36,7 +36,7 @@ export default function KroescheWorkshopIntroLayout({ className, workshop }: Pro
           {workshop.introduction.title}
           <InfoBtn
             content={workshop.introduction.infoBtnText}
-            className="mx-auto mt-12"
+            className="mx-auto mt-12 dark"
           />
           {workshop.introduction.subtitle}
           <div className="flex flex-col gap-4 mt-12">
@@ -46,7 +46,7 @@ export default function KroescheWorkshopIntroLayout({ className, workshop }: Pro
             {workshop.introduction.textBoxFour}
           </div>
         </div>
-        <div className="flex-1 bg-custom-white flex flex-col justify-between py-12 lg:pt-0 px-4 lg:p-8 mt-12 md:mx-4 lg:m-0 rounded-lg">
+        <div className="flex-1 bg-custom-white flex flex-col justify-between py-12 lg:pt-0 px-4 lg:p-8 mt-12 md:mx-4 lg:m-0 rounded-xl dark">
           <div>
             <div className="flex flex-col items-start gap-2 pt-8">
               {workshop.content.iconText}

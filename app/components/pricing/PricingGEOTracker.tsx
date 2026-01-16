@@ -21,7 +21,7 @@ export default function PricingGEOTracker({ className, pricingBoxes }: Props) {
         {pricingBoxes.map((e, index) => (
           <div
             key={index}
-            className="bg-white flex flex-col justify-between xl:flex-1 xl:m-0 p-8 rounded-lg"
+            className="bg-white flex flex-col justify-between xl:flex-1 xl:m-0 p-8 rounded-lg dark"
           >
             <div>
               <div className="flex flex-col items-start gap-2">

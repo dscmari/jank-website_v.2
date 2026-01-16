@@ -1,4 +1,9 @@
 import WebsiteCheck from "@/app/components/website-check/WebsiteCheck";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Kostenloser GEO Check | GEO Analyse für KI Sichtbarkeit",
+};
 
 export default function page() {
   return (

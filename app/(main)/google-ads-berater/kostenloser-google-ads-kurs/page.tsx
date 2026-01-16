@@ -23,16 +23,16 @@ export default function page() {
         </h2>
       </div>
 
-      <KroescheWorkshopIntroLayout workshop={googleAdsKurs} />
-      <section className="lg:hidden mt-12 p-4">
-        <InfoBtn className="mx-auto" content="Google Ads Kurs" />
-        <h1 className="mt-8">
+      <KroescheWorkshopIntroLayout workshop={googleAdsKurs} className="dark:pt-12 dark:lg:pt-0" />
+      <section className="lg:hidden mt-24 p-4">
+        <h1 className="text-center md:px-16">
           Mehr Sichtbarkeit und{" "}
           <span className="text-custom-red">mehr Kunden </span> mit gezielter
           Google Werbung
         </h1>
-        <h2>So dominierst Du die Google-Suche in Deiner Branche</h2>
-        <div className="flex flex-col gap-4">
+               <InfoBtn className="mx-auto dark mt-12" content="Google Ads Kurs" />
+        <h2 className="mt-4 text-center">So dominierst Du die Google-Suche in Deiner Branche</h2>
+        <div className="flex flex-col gap-4 mt-8">
           <p>
             Für viele Unternehmen ist Google Ads der wichtigste Kanal, um
             Anfragen über die Website zu erhalten.
@@ -71,7 +71,7 @@ export default function page() {
         </div>
         </div>
       </section>
-      <section className="hidden lg:flex flex-col lg:flex-row gap-12 mt-64 lg:bg-custom-white px-32 pt-24 pb-48 2xl:gap-32 2xl:justify-center ">
+      <section className="hidden lg:flex flex-col lg:flex-row gap-12 mt-64 lg:bg-custom-white px-32 pt-24 pb-48 2xl:gap-32 2xl:justify-center dark">
         <div className="lg:min-w-1/2 2xl:min-w-1/3 lg:relative">
           <div className="lg:absolute lg:-top-48">
             <Image
@@ -81,7 +81,7 @@ export default function page() {
               height={800}
               width={400}
             />
-            <p className="p-8 italic mx-auto text-center font-light">
+          <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
               "Wir helfen Unternehmen dabei, die Nummer 1 ihrer Branche werden"
             </p>
           </div>
@@ -92,7 +92,7 @@ export default function page() {
             <span className="text-custom-red">mehr Kunden </span> mit gezielter
             Google Werbung
           </h1>
-          <InfoBtn content="Google Ads Kurs" className="mx-auto mt-12" />
+          <InfoBtn content="Google Ads Kurs" className="mx-auto mt-12 dark:bg-black" />
           <h2 className="text-center mt-4">
             So dominierst Du die Google-Suche in Deiner Branche
           </h2>
@@ -131,7 +131,7 @@ export default function page() {
           Kursteilnehmer
         </h1>
         <div className="flex flex-col lg:flex-row gap-8">
-          <div className="lg:flex-1 flex flex-col p-8 bg-white rounded-xl">
+          <div className="lg:flex-1 flex flex-col p-8 bg-white rounded-xl dark">
             <div className="flex flex-col items-start gap-2">
               <span className="text-white bg-custom-red font-semibold tracking-tight py-2 px-4 rounded-lg">
                 Kursteilnehmer
@@ -158,7 +158,7 @@ export default function page() {
               </div>
             </div>
           </div>
-          <div className="lg:flex-1 flex flex-col p-8 bg-white rounded-xl">
+          <div className="lg:flex-1 flex flex-col p-8 bg-white rounded-xl dark">
             <div className="flex flex-col items-start gap-2">
               <span className="text-white bg-custom-red font-semibold tracking-tight py-2 px-4 rounded-lg">
                 Kursteilnehmer
@@ -187,10 +187,10 @@ export default function page() {
         </div>
       </section>
       <KroescheWorkshopIntroLayout
-        className="mt-24 lg:mt-0"
+        className="mt-24 lg:mt-0 dark:mt-0"
         workshop={googleAdsKurs}
       />
-      <section className="hidden lg:flex flex-col lg:flex-row gap-12 mt-64 lg:bg-custom-white px-32 pt-24 pb-48 2xl:gap-32 2xl:justify-center ">
+      <section className="hidden lg:flex flex-col lg:flex-row gap-12 mt-64 lg:bg-custom-white px-32 pt-24 pb-48 2xl:gap-32 2xl:justify-center dark">
         <div className="lg:min-w-1/2 2xl:min-w-1/3 lg:relative">
           <div className="lg:absolute lg:-top-48">
             <Image
@@ -200,7 +200,7 @@ export default function page() {
               height={800}
               width={400}
             />
-            <p className="p-8 italic mx-auto text-center font-light">
+   <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
               "Wir helfen Unternehmen dabei, die Nummer 1 ihrer Branche werden"
             </p>
           </div>
@@ -211,7 +211,7 @@ export default function page() {
             <span className="text-custom-red"> kostenlosen </span>Google Ads
             Kurs mit Jan Krösche anmelden
           </h1>
-          <InfoBtn content="Google Ads Kurs" className="mx-auto mt-12" />
+          <InfoBtn content="Google Ads Kurs" className="mx-auto mt-12 dark:bg-black" />
           <h2 className="text-center mt-4">
             Lass uns über Deine Sichbarkeit sprechen
           </h2>

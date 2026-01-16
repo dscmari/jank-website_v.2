@@ -23,7 +23,7 @@ export default function FourBoxLayout({ className, boxes }: Props) {
         {boxes.map((e, index) => (
           <div
             key={index}
-            className="bg-white grid justify-between lg:m-0 p-8 rounded-lg"
+            className="bg-white grid justify-between lg:m-0 p-8 rounded-xl dark"
           >
             <div>
               {" "}

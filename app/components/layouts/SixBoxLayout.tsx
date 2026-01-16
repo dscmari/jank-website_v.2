@@ -14,11 +14,11 @@ type Props = {
 
 export default function SixBoxLayout({className, boxes}: Props) {
   return (
-     <div className={`pt-8 lg:pt-16 lg:pb-32 grid lg:grid-cols-3 gap-4 max-w-5xl mx-auto ${className}`}>
+     <div className={`lg:pb-32 grid lg:grid-cols-3 gap-4 max-w-5xl mx-auto ${className}`}>
           {boxes.map((e, index) => (
             <div
               key={index}
-              className="lg:aspect-square flex flex-col justify-between p-8 bg-white rounded-xl lg:shadow-lg"
+              className="lg:aspect-square flex flex-col justify-between p-8 bg-white rounded-xl dark"
             >
               <div className="flex flex-col pt-4">
                 {e.icon}

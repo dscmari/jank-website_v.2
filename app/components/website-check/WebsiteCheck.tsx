@@ -2,7 +2,6 @@ import Image from "next/image";
 import InfoBtn from "../buttons/InfoBtn";
 import WebsiteCheckForm from "./WebsiteCheckForm";
 
-
 type Props = {
   isGeo?: boolean;
   className?: string;
@@ -13,30 +12,37 @@ export default function WebsiteCheck({ isGeo, className }: Props) {
     <section
       className={`bg-custom-red lg:bg-white text-custom-white lg:text-custom-black p-8 pt-12 dark ${className}`}
     >
-      <div className="lg:flex lg:gap-16">
-        <div className="hidden lg:block max-w-[640px] relative">
-          <img
-            src="/images/portraits/portrait_turned_side.jpg"
-            alt=""
-            className="w-full rounded-tr-4xl rounded-b-4xl"
-          />
-          <div className="absolute w-3/4 text-custom-white left-16 bottom-0 -translate-y-1/4 leading-8 font-semibold">
+      <div className="xl:flex xl:gap-16">
+        <div className="hidden xl:block">
+          <div className="xl:relative">
             <Image
-              src="/images/logo_white_bg_transparent.png"
-              alt="Jan Krösche Logo"
-              style={{ width: "100px" }}
+              src="/images/portraits/portrait_turned_side.jpg"
+              alt=""
+              className="w-full rounded-tr-4xl rounded-b-4xl"
               width={400}
               height={200}
             />
-            <p>
-              "Wir haben schon über 1.000 SEO-Analysen seit 2017 durchgeführt.
-              Wir haben alle Fehler gesehen, die man im SEO machen kann. Von
-              dieser Erfahrung profitierst Du."
-            </p>
+            <div className="xl:absolute p-8 text-custom-white bottom-0 leading-8 font-semibold">
+              <Image
+                src="/images/logo_white_bg_transparent.png"
+                alt="Jan Krösche Logo"
+                style={{ width: "100px" }}
+                width={400}
+                height={200}
+              />
+              <p className="text-sm font-light dark:text-custom-white">
+                "Wir haben schon über 1.000 SEO-Analysen seit 2017 durchgeführt.
+                Wir haben alle Fehler gesehen, die man im SEO machen kann. Von
+                dieser Erfahrung profitierst Du."
+              </p>
+            </div>
           </div>
         </div>
-        <div className="lg:max-w-1/2">
-        <InfoBtn content={"Website Check"} className="lg:mt-8 hidden lg:block dark:bg-black"/>
+        <div className="xl:max-w-1/2">
+          <InfoBtn
+            content={"Website Check"}
+            className="lg:mt-8 hidden lg:block dark:bg-black"
+          />
           <div className="lg:flex lg:flex-col 2xl:justify-center lg:py-8 ">
             <h1 className="mb-4 lg:mb-0 font-semibold tracking-tight lg:text-custom-red">
               {isGeo ? "Kostenloser KI GEO Check" : "Kostenloser Website Check"}
@@ -56,7 +62,7 @@ export default function WebsiteCheck({ isGeo, className }: Props) {
                 kostenlos.
               </p>
             )}
-          <WebsiteCheckForm/>
+            <WebsiteCheckForm />
           </div>
         </div>
       </div>

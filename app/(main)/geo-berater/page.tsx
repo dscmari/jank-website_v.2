@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { FiArrowRight } from "react-icons/fi";
 import references from "@/app/content/referencesList";
 import WebsiteCheck from "@/app/components/website-check/WebsiteCheck";
 import { GoDiamond } from "react-icons/go";
@@ -91,9 +90,9 @@ export default function GEOBerater() {
         </div>
         <Contact className="p-4 lg:p-8 mt-12" />
       </section>
-      <section className="mt-24 xl:mt-12 flex flex-col xl:flex-row gap-8 xl:gap-12 xl:p-32 xl:py-24 2xl:gap-32 2xl:justify-center ">
-        <div className="min-w-1/2 2xl:min-w-1/3 relative">
-          <div className="xl:absolute -top-48">
+      <section className="mt-24 xl:mt-12 flex flex-col xl:flex-row gap-8 xl:gap-12 xl:p-32 xl:py-24 2xl:gap-32 2xl:justify-center dark">
+        <div className="min-w-1/2 2xl:min-w-1/3 xl:relative">
+          <div className="dark:md:pt-24 dark:xl:p-0 xl:absolute -top-48">
             <Image
               src="/images/portraits/39321-4133web.jpg"
               style={{ width: "600px" }}
@@ -107,7 +106,7 @@ export default function GEOBerater() {
             </p>
           </div>
         </div>
-        <div className="mx-4 xl:m-0 flex flex-col gap-4 2xl:max-w-1/2 3xl:max-w-1/3">
+        <div className="mx-4 xl:m-0 flex flex-col gap-4 2xl:max-w-1/2 3xl:max-w-1/3 dark:pb-24 dark:md:pb-32 dark:xl:pb-0">
           <h2 className="lg:!text-3xl/10 tracking-wide font-semibold">
             Jan Krösche & Team: Deine GEO Berater für mehr{" "}
             <span className="text-custom-red">Sichtbarkeit in KI Systemen</span>
@@ -163,8 +162,9 @@ export default function GEOBerater() {
           So kommst Du in den{" "}
           <span className="text-custom-red">KI Antworten</span> ganz nach oben
         </h1>
-        <SixBoxLayout boxes={geoBeraterSixBox} className="" />
+        
       </section>
+      <SixBoxLayout boxes={geoBeraterSixBox} className="" />
       <section className="px-4 pt-24 pb-12 lg:pb-32 lg:px-32 bg-custom-white">
         <h1 className="text-center tracking-wide">
           Seit 2017 haben wir schon über
@@ -173,7 +173,7 @@ export default function GEOBerater() {
         <div className="pt-4 lg:pt-16 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4 items-stretch">
           {references.slice(0, 4).map((s: any, index: number) => (
             <section key={index} className="flex flex-col">
-              <div className="h-full bg-white p-8 rounded-xl">
+              <div className="h-full bg-white p-8 rounded-xl dark">
                 <FiveStarRating />
                 <h2 className="mt-8">{s.title}</h2>
                 <p>{s.text}</p>
@@ -308,23 +308,23 @@ export default function GEOBerater() {
           </p>
         </div>
       </section>
-      <section className="lg:bg-custom-white lg:mt-48 lg:flex gap-12 lg:p-32 lg:pb-48 xl:pb-64 2xl:pb-80 2xl:gap-32 2xl:justify-center ">
+      <section className="lg:bg-custom-white mx-auto lg:mt-48 lg:flex gap-12 lg:p-32 lg:pb-32 2xl:gap-32 2xl:justify-center dark">
         <div className="mt-12 lg:m-0 min-w-1/2 2xl:min-w-1/3 lg:relative">
-          <div className="lg:absolute -top-48">
+          <div className="lg:absolute -top-48 md:dark:pt-32 dark:xl:pt-0">
             <Image
               src="/images/portraits/39321-4194.jpg"
-              style={{ width: "600px" }}
+              style={{ width: "400px" }}
               alt="Portrait Jan Kroesche"
               height={500}
               width={300}
               className="mx-auto"
             />
-            <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
+            <p className="text-sm font-light p-8 max-w-xl mx-auto text-center ">
               "Wir helfen Unternehmen dabei, die Nummer 1 ihrer Branche werden"
             </p>
           </div>
         </div>
-        <div className="mx-4 lg:m-0 flex flex-col gap-4 2xl:max-w-1/2 3xl:max-w-1/3">
+        <div className="mx-4 lg:m-0 flex flex-col gap-4 2xl:max-w-1/2 3xl:max-w-1/3 dark:pb-24 md:dark:pb-32 dark:xl:pb-0">
           <h1 className="tracking-wide text-center lg:text-start mb-4 lg:mb-0">
             Dein <span className="text-custom-red">GEO Berater</span> kümmert
             sich persönlich um Dich

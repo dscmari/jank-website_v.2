@@ -24,15 +24,16 @@ export default function page() {
         </h2>
       </div>
 
-      <KroescheWorkshopIntroLayout workshop={geoKurs} />
+      <KroescheWorkshopIntroLayout workshop={geoKurs} className="dark:pt-12"/>
       <section className="lg:hidden mt-12 p-4">
-        <InfoBtn content="GEO Kurs" />
-        <h1 className="mt-8">
+
+        <h1 className="mt-8 text-center md:px-16">
           Im GEO Kurs lernst Du, wie Deine Website in den{" "}
           <span className="text-custom-red">KI-Antworten </span> zitiert wird
         </h1>
-        <h2>Verpasse nicht den Anschluss an die neue Suche</h2>
-        <div className="flex flex-col gap-4">
+                <InfoBtn content="GEO Kurs" className="mt-12 mx-auto dark" />
+        <h2 className="mt-4 text-center">Verpasse nicht den Anschluss an die neue Suche</h2>
+        <div className="flex flex-col gap-4 mt-4">
           <p>
             KI-Systeme wie ChatGPT, Copilot oder Gemini werden in den nächsten
             Jahren zu einem festen Bestandteil unseres täglichen Tuns werden.
@@ -58,7 +59,7 @@ export default function page() {
           </p>
         </div>
       </section>
-      <section className="hidden xl:flex flex-col xl:flex-row gap-12 mt-64 xl:bg-custom-white px-32 pt-24 pb-48 2xl:gap-32 2xl:justify-center ">
+      <section className="hidden xl:flex flex-col xl:flex-row gap-12 mt-64 xl:bg-custom-white px-32 pt-24 pb-48 2xl:gap-32 2xl:justify-center dark">
         <div className="lg:min-w-1/2 2xl:min-w-1/3 xl:relative">
           <div className="xl:absolute xl:-top-48">
             <Image
@@ -78,7 +79,7 @@ export default function page() {
             Im GEO Kurs lernst Du, wie Deine Website in den{" "}
             <span className="text-custom-red">KI-Antworten </span> zitiert wird
           </h1>
-          <InfoBtn content="GEO Kurs" className="mx-auto mt-12" />
+          <InfoBtn content="GEO Kurs" className="mx-auto mt-12 dark:bg-black" />
           <h2 className="text-center mt-4">
             KI-Sichtbarkeit sichern: Verpasse nicht den Anschluss an die neue
             Suche
@@ -110,7 +111,7 @@ export default function page() {
           </p>
         </div>
       </section>
-      <section className="flex flex-col 2xl:flex-row 2xl:items-center px-4 pt-8 lg:gap-12 lg:p-32 lg:py-32 2xl:gap-32 2xl:justify-center">
+      <section className="flex flex-col 2xl:flex-row 2xl:items-center px-4 pt-24 lg:gap-12 lg:p-32 lg:py-32 2xl:gap-32 2xl:justify-center">
         <div className="flex-1 flex flex-col">
           <h1>
             Du willst den Anschluss nicht verlieren und bei{" "}
@@ -161,13 +162,13 @@ export default function page() {
           </p>
         </div>
       </section>
-      <section className="bg-custom-white mt-12 px-4 lg:px-32 py-24 lg:py-32">
+      <section className="bg-custom-white mt-24 lg:mt-0 px-4 lg:px-32 pt-32 dark:pt-0">
         <h1 className="text-center lg:text-start !mb-8 lg:!mb-12">
           Das sagen <span className="text-custom-red">zufriedene </span>
           Kursteilnehmer
         </h1>
         <div className="flex flex-col lg:flex-row gap-8">
-          <div className="lg:flex-1 flex flex-col p-8 bg-white rounded-xl">
+          <div className="lg:flex-1 flex flex-col p-8 bg-white rounded-xl dark">
             <div className="flex flex-col items-start gap-2">
               <span className="text-white bg-custom-red font-semibold tracking-tight py-2 px-4 rounded-lg">
                 Kursteilnehmer
@@ -193,7 +194,7 @@ export default function page() {
               </div>
             </div>
           </div>
-          <div className="lg:flex-1 flex flex-col p-8 bg-white rounded-xl">
+          <div className="lg:flex-1 flex flex-col p-8 bg-white rounded-xl dark">
             <div className="flex flex-col items-start gap-2">
               <span className="text-white bg-custom-red font-semibold tracking-tight py-2 px-4 rounded-lg">
                 Kursteilnehmerin
@@ -222,8 +223,8 @@ export default function page() {
           </div>
         </div>
       </section>
-      <KroescheWorkshopIntroLayout workshop={geoKurs} />
-      <section className="hidden lg:flex flex-col lg:flex-row gap-12 mt-64 lg:bg-custom-white px-32 pt-24 pb-48 2xl:gap-32 2xl:justify-center ">
+      <KroescheWorkshopIntroLayout workshop={geoKurs} className="mt-24 lg:mt-48" />
+      <section className="hidden lg:flex flex-col lg:flex-row gap-12 mt-64 lg:bg-custom-white px-32 pt-24 pb-48 2xl:gap-32 2xl:justify-center dark">
         <div className="lg:min-w-1/2 2xl:min-w-1/3 lg:relative">
           <div className="lg:absolute lg:-top-48">
             <Image
@@ -244,7 +245,7 @@ export default function page() {
             <span className="text-custom-red"> kostenlosen </span>GEO Kurs mit
             Jan Krösche anmelden
           </h1>
-          <InfoBtn content="GEO Kurs" className="mx-auto mt-12" />
+          <InfoBtn content="GEO Kurs" className="mx-auto mt-12 dark:bg-black" />
           <h2 className="text-center mt-4">
             Lass uns über Deine Sichbarkeit in der KI sprechen
           </h2>

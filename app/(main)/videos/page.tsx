@@ -1,11 +1,10 @@
-import { FiArrowRight } from "react-icons/fi";
-import LinkSeoCheck from "@/app/components/links/LinkSeoCheck";
 import { LuSquareArrowOutUpRight } from "react-icons/lu";
+import SEOCheckBtn from "@/app/components/buttons/SEOCheckBtn";
 
 export default function Videos() {
   return (
     <div className="">
-      <div className="m-8 lg:m-0 lg:flex lg:px-32 lg:pt-32">
+      <div className="mt-12 mx-4 md:mx-0 lg:flex md:px-16 lg:px-32 lg:pt-32">
         <h1 className="mb-4 lg:mb-0 flex-2 lg:!text-3xl/10 tracking-wide">
           Jansen's Blog (Blog Name)
         </h1>
@@ -14,14 +13,12 @@ export default function Videos() {
           Erklärvideos rund um SEO, GEO und Google Ads.
         </p>
       </div>
-      <div>
-        <button className="mt-8 ml-8 lg:ml-32 px-4 py-2 lg:p-4 bg-custom-red text-custom-white rounded-4xl lg:rounded flex items-center gap-8 justify-between">
-          <LinkSeoCheck />
-          <FiArrowRight />
-        </button>
+      <div className="mx-4 md:mx-16 mt-8 lg:mt-16 lg:mx-32 md:max-w-1/2">
+        <SEOCheckBtn className="" />
       </div>
+
       <div className="grid lg:grid-cols-2 gap-24 lg:gap-12 m-8 mt-24 lg:m-32">
-        <div className="bg-custom-white">
+        <div className="bg-custom-white dark rounded-xl">
           <img
             src="/images/portraits/39321-4000_02.jpg"
             alt=""
@@ -41,7 +38,7 @@ export default function Videos() {
             </div>
           </div>
         </div>
-        <div className="bg-custom-white">
+        <div className="bg-custom-white dark rounded-xl">
           <img
             src="/images/portraits/39321-4000_02.jpg"
             alt=""
@@ -61,7 +58,7 @@ export default function Videos() {
             </div>
           </div>
         </div>
-        <div className="bg-custom-white">
+        <div className="bg-custom-white dark rounded-xl">
           <img
             src="/images/portraits/39321-4000_02.jpg"
             alt=""
@@ -81,7 +78,7 @@ export default function Videos() {
             </div>
           </div>
         </div>
-        <div className="bg-custom-white">
+        <div className="bg-custom-white dark rounded-xl">
           <img
             src="/images/portraits/39321-4000_02.jpg"
             alt=""

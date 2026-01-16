@@ -40,7 +40,10 @@ export default function page() {
             Der <span className="text-custom-red">Krösche GEO Tracker</span>{" "}
             misst Deinen Sichtbarkeit in den KI Anbietern
           </h1>
-          <InfoBtn content="GEO Tracker" className="mx-auto mt-8 lg:mt-12" />
+          <InfoBtn
+            content="GEO Tracker"
+            className="mx-auto mt-8 lg:mt-12 dark"
+          />
           <h2 className="text-center mt-4">
             Behalte Deine Marke bei ChatGPT & Co. im Blick
           </h2>
@@ -72,7 +75,7 @@ export default function page() {
             width={500}
             className="mx-auto"
           />
-          <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
+          <p className="text-sm font-light p-8 max-w-xl mx-auto text-center dark:text-custom-white">
             Du siehst auf einen Blick, ob Du in den KI Antworten aller wichtigen
             KI-Systemen genannt wirst oder nicht.
           </p>
@@ -85,7 +88,10 @@ export default function page() {
             Wie gut ist meine Website eigentlich{" "}
             <span className="text-custom-red">in der KI</span>?
           </h1>
-          <InfoBtn content="GEO Tracker" className="mx-auto mt-8 lg:mt-12" />
+          <InfoBtn
+            content="GEO Tracker"
+            className="mx-auto mt-8 lg:mt-12 dark"
+          />
           <h2 className="text-center mt-4">
             Sichere Dir Deinen Platz in den KI Antworten
           </h2>
@@ -120,13 +126,16 @@ export default function page() {
         </div>
       </section>
 
-      <section className="bg-custom-white flex flex-col lg:flex-row lg:items-center gap-12 mt-24 px-4 lg:p-32 2xl:gap-32 2xl:justify-center ">
+      <section className="bg-custom-white flex flex-col lg:flex-row lg:items-center gap-12 mt-24 px-4 lg:p-32 2xl:gap-32 2xl:justify-center dark">
         <div className="pt-24 lg:pt-0 flex-1 lg:px-0">
           <h1 className="text-center md:px-16 lg:px-0">
             Der <span className="text-custom-red">Krösche GEO Tracker</span> -
             die beste Datenquelle, um Deine KI Sichtbarkeit zu messen
           </h1>
-          <InfoBtn content="GEO Tracker" className="mx-auto mt-8 lg:mt-12" />
+          <InfoBtn
+            content="GEO Tracker"
+            className="mx-auto mt-8 lg:mt-12 dark:bg-black"
+          />
           <h2 className="text-center mt-4">
             Sichere Dir Deinen Platz in den KI Antworten
           </h2>
@@ -173,7 +182,7 @@ export default function page() {
       </section>
 
       <section className="bg-custom-white px-4 lg:px-32 py-24 lg:pb-8">
-        <h2 className="md:text-center">
+        <h2 className="md:text-center lg:!my-12">
           Was macht der Krösche GEO Tracker genau?
         </h2>
         <SixBoxLayout boxes={geoTrackerSixBoxContent} />
@@ -185,7 +194,7 @@ export default function page() {
             Der Krösche GEO Tracker ist bereits bei über{" "}
             <span className="text-custom-red">100 Firmen</span> im Einsatz
           </h1>
-          <InfoBtn content="Erfahrung" className="mx-auto mt-8 lg:mt-12" />
+          <InfoBtn content="Erfahrung" className="mx-auto mt-8 lg:mt-12 dark" />
           <h2 className="text-center mt-4">Profitiere von unserer Expertise</h2>
           <div className="flex flex-col gap-4 font-light mt-8">
             <p>
@@ -218,13 +227,16 @@ export default function page() {
         </div>
       </section>
 
-      <section className="bg-custom-white flex flex-col xl:flex-row xl:items-center gap-12 mt-24 px-4 py-24 lg:p-32 2xl:gap-32 2xl:justify-center ">
+      <section className="bg-custom-white flex flex-col xl:flex-row xl:items-center gap-12 mt-24 lg:mt-0 px-4 py-24 lg:p-32 2xl:gap-32 2xl:justify-center dark">
         <div className="flex-1">
           <h1 className="text-center">
             Was sind <span className="text-custom-red">Prompts </span> und warum
             sollte man sie tracken?
           </h1>
-          <InfoBtn content="Prompts" className="mx-auto mt-8 lg:mt-12" />
+          <InfoBtn
+            content="Prompts"
+            className="mx-auto mt-8 lg:mt-12 dark:bg-black"
+          />
           <h2 className="text-center mt-4">Anweisungen an KI Systeme</h2>
           <div className="flex flex-col gap-4 font-light mt-8">
             <p>
@@ -251,7 +263,7 @@ export default function page() {
               Tracker ist monatlich kündbar.
             </p>
           </div>
-     <GEOTrackerInstallBtn className="mt-16 p-4 md:w-2/3 mx-auto lg:mx-0" />
+          <GEOTrackerInstallBtn className="mt-16 p-4 md:w-2/3 mx-auto lg:mx-0" />
         </div>
         <div className="flex-1 lg:min-w-1/2 2xl:min-w-1/3 ">
           <div className="mt-24 lg:mt-12 xl:min-w-1/3">
@@ -282,7 +294,7 @@ export default function page() {
           <h1 className="text-center">
             Was versteht man unter <span className="text-custom-red">GEO</span>?
           </h1>
-          <InfoBtn content="GEO" className="mx-auto mt-8 lg:mt-12" />
+          <InfoBtn content="GEO" className="mx-auto mt-8 lg:mt-12 dark" />
           <h2 className="text-center mt-4">
             Optimierung der Website für KI-Systeme
           </h2>
@@ -301,15 +313,15 @@ export default function page() {
           </div>
         </div>
         <div className="flex-1 lg:min-w-1/2 2xl:min-w-1/3 ">
-  <div className="mt-12 xl:min-w-1/3">
-                      <Image
-            src="/images/screenshots/geo-tracker_6.png"
-            style={{ width: "600px" }}
- alt="Screenshot von einem Prompt"
-            height={300}
-            width={500}
-            className="mx-auto"
-          />
+          <div className="mt-12 xl:min-w-1/3">
+            <Image
+              src="/images/screenshots/geo-tracker_6.png"
+              style={{ width: "600px" }}
+              alt="Screenshot von einem Prompt"
+              height={300}
+              width={500}
+              className="mx-auto"
+            />
             <p className="lg:hidden p-8 italic mx-auto text-center text-sm font-light">
               Unter GEO versteht man die Optimierung einer Firmen-Website, um
               sie in den KI-Antworten von ChatGPT, Gemini & Co. für bestimmte
@@ -331,7 +343,7 @@ export default function page() {
             Der <span className="text-custom-red">Krösche GEO Tracker</span> ist
             die ideale Grundlage
           </h1>
-          <InfoBtn content="Basis" className="mx-auto mt-8 lg:mt-12" />
+          <InfoBtn content="Basis" className="mx-auto mt-8 lg:mt-12 dark" />
           <h2 className="text-center mt-4">
             Überlick über Deine Sichtbarkeit im Netz
           </h2>
@@ -352,7 +364,7 @@ export default function page() {
           </div>
           <GEOTrackerInstallBtn className="mt-16 p-4 lg:w-2/3" />
         </div>
-<div className="mt-12 xl:min-w-1/3">
+        <div className="mt-12 xl:min-w-1/3">
           <Image
             src="/images/screenshots/geo-tracker_4.png"
             style={{ width: "600px" }}
@@ -368,7 +380,7 @@ export default function page() {
         </div>
       </section>
 
-      <section className="bg-custom-white">
+      <section className="bg-custom-white dark">
         <div className="mt-24 lg:mt-0 pt-24 lg:px-32 px-4 lg:pt-32 lg:pb-16 lg:max-w-2/3">
           <h1 className="">
             Pricing: Das kostet der Krösche{" "}
@@ -382,9 +394,9 @@ export default function page() {
             auf das, was Dir wichtig ist. Schnell und einfach zu sehen, wie gut
             Du bei ChatGPT & Co. für Deine Prompts rankst.
           </p>
-     <GEOTrackerInstallBtn className="mt-16 p-4 md:w-2/3 mx-auto lg:mx-0" />
+          <GEOTrackerInstallBtn className="mt-16 p-4 md:w-2/3 mx-auto lg:mx-0" />
         </div>
-        <div className="pt-24 lg:pb-32 bg-custom-white">
+        <div className="pt-24 lg:pb-32 bg-custom-white dark:bg-black">
           <PricingGEOTracker
             pricingBoxes={geoTrackerPriceBoxes}
             className="px-4 lg:px-32 "
@@ -411,7 +423,7 @@ export default function page() {
         </div>
         <form
           action={submitGeoTracker}
-          className="mt-12 lg:mt-24 max-w-4xl mx-auto bg-white p-8 pb-12 rounded-lg"
+          className="mt-12 lg:mt-24 max-w-4xl mx-auto bg-white p-8 pb-12 rounded-xl dark"
         >
           <div className="flex-1">
             <span className="text-white bg-custom-red font-semibold tracking-tight py-1 px-2 rounded-lg">
@@ -467,13 +479,13 @@ export default function page() {
             <textarea
               name="promptsText"
               id=""
-              className="border border-slate-200 h-40 w-full p-4 mt-4"
+              className="border border-slate-200 dark:border-none h-40 w-full p-4 mt-4 dark:bg-slate-800"
               placeholder="Deine Prompts...."
             ></textarea>
           </div>
           <p className="mt-12">Rechnungsanschrift</p>
           <div className="flex flex-col mt-4">
-            <div className="rechnungsForm flex-1 flex flex-col lg:flex-row gap-4 lg:gap-8">
+            <div className="rechnungsForm flex-1 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  gap-4 lg:gap-8">
               <div className="flex flex-col gap-4">
                 <div className="flex flex-col gap-1">
                   <label htmlFor="company" className="w-40">

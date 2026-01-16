@@ -33,9 +33,9 @@ export default function page() {
           und werden auch im Marketing- und Unternehmenskontext immer wichtiger.
         </h2>
       </div>
-      <KroescheWorkshopIntroLayout workshop={geoWorkshopFuerAgenturen} />
-      <section className="lg:hidden mt-12 p-4">
-        <InfoBtn content="GEO Workshop" />
+      <KroescheWorkshopIntroLayout workshop={geoWorkshopFuerAgenturen} className="dark:pt-12" />
+      <section className="lg:hidden mt-24 p-4">
+        <InfoBtn content="GEO Workshop" className="mx-auto dark" />
         <h1 className="mt-8">
           Du hast das Gefühl, den<span className="text-custom-red"> KI </span>{" "}
           und <span className="text-custom-red"> GEO </span> Entwicklungen nicht
@@ -63,7 +63,7 @@ export default function page() {
             Hinzu kommen täglich unangenehme Kundenfragen, die das eigene
             Geschäft existenziell bedrohen.
           </p>
-          <div>
+          <div className="dark:text-custom-white">
             <div className="flex items-center gap-4">
               <GoDiamond color="rgb(231,0,53)" size={12} className="shrink-0" />
               <span>
@@ -107,7 +107,7 @@ export default function page() {
           </p>
         </div>
       </section>
-      <section className="hidden lg:flex flex-col lg:flex-row gap-12 mt-64 lg:bg-custom-white px-32 pt-24 pb-32 2xl:gap-32 2xl:justify-center ">
+      <section className="hidden lg:flex flex-col lg:flex-row gap-12 mt-64 lg:bg-custom-white px-32 pt-24 pb-32 2xl:gap-32 2xl:justify-center dark">
         <div className="lg:min-w-1/2 2xl:min-w-1/3 lg:relative">
           <div className="lg:absolute lg:-top-48">
             <Image
@@ -227,7 +227,7 @@ export default function page() {
           </p>
         </div>
       </section>
-      <section className="mt-24 pt-24 lg:pb-48 pb-24 lg:mt-0 px-4 lg:px-32 bg-custom-white">
+      <section className="mt-24 lg:pt-24 lg:pb-24 lg:mt-0 px-4 lg:px-32 bg-custom-white">
         <h1 className="!mb-8 lg:!mb-4 text-center lg:text-start lg:max-w-2/3">
           Das lernst Du im <span className="text-custom-red">GEO</span> Workshop
         </h1>
@@ -252,18 +252,19 @@ export default function page() {
             Bedürfnisse individuell anpassen.{" "}
           </p>
         </div>
-        <SixBoxLayout boxes={geoWorkshopAgenturenSixBoxContent} />
+       
       </section>
+       <SixBoxLayout boxes={geoWorkshopAgenturenSixBoxContent} className="mt-24 lg:mt-0 px-4 md:px-8 lg:px-0" />
 
-      <section className="lg:hidden mt-12 p-4">
-        <InfoBtn content="GEO Workshop" />
-        <h1 className="mt-8">Über den Workshop Leiter Jan Krösche</h1>
-        <h2>
+      <section className="xl:hidden mt-12 p-4">
+        <h1 className="mt-8 text-center">Über den Workshop Leiter Jan Krösche</h1>
+            <InfoBtn content="GEO Workshop" className="mx-auto mt-12 mb-4 dark" />
+        <h2 className="text-center">
           {" "}
           Seit 2017 bin ich als SEO, Ads und GEO Dienstleister und Kundenberater
           tätig.
         </h2>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 mt-12">
           <p>
             In den letzten Jahren habe ich eine der größten Onlinemarketing
             Agenturen in Süddeutschland geleitet. Mit ca. 50 festangestellten
@@ -282,24 +283,25 @@ export default function page() {
           </p>
         </div>
       </section>
-      <section className="hidden lg:flex flex-col lg:flex-row gap-12 lg:mt-0 lg:white px-32 pt-24 pb-48 2xl:gap-32 2xl:justify-center ">
-        <div className="lg:min-w-1/2 2xl:min-w-1/3 lg:relative">
+      <section className="hidden xl:flex gap-12 lg:mt-32 px-32 pt-24 pb-32 2xl:gap-32 2xl:justify-center dark">
+        <div className="xl:min-w-1/2 2xl:min-w-1/3 lg:relative">
           <div className="lg:absolute lg:-top-48">
             <Image
               src="/images/portraits/39321-4319.jpg"
-              style={{ width: "600px" }}
+              style={{ width: "400px" }}
               alt="Portrait Jan Kroesche"
               height={800}
               width={400}
+              className="mx-auto"
             />
-            <p className="p-8 italic mx-auto text-center font-light">
+               <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
               "Wir helfen Unternehmen dabei, die Nummer 1 ihrer Branche werden"
             </p>
           </div>
         </div>
         <div className="mx-4 lg:mx-0 2xl:max-w-1/2 3xl:max-w-1/3">
           <h1 className="text-center">Über den Workshop Leiter Jan Krösche</h1>
-          <InfoBtn content="Erfahrung" className="mx-auto mt-12" />
+          <InfoBtn content="Erfahrung" className="mx-auto mt-12 dark:bg-black" />
           <h2 className="text-center mt-4">
             Seit 2017 bin ich als SEO, Ads und GEO Dienstleister und
             Kundenberater tätig.
@@ -325,13 +327,13 @@ export default function page() {
         </div>
       </section>
 
-      <section className="flex flex-col lg:flex-row gap-8 lg:px-32 lg:mt-24">
+      <section className="flex flex-col lg:flex-row gap-8 lg:px-32 mt-24 lg:mt-32">
         <div className="px-4 lg:p-8 flex-1">
           <h1 className="mt-4 text-center">
             {" "}
             Es können so viele Mitarbeitende teilnehmen, wie Du möchtest
           </h1>
-          <InfoBtn content="Gleicher Preis" className="mx-auto mt-12" />
+          <InfoBtn content="Gleicher Preis" className="mx-auto mt-12 dark" />
           <h2 className="mt-4 text-center">
             Maßgeschneidertes Expertenwissen für Agenturen und Teams
           </h2>
@@ -353,7 +355,7 @@ export default function page() {
             </p>
           </div>
         </div>
-        <div className="flex-1 bg-custom-white flex flex-col justify-between py-12 lg:pt-0 px-4 md:mx-4 lg:mx-0 lg:p-8 rounded-lg">
+        <div className="flex-1 bg-custom-white flex flex-col justify-between py-12 lg:pt-0 px-4 md:mx-4 lg:mx-0 lg:p-8 rounded-xl dark">
           <div>
             <div className="flex flex-col items-start gap-2 pt-8">
               <span className="text-white bg-custom-red font-semibold tracking-tight py-1 px-2 rounded-lg">

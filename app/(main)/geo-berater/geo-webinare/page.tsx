@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function page() {
   return (
-    <div className="bg-custom-white pb-32">
+    <section className="bg-custom-white pb-32">
       <div className="pt-12 lg:px-32 px-4 xl:pr-0 lg:pt-32 lg:pb-16 xl:max-w-2/3">
         <h1 className="lg:!text-5xl/14">
           Aktuelle <span className="text-custom-red">GEO </span> Webinare
@@ -31,8 +31,8 @@ export default function page() {
           dir jetzt deinen Wissensvorsprung.
         </p>
       </div>
-      <div className="flex flex-col items-center xl:flex-row justify-center gap-16 lg:gap-32 px-4 lg:px-32 mt-12">
-        <div className="bg-white max-w-xl rounded-lg">
+      <div className="flex flex-col items-center xl:flex-row justify-center gap-16 lg:gap-32 px-4 lg:px-32 mt-24">
+        <div className="bg-white max-w-xl rounded-lg dark">
           <div className="relative">
             <Image
               src="/images/portraits/39321-4211_02.jpg"
@@ -54,7 +54,7 @@ export default function page() {
             <h1 className="text-center mt-8">
               Sichtbarkeits-Boost auf ChatGPT
             </h1>
-            <InfoBtn content="GEO Webinar" className="mx-auto mt-8" />
+            <InfoBtn content="GEO Webinar" className="mx-auto mt-8 dark:bg-black" />
             <p className="font-light text-sm/5 mt-8">
               Im kostenlosen Webinar lernst Du, wie Du die Reichweite Deiner
               Firma bei ChatGPT steigern kannst. Damit Dich Deine Kunden dort
@@ -147,7 +147,7 @@ export default function page() {
           </div>
         </div>
 
-        <div className="bg-white max-w-xl rounded-lg">
+        <div className="bg-white max-w-xl rounded-lg dark">
           <div className="relative">
             <Image
               src="/images/portraits/39321-4127_01.jpg"
@@ -169,7 +169,7 @@ export default function page() {
             <h1 className="text-center mt-8">
               Wie funktionieren KI Suchmaschinen?
             </h1>
-            <InfoBtn content="GEO Webinar" className="mx-auto mt-8" />
+            <InfoBtn content="GEO Webinar" className="mx-auto mt-8 dark:bg-black" />
             <p className="font-light text-sm/5 mt-8">
               Im kostenlosen GEO Webinar lernst Du, wie KI Suchmaschinen
               funktionieren. Zudem lernst Du die Grundlagen, wie Du Deine
@@ -262,6 +262,6 @@ export default function page() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
