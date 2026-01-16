@@ -14,12 +14,12 @@ type Props = {
 
 export default function Pricing({ className, pricingBoxes }: Props) {
   return (
-    <div className={`${className}`}>
+    <section className={`${className}`}>
       <div className="flex flex-col xl:flex-row gap-8 xl:gap-4 xl:justify-around">
         {pricingBoxes.map((e, index) => (
           <div
             key={index}
-            className="bg-white flex flex-col justify-between xl:flex-1 xl:m-0 p-8 rounded-lg"
+            className="bg-white flex flex-col justify-between xl:flex-1 xl:m-0 p-8 rounded-lg dark"
           >
             <div>
               <div className="flex flex-col items-start gap-2">
@@ -59,6 +59,6 @@ export default function Pricing({ className, pricingBoxes }: Props) {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

@@ -11,7 +11,7 @@ export default function Testimonials({ className }: Props) {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4 max-w-7xl lg:mx-auto">
         {" "}
         {testimonals.map((e, index) => (
-          <div key={index} className="bg-white p-8 rounded-xl">
+          <div key={index} className="bg-white p-8 rounded-xl dark">
             <FiveStarRating />
             <h2 className="mt-4">{e.title}</h2>
             <p>{e.text}</p>

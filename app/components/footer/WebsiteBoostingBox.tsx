@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function WebsiteBoostingBox() {
   return (
-    <div className="flex-1 bg-custom-white leading-8 p-8 rounded-lg lg:mx-0 flex flex-col justify-center">
+    <div className="flex-1 bg-custom-white leading-8 p-8 rounded-lg lg:mx-0 flex flex-col justify-center dark">
       <div className="flex justify-around max-w-screen">
         <Image
           src="/images/Website_Boosting_Logo.png"
@@ -19,7 +19,7 @@ export default function WebsiteBoostingBox() {
           height={300}
         />
       </div>
-      <p className="mt-8 text-center">
+       <p className="mx-4 mt-2 text-sm font-light text-center mt-8">
         Jan Krösche veröffentlicht regelmäßig im Fachmagazin „Website Boosting“
         und hält Vorträge beim Verein Deutscher Ingenieure.
       </p>

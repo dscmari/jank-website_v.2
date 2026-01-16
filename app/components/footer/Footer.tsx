@@ -5,7 +5,7 @@ import LinkAdsKurs from "../links/LinkAdsKurs";
 
 export default function Footer() {
   return (
-    <div className="mt-8 p-8 lg:p-16 bg-custom-black text-white grid grid-cols-1 gap-12 lg:grid-cols-4">
+    <div className="p-8 lg:p-16 bg-custom-black text-white grid grid-cols-1 gap-12 lg:grid-cols-4">
       <div className="flex flex-col items-center lg:items-start gap-2 mt-12 lg:mt-0">
         <div className="flex flex-col mb-4">
           <span>Jan Krösche & Team</span>

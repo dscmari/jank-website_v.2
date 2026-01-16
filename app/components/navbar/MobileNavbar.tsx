@@ -225,7 +225,7 @@ export default function Navbar({ className }: Props) {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-between p-4 dark:bg-white">
+      <div className="flex items-center justify-between p-4 dark:bg-custom-white">
         <Link href={"/"}>
           <Image
             src="/images/logo_transparent.png"

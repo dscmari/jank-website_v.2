@@ -9,8 +9,8 @@ type Props = {
 export default function MiniTestimonals({ className }: Props) {
   return (
     <div className={`${className}`}>
-      <section className="lg:hidden mt-12 p-8 mx-4 bg-custom-whiterounded-xl">
-        <InfoBtn content="Erfolge" />
+      <section className="lg:hidden mt-12 p-8 mx-4 bg-custom-white rounded-xl dark">
+        <InfoBtn className="dark:bg-black" content="Erfolge" />
         <h1 className="mt-4">
           Hey Jan, was bringt es mir denn, bei Google oben zu stehen?
         </h1>
@@ -41,7 +41,7 @@ export default function MiniTestimonals({ className }: Props) {
         </div>
         <SEOCheckBtn className="mt-12" />
       </section>
-      <section className="hidden lg:flex flex-col lg:flex-row gap-12 mt-64 lg:bg-custom-white px-32 pt-24 pb-48 2xl:gap-32 2xl:justify-center ">
+      <section className="hidden lg:flex flex-col lg:flex-row gap-12 mt-64 lg:bg-custom-white px-32 pt-24 pb-48 2xl:gap-32 2xl:justify-center dark">
         <div className="lg:min-w-1/2 2xl:min-w-1/3 lg:relative">
           <div className="lg:absolute lg:-top-48">
             <Image
@@ -51,7 +51,7 @@ export default function MiniTestimonals({ className }: Props) {
               height={800}
               width={400}
             />
-            <p className="p-8 italic mx-auto text-center font-light">
+            <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
               "Wir helfen Unternehmen dabei, die Nummer 1 ihrer Branche werden"
             </p>
           </div>
@@ -61,7 +61,7 @@ export default function MiniTestimonals({ className }: Props) {
             Hey Jan, was bringt es mir denn, bei{" "}
             <span className="text-custom-red">Google</span> oben zu stehen?
           </h1>
-          <InfoBtn content="Erfolge" className="mx-auto mt-12" />
+          <InfoBtn content="Erfolge" className="mx-auto mt-12 dark:bg-darkmode-blue" />
           <h2 className="text-center mt-4">
             Taten sprechen bekanntlich lauter als Worte. Drei Beispiele von
             meinen betreuten Kunden:

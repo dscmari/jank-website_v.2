@@ -9,7 +9,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
 
@@ -18,7 +19,6 @@ body {
   min-height: 100vh;
   max-width: 2048px;
   margin: 0 auto 0 auto;
-
 }
 
 @theme {
@@ -29,9 +29,29 @@ body {
   --color-custom-white: #f5f6fa;
   --color-custom-grey: #636e72; /* us */
   --color-custom-purple: #ffeaa7; /* us */
+  --color-darkmode-blue: #192a56; /* gb */
 
   --font-poppins: var(--font-poppins);
   --font-inter: var(--font-inter);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: black;
+  }
+  section {
+    background-color: black;
+  }
+  h1,
+  h2,
+  p {
+    color: var(--color-custom-white) !important;
+  }
+
+  .dark {
+    background-color: var(--color-darkmode-blue);
+    color: var(--color-custom-white);
+  }
 }
 
 h1,

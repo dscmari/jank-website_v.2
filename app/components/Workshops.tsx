@@ -31,12 +31,12 @@ export default function Workshops({ className }: Props) {
           <span className="text-red-500"> Google Ads</span>,{" "}
           <span className="text-red-500"> Kundengewinnung im Internet</span>.
         </h1>
-        <InfoBtn content="Workshops" className="mx-auto mt-4 mb-8 lg:mb-16" />
+        <InfoBtn content="Workshops" className="mx-auto mt-4 mb-8 lg:mb-16 dark:bg-darkmode-blue" />
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4 pt-12 max-w-7xl lg:mx-auto">
         {workshops.map((e, index) => (
-          <div key={index} className="flex flex-col p-8 bg-white rounded-xl">
+          <div key={index} className="flex flex-col p-8 bg-white rounded-xl dark">
             <div className="flex flex-col items-start gap-2">
               <span className="text-white bg-custom-red font-semibold tracking-tight py-2 px-4 rounded-lg">
                 Workshop

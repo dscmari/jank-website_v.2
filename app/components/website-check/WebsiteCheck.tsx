@@ -11,7 +11,7 @@ type Props = {
 export default function WebsiteCheck({ isGeo, className }: Props) {
   return (
     <section
-      className={`bg-custom-red lg:bg-white text-custom-white lg:text-custom-black p-8 pt-12 ${className}`}
+      className={`bg-custom-red lg:bg-white text-custom-white lg:text-custom-black p-8 pt-12 dark ${className}`}
     >
       <div className="lg:flex lg:gap-16">
         <div className="hidden lg:block max-w-[640px] relative">
@@ -36,7 +36,7 @@ export default function WebsiteCheck({ isGeo, className }: Props) {
           </div>
         </div>
         <div className="lg:max-w-1/2">
-        <InfoBtn content={"Website Check"} className="lg:mt-8 hidden lg:block"/>
+        <InfoBtn content={"Website Check"} className="lg:mt-8 hidden lg:block dark:bg-black"/>
           <div className="lg:flex lg:flex-col 2xl:justify-center lg:py-8 ">
             <h1 className="mb-4 lg:mb-0 font-semibold tracking-tight lg:text-custom-red">
               {isGeo ? "Kostenloser KI GEO Check" : "Kostenloser Website Check"}

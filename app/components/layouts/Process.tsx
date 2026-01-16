@@ -11,12 +11,12 @@ type Props = {
 
 export default function Process({ className, circles }: Props) {
   return (
-    <section className={` ${className}`}>
+    <section className={`${className}`}>
       <div className="mt-16 flex flex-col lg:flex-row justify-center gap-12 items-center ">
         {circles.map((e, index) => (
           <div key={index}>
             <div
-              className={`${index === 2 ? "bg-none" : "bg-white"} lg:relative z-50 h-80 w-80 rounded-full flex flex-col gap-8 items-center border-4 border-custom-red-op`}
+              className={`${index === 2 ? "bg-none" : "bg-white"} lg:relative z-50 h-80 w-80 rounded-full flex flex-col gap-8 items-center border-4 border-custom-red-op dark`}
             >
               <div className="relative mt-12 bg-custom-red w-12 h-12 rounded-full flex items-center justify-center text-white font-semibold ">
                 {index === 1 && (
