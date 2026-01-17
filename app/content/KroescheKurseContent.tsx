@@ -302,3 +302,99 @@ export const geoWorkshopFuerAgenturen = {
     ),
   },
 };
+
+// GEO Konferenz
+const geoKonferenzBullets = [
+  "Du lernst „GEO“ kennen und bekommst Praxistipps, wie Du in der KI besser gefunden werden kannst.",
+  "Du lernst von echten Profis: Beide GEO Referenten haben über 10 Jahre Erfahrung.",
+  "Du hast auf der Konferenz die Möglichkeit, Dich mit den anderen Teilnehmern auszutauschen",
+];
+
+const geoKonferenzDates = [
+  "Datum: 17. April 2026 von 09 bis 16 Uhr",
+  "Ort: Ringhotel Sonneck Tannenbaum 1, 86825 Bad Wörishofen",
+  "Preis: 450 Euro netto ",
+  "Verpflegung: Speisen & Getränke im Preis enthalten",
+];
+
+export const geoKonferenz = {
+  introduction: {
+    title: <h1 className="mt-4 text-center">GEO Konferenz</h1>,
+    infoBtnText: "Neue Herausforderungen",
+    subtitle: (
+      <h2 className="text-center mt-4">
+        Google, ChatGPT & Co: Bleib sichtbar im Wandel der Suche
+      </h2>
+    ),
+    textBoxOne: (
+      <p>
+        Die KI-Suche ist kein Spielzeug mehr, sondern ein etabliertes Tool, das
+        von immer mehr Menschen genutzt wird – auch von Deinen potenziellen
+        Kunden. Firmen werden es sich bald nicht mehr leisten können, dort nicht
+        genannt zu werden.
+      </p>
+    ),
+    textBoxTwo: (
+      <p>
+        {" "}
+        Auf der GEO Konferenz bekommst Du einen Überblick zum aktuellen Status
+        Quo des Suchmarkts. Wird Google sterben? Wird ChatGPT die Nr. 1 werden?
+        Zudem zeigen Dir die beiden GEO-Experten Bastian Huber und Jan Krösche,
+        wie Du Deinen Webauftritt für die KI optimieren kannst. Für mehr
+        Sichtbarkeit und mehr Anfragen.
+      </p>
+    ),
+    textBoxThree: (
+      <div>
+        <h2>Zielgruppe</h2>
+        <p>
+          Die GEO-Konferenz in Bad Wörishofen im Unterallgäu richtet sich an
+          alle, die über Online-Kanäle und KI-Systeme mehr Kunden gewinnen und
+          ihr Wissen im Bereich Generative Engine Optimization vertiefen
+          möchten.
+        </p>
+      </div>
+    ),
+    textBoxFour: (
+      <div>
+        <p>
+          Die Veranstaltung findet bewusst in einem kleinen, persönlichen Rahmen
+          statt. So bleibt Raum für intensiven Austausch, fundierten Input und
+          echte Diskussionen. Im Fokus steht kein Frontalvortrag, sondern
+          praxisnaher Wissenstransfer kombiniert mit moderierten
+          Gesprächsrunden.
+        </p>
+      </div>
+    ),
+  },
+  content: {
+    iconText: (
+      <span className="text-white bg-custom-red font-semibold tracking-tight py-1 px-2 rounded-lg">
+        GEO Konferenz
+      </span>
+    ),
+    title: "GEO Konferenz auf einen Blick",
+    subtitle: (
+      <span className="font-light">
+        GEO - Generative Engine Optimization für echte Anfragen
+      </span>
+    ),
+    text: (
+      <p className="mt-4 mb-8 font-light text-base/5">
+        Auf der GEO Konferenz bekommst Du einen Überblick zum aktuellen Status
+        Quo des Suchmarkts. Wird Google sterben? Wird ChatGPT die Nr. 1 werden?
+        Zudem zeigen Dir die beiden GEO-Experten Bastian Huber und Jan Krösche,
+        wie Du Deinen Webauftritt für die KI optimieren kannst. Für mehr
+        Sichtbarkeit und mehr Anfragen.
+      </p>
+    ),
+    bullets: geoKonferenzBullets,
+    dates: geoKonferenzDates,
+    closing: (
+      <p className="pb-8 font-semibold  border-b-1 border-slate-700">
+        Bonus: Wir analysieren im GEO Workshop eine Kundenwebsite von Euch,
+        damit Du das Erarbeitete direkt beim Kunden anwenden kannst
+      </p>
+    ),
+  },
+};
