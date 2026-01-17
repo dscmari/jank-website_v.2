@@ -5,6 +5,12 @@ const homeATF = {
   text:"Jan Krösche & Team sind Deine SEO, GEO und SEA-Spezialisten, damit  Du die Nr. 1 im Netz wirst. Und mehr Neukunden gewinnst als Deine Wettbewerber."
 }
 
+const seoBeraterATF = {
+  title: "Dein SEO Berater für starke Google Rankings",
+  subtitle: "SEO Berater Jan Krösche & Team haben seit 2017 über 500 Firmen-Websites zu Platz 1 Rankings bei Google verholfen.",
+  text: "Wir optimieren Deine Website, damit Du bei Google ganz oben stehst, mehr Präsenz hast und mehr Neukunden gewinnst. Die sichtbarsten Firmen gewinnen."
+}
+
 const geoBeraterATF = {
   title: "Dein GEO Berater für starke KI Sichtbarkeit",
   subtitle: "GEO Berater Jan Krösche & Team sorgen dafür, dass Deine Firma in den KI-Antworten von ChatGPT, Gemini und Copilot erscheint.",
@@ -19,4 +25,4 @@ const adsBeraterATF = {
 
 
 
-export default {homeATF, geoBeraterATF, adsBeraterATF}
+export default {homeATF, seoBeraterATF, geoBeraterATF, adsBeraterATF}

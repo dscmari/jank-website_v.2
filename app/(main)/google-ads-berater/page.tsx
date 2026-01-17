@@ -3,7 +3,6 @@ import ATF from "@/app/components/ATF";
 import { Metadata } from "next";
 import atf from "../../content/ATFContents";
 import LinkAdsKurs from "@/app/components/links/LinkAdsKurs";
-import { FiArrowRight } from "react-icons/fi";
 import Contact from "@/app/components/Contact";
 import TwoBoxLayout from "@/app/components/layouts/TwoBoxLayout";
 import { adsBerater } from "@/app/content/TwoBoxLayoutContent";
@@ -25,7 +24,7 @@ export default function page() {
         title={atf.adsBeraterATF.title}
         subtitle={atf.adsBeraterATF.subtitle}
         text={atf.adsBeraterATF.text}
-        LinkComponent={<LinkAdsKurs />}
+        LinkComponent={<LinkAdsKurs className="w-full text-left" />}
         imgPathMobile={"/images/portraits/39321-4190.jpg"}
         imgPathDesktop={"/images/portraits/39321-4211_02.jpg"}
       />

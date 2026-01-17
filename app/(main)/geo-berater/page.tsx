@@ -25,7 +25,7 @@ export default function GEOBerater() {
         title={atf.geoBeraterATF.title}
         subtitle={atf.geoBeraterATF.subtitle}
         text={atf.geoBeraterATF.text}
-        LinkComponent={<LinkGeoCheck />}
+        LinkComponent={<LinkGeoCheck className="w-full text-left" />}
         imgPathMobile="/images/portraits/39321-4194.jpg"
         imgPathDesktop="/images/portraits/39321-4127_01.jpg"
       />
@@ -125,7 +125,8 @@ export default function GEOBerater() {
             Firmen, die innerhalb der KI-Antworten erscheinen, treten direkt mit
             der Zielgruppe in Kontakt. Marketingexperten aus den USA gehen davon
             aus, dass die Sichtbarkeit innerhalb von ChatGPT und Gemini zum
-            wichtigsten Kundenlieferant für Unternehmen in Zukunft werden wird.{" "}
+            wichtigsten Kundenlieferant für Unternehmen in Zukunft werden
+            wird.{" "}
           </p>
           <p>
             Als GEO Berater haben wir uns auf dieses Thema spezialisiert. Wir
@@ -158,17 +159,17 @@ export default function GEOBerater() {
         </div>
       </section>
       <section className="pt-24 pb-12 lg:pt-16 px-4 lg:px-32 bg-custom-white">
-        <h1 className="text-center tracking-wide">
+        <h1 className="text-center">
           So kommst Du in den{" "}
           <span className="text-custom-red">KI Antworten</span> ganz nach oben
         </h1>
-        
+        <SixBoxLayout boxes={geoBeraterSixBox} className="mt-8 lg:mt-16" />
       </section>
-      <SixBoxLayout boxes={geoBeraterSixBox} className="" />
+
       <section className="px-4 pt-24 pb-12 lg:pb-32 lg:px-32 bg-custom-white">
         <h1 className="text-center tracking-wide">
           Seit 2017 haben wir schon über
-          <span className="text-custom-red"> 500 Firmen</span> im SEO geholfen
+          <span className="text-custom-red"> 500 Firmen</span> im GEO geholfen
         </h1>
         <div className="pt-4 lg:pt-16 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4 items-stretch">
           {references.slice(0, 4).map((s: any, index: number) => (

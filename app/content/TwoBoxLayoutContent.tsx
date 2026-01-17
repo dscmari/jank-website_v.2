@@ -1,4 +1,6 @@
 import LinkAdsKurs from "../components/links/LinkAdsKurs";
+import LinkGEOKurs from "../components/links/LinkGEOKurs";
+import LinkSEOKurs from "../components/links/LinkSEOKurs";
 
 export const adsBerater = [
   {
@@ -31,8 +33,7 @@ export const adsBerater = [
     "Erstellung passender Landingpages",
     "Wettbewerbsanalysen",
     "Strategische Anpassungen",
-    ],
-    linkComponent: <LinkAdsKurs />,
+    ]
   },
 ];
 
@@ -41,7 +42,7 @@ export const geoBeraterTwoBox = [
     iconText: "KI Sichtbarkeit",
     title: "Mehr KI Sichtbarkeit mit Deiner Firma",
     subtitle: "Präsens in allen gängigen KI Tools",
-    text: "Unsere Aufgabe ist klar: Wir bringen Deine Firmenwebsite in die KI-Antworten von ChatGPT, Gemini, Copilot und Perplexity, damit Du künftig die Nummer 1 der Branche bist und mehr Neukunden gewinnst",
+    text: "Unsere Aufgabe ist klar: Wir bringen Deine Firmenwebsite in die KI-Antworten von ChatGPT, Gemini, Copilot und Perplexity, damit Du künftig die Nummer 1 der Branche bist und mehr Neukunden gewinnst.",
     services: [
     "Für wichtige Prompts erscheinst Du in der KI Antwort",
     "Du bekommst eine hohe Sichtbarkeit in KI Systemen",
@@ -50,7 +51,7 @@ export const geoBeraterTwoBox = [
     "Du erhältst mehr Anfragen",
     "Du bestehst langfristig am Markt",
     ],
-    linkComponent: <LinkAdsKurs />,
+    linkComponent: <LinkGEOKurs />,
   },
   {
     iconText: "Angebot",
@@ -68,6 +69,39 @@ export const geoBeraterTwoBox = [
     "Mind. eine digitale PR Aktion im Monat",
     "Strategische Anpassungen",
     ],
-    linkComponent: <LinkAdsKurs />,
   },
 ];
+export const seoBeraterTwoBox = [
+  {
+    iconText: "Google Sichtbarkeit",
+    title: "Mehr Google Sichtbarkeit mit deiner Firma",
+    subtitle: "Ganz nach oben in den Rankings",
+    text: "Wir bringen Dich und Deine Firmenwebsite bei Google ganz nach oben. Das ist unsere Aufgabe. Firmen, die bei Google nicht sichtbar sind, gehen beim Neukundengeschäft leer aus.",
+    services: [
+    "Für wichtige Keywords rankst du auf Platz 1",
+    "Du bekommst eine hohe Sichtbarkeit auf Google",
+    "Deine Kunden finden Dich dort, wo sie suchen",
+    "Du bist im Ranking über Deinen Wettbewerbern ",
+    "Du erhältst mehr Anfragen über die Website",
+    "Du bestehst langfristig am Markt",
+    ],
+    linkComponent: <LinkSEOKurs className="w-full text-left" />,
+  },
+  {
+    iconText: "Angebot",
+    title: "Unser Preispaket für Dich",
+    subtitle: "Für ein starkes Google Ranking",
+    text: "Website-Optimierungen, damit Du in der Google-Suche & bei Google Maps zu vielen Suchbegriffen oben rankst. Und mehr Anfragen generierst.",
+    services: [
+    "Persönlicher Ansprechpartner",
+    "Fortlaufende Suchbegriff Recherche",
+    "OnPage Optimierung",
+    "Schema.org Umsetzung",
+    "Mind. ein Backlink im Monat",
+    "Mind. ein Text im Monat",
+    "Erstellung neuer SEO Landingpages",
+    "Wettbewerbsanalysen",
+    "Strategische Anpassungen",
+    ]
+  },
+]

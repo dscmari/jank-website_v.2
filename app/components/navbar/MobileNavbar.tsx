@@ -76,12 +76,14 @@ export default function Navbar({ className }: Props) {
                   >
                     <div className="flex flex-col gap-1 mr-8">
                       <h3 className="font-semibold mt-2">Google Platz 1</h3>
-                      <a
-                        href="#"
-                        className="block pb-1 text-neutral-400 border-b-2 border-slate-200"
+                      <div
+                        className="pb-1 text-neutral-400 border-b-2 border-slate-200"
+                        onClick={() => setIsMenuOpen((prev) => !prev)}
                       >
-                        SEO Berater für Google Rankings
-                      </a>
+                        <Link href="/seo-berater/">
+                          SEO Berater für Google Rankings
+                        </Link>
+                      </div>
                       <div
                         className="pb-1 text-neutral-400 border-b-2 border-slate-200"
                         onClick={() => setIsMenuOpen((prev) => !prev)}
@@ -108,7 +110,7 @@ export default function Navbar({ className }: Props) {
                           GEO Berater für KI Sichtbarkeit
                         </Link>
                       </div>
-                        <div
+                      <div
                         className="pb-1 text-neutral-400 border-b-2 border-slate-200"
                         onClick={() => setIsMenuOpen((prev) => !prev)}
                       >
@@ -199,7 +201,7 @@ export default function Navbar({ className }: Props) {
               </Link>
               <Link
                 href={"/geo-berater/geo-tracker/"}
-                     onClick={() => setIsMenuOpen((prev) => !prev)}
+                onClick={() => setIsMenuOpen((prev) => !prev)}
                 className="pt-4 pb-2 mx-8 border-b-2 border-slate-200"
               >
                 GEO Tracker

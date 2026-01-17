@@ -14,6 +14,46 @@ import { LuScreenShare } from "react-icons/lu";
 import { MdPhoneInTalk } from "react-icons/md";
 import { PiFingerprint, PiLighthouse } from "react-icons/pi";
 
+//SEO Berater
+export const seoBeraterSixBox = [
+  {
+    icon: <GiPodiumWinner color="rgb(231,0,53)" size="3rem" />,
+    title: "Platz 1 bei Google",
+    text: "Als SEO Betater unterstützen wir Dich, damit Deine Website bei Google ganz oben rankt.",
+    link: "",
+  },
+  {
+    icon: <GiArchiveResearch color="rgb(231,0,53)" size="3rem" />,
+    title: "Recherche",
+    text: "Wir recherchieren die Suchbegriffe, die Deine potentiellen Kunden bei Google eingeben. Dafür gibt es spezielle SEO Tools, die wir bei der Analyse-Arbeit verwenden.",
+    link: "",
+  },
+  {
+    icon: <GrOptimize color="rgb(231,0,53)" size="3rem" />,
+    title: "Optimierung",
+    text: " Wir optimieren wichtige Teile Deiner Website wie Title Tags, Meta Descriptions, Überschriften und weitere Inhalte.",
+    link: "",
+  },
+  {
+    icon: <LuScreenShare color="rgb(231,0,53)" size="3rem" />,
+    title: "Reichweite",
+    text: "Wir verbreiten Deine Firma im Netz über Backlinks und kleinere PR-Aktionen und sorgen so für mehr Aufmerksamkeit für Deine Website.",
+    link: "",
+  },
+  {
+    icon: <GiAirplaneDeparture color="rgb(231,0,53)" size="3rem" />,
+    title: "Content Verbesserung",
+    text: " Wir erweitern und optimieren Deinen Content. Dabei schreiben wir beispielsweise Überschriften um und setzen interne Links.",
+    link: "",
+  },
+  {
+    icon: <GiGears color="rgb(231,0,53)" size="3rem" />,
+    title: "Backlinks",
+    text: "Je relevanter die Verweise von anderen Websites auf deine Seite sind, desto höher stufen Suchmaschinen deine Glaubwürdigkeit und Relevanz ein.",
+    link: "",
+  },
+];
+
 //GEO Berater
 export const geoBeraterSixBox = [
   {

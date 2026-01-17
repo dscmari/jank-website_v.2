@@ -9,9 +9,9 @@ const NavServices = () => {
       <div className="flex gap-16 p-8">
         <div className="flex flex-col gap-2">
           <h3 className="text-xl  mb-2 font-medium">Google Platz 1</h3>
-          <a href="#" className="mb-1 block text-neutral-400">
+          <Link href="/seo-berater/" className="text-neutral-400">
             SEO Berater für Google Rankings
-          </a>
+          </Link>
           <LinkSeoCheck className="text-neutral-400" />
           <Link
             href="/seo-berater/kostenloser-seo-kurs/"

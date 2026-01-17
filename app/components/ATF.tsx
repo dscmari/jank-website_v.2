@@ -50,7 +50,7 @@ export default function ATF({
           <h1 className="mb-8 lg:!text-3xl/12 xl:!text-5xl/14">{title}</h1>
           <h2>{subtitle}</h2>
           <p>{text}</p>
-          <button className="mt-16 p-4 bg-custom-red text-custom-white rounded w-2/3 flex items-center justify-between">
+          <button className="mt-16 p-4 bg-custom-red text-custom-white rounded-xl w-2/3 flex items-center justify-between">
             {LinkComponent}
             <FiArrowRight />
           </button>
