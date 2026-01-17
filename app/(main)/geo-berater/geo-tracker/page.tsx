@@ -1,4 +1,5 @@
 import { submitGeoTracker } from "@/actions/submit-geo-tracker";
+import Breadcrumbs from "@/app/components/Breadcrumps";
 import GEOTrackerInstallBtn from "@/app/components/buttons/GEOTrackerInstallBtn";
 import InfoBtn from "@/app/components/buttons/InfoBtn";
 import SixBoxLayout from "@/app/components/layouts/SixBoxLayout";
@@ -22,6 +23,7 @@ export default function page() {
   ];
   return (
     <div>
+      <Breadcrumbs className="hidden md:block pt-4 px-4 lg:px-32 font-semibold" />
       <div className="pt-12 lg:px-32 px-4 lg:pt-32 lg:pb-16 xl:max-w-3/4 2xl:max-w-2/3">
         <h1 className="text-center md:px-32 lg:px-0 lg:text-start 2xl:!text-5xl/14">
           Mit dem <span className="text-custom-red">Krösche GEO Tracker</span>{" "}
@@ -150,7 +152,8 @@ export default function page() {
             <p>
               Damit Du immer sehen kannst, wie gut Du in den KI-Antworten von
               ChatGPT, Gemini, Copilot und Perplexity stehst. Der Krösche GEO
-              Tracker ist bereits bei über 100 Firmen im Einsatz – weltweit!{" "}
+              Tracker ist bereits bei über 100 Firmen im Einsatz –
+              weltweit!{" "}
             </p>
             <p>
               Die Einrichtung erfolgt innerhalb von 24 Stunden und der GEO

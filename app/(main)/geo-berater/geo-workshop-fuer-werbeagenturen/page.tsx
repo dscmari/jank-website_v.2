@@ -7,6 +7,7 @@ import { GoDiamond } from "react-icons/go";
 import SixBoxLayout from "@/app/components/layouts/SixBoxLayout";
 import { geoWorkshopAgenturenSixBoxContent } from "@/app/content/SixBoxLayoutContent";
 import { IoIosCheckmarkCircle } from "react-icons/io";
+import Breadcrumbs from "@/app/components/Breadcrumps";
 
 export const metadata: Metadata = {
   title: "GEO Workshop für Werbeagenturen | GEO Seminar",
@@ -22,6 +23,7 @@ export default function page() {
 
   return (
     <div>
+      <Breadcrumbs className="hidden md:block pt-4 px-4 lg:px-32 font-semibold" />
       <div className="hidden lg:block lg:px-32 px-4 lg:pt-32 lg:pb-16 xl:pr-0 xl:max-w-2/3">
         <h1 className="!text-5xl/14">
           GEO Workshop für{" "}
@@ -33,7 +35,10 @@ export default function page() {
           und werden auch im Marketing- und Unternehmenskontext immer wichtiger.
         </h2>
       </div>
-      <KroescheWorkshopIntroLayout workshop={geoWorkshopFuerAgenturen} className="dark:pt-12" />
+      <KroescheWorkshopIntroLayout
+        workshop={geoWorkshopFuerAgenturen}
+        className="dark:pt-12"
+      />
       <section className="lg:hidden mt-24 p-4">
         <InfoBtn content="GEO Workshop" className="mx-auto dark" />
         <h1 className="mt-8">
@@ -252,13 +257,17 @@ export default function page() {
             Bedürfnisse individuell anpassen.{" "}
           </p>
         </div>
-       
       </section>
-       <SixBoxLayout boxes={geoWorkshopAgenturenSixBoxContent} className="mt-24 lg:mt-0 px-4 md:px-8 lg:px-0" />
+      <SixBoxLayout
+        boxes={geoWorkshopAgenturenSixBoxContent}
+        className="mt-24 lg:mt-0 px-4 md:px-8 lg:px-0"
+      />
 
       <section className="xl:hidden mt-12 p-4">
-        <h1 className="mt-8 text-center">Über den Workshop Leiter Jan Krösche</h1>
-            <InfoBtn content="GEO Workshop" className="mx-auto mt-12 mb-4 dark" />
+        <h1 className="mt-8 text-center">
+          Über den Workshop Leiter Jan Krösche
+        </h1>
+        <InfoBtn content="GEO Workshop" className="mx-auto mt-12 mb-4 dark" />
         <h2 className="text-center">
           {" "}
           Seit 2017 bin ich als SEO, Ads und GEO Dienstleister und Kundenberater
@@ -294,14 +303,17 @@ export default function page() {
               width={400}
               className="mx-auto"
             />
-               <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
+            <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
               "Wir helfen Unternehmen dabei, die Nummer 1 ihrer Branche werden"
             </p>
           </div>
         </div>
         <div className="mx-4 lg:mx-0 2xl:max-w-1/2 3xl:max-w-1/3">
           <h1 className="text-center">Über den Workshop Leiter Jan Krösche</h1>
-          <InfoBtn content="Erfahrung" className="mx-auto mt-12 dark:bg-black" />
+          <InfoBtn
+            content="Erfahrung"
+            className="mx-auto mt-12 dark:bg-black"
+          />
           <h2 className="text-center mt-4">
             Seit 2017 bin ich als SEO, Ads und GEO Dienstleister und
             Kundenberater tätig.

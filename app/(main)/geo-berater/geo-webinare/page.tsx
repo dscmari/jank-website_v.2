@@ -1,4 +1,5 @@
 import { submitWebinar } from "@/actions/submit-webinar";
+import Breadcrumbs from "@/app/components/Breadcrumps";
 import InfoBtn from "@/app/components/buttons/InfoBtn";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
 export default function page() {
   return (
     <section className="bg-custom-white pb-32">
+      <Breadcrumbs className="hidden md:block pt-4 px-4 lg:px-32 font-semibold" />
       <div className="pt-12 lg:px-32 px-4 xl:pr-0 lg:pt-32 lg:pb-16 xl:max-w-2/3">
         <h1 className="lg:!text-5xl/14">
           Aktuelle <span className="text-custom-red">GEO </span> Webinare
@@ -54,7 +56,10 @@ export default function page() {
             <h1 className="text-center mt-8">
               Sichtbarkeits-Boost auf ChatGPT
             </h1>
-            <InfoBtn content="GEO Webinar" className="mx-auto mt-8 dark:bg-black" />
+            <InfoBtn
+              content="GEO Webinar"
+              className="mx-auto mt-8 dark:bg-black"
+            />
             <p className="font-light text-sm/5 mt-8">
               Im kostenlosen Webinar lernst Du, wie Du die Reichweite Deiner
               Firma bei ChatGPT steigern kannst. Damit Dich Deine Kunden dort
@@ -169,7 +174,10 @@ export default function page() {
             <h1 className="text-center mt-8">
               Wie funktionieren KI Suchmaschinen?
             </h1>
-            <InfoBtn content="GEO Webinar" className="mx-auto mt-8 dark:bg-black" />
+            <InfoBtn
+              content="GEO Webinar"
+              className="mx-auto mt-8 dark:bg-black"
+            />
             <p className="font-light text-sm/5 mt-8">
               Im kostenlosen GEO Webinar lernst Du, wie KI Suchmaschinen
               funktionieren. Zudem lernst Du die Grundlagen, wie Du Deine

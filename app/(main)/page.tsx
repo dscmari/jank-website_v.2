@@ -8,7 +8,6 @@ import Contact from "../components/Contact";
 import Testimonials from "../components/Testimonials";
 import Pricing from "../components/pricing/Pricing";
 import Process from "../components/layouts/Process";
-
 import { GiAirplaneDeparture } from "react-icons/gi";
 import FourBoxLayout from "../components/layouts/FourBoxLayout";
 import SEOCheckBtn from "../components/buttons/SEOCheckBtn";

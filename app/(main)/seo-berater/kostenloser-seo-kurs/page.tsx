@@ -3,6 +3,7 @@ import Image from "next/image";
 import InfoBtn from "@/app/components/buttons/InfoBtn";
 import KroescheWorkshopIntroLayout from "@/app/components/layouts/KroescheWorkshopIntroLayout";
 import { seoKurs } from "@/app/content/KroescheKurseContent";
+import Breadcrumbs from "@/app/components/Breadcrumps";
 
 export const metadata: Metadata = {
   title: "Kostenloser SEO Kurs | SEO Seminar mit Jan Krösche",
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
 export default function page() {
   return (
     <div className="dark:pt-12">
+      <Breadcrumbs className="hidden md:block pt-4 px-4 lg:px-32 font-semibold" />
       <div className="hidden lg:block lg:px-32 px-4 lg:pt-32 lg:pb-16 lg:max-w-2/3">
         <h1 className="!text-5xl/14">
           Kostenloser <span className="text-custom-red">SEO </span> Kurs
@@ -78,7 +80,10 @@ export default function page() {
             Mit dem kostenlosen SEO Kurs bringst Du Deine Website auf{" "}
             <span className="text-custom-red"> Platz 1 bei Google</span>
           </h1>
-          <InfoBtn content="SEO Kurs" className="mx-auto mt-12 dark:bg-darkmode-blue" />
+          <InfoBtn
+            content="SEO Kurs"
+            className="mx-auto mt-12 dark:bg-darkmode-blue"
+          />
           <h2 className="text-center mt-4">
             So dominierst Du die Google-Suche in Deiner Branche
           </h2>
@@ -146,7 +151,7 @@ export default function page() {
             width={500}
             className="mx-auto"
           />
-                   <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
+          <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
             "Der IT Dienstleister Kramer Systems wird bei Google für den
             Suchbegriff „IT Dienstleister Landsberg“ bei Google ganz oben
             gefunden. Durch diese Top Platzierung gewinnt die Firma jede Woche
@@ -212,7 +217,10 @@ export default function page() {
           </div>
         </div>
       </section>
-      <KroescheWorkshopIntroLayout className="mt-24 lg:m-0" workshop={seoKurs} />
+      <KroescheWorkshopIntroLayout
+        className="mt-24 lg:m-0"
+        workshop={seoKurs}
+      />
       <section className="hidden lg:flex flex-col lg:flex-row gap-12 mt-64 lg:bg-custom-white px-32 pt-24 pb-48 2xl:gap-32 2xl:justify-center dark">
         <div className="lg:min-w-1/2 2xl:min-w-1/3 lg:relative">
           <div className="lg:absolute lg:-top-48">

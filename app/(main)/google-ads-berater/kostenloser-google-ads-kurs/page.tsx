@@ -3,6 +3,7 @@ import Image from "next/image";
 import InfoBtn from "@/app/components/buttons/InfoBtn";
 import KroescheWorkshopIntroLayout from "@/app/components/layouts/KroescheWorkshopIntroLayout";
 import { googleAdsKurs } from "@/app/content/KroescheKurseContent";
+import Breadcrumbs from "@/app/components/Breadcrumps";
 
 export const metadata: Metadata = {
   title: "Kostenloser Google Ads Kurs | Google Werbung Kurs",
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
 export default function page() {
   return (
     <div>
+      <Breadcrumbs className="hidden md:block pt-4 px-4 lg:px-32 font-semibold" />
       <div className="hidden lg:block lg:px-32 px-4 lg:pt-32 lg:pb-16 lg:max-w-2/3">
         <h1 className="!text-5xl/14">
           Kostenloser <span className="text-custom-red">Google Ads </span> Kurs
@@ -23,15 +25,20 @@ export default function page() {
         </h2>
       </div>
 
-      <KroescheWorkshopIntroLayout workshop={googleAdsKurs} className="dark:pt-12 dark:lg:pt-0" />
+      <KroescheWorkshopIntroLayout
+        workshop={googleAdsKurs}
+        className="dark:pt-12 dark:lg:pt-0"
+      />
       <section className="lg:hidden mt-24 p-4">
         <h1 className="text-center md:px-16">
           Mehr Sichtbarkeit und{" "}
           <span className="text-custom-red">mehr Kunden </span> mit gezielter
           Google Werbung
         </h1>
-               <InfoBtn className="mx-auto dark mt-12" content="Google Ads Kurs" />
-        <h2 className="mt-4 text-center">So dominierst Du die Google-Suche in Deiner Branche</h2>
+        <InfoBtn className="mx-auto dark mt-12" content="Google Ads Kurs" />
+        <h2 className="mt-4 text-center">
+          So dominierst Du die Google-Suche in Deiner Branche
+        </h2>
         <div className="flex flex-col gap-4 mt-8">
           <p>
             Für viele Unternehmen ist Google Ads der wichtigste Kanal, um
@@ -55,20 +62,20 @@ export default function page() {
             stärker zu werden.
           </p>
           <div className="mt-12 lg:mt-0 xl:min-w-1/3">
-          <Image
-            src="/images/screenshots/ads-kurs.png"
-            style={{ width: "600px" }}
-            alt="Screenshot einer Google Suche"
-            height={300}
-            width={500}
-            className="mx-auto"
-          />
-          <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
-            "Gibt man bei Google „Anwalt München“ ein, erscheinen ganz oben die
-            bezahlten Suchanzeigen – auch Google Ads genannt. Mit Google Ads
-            kannst Du in kurzer Zeit nach oben kommen.“
-          </p>
-        </div>
+            <Image
+              src="/images/screenshots/ads-kurs.png"
+              style={{ width: "600px" }}
+              alt="Screenshot einer Google Suche"
+              height={300}
+              width={500}
+              className="mx-auto"
+            />
+            <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
+              "Gibt man bei Google „Anwalt München“ ein, erscheinen ganz oben
+              die bezahlten Suchanzeigen – auch Google Ads genannt. Mit Google
+              Ads kannst Du in kurzer Zeit nach oben kommen.“
+            </p>
+          </div>
         </div>
       </section>
       <section className="hidden lg:flex flex-col lg:flex-row gap-12 mt-64 lg:bg-custom-white px-32 pt-24 pb-48 2xl:gap-32 2xl:justify-center dark">
@@ -81,7 +88,7 @@ export default function page() {
               height={800}
               width={400}
             />
-          <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
+            <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
               "Wir helfen Unternehmen dabei, die Nummer 1 ihrer Branche werden"
             </p>
           </div>
@@ -92,7 +99,10 @@ export default function page() {
             <span className="text-custom-red">mehr Kunden </span> mit gezielter
             Google Werbung
           </h1>
-          <InfoBtn content="Google Ads Kurs" className="mx-auto mt-12 dark:bg-black" />
+          <InfoBtn
+            content="Google Ads Kurs"
+            className="mx-auto mt-12 dark:bg-black"
+          />
           <h2 className="text-center mt-4">
             So dominierst Du die Google-Suche in Deiner Branche
           </h2>
@@ -200,7 +210,7 @@ export default function page() {
               height={800}
               width={400}
             />
-   <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
+            <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
               "Wir helfen Unternehmen dabei, die Nummer 1 ihrer Branche werden"
             </p>
           </div>
@@ -211,7 +221,10 @@ export default function page() {
             <span className="text-custom-red"> kostenlosen </span>Google Ads
             Kurs mit Jan Krösche anmelden
           </h1>
-          <InfoBtn content="Google Ads Kurs" className="mx-auto mt-12 dark:bg-black" />
+          <InfoBtn
+            content="Google Ads Kurs"
+            className="mx-auto mt-12 dark:bg-black"
+          />
           <h2 className="text-center mt-4">
             Lass uns über Deine Sichbarkeit sprechen
           </h2>

@@ -3,15 +3,16 @@ import Image from "next/image";
 import InfoBtn from "@/app/components/buttons/InfoBtn";
 import KroescheWorkshopIntroLayout from "@/app/components/layouts/KroescheWorkshopIntroLayout";
 import { geoKurs } from "@/app/content/KroescheKurseContent";
+import Breadcrumbs from "@/app/components/Breadcrumps";
 
 export const metadata: Metadata = {
   title: "Kostenloser GEO Kurs | GEO Schulung & GEO Seminar",
 };
 
-
 export default function page() {
   return (
     <div>
+      <Breadcrumbs className="hidden md:block pt-4 px-4 lg:px-32 font-semibold" />
       <div className="hidden lg:block lg:px-32 xl:pr-0 px-4 lg:pt-32 lg:pb-16 xl:max-w-2/3">
         <h1 className="!text-5xl/14">
           Kostenloser <span className="text-custom-red">GEO </span> Kurs
@@ -24,15 +25,16 @@ export default function page() {
         </h2>
       </div>
 
-      <KroescheWorkshopIntroLayout workshop={geoKurs} className="dark:pt-12"/>
+      <KroescheWorkshopIntroLayout workshop={geoKurs} className="dark:pt-12" />
       <section className="lg:hidden mt-12 p-4">
-
         <h1 className="mt-8 text-center md:px-16">
           Im GEO Kurs lernst Du, wie Deine Website in den{" "}
           <span className="text-custom-red">KI-Antworten </span> zitiert wird
         </h1>
-                <InfoBtn content="GEO Kurs" className="mt-12 mx-auto dark" />
-        <h2 className="mt-4 text-center">Verpasse nicht den Anschluss an die neue Suche</h2>
+        <InfoBtn content="GEO Kurs" className="mt-12 mx-auto dark" />
+        <h2 className="mt-4 text-center">
+          Verpasse nicht den Anschluss an die neue Suche
+        </h2>
         <div className="flex flex-col gap-4 mt-4">
           <p>
             KI-Systeme wie ChatGPT, Copilot oder Gemini werden in den nächsten
@@ -155,7 +157,7 @@ export default function page() {
             width={500}
             className="mx-auto"
           />
-       <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
+          <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
             "Das Hotel Schwabinger Wahrheit erscheint in der KI Antwort von
             ChatGPT ganz oben. Durch geziete GEO-Umsetzungen haben wir das für
             unseren Kunden erreicht.“
@@ -223,7 +225,10 @@ export default function page() {
           </div>
         </div>
       </section>
-      <KroescheWorkshopIntroLayout workshop={geoKurs} className="mt-24 lg:mt-48" />
+      <KroescheWorkshopIntroLayout
+        workshop={geoKurs}
+        className="mt-24 lg:mt-48"
+      />
       <section className="hidden lg:flex flex-col lg:flex-row gap-12 mt-64 lg:bg-custom-white px-32 pt-24 pb-48 2xl:gap-32 2xl:justify-center dark">
         <div className="lg:min-w-1/2 2xl:min-w-1/3 lg:relative">
           <div className="lg:absolute lg:-top-48">

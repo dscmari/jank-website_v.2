@@ -2,11 +2,13 @@ import FiveStarRating from "@/app/components/FiveStarRating";
 import Image from "next/image";
 import { GoDiamond } from "react-icons/go";
 import sections from "../../content/referencesList";
+import Breadcrumbs from "@/app/components/Breadcrumps";
 
 export default function page() {
   return (
-    <div className="mx-4 lg:mx-32 lg:mt-32">
-      <div className="lg:max-w-2/3 lg:mb-8">
+    <div>
+      <Breadcrumbs className="hidden md:block pt-4 px-4 lg:px-32 font-semibold" />
+      <div className="mx-4 lg:mx-32 lg:max-w-2/3 lg:mb-8 lg:mt-32">
         <h1 className="hidden lg:block !text-5xl/14"> Unsere Referenzen</h1>
         <h2 className="mt-12 lg:mt-0">
           {" "}

@@ -1,3 +1,9 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Allgemeine Geschäftsbedingungen | Jan Krösche",
+};
+
 export default function page() {
   return (
     <div className="my-12 mx-4 lg:m-32 agbs">

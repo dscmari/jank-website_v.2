@@ -1,9 +1,11 @@
 import { LuSquareArrowOutUpRight } from "react-icons/lu";
 import SEOCheckBtn from "@/app/components/buttons/SEOCheckBtn";
+import Breadcrumbs from "@/app/components/Breadcrumps";
 
 export default function Videos() {
   return (
     <div className="">
+      <Breadcrumbs className="hidden md:block pt-4 px-4 lg:px-32 font-semibold" />
       <div className="mt-12 mx-4 md:mx-0 lg:flex md:px-16 lg:px-32 lg:pt-32">
         <h1 className="mb-4 lg:mb-0 flex-2 lg:!text-3xl/10 tracking-wide">
           Jansen's Blog (Blog Name)

@@ -101,13 +101,20 @@ export default function Navbar({ className }: Props) {
                     </div>
                     <div className="flex flex-col gap-1 mr-8">
                       <h3 className="font-semibold mt-2">ChatGPT Platz 1</h3>
-
                       <div
                         className="pb-1 text-neutral-400 border-b-2 border-slate-200"
                         onClick={() => setIsMenuOpen((prev) => !prev)}
                       >
                         <Link href="/geo-berater/">
                           GEO Berater für KI Sichtbarkeit
+                        </Link>
+                      </div>
+                      <div
+                        className="pb-1 text-neutral-400 border-b-2 border-slate-200"
+                        onClick={() => setIsMenuOpen((prev) => !prev)}
+                      >
+                        <Link href="/geo-berater/geo-konferenz/">
+                          GEO Konferenz im Allgäu am 17. April
                         </Link>
                       </div>
                       <div
