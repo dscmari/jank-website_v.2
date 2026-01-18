@@ -1,5 +1,10 @@
 import Breadcrumbs from "@/app/components/Breadcrumps";
+import InfoBtn from "@/app/components/buttons/InfoBtn";
+import GEOConferenceOverview from "@/app/components/GEOConferenceOverview";
+import FourBoxLayout from "@/app/components/layouts/FourBoxLayout";
 import KroescheKonferenzIntroLayout from "@/app/components/layouts/KroescheKonferenzIntroLayout";
+import Timetable from "@/app/components/Timetable";
+import { geoKonferenzContent } from "@/app/content/FourBoxLayoutContent";
 import { geoKonferenz } from "@/app/content/KroescheKurseContent";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -35,7 +40,7 @@ export default function page() {
           className="dark:pt-12"
         />
       </section>
-      <section className="flex flex-col 2xl:flex-row 2xl:items-center px-4 pt-8 lg:gap-12 lg:p-32 lg:py-32 2xl:gap-32 2xl:justify-center">
+      <section className="flex flex-col 2xl:flex-row 2xl:items-center px-4 pt-24 lg:gap-12 lg:p-32 2xl:gap-32 2xl:justify-center">
         <div className="flex-1 flex flex-col">
           <h1>
             Die GEO Konferenz für{" "}
@@ -76,161 +81,203 @@ export default function page() {
           </p>
         </div>
       </section>
-      <section className="md:px-8 lg:px-32">
-        <div className="p-4 md:p-8 lg:p-16 mx-auto max-w-6xl bg-custom-white rounded-xl">
-          <h1 className="text-center pt-12">
-            Ablauf der GEO Konferenz am 17.04.2026
-          </h1>
-          <div className="flex flex-col gap-2 my-16 text-xl">
-            <div className="flex items-center">
-              <span className="font-semibold min-w-40">Datum:</span>
-              <span>14.04.2026</span>
-            </div>
-            <div className="flex items-center">
-              <span className="font-semibold min-w-40">Uhrzeit:</span>
-              <span>9.00 - 16.00 Uhr</span>
-            </div>
-            <div className="flex items-center">
-              <span className="font-semibold min-w-40">Ort:</span>
-              <span>Tagungshotel Sonneck in Bad Wörishofen</span>
-            </div>
+      <section className="px-4 md:px-8 lg:px-32 bg-custom-white ">
+        <Timetable className="pt-24 lg:pt-32" />
+      </section>
+      <section className="bg-custom-white pt-24 px-4 md:px-8 lg:p-32 lg:pb-48">
+        <FourBoxLayout boxes={geoKonferenzContent} className="pb-24" />
+      </section>
+      <section className="lg:hidden mt-24 dark:mt-0 lg:dark:mt-24 p-8 mx-4 bg-custom-white rounded-xl dark">
+        <InfoBtn className="dark:bg-black" content="Seit 2017 im Geschäft" />
+        <h1 className="mt-4">
+          Über den GEO Referenten{" "}
+          <span className="text-custom-red">Jan Krösche</span>
+        </h1>
+        <h2>
+          Taten sprechen bekanntlich lauter als Worte. Drei Beispiele von meinen
+          betreuten Kunden:
+        </h2>
+        <div className="flex flex-col gap-4">
+          <p>
+            Eine Firma aus der Baubranche konnte durch die gesteigerte Google
+            Sichtbarkeit über 500 Anfragen über die Website generieren.
+            Auftragsvolumen mehr als 8 Millionen Euro. Allein über Google!
+          </p>
+          <p>
+            Eine Firma aus dem IT-Bereich gewinnt jede Woche mehr als zwei neue
+            Kunden durch die Google Rankings. Mit durchschnittlichem
+            Auftragswert von 7.000 Euro.
+          </p>
+          <p>
+            Eine Firma aus dem Werbemittel-Bereich hat letztes Jahr 9 neue große
+            Firmenkunden allein über ChatGPT gewonnen: Gesamt-Auftragsvolumen
+            von über 200.000 Euro.
+          </p>
+          <p>
+            Du siehst: Google Rankings sind kein Selbstzweck, sondern ein
+            Treiber für Neukunden und Umsatz.
+          </p>
+        </div>
+      </section>
+      <section className="hidden lg:flex flex-col lg:flex-row gap-12 p-32 2xl:gap-32 2xl:justify-center dark">
+        <div className="lg:min-w-1/2 2xl:min-w-1/3 lg:relative">
+          <div className="lg:absolute lg:-top-48">
+            <Image
+              src="/images/portraits/39321-3997.jpg"
+              style={{ width: "400px" }}
+              alt="Portrait Jan Kroesche"
+              height={800}
+              width={400}
+              className="mx-auto"
+            />
+            <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
+              Wir helfen Unternehmen dabei, die Nummer 1 ihrer Branche werden
+            </p>
           </div>
-          <div className="flex flex-col md:text-xl">
-            <div className="bg-slate-200 p-4">
-              <div className="flex flex-col lg:flex-row lg:justify-between">
-                <div className="w-full flex flex-col lg:flex-row gap-4 lg:gap-0">
-                  <span className="lg:min-w-60 text-neutral-400 font-bold text-xl lg:text-4xl">
-                    01
-                  </span>{" "}
-                  <span className="font-semibold">
-                    Begrüßung & Kennenlernen
-                  </span>
-                </div>
-                <span className="pt-2 lg:pt-0 min-w-48 w-full lg:w-auto text-left lg:text-right">
-                  9.00 - 9.15 Uhr
-                </span>{" "}
-              </div>
-              <div className="flex flex-items gap-2 lg:gap-0 pt-2">
-                <span className="lg:min-w-60">Redner:</span>{" "}
-                <span>Jan Krösche</span>
-              </div>
-            </div>
-            <div className="bg-slate-300 p-4">
-              <div className="flex flex-col lg:flex-row lg:justify-between">
-                <div className="w-full flex flex-col lg:flex-row gap-4 lg:gap-0">
-                  <span className="lg:min-w-60 text-neutral-400 font-bold text-xl lg:text-4xl">
-                    02
-                  </span>{" "}
-                  <span className="font-semibold">
-                    Status Quo im GEO – aktuelle Entwicklungen
-                  </span>
-                </div>
-                <span className="pt-2 lg:pt-0 min-w-48 w-full lg:w-auto text-left lg:text-right">
-                  9.15 - 10.30 Uhr
-                </span>{" "}
-              </div>
-              <div className="flex flex-items gap-2 lg:gap-0 pt-2">
-                <span className="lg:min-w-60">Redner:</span>{" "}
-                <span>Jan Krösche</span>
-              </div>
-            </div>
-            <div className="p-4">
-              <div className="flex items-center justify-between py-1">
-                <div className="flex items-center">
-                  <span className="lg:min-w-60 text-neutral-400 font-bold text-4xl"></span>{" "}
-                  <span className="">15 Minuten Pause</span>
-                </div>
-                <span className=""></span>{" "}
-              </div>
-              <div className="flex flex-items pt-2">
-                <span className="lg:min-w-60"></span> <span></span>
-              </div>
-            </div>
-            <div className="bg-slate-200 p-4">
-              <div className="flex flex-col lg:flex-row lg:justify-between">
-                <div className="w-full flex flex-col lg:flex-row gap-4 lg:gap-0">
-                  <span className="lg:min-w-60 text-neutral-400 font-bold text-xl lg:text-4xl">
-                    03
-                  </span>{" "}
-                  <span className="font-semibold">
-                    Website bei ChatGPT & Co. sichtbar machen – Konkrete
-                    Maßnahme
-                  </span>
-                </div>
-                <span className="pt-2 lg:pt-0 min-w-48 w-full lg:w-auto text-left lg:text-right">
-                  10.45 - 12.30 Uhr
-                </span>{" "}
-              </div>
-              <div className="flex flex-items gap-2 lg:gap-0 pt-2">
-                <span className="lg:min-w-60">Redner:</span>{" "}
-                <span>Jan Krösche</span>
-              </div>
-            </div>
-            <div className="p-4">
-              <div className="flex items-center justify-between py-1">
-                <div className="flex items-center">
-                  <span className="lg:min-w-60 text-neutral-400 font-bold text-4xl"></span>{" "}
-                  <span className="">Mittagspause inkl. gemeinsames Essen</span>
-                </div>
-                <span className=""></span>{" "}
-              </div>
-              <div className="flex flex-items pt-2">
-                <span className="lg:min-w-60"></span> <span></span>
-              </div>
-            </div>
-            <div className="bg-slate-300 p-4">
-              <div className="flex flex-col lg:flex-row lg:justify-between">
-                <div className="w-full flex flex-col lg:flex-row gap-4 lg:gap-0">
-                  <span className="lg:min-w-60 text-neutral-400 font-bold text-xl lg:text-4xl">
-                    04
-                  </span>{" "}
-                  <span className="font-semibold">
-                    Gemeinsamer GEO Audit einer Website, um Optimierungen zu
-                    identifizieren
-                  </span>
-                </div>
-                <span className="pt-2 lg:pt-0 min-w-48 w-full lg:w-auto text-left lg:text-right">
-                  14.00 - 15.00 Uhr
-                </span>{" "}
-              </div>
-              <div className="flex flex-items gap-2 lg:gap-0 pt-2">
-                <span className="lg:min-w-60">Redner:</span>{" "}
-                <span>Bastian Huber</span>
-              </div>
-            </div>
-            <div className="bg-slate-200 p-4">
-              <div className="flex flex-col lg:flex-row lg:justify-between">
-                <div className="w-full flex flex-col lg:flex-row gap-4 lg:gap-0">
-                  <span className="lg:min-w-60 text-neutral-400 font-bold text-xl lg:text-4xl">
-                    05
-                  </span>{" "}
-                  <span className="font-semibold">
-                    Diskussionsrunde zu KI- und GEO-Themen
-                  </span>
-                </div>
-                <span className="pt-2 lg:pt-0 min-w-48 w-full lg:w-auto text-left lg:text-right">
-                  15.00 - 16.00 Uhr
-                </span>{" "}
-              </div>
-              <div className="flex flex-items gap-2 lg:gap-0 pt-2">
-                <span className="lg:min-w-60">Redner:</span>{" "}
-                <span>Bastian Huber & Jan Krösche</span>
-              </div>
-            </div>
-            <div className="p-4">
-              <div className="flex items-center justify-between py-1">
-                <div className="flex items-center">
-                  <span className="lg:min-w-60 ">Ende der Veranstaltung</span>{" "}
-                  <span className=""></span>
-                </div>
-                <span className=""></span>{" "}
-              </div>
-              <div className="flex flex-items pt-2">
-                <span className="lg:min-w-60"></span> <span></span>
-              </div>
+        </div>
+        <div className="mx-4 lg:mx-0 2xl:max-w-1/2 3xl:max-w-1/3">
+          <h1 className="text-center">
+            Über den GEO Referenten{" "}
+            <span className="text-custom-red">Jan Krösche</span>
+          </h1>
+          <InfoBtn
+            content="Seit 2017 im Geschäft"
+            className="mx-auto mt-12 dark:bg-darkmode-blue"
+          />
+          <h2 className="text-center mt-4">
+            Seit 2017 bin ich als SEO, Ads und GEO Dienstleister und
+            Kundenberater unterwegs
+          </h2>
+          <div className="flex flex-col gap-4 mt-12">
+            <p>
+              In den vergangenen Jahren habe ich eine der größten
+              Onlinemarketing Agenturen in Süddeutschland geleitet. Mit ca. 50
+              festangestellten Mitarbeitenden betreuten wir einen Kundenstamm
+              von über 300 Firmen aus dem deutschsprachigen Raum.
+            </p>
+            <p>
+              In den vergangenen Jahren habe ich eine der größten
+              Onlinemarketing Agenturen in Süddeutschland geleitet. Mit ca. 50
+              festangestellten Mitarbeitenden betreuten wir einen Kundenstamm
+              von über 300 Firmen aus dem deutschsprachigen Raum.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="lg:hidden mt-12 p-8 mx-4 bg-custom-white rounded-xl dark">
+        <InfoBtn className="dark:bg-black" content="SEO & GEO Experte" />
+        <h1 className="mt-4">
+          Über den GEO Referenten{" "}
+          <span className="text-custom-red">Bastian Huber</span>
+        </h1>
+        <h2>Mein Hintergrund ist redaktionell - mein Blick strategisch.</h2>
+        <div className="flex flex-col gap-4">
+          <p>
+            Eine Firma aus der Baubranche konnte durch die gesteigerte Google
+            Sichtbarkeit über 500 Anfragen über die Website generieren.
+            Auftragsvolumen mehr als 8 Millionen Euro. Allein über Google!
+          </p>
+          <p>
+            Eine Firma aus dem IT-Bereich gewinnt jede Woche mehr als zwei neue
+            Kunden durch die Google Rankings. Mit durchschnittlichem
+            Auftragswert von 7.000 Euro.
+          </p>
+          <p>
+            Eine Firma aus dem Werbemittel-Bereich hat letztes Jahr 9 neue große
+            Firmenkunden allein über ChatGPT gewonnen: Gesamt-Auftragsvolumen
+            von über 200.000 Euro.
+          </p>
+          <p>
+            Du siehst: Google Rankings sind kein Selbstzweck, sondern ein
+            Treiber für Neukunden und Umsatz.
+          </p>
+        </div>
+      </section>
+      <section className="hidden lg:flex flex-col lg:flex-row gap-12 mt-32 xl:mt-48 lg:bg-custom-white p-32 2xl:gap-32 2xl:justify-center dark">
+        <div className="lg:min-w-1/2 2xl:min-w-1/3 lg:relative">
+          <div className="lg:absolute lg:-top-48">
+            <Image
+              src="/images/portraits/39321-3997.jpg"
+              style={{ width: "400px" }}
+              alt="Portrait Jan Kroesche"
+              height={800}
+              width={400}
+              className="mx-auto"
+            />
+            <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
+              Wir helfen Unternehmen dabei, die Nummer 1 ihrer Branche werden
+            </p>
+          </div>
+        </div>
+        <div className="mx-4 lg:mx-0 2xl:max-w-1/2 3xl:max-w-1/3">
+          <h1 className="text-center">
+            Über den GEO Referenten{" "}
+            <span className="text-custom-red">Bastian Huber</span>
+          </h1>
+          <InfoBtn
+            content="SEO & GEO Experte"
+            className="mx-auto mt-12 dark:bg-darkmode-blue"
+          />
+          <h2 className="text-center mt-4">
+            Mein Hintergrund ist redaktionell - mein Blick strategisch.
+          </h2>
+          <div className="flex flex-col gap-4 mt-12">
+            <p>
+              Ich arbeite seit vielen Jahren im Bereich SEO und Content mit dem
+              Fokus darauf, wie Sichtbarkeit tatsächlich entsteht – und warum
+              sie oft ausbleibt.
+            </p>
+            <p>
+              Mit der ConversionSchmiede berate ich Unternehmen dabei, online
+              als relevante Quelle wahrgenommen zu werden – in Suchmaschinen
+              ebenso wie in KI-Antwortsystemen. Dabei geht es nicht um Taktiken,
+              sondern um saubere Strukturen, Inhalte und Einordnung.
+            </p>
+            <p>
+              Mein Schwerpunkt liegt auf SEO, GEO und der Verbindung aus
+              Technik, Content und Autorität. Dieses Wissen vermittle ich
+              praxisnah in Beratung, Workshops und Vorträgen.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="flex flex-col gap-24 xl:flex-row px-4 md:px-8 lg:px-32 mt-24 lg:mt-32 xl:mt-48">
+        <div className="flex-1 mx-4 lg:mx-0 2xl:max-w-1/2 3xl:max-w-1/3 lg:mt-8">
+          <h1 className="text-center">
+            Anmeldung zur <span className="text-custom-red">GEO Konferenz</span>
+          </h1>
+          <InfoBtn
+            content="Teilnahme sichern"
+            className="mx-auto mt-12 dark:bg-darkmode-blue"
+          />
+          <h2 className="text-center mt-4">
+            Du kannst dich per Mail für die GEO Konferent anmelden
+          </h2>
+          <div className="flex flex-col gap-4 mt-12">
+            <p>
+              Du kannst Dich ganz einfach per E-Mail für die GEO Konferenz am
+              17.04.2026 anmelden. Schreibe uns einfach eine Nachricht an
+              jan@jankroesche.de. Du erhältst dann alle weiteren Informationen
+              zugeschickt.
+            </p>
+            <p>
+              Hast Du Fragen zur Veranstaltung? Dann kontaktieren uns gern
+              persönlich. Wir stehen Dir per Mail oder per Telefon gern zur
+              Seite.
+            </p>
+
+            <p className="pb-8 border-b-1 border-slate-700 dark:border-custom-white">
+              Wir freuen uns, auf viele spannende Gespräche rund um GEO und KI
+              und eine gute Zeit mit Dir.
+            </p>
+            <div className="flex flex-col items-center">
+              <span className="dark:text-custom-white">Jan Krösche</span>
+              <span className="text-custom-red">+49 176 55 10 93 83</span>
+              <span className="text-custom-red">jan@jankroesche.de </span>
             </div>
           </div>
         </div>
+        <GEOConferenceOverview conference={geoKonferenz} className="flex-1" />
       </section>
     </div>
   );

@@ -278,9 +278,9 @@ export default function Home() {
         <Contact className="p-8 mt-24 lg:mt-0 lg:mx-32" />
       </div>
       <WebsiteCheck className="mt-32 lg:max-w-[1500px] lg:mx-auto" />
-      <section className="py-24 md:py-32 lg:py-0 lg:py-32 flex flex-col item-center bg-custom-white">
-        <div className="px-4 lg:px-0 text-center lg:mt-32">
-          <h1 className="">
+      <section className="py-24 lg:py-32 lg:mt-32 flex flex-col item-center bg-custom-white">
+        <div className="px-4 md:px-16 lg:px-32 ">
+          <h1 className="text-center">
             {" "}
             Keine Lust mehr, hinter Deinem{" "}
             <span className="text-custom-red">größten Wettbewerber</span>{" "}
@@ -292,7 +292,7 @@ export default function Home() {
         <div className="bg-custom-white dark:bg-black">
           <FourBoxLayout
             boxes={standardFourBoxContent}
-            className="px-4 lg:px-0 max-w-7xl"
+            className="px-4 md:px-8 lg:px-32 pt-8  max-w-7xl"
           />
         </div>
       </section>
