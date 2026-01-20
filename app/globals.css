@@ -33,6 +33,8 @@ body {
 
   --font-poppins: var(--font-poppins);
   --font-inter: var(--font-inter);
+
+  --background-image-geo-conference: url('/images/hotel_sonneck_panorama.jpg');
 }
 
 @media (prefers-color-scheme: dark) {

@@ -16,9 +16,9 @@ export const metadata: Metadata = {
 export default function page() {
   return (
     <div>
-      <Breadcrumbs className="hidden md:block pt-4 px-4 lg:px-32 font-semibold" />
-      <section className="pt-12 lg:px-32 px-4 lg:pt-32 lg:pb-16 xl:max-w-3/4 2xl:max-w-2/3">
-        <h1 className="text-center md:px-32 lg:px-0 lg:text-start 2xl:!text-5xl/14">
+      <section className="pt-12 lg:pt-0 lg:px-32 px-4 lg:bg-geo-conference bg-cover lg:h-screen flex flex-col lg:justify-center lg:items-start">
+      <div className="xl:max-w-2/3 bg-white p-8 lg:p-16 rounded-xl">
+       <h1 className="text-center md:px-32 lg:px-0 lg:text-start 2xl:!text-5xl/14">
           <span className="text-custom-red">GEO Konferenz</span> im Allgäu am
           17. April 2026
         </h1>
@@ -33,7 +33,20 @@ export default function page() {
           potenzielle Kunden in Zukunft dort finden, wo sie nach Produkten und
           Dienstleistungen suchen.
         </p>
+      </div>
+      {/* <div className="absolute">
+                 <Image
+            src="/images/hotel_sonneck_panorama.jpg"
+            style={{ width: "1200px" }}
+            alt="Screenshot eines Prompts in einer KI Suchmaschine"
+            height={300}
+            width={500}
+            className="mx-auto"
+          />
+      </div> */}
+ 
       </section>
+            <Breadcrumbs className="hidden md:block pt-4 px-4 lg:px-32 font-semibold" />
       <section>
         <KroescheKonferenzIntroLayout
           workshop={geoKonferenz}
