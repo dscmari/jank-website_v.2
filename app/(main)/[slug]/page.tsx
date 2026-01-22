@@ -58,7 +58,7 @@ export default async function PostPage({
   return (
     <main className="px-4 md:px-8 lg:px-32">
       <Link
-        href="/videos/"
+        href="/blog/"
         className="block mt-4 md:mt-8 lg:mt-16 font-light text-sm dark:text-custom-white"
       >
         ← Zurück
