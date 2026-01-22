@@ -38,9 +38,9 @@ const Tabs = () => {
       link: "/referenzen/",
     },
     {
-      title: "Videos",
+      title: "Blog",
       Component: NavVideos,
-      link: "/videos/",
+      link: "/blog/",
     },
     {
       title: "GEO Tracker",

@@ -3,6 +3,12 @@ import Image from "next/image";
 import { GoDiamond } from "react-icons/go";
 import sections from "../../content/referencesList";
 import Breadcrumbs from "@/app/components/Breadcrumps";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Referenzen von Jan Krösche | SEO – GEO – Google Ads",
+};
+
 
 export default function page() {
   return (

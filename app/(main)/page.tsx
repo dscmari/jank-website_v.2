@@ -26,6 +26,7 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+
   return (
     <>
       <ATF
@@ -92,7 +93,10 @@ export default function Home() {
           Wir haben über 500 Firmenwebsites{" "}
           <span className="text-custom-red"> auf Platz 1</span> optimiert
         </h1>{" "}
-        <InfoBtn content="Erfolgsgeschichten" className="mx-auto mt-16 dark:bg-darkmode-blue" />
+        <InfoBtn
+          content="Erfolgsgeschichten"
+          className="mx-auto mt-16 dark:bg-darkmode-blue"
+        />
         <h2 className="mt-4 text-center">
           Messbarer Erfolg und nachhaltiges Wachstum durch SEO, GEO & SEA
         </h2>
@@ -287,7 +291,10 @@ export default function Home() {
             hinterherzulaufen?
           </h1>
         </div>
-        <InfoBtn content="Unser Ziel" className="mx-auto mt-16 dark:bg-darkmode-blue" />
+        <InfoBtn
+          content="Unser Ziel"
+          className="mx-auto mt-16 dark:bg-darkmode-blue"
+        />
         <h2 className="mt-4 text-center">Wir stärken deine Sichtbarkeit</h2>
         <div className="bg-custom-white dark:bg-black">
           <FourBoxLayout
