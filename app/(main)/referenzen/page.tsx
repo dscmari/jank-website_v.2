@@ -1,4 +1,3 @@
-import FiveStarRating from "@/app/components/FiveStarRating";
 import Image from "next/image";
 import { GoDiamond } from "react-icons/go";
 import sections from "../../content/referencesList";
@@ -26,7 +25,7 @@ export default function page() {
         </h2>
       </div>
 
-      <div className="flex flex-col gap-24 lg:gap-32 mt-12 lg:mt-24">
+      <div className="flex flex-col gap-24 lg:gap-32 mt-12 lg:mt-24 lg:px-32">
         {sections.map((s, index) => (
           <section
             key={index}

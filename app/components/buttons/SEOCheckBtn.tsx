@@ -1,4 +1,5 @@
 
+import Link from "next/link";
 import LinkSeoCheck from "../links/LinkSeoCheck";
 import { FiArrowRight } from "react-icons/fi";
 
@@ -8,11 +9,11 @@ type Props = {
 
 export default function SEOCheckBtn({ className }: Props) {
   return (
-    <button
-      className={`px-4 py-4 bg-custom-red text-xl text-white rounded-xl w-full flex items-center justify-between ${className}`}
+    <Link href={"/seo-berater/kostenloser-seo-check/"}
+      className={`md:w-1/2 md:mx-auto lg:mx-0 lg:w-full p-4 lg:max-w-2/3 bg-custom-red text-lg text-white font-semibold tracking-tight rounded-xl flex items-center justify-between ${className}`}
     >
-      <LinkSeoCheck />
+      Kostenloser SEO Check
       <FiArrowRight color="white" />
-    </button>
+    </Link>
   );
 }
