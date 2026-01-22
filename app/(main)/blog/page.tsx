@@ -11,7 +11,6 @@ export const metadata: Metadata = {
   title: "Videos, Podcast, Ratgeber rund um SEO, GEO & Ads",
 };
 
-
 const POSTS_QUERY = `*[
   _type == "post"
   && defined(slug.current)
@@ -28,7 +27,7 @@ const options = { next: { revalidate: 30 } };
 
 export default async function Blog() {
   const posts = await client.fetch<SanityDocument[]>(POSTS_QUERY, {}, options);
-  
+
   return (
     <div className="">
       <Breadcrumbs className="hidden md:block pt-4 px-4 lg:px-32 font-semibold" />
@@ -54,17 +53,22 @@ export default async function Blog() {
               height={600}
               className="h-96 w-full object-cover"
             />
-            <div className="mx-4 my-2 flex flex-col">
-              <span className="underline font-bold text-lg">
+            <div className="mx-4 my-2 flex flex-col items-start">
+              <Link
+                href={`/${post.slug.current}`}
+                className="gap-2 pt-4  underline font-semibold text-lg"
+              >
                 {post.title}
-              </span>
-
+              </Link>
               <p className="leading-5 text-slate-600">
                 {post.excerpt?.substring(0, 140)}...
               </p>
-              <Link href={`/${post.slug.current}`} className="flex gap-2 pt-4 items-center cursor-pointer">
-                <span className="text-sm font-semibold">Zum Post</span>
-                 <LuSquareArrowOutUpRight />
+              <Link
+                href={`/${post.slug.current}`}
+                className="flex gap-2 pt-4 items-center text-sm font-semibold"
+              >
+                Zum Post
+                <LuSquareArrowOutUpRight />
               </Link>
             </div>
           </div>
