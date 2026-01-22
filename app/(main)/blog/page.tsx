@@ -57,6 +57,7 @@ export default async function Blog() {
               <Link
                 href={`/${post.slug.current}`}
                 className="gap-2 pt-4  underline font-semibold text-lg"
+                target="_blank"
               >
                 {post.title}
               </Link>
@@ -66,6 +67,7 @@ export default async function Blog() {
               <Link
                 href={`/${post.slug.current}`}
                 className="flex gap-2 pt-4 items-center text-sm font-semibold"
+                target="_blank"
               >
                 Zum Post
                 <LuSquareArrowOutUpRight />
