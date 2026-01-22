@@ -200,11 +200,11 @@ export default function Navbar({ className }: Props) {
                 Referenzen
               </Link>
               <Link
-                href={"/videos"}
+                href={"/blog/"}
                 onClick={() => setIsMenuOpen((prev) => !prev)}
                 className="pt-4 pb-2 mx-8 border-b-2 border-slate-200"
               >
-                Videos
+                Blog
               </Link>
               <Link
                 href={"/geo-berater/geo-tracker/"}
