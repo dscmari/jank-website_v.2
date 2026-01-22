@@ -53,6 +53,9 @@ const NavServices = () => {
           <Link href="/google-ads-berater/" className="text-neutral-400">
             Google Ads Berater für Google-Klicks
           </Link>
+           <Link href="/microsoft-ads-berater/" className="text-neutral-400">
+            Microsoft Ads Berater
+          </Link>
           <Link
             href="/google-ads-berater/kostenloser-google-ads-kurs"
             className="text-neutral-400"

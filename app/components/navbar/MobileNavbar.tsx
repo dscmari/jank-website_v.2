@@ -169,6 +169,17 @@ export default function Navbar({ className }: Props) {
                           Google Ads Berater für Google-Klicks
                         </Link>
                       </div>
+                             <div
+                        className="pb-1 border-b-2 border-slate-200"
+                        onClick={() => setIsMenuOpen((prev) => !prev)}
+                      >
+                        <Link
+                          href="/microsoft-ads-berater/"
+                          className="text-neutral-400 "
+                        >
+                          Microsoft Ads Berater
+                        </Link>
+                      </div>
                       <div
                         className="pb-1 border-b-2 border-slate-200"
                         onClick={() => setIsMenuOpen((prev) => !prev)}

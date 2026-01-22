@@ -12,7 +12,7 @@ type Props = {
 export default function DesktopNavbar({className} : Props) {
   return (
     <div className={`bg-custom-white p-4 px-8 ${className}`}>
-      <div className="flex gap-8 justify-end items-center">
+      <div className="flex gap-8 justify-end items-center text-sm">
         <div className="flex gap-2 items-center">
           <FiPhone />
           <span>+49 176 55109383</span>

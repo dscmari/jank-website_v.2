@@ -23,6 +23,11 @@ const adsBeraterATF = {
   text:"Wir schalten Deine Google Werbung, optimieren Deine Kampagne und sorgen dafür, dass Du endlich mehr Anfragen über Deine Seite erhältst."
 }
 
+const msAdsBeraterATF = {
+  title: "Dein Microsoft Ads Berater für Sichtbarkeit auf Bing & Copilot",
+  subtitle: "Als Microsoft Ads Berater helfen wir Dir, bei Bing und Copilot sichtbar zu sein. Damit Deine Kunden Dich finden.",
+  text:"Viele Firmen unterschätzen Microsoft Ads und nutzen den Werbekanal nicht. Ideal für Dich, um mehr Klicks zu bekommen."
+}
 
 
-export default {homeATF, seoBeraterATF, geoBeraterATF, adsBeraterATF}
+export default {homeATF, seoBeraterATF, geoBeraterATF, adsBeraterATF, msAdsBeraterATF}

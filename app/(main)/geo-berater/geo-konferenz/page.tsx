@@ -17,7 +17,7 @@ export default function page() {
   return (
     <div>
       <section className="pt-12 lg:pt-0 lg:px-32 px-4 lg:bg-geo-conference bg-cover lg:h-screen flex flex-col lg:justify-center lg:items-start">
-      <div className="xl:max-w-2/3 bg-white p-8 lg:p-16 rounded-xl">
+      <div className="xl:max-w-2/3 bg-white lg:p-16 rounded-xl">
        <h1 className="text-center md:px-32 lg:px-0 lg:text-start 2xl:!text-5xl/14">
           <span className="text-custom-red">GEO Konferenz</span> im Allgäu am
           17. April 2026
@@ -34,17 +34,6 @@ export default function page() {
           Dienstleistungen suchen.
         </p>
       </div>
-      {/* <div className="absolute">
-                 <Image
-            src="/images/hotel_sonneck_panorama.jpg"
-            style={{ width: "1200px" }}
-            alt="Screenshot eines Prompts in einer KI Suchmaschine"
-            height={300}
-            width={500}
-            className="mx-auto"
-          />
-      </div> */}
- 
       </section>
             <Breadcrumbs className="hidden md:block pt-4 px-4 lg:px-32 font-semibold" />
       <section>
@@ -210,9 +199,9 @@ export default function page() {
         <div className="lg:min-w-1/2 2xl:min-w-1/3 lg:relative">
           <div className="lg:absolute lg:-top-48">
             <Image
-              src="/images/portraits/39321-3997.jpg"
+              src="/images/portraits/huber_bastian.jpg"
               style={{ width: "400px" }}
-              alt="Portrait Jan Kroesche"
+              alt="Portrait von Bastian Huber"
               height={800}
               width={400}
               className="mx-auto"

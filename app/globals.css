@@ -190,5 +190,8 @@ span {
 }
 
 .sanity-text h2 {
-  margin-top: 1rem;
+  margin-top: 2rem;
+}
+.sanity-text p {
+  line-height: 1.625; /* leading-relaxed */
 }

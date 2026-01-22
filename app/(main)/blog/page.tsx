@@ -49,9 +49,9 @@ export default async function Blog() {
             <Image
               src={post.imageUrl}
               alt={post.title}
-              width={400}
-              height={600}
-              className="h-96 w-full object-cover"
+              width={1200}
+              height={800}
+              className=""
             />
             <div className="mx-4 my-2 flex flex-col items-start">
               <Link

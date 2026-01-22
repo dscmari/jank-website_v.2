@@ -72,14 +72,14 @@ export default async function PostPage({
       >
         ← Zurück
       </Link>
-      <div className="flex flex-col items-center max-w-7xl mx-4 lg:mx-auto">
+      <div className="flex flex-col items-center max-w-4xl mx-4 lg:mx-auto">
         {postImageUrl && (
           <Image
             src={postImageUrl}
             alt={post.title}
             width={600}
             height={400}
-            className=" rounded-xl mt-16 "
+            className="rounded-xl mt-16 "
           />
         )}
         <InfoBtn content="Blog" className="mt-4 md:mt-8 lg:mt-16 dark" />
