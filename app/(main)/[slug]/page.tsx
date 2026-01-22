@@ -51,10 +51,19 @@ export default async function PostPage({
     await params,
     options,
   );
+
   const postImageUrl = post.image
     ? urlFor(post.image)?.width(550).height(310).url()
     : null;
+  const postImageUrl_2 = post.image_2
+    ? urlFor(post.image)?.width(550).height(310).url()
+    : null;
+  const postImageUrl_3 = post.image_3
+    ? urlFor(post.image)?.width(550).height(310).url()
+    : null;
 
+    console.log(post)
+    console.log(postImageUrl_2)
   return (
     <main className="px-4 md:px-8 lg:px-32">
       <Link
@@ -73,7 +82,7 @@ export default async function PostPage({
             className=" rounded-xl mt-16 "
           />
         )}
-        <InfoBtn content="Blog" className="mt-4 md:mt-8 lg:mt-16 dark"/>
+        <InfoBtn content="Blog" className="mt-4 md:mt-8 lg:mt-16 dark" />
         <h1 className="mt-4 lg:mt-8">{post.title}</h1>
         <p className="text-sm font-light text-center">
           {new Date(post.publishedAt).toLocaleDateString("de-DE", {
@@ -82,9 +91,32 @@ export default async function PostPage({
             year: "numeric",
           }) || "Datum unbekannt"}
         </p>
-
-        <div className="mt-4 lg:mt-8 lg:px-16 xl:px-32">
+        <div className="mt-4 lg:mt-8 lg:px-16 xl:px-32 sanity-text">
           {Array.isArray(post.body) && <PortableText value={post.body} />}
+        </div>
+        {postImageUrl_2 && (
+          <Image
+            src={postImageUrl_2}
+            alt={post.title}
+            width={600}
+            height={400}
+            className=" rounded-xl mt-16 "
+          />
+        )}
+        <div className="mt-4 lg:mt-8 lg:px-16 xl:px-32 sanity-text">
+          {Array.isArray(post.body_2) && <PortableText value={post.body_2} />}
+        </div>
+        {postImageUrl_3 && (
+          <Image
+            src={postImageUrl_3}
+            alt={post.title}
+            width={600}
+            height={400}
+            className=" rounded-xl mt-16 "
+          />
+        )}
+        <div className="mt-4 lg:mt-8 lg:px-16 xl:px-32 sanity-text">
+          {Array.isArray(post.body_3) && <PortableText value={post.body_3} />}
         </div>
       </div>
     </main>

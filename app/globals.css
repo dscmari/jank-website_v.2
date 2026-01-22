@@ -188,3 +188,7 @@ span {
   font-size: var(--text-sm);
   line-height: var(--text-sm--line-height);
 }
+
+.sanity-text h2 {
+  margin-top: 1rem;
+}
