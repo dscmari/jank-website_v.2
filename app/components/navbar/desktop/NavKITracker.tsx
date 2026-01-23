@@ -42,10 +42,10 @@ const NavKITracker = () => {
         </div>
       </div>
 
-      <button className="ml-auto mt-4 flex items-center gap-1 text-sm text-indigo-300">
+      {/* <button className="ml-auto mt-4 flex items-center gap-1 text-sm text-indigo-300">
         <span>View more</span>
         <FiArrowRight />
-      </button>
+      </button> */}
     </div>
   );
 };
