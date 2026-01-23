@@ -24,21 +24,22 @@ const Tab = ({
     }
   } 
   return (
+    /* Display Menu just for Services */
     <button
       id={`shift-tab-${tab}`}
-      onMouseEnter={() => handleSetSelected(tab)}
+      onMouseEnter={() => !hasLink && handleSetSelected(tab)}
       onClick={() => handleClick()}
       className={`flex items-center gap-1 rounded p-4 transition-colors text-custom-black ${
         selected === tab
           ? "underline cursor-pointer"
           : ""
-      } ${hasLink ? "!cursor-pointer" : ""}`}
+      } ${hasLink ? "!cursor-pointer hover:underline" : ""}`}
     >
       {children}
       <FiChevronDown
         className={`transition-transform size-6 ${
           selected === tab ? "rotate-180" : ""
-        }`}
+        } ${hasLink && "hidden"}`}
       />
     </button>
   );

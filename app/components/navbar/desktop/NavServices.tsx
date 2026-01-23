@@ -34,12 +34,12 @@ const NavServices = () => {
           <Link href="/geo-berater/geo-webinare/" className="text-neutral-400">
             GEO Webinare
           </Link>
-          <Link
+          {/* <Link
             href="/geo-berater/geo-workshop-fuer-werbeagenturen/"
             className="text-neutral-400"
           >
             GEO Workshop für Werbeagenturen
-          </Link>
+          </Link> */}
           <Link
             href="/geo-berater/chatgpt-ads-berater/"
             className="text-neutral-400"
