@@ -38,6 +38,10 @@ const youtubeSeoBeraterATF = {
   subtitle: "Wir helfen Firmen, bei YouTube sichtbar zu sein und mehr Neukunden zu gewinnen.",
   text:"YouTube zählt zu den beliebtesten Internetplattformen weltweit. Wir optimieren Deinen Kanal & Deine Videos, damit sie in YouTube ganz oben stehen."
 }
+const youtubeAdsBeraterATF = {
+  title: "Dein YouTube Ads Berater für mehr Reichweite auf YouTube",
+  subtitle: "Wir schalten Deine YouTube Ads, damit Deine Videos von potentiellen Kunden gesehen werden.",
+  text:"YouTube zählt zu den beliebtesten Internetplattformen weltweit. Wir schalten Deine YouTube Ads für mehr Sichtbarkeit bei YouTube."
+}
 
-
-export default {homeATF, seoBeraterATF, geoBeraterATF, adsBeraterATF, msAdsBeraterATF, chatGPTAdsBeraterATF, youtubeSeoBeraterATF }
+export default {homeATF, seoBeraterATF, geoBeraterATF, adsBeraterATF, msAdsBeraterATF, chatGPTAdsBeraterATF, youtubeSeoBeraterATF, youtubeAdsBeraterATF }

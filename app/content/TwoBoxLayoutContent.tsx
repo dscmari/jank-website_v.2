@@ -232,3 +232,44 @@ export const youtubeSEOBeraterTwoBox = [
     ],
   },
 ];
+export const youtubeAdsBeraterTwoBox = [
+  {
+    iconText: "YouTube Ads",
+    title: "Wir schalten deine YouTube Ads",
+    subtitle: "Neukunden sehen die Videos Deiner Firma",
+    text: "Wir kümmern uns um die komplette Ads Strategie Deines YouTube Kanals. Von der Themenrecherche bis zur Optimierung der Videoanzeigen.",
+    services: [
+      "Du wirst auf YouTube gefunden",
+      "Du bekommst eine hohe Sichtbarkeit auf YouTube",
+      "Du erreichst über YouTube die richtigen Websitebesucher",
+      "Deine Videos werden häufiger angesehen",
+      "Du erhältst mehr Anfragen über die Website",
+      "Du bestehst langfristig am Markt",
+    ],
+    linkComponent: (
+      <a
+        href="mailto:max.mustermann@ihre-domain.de"
+        className="flex gap-4 items-center w-full "
+      >
+        <FiMail />
+        <span className="font-semibold tracking-wider">jan@jankroesche.de</span>
+      </a>
+    ),
+  },
+  {
+    iconText: "Angebot",
+    title: "Unser Preispaket für Dich",
+    subtitle: "Für die Steigerung deiner Sichtbarkeit bei YouTube",
+    text: "Langfristige Steigerung Deines Kanals und Deiner Videos auf YouTube, um mehr Neukunden zu erreichen.",
+    services: [
+      "Persönlicher Ansprechpartner",
+      "Fortlaufende Keyword-Recherche",
+      "Einrichtung Deiner YouTube Ads",
+      "Zielgruppen Einstellungen",
+      "Fortlaufende Kampagnen Optimierung",
+      "Ideengeber für mehr YouTube Sichtbarkeit ",
+      "Wettbewerbsanalysen",
+      "Strategische Anpassungen",
+    ],
+  },
+];
