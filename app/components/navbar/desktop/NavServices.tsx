@@ -26,7 +26,7 @@ const NavServices = () => {
             GEO Berater für KI Sichtbarkeit
           </Link>
           <Link href="/geo-berater/geo-konferenz/" className="text-neutral-400">
-            GEO Konferenz im Allgäu am 17. April
+            GEO Konferenz im Allgäu am 8. Mai
           </Link>
           <Link href="/geo-berater/geo-tracker/" className="text-neutral-400">
             GEO Tracker

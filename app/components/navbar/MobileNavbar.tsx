@@ -114,7 +114,7 @@ export default function Navbar({ className }: Props) {
                         onClick={() => setIsMenuOpen((prev) => !prev)}
                       >
                         <Link href="/geo-berater/geo-konferenz/">
-                          GEO Konferenz im Allgäu am 17. April
+                          GEO Konferenz im Allgäu am 8. Mai
                         </Link>
                       </div>
                       <div

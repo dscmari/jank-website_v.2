@@ -10,7 +10,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "GEO Konferenz im Allgäu 17.04.26 | GEO Seminar Bad Wörishofen",
+  title: "GEO Konferenz im Allgäu 08.05.26 | GEO Seminar Bad Wörishofen",
 };
 
 export default function page() {
@@ -20,14 +20,14 @@ export default function page() {
       <div className="xl:max-w-2/3 bg-white lg:p-16 rounded-xl">
        <h1 className="text-center md:px-32 lg:px-0 lg:text-start 2xl:!text-5xl/14">
           <span className="text-custom-red">GEO Konferenz</span> im Allgäu am
-          17. April 2026
+          8. Mai 2026
         </h1>
         <h2 className="hidden lg:block">
           Mehr Sichtbarkeit bei ChatGPT, Gemini & Co.: So stellst Dich online
           auf, damit Dich Deine Kunden in der KI finden können
         </h2>
         <p>
-          Auf der GEO Konferenz am 17.04.2026 im Ringhotel Sonneck Bad
+          Auf der GEO Konferenz am 08.05.2026 im Ringhotel Sonneck Bad
           Wörishofen lernst Du, wie Du Deine Firmen-Website in die KI-Antworten
           von ChatGPT, Gemini, Perplexity & Copilot bekommst. Damit Dich
           potenzielle Kunden in Zukunft dort finden, wo sie nach Produkten und
@@ -258,7 +258,7 @@ export default function page() {
           <div className="flex flex-col gap-4 mt-12">
             <p>
               Du kannst Dich ganz einfach per E-Mail für die GEO Konferenz am
-              17.04.2026 anmelden. Schreibe uns einfach eine Nachricht an
+              08.05.2026 anmelden. Schreibe uns einfach eine Nachricht an
               jan@jankroesche.de. Du erhältst dann alle weiteren Informationen
               zugeschickt.
             </p>
