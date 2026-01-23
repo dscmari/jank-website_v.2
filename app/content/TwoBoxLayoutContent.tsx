@@ -190,3 +190,45 @@ export const chatGPTAdsBeraterTwoBox = [
     ],
   },
 ];
+export const youtubeSEOBeraterTwoBox = [
+  {
+    iconText: "YouTube SEO",
+    title: "Mehr Youtube Sichtbarkeit mit SEO",
+    subtitle: "Neukunden sehen die Videos Deiner Firma",
+    text: "Wir kümmern uns um die komplette SEO Strategie Deines YouTube Kanals. Von der Themenrecherche bis zur Optimierung der Videotitel und Beschreibungen.",
+    services: [
+      "Du wirst auf YouTube gefunden",
+      "Du bekommst eine hohe Sichtbarkeit auf YouTube",
+      "Du erreichst über YouTube die richtigen Websitebesucher",
+      "Deine Videos werden häufiger angesehen",
+      "Du erhältst mehr Anfragen über die Website",
+      "Du bestehst langfristig am Markt",
+    ],
+    linkComponent: (
+      <a
+        href="mailto:max.mustermann@ihre-domain.de"
+        className="flex gap-4 items-center w-full "
+      >
+        <FiMail />
+        <span className="font-semibold tracking-wider">jan@jankroesche.de</span>
+      </a>
+    ),
+  },
+  {
+    iconText: "Angebot",
+    title: "Unser Preispaket für Dich",
+    subtitle: "Für die Steigerung deiner Sichtbarkeit bei YouTube",
+    text: "Langfristige Steigerung Deines Kanals und Deiner Videos auf YouTube, um mehr Neukunden zu erreichen.",
+    services: [
+      "Persönlicher Ansprechpartner",
+      "Fortlaufende Suchbegriff Recherche",
+      "Optimierung deines YouTube Kanals",
+      "SEO-konformer Upload der Videos",
+      "Erstellung der Video-Titel und Beschreibungen",
+      "Video Content Plan ",
+      "Ideengeber für mehr YouTube Sichtbarkeit",
+      "Wettbewerbsanalysen",
+      "Strategische Anpassungen",
+    ],
+  },
+];

@@ -33,6 +33,11 @@ const chatGPTAdsBeraterATF = {
   subtitle: "Als ChatGPT Ads Berater helfen wir Dir, bei ChatGPT und anderen KI Systemen genannt zu werden. Damit Deine Kunden Dich finden.",
   text:"ChatGPT Ads wird ein zentraler Werbekanal für viele Unternehmen. Wer in der KI unsichtbar ist, verliert Marktanteile."
 }
+const youtubeSeoBeraterATF = {
+  title: "Dein YouTube SEO Berater für Sichtbarkeit auf YouTube",
+  subtitle: "Wir helfen Firmen, bei YouTube sichtbar zu sein und mehr Neukunden zu gewinnen.",
+  text:"YouTube zählt zu den beliebtesten Internetplattformen weltweit. Wir optimieren Deinen Kanal & Deine Videos, damit sie in YouTube ganz oben stehen."
+}
 
 
-export default {homeATF, seoBeraterATF, geoBeraterATF, adsBeraterATF, msAdsBeraterATF, chatGPTAdsBeraterATF }
+export default {homeATF, seoBeraterATF, geoBeraterATF, adsBeraterATF, msAdsBeraterATF, chatGPTAdsBeraterATF, youtubeSeoBeraterATF }

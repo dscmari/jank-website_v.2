@@ -197,6 +197,31 @@ export default function Navbar({ className }: Props) {
                         </Link>
                       </div>
                     </div>
+                          <div className="flex flex-col gap-1 mr-8">
+                      <h3 className="font-semibold mt-2">YouTube Werbung</h3>
+                      <div
+                        className="pb-1 border-b-2 border-slate-200"
+                        onClick={() => setIsMenuOpen((prev) => !prev)}
+                      >
+                        <Link
+                          href="/youtube-seo-berater/"
+                          className="text-neutral-400 "
+                        >
+                          YouTube SEO Berater
+                        </Link>
+                      </div>
+                      <div
+                        className="pb-1 border-b-2 border-slate-200"
+                        onClick={() => setIsMenuOpen((prev) => !prev)}
+                      >
+                        <Link
+                          href="/youtube-ads-berater/"
+                          className="text-neutral-400 "
+                        >
+                          YouTube Ads Berater
+                        </Link>
+                      </div>
+                    </div>
                   </motion.ol>
                 )}
               </AnimatePresence>

@@ -6,7 +6,7 @@ import Link from "next/link";
 const NavServices = () => {
   return (
     <div>
-      <div className="flex gap-16 p-8">
+      <div className="flex gap-8 p-8">
         <div className="flex flex-col gap-2">
           <h3 className="text-xl  mb-2 font-medium">Google Platz 1</h3>
           <Link href="/seo-berater/" className="text-neutral-400">
@@ -67,6 +67,15 @@ const NavServices = () => {
             className="text-neutral-400"
           >
             Kostenloser Google Ads Kurs
+          </Link>
+        </div>
+                <div className="flex flex-col gap-2">
+          <h3 className="text-xl font-semibold mb-2">YouTube Werbung</h3>
+          <Link href="/youtube-seo-berater/" className="text-neutral-400">
+            YouTube SEO Berater
+          </Link>
+             <Link href="/youtube-ads-berater/" className="text-neutral-400">
+            YouTube Ads Berater
           </Link>
         </div>
       </div>
