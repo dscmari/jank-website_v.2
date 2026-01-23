@@ -10,8 +10,8 @@ export async function submitWebsiteCheck(formData: FormData) {
 
   try {
     const { data, error } = await resend.emails.send({
-      from: "onboarding@resend.dev",
-      to: "mariannoekel@gmail.com",
+      from: "Website Formular <webform@jankroesche.de>",
+      to: "jan@jankroesche.de",
       subject: "Website Check Anfrage",
       html: 
       `<div>

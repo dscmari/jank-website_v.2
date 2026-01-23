@@ -28,8 +28,8 @@ export async function submitGeoTracker(formData: FormData) {
 
   try {
     const { data, error } = await resend.emails.send({
-      from: "onboarding@resend.dev",
-      to: "mariannoekel@gmail.com",
+      from: "Website Formular <webform@jankroesche.de>",
+      to: "jan@jankroesche.de",
       subject: "Webinar Anfrage",
       html: `<div style="font-family: sans-serif; line-height: 1.5; color: #333;">
   <h2 style="color: #bc002d;">Neue Bestellung: GEO Tracker</h2>

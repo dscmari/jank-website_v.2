@@ -12,8 +12,8 @@ export async function submitWebinar(formData: FormData) {
 
   try {
     const { data, error } = await resend.emails.send({
-      from: "onboarding@resend.dev",
-      to: "mariannoekel@gmail.com",
+      from: "Website Formular <webform@jankroesche.de>",
+      to: "jan@jankroesche.de",
       subject: "Webinar Anfrage",
         html: 
       `<div>
