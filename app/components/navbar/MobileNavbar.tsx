@@ -48,18 +48,16 @@ export default function Navbar({ className }: Props) {
         <div className="">
           <ol>
             <div
-              className={`pt-4 rounded-t flex items-center justify-between ${
-                isSelected
+              className={`pt-4 rounded-t flex items-center justify-between ${isSelected
                   ? "border-t border-slate-200 px-8"
                   : "mx-8 border-b-2 border-slate-200"
-              }`}
+                }`}
               onClick={() => setIsSelected((prev) => !prev)}
             >
               <span className="font-semibold pb-2">Leistungen</span>
               <FiChevronDown
-                className={`transition-transform size-6 ${
-                  isSelected ? "rotate-180 text-custom-red" : ""
-                }`}
+                className={`transition-transform size-6 ${isSelected ? "rotate-180 text-custom-red" : ""
+                  }`}
               />
             </div>
             <div className="flex flex-col font-semibold ">
@@ -70,9 +68,8 @@ export default function Navbar({ className }: Props) {
                     animate={{ height: "auto", opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3, ease: "easeInOut" }}
-                    className={`pl-8 pb-8 flex flex-col gap-4 !font-medium  ${
-                      isSelected ? "" : ""
-                    }`}
+                    className={`pl-8 pb-8 flex flex-col gap-4 !font-medium  ${isSelected ? "" : ""
+                      }`}
                   >
                     <div className="flex flex-col gap-1 mr-8">
                       <h3 className="font-semibold mt-2">Google Platz 1</h3>
@@ -145,6 +142,14 @@ export default function Navbar({ className }: Props) {
                         className="pb-1 text-neutral-400 border-b-2 border-slate-200"
                         onClick={() => setIsMenuOpen((prev) => !prev)}
                       >
+                        <Link href="/geo-berater/chatgpt-ads-berater/">
+                          ChatGPT Ads Berater
+                        </Link>
+                      </div>
+                      <div
+                        className="pb-1 text-neutral-400 border-b-2 border-slate-200"
+                        onClick={() => setIsMenuOpen((prev) => !prev)}
+                      >
                         <Link href="/geo-berater/kostenloser-geo-kurs/">
                           Kostenloser GEO Kurs
                         </Link>
@@ -169,7 +174,7 @@ export default function Navbar({ className }: Props) {
                           Google Ads Berater für Google-Klicks
                         </Link>
                       </div>
-                             <div
+                      <div
                         className="pb-1 border-b-2 border-slate-200"
                         onClick={() => setIsMenuOpen((prev) => !prev)}
                       >

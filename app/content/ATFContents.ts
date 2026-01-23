@@ -28,6 +28,11 @@ const msAdsBeraterATF = {
   subtitle: "Als Microsoft Ads Berater helfen wir Dir, bei Bing und Copilot sichtbar zu sein. Damit Deine Kunden Dich finden.",
   text:"Viele Firmen unterschätzen Microsoft Ads und nutzen den Werbekanal nicht. Ideal für Dich, um mehr Klicks zu bekommen."
 }
+const chatGPTAdsBeraterATF = {
+  title: "Dein ChatGPT Ads Berater für maximale KI Sichtbarkeit",
+  subtitle: "Als ChatGPT Ads Berater helfen wir Dir, bei ChatGPT und anderen KI Systemen genannt zu werden. Damit Deine Kunden Dich finden.",
+  text:"ChatGPT Ads wird ein zentraler Werbekanal für viele Unternehmen. Wer in der KI unsichtbar ist, verliert Marktanteile."
+}
 
 
-export default {homeATF, seoBeraterATF, geoBeraterATF, adsBeraterATF, msAdsBeraterATF}
+export default {homeATF, seoBeraterATF, geoBeraterATF, adsBeraterATF, msAdsBeraterATF, chatGPTAdsBeraterATF }

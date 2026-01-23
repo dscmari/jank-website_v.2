@@ -1,24 +1,24 @@
 import ATF from "@/app/components/ATF";
+import atf from "../../../content/ATFContents";
 import { Metadata } from "next";
-import atf from "../../content/ATFContents";
-import { FiMail } from "react-icons/fi";
 import Image from "next/image";
+import { FiMail } from "react-icons/fi";
 import Contact from "@/app/components/Contact";
 import InfoBtn from "@/app/components/buttons/InfoBtn";
 import TwoBoxLayout from "@/app/components/layouts/TwoBoxLayout";
-import { msAdsBeraterTwoBox } from "@/app/content/TwoBoxLayoutContent";
+import { chatGPTAdsBeraterTwoBox } from "@/app/content/TwoBoxLayoutContent";
 
 export const metadata: Metadata = {
-  title: "Microsoft Ads Berater Jan Krösche | Bing Ads schalten",
+  title: "ChatGPT Ads Berater Jan Krösche | Werbung auf ChatGPT",
 };
 
 export default function page() {
   return (
     <div>
       <ATF
-        title={atf.msAdsBeraterATF.title}
-        subtitle={atf.msAdsBeraterATF.subtitle}
-        text={atf.msAdsBeraterATF.text}
+        title={atf.chatGPTAdsBeraterATF.title}
+        subtitle={atf.chatGPTAdsBeraterATF.subtitle}
+        text={atf.chatGPTAdsBeraterATF.text}
         LinkComponent={
           <div className="flex gap-4 items-center">
             <FiMail />
@@ -33,26 +33,26 @@ export default function page() {
       <section className="flex flex-col 2xl:flex-row 2xl:items-center px-4 md:px-16 pt-8 lg:gap-12 lg:p-32 lg:py-32 2xl:gap-32 2xl:justify-center">
         <div className="flex-1 flex flex-col">
           <h1>
-            Mit unserer <span className="text-custom-red">GEO Beratung</span>{" "}
-            wirst Du bei ChatGPT, Gemini & Co. am häufigsten zitiert
+            Mit <span className="text-custom-red">ChatGPT Ads</span> wirst Du
+            die Nr. 1 bei ChatGPT und anderen KI Systemen
           </h1>
           <p>
-            Unter „GEO“ versteht man die Optimierung für generative
-            Suchmaschinen. Einfach ausgedrückt: Man optimiert Firmen-Websites
-            dahingehend, dass sie extrem häufig bei ChatGPT, Gemini, Copilot und
-            anderen KI-Chatsystemen auftauchen.
+            KI Suchmaschinen wie ChatGPT, Gemini, Perplexity und Copilot werden
+            bedeutender. Die Zugriffszahlen wachsen konstant.
           </p>
           <p className="py-4">
-            Unseren Kunden „Schwabinger Wahrheit“ – ein Hotel in München –
-            optimieren wir seit 2022 mit dem Ziel, in der KI sichtbarer zu sein.
-            Für die Suchphrase (= Prompt) „Bestes Familienhotel in Schwabing“
-            erscheint die Hotel-Website unseres Kunden auf Platz 1 in der
-            Antwort. Genau so funktioniert die Kundengewinnung von Morgen.{" "}
+            Kein Wunder, dass ChatGPT Ads zu einem wichtigen Werkzeug werden, um
+            die Firmen-Sichtbarkeit in der KI zu steigern.
+          </p>
+          <p className="pb-4">
+            Mit gezielten ChatGPT Ads wirst Du genau für die Phrasen (= Prompts)
+            ausgespielt, die Deine potentiellen Kunden in der KI suchen. Die
+            erreichst die passende Zielgruppen und generierst mehr Anfragen und
+            mehr Neukunden.
           </p>
           <p>
-            Wir stehen Unternehmen aus Deutschland, Österreich, Südtirol und der
-            Schweiz als GEO Berater zur Seite. Wir helfen Dir, die Nummer 1 in
-            der KI zu werden.
+            Wir setzen Deine ChatGPT Werbung auf, damit Du in der KI sichtbarer
+            bist.
           </p>
           <a
             href="mailto:max.mustermann@ihre-domain.de"
@@ -66,37 +66,35 @@ export default function page() {
         </div>
         <div className="mt-24 lg:mt-12 xl:min-w-1/3">
           <Image
-            src="/images/screenshots/ms-ads-berater.png"
+            src="/images/screenshots/chatgpt-ads-berater.png"
             style={{ width: "600px" }}
-            alt="Screenshot von Bing-Suchergebnissen"
-            height={300}
-            width={500}
+            alt="Screenshot einer ChatGPT Suche"
+            height={400}
+            width={600}
             className="mx-auto"
           />
           <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
-            Microsoft Ads sind ideal, wenn Du Dein Firmenkundengeschäft
-            ankurbeln möchtest
+            Menschen interagieren zunehmend mit KI Systemen. Mit ChatGPT macht
+            man sich und sein Angebot sichtbar
           </p>
         </div>
       </section>
       <section className="pt-24 lg:p-32 lg:pb-48 dark:xl:pb-64 relative lg:bg-custom-white dark:lg:py-0">
         <div className="px-4 lg:px-0 xl:max-w-2/3">
           <h2 className="lg:!text-3xl/10 tracking-wide font-semibold">
-            Du willst bei Bing sofort ganz oben erscheinen und so zum{" "}
+            Du willst bei ChatGPT zitiert werden so zum{" "}
             <span className="text-custom-red">sichtbarsten Anbieter</span> der
             Branche in deiner Region werden?
           </h2>
         </div>
         <div className="lg:text-lg px-4 lg:px-0">
           <p>
-            Mit Microsoft Ads sorgen wir dafür, dass Ihre Firma in der
-            Bing-Suche immer ganz oben steht, sobald jemand nach Ihren
-            Leistungen sucht. Wir wählen gemeinsam genau die Begriffe (Keywords)
-            aus, die Ihre potenziellen Kunden tagtäglich in die Suchzeile
-            eintippen, damit Sie keine teure Werbung an die falschen Leute
-            verschwenden, sondern genau dort sichtbar sind, wo die
-            Kaufentscheidung fällt. So landen die Besucher nicht irgendwo im
-            Netz, sondern direkt auf Ihrer Website.
+            Was bringt Dir eine Website, wenn sie niemand sieht? Viele
+            Unternehmen scheitern nicht daran, weil die Qualität nicht
+            ausreicht. Sie scheitern daran, dass sie kaum Bekanntheit und
+            Reichweite haben. Was bringt das beste Angebot, wenn es niemand
+            kennt? Mit ChatGPT Ads bringst Du Dich genau dort ins Spiel, wo
+            Deine potentiellen Kunden unterwegs sind!
           </p>
         </div>
         <Contact className="p-4 lg:p-8 mt-12" />
@@ -120,7 +118,7 @@ export default function page() {
         <div className="mx-4 lg:mx-0 2xl:max-w-1/2 3xl:max-w-1/3">
           <h1 className="text-center">
             Jan Krösche & Team: Deine{" "}
-            <span className="text-custom-red">Microsoft Ads Berater</span> aus
+            <span className="text-custom-red">ChatGPT Ads Berater</span> aus
             Deutschland, Österreich, Südtirol & der Schweiz
           </h1>
           <InfoBtn
@@ -128,7 +126,7 @@ export default function page() {
             className="mx-auto mt-12 dark:bg-darkmode-blue"
           />
           <h2 className="text-center mt-4">
-            Wir machen Unternehmen bei KI Suchmaschinen sichtbar
+            Wir machen Unternehmen bei ChatGPT sichtbar
           </h2>
           <div className="flex flex-col gap-4 mt-12">
             <p>
@@ -138,10 +136,9 @@ export default function page() {
               unsere Kunden maximal sichtbar machen zu können.
             </p>
             <p>
-              Unser Ziel ist es, Dich und Deine Firmenwebsite bei Bing von
-              Microsoft auffindbar zu machen. Wir schalten Microsoft Ads
-              Kampagnen für Firmen aus Deutschland, Österreich, Südtirol und der
-              Schweiz.
+              Unser Ziel ist es, Dich und Deine Firmenwebsite bei ChatGPT von
+              OpenAI auffindbar zu machen. Wir schalten ChatGPT Ads Kampagnen
+              für Firmen aus Deutschland, Österreich, Südtirol und der Schweiz.
             </p>
             <p>
               Zu unseren Kunden zählen Selbstständige wie Zahnärzte, Handwerker,
@@ -179,7 +176,10 @@ export default function page() {
             Rankings. Neben der fachlichen Expertise wird bei uns der
             Kundenservice groß geschrieben.
           </p>
-          <TwoBoxLayout boxes={msAdsBeraterTwoBox} className="mt-12 lg:mt-24" />
+          <TwoBoxLayout
+            boxes={chatGPTAdsBeraterTwoBox}
+            className="mt-12 lg:mt-24"
+          />
         </div>
       </section>
     </div>

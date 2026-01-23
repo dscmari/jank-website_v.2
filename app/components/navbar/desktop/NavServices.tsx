@@ -41,6 +41,12 @@ const NavServices = () => {
             GEO Workshop für Werbeagenturen
           </Link>
           <Link
+            href="/geo-berater/chatgpt-ads-berater/"
+            className="text-neutral-400"
+          >
+            ChatGPT Ads Berater
+          </Link>
+          <Link
             href="/geo-berater/kostenloser-geo-kurs/"
             className="text-neutral-400"
           >
@@ -53,7 +59,7 @@ const NavServices = () => {
           <Link href="/google-ads-berater/" className="text-neutral-400">
             Google Ads Berater für Google-Klicks
           </Link>
-           <Link href="/microsoft-ads-berater/" className="text-neutral-400">
+          <Link href="/microsoft-ads-berater/" className="text-neutral-400">
             Microsoft Ads Berater
           </Link>
           <Link

@@ -148,3 +148,45 @@ export const msAdsBeraterTwoBox = [
     ],
   },
 ];
+export const chatGPTAdsBeraterTwoBox = [
+  {
+    iconText: "ChatGPT Ads",
+    title: "Wir schalten Deine ChatGPT Ads",
+    subtitle: "Sichtbarkeit in KI Suchmaschinen",
+    text: "Wir kümmern uns um die komplette Einrichtung Deiner ChatGPT Ads Kampagne, damit Du schnell ín der KI sichtbar bist.",
+    services: [
+      "Du erscheinst für wichtige Prompts bei ChatGPT",
+      "Du bekommst eine hohe Sichtbarkeit auf ChatGPT",
+      "Du erreichst über ChatGPT die richtigen Websitebesucher",
+      "Du wirst in den Antworten von ChatGPT zitiert",
+      "Du erhältst mehr Anfragen über die Website",
+      "Du bestehst langfristig am Markt",
+    ],
+    linkComponent: (
+      <a
+        href="mailto:max.mustermann@ihre-domain.de"
+        className="flex gap-4 items-center w-full "
+      >
+        <FiMail />
+        <span className="font-semibold tracking-wider">jan@jankroesche.de</span>
+      </a>
+    ),
+  },
+  {
+    iconText: "Angebot",
+    title: "Unser Preispaket für Dich",
+    subtitle: "Für die Steigerung deiner Sichtbarkeit bei ChatGPT",
+    text: "Kurzfristige Steigerung Deiner ChatGPT Sichtbarkeit durch Werbeanzeigen auf ChatGPT. Damit Du von Deinen Kunden schnell gefunden wirst und Anfragen bekommst.",
+    services: [
+      "Persönlicher Ansprechpartner",
+      "Fortlaufende Suchbegriff Recherche",
+      "Einrichtung der ChatGPT Kampagne",
+      "Erstellung der Anzeigentexte",
+      "Optimierung der Kampagne",
+      "Ausschluss falscher Keywords",
+      "Erstellung neuer SEO Landingpages",
+      "Wettbewerbsanalysen",
+      "Strategische Anpassungen",
+    ],
+  },
+];
