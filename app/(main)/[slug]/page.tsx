@@ -8,6 +8,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 import Image from "next/image";
 import InfoBtn from "@/app/components/buttons/InfoBtn";
+import { IoArrowBack } from "react-icons/io5";
 
 export async function generateMetadata({
   params,
@@ -66,9 +67,9 @@ export default async function PostPage({
     <main className="">
       <Link
         href="/blog/"
-        className="block mt-4 px-4  md:mt-8 md:px-8 lg:px-16 lg:px-32 font-light text-sm dark:text-custom-white"
+        className="hidden lg:block mt-4 px-4  md:mt-8 md:px-8 lg:px-16 lg:px-32 font-light text-sm dark:text-custom-white"
       >
-        ← Zurück
+        <IoArrowBack className="size-10 text-neutral-500"/>
       </Link>
       <div className="flex flex-col items-center max-w-4xl mx-4 lg:mx-auto">
         {postImageUrl && (
