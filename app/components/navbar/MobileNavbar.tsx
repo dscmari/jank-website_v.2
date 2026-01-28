@@ -110,14 +110,6 @@ export default function Navbar({ className }: Props) {
                         className="pb-1 text-neutral-400 border-b-2 border-slate-200"
                         onClick={() => setIsMenuOpen((prev) => !prev)}
                       >
-                        <Link href="/geo-berater/geo-konferenz/">
-                          GEO Konferenz im Allgäu am 8. Mai
-                        </Link>
-                      </div>
-                      <div
-                        className="pb-1 text-neutral-400 border-b-2 border-slate-200"
-                        onClick={() => setIsMenuOpen((prev) => !prev)}
-                      >
                         <Link href="/geo-berater/geo-tracker/">
                           GEO Tracker
                         </Link>
@@ -255,11 +247,11 @@ export default function Navbar({ className }: Props) {
                 Blog
               </Link>
               <Link
-                href={"/geo-berater/geo-tracker/"}
+                href={"/geo-berater/geo-konferenz/"}
                 onClick={() => setIsMenuOpen((prev) => !prev)}
                 className="pt-4 pb-2 mx-8 border-b-2 border-slate-200"
               >
-                GEO Tracker
+                 GEO Konferenz im Allgäu am 8. Mai
               </Link>
             </div>
           </ol>

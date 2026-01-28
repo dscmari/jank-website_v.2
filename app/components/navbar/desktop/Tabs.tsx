@@ -49,9 +49,9 @@ const Tabs = () => {
       link: "/blog/",
     },
     {
-      title: "GEO Tracker",
+      title: "GEO Konferenz 8. Mai",
       Component: NavKITracker,
-      link: "/geo-berater/geo-tracker/",
+      link: "/geo-berater/geo-konferenz/",
     },
   ].map((n, idx) => ({ ...n, id: idx + 1 }));
 
