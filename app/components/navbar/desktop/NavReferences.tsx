@@ -1,4 +1,3 @@
-import { FiArrowRight } from "react-icons/fi";
 
 const NavReferences = () => {
   return (

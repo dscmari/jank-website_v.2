@@ -240,6 +240,13 @@ export default function Navbar({ className }: Props) {
               >
                 Referenzen
               </Link>
+                           <Link
+                href={"/seo-geo-ads-workshops/"}
+                onClick={() => setIsMenuOpen((prev) => !prev)}
+                className="pt-4 pb-2 mx-8 border-b-2 border-slate-200"
+              >
+                Workshops
+              </Link>
               <Link
                 href={"/blog/"}
                 onClick={() => setIsMenuOpen((prev) => !prev)}

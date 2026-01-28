@@ -8,6 +8,7 @@ import NavReferences from "./NavReferences";
 import NavContent from "./NavContent";
 import NavServices from "./NavServices";
 import NavKITracker from "./NavKITracker";
+import NavWorkshops from "./NavWorkshops";
 
 const Tabs = () => {
   const [selected, setSelected] = useState<number | null>(null);
@@ -36,6 +37,11 @@ const Tabs = () => {
       title: "Referenzen",
       Component: NavReferences,
       link: "/referenzen/",
+    },
+        {
+      title: "Workshops",
+      Component: NavWorkshops,
+      link: "/seo-geo-ads-workshops/",
     },
     {
       title: "Blog",
