@@ -51,7 +51,7 @@ const NavContent = ({
         opacity: 0,
         y: 8,
       }}
-      className="absolute left-0 -translate-x-1/4 top-[calc(100%_+_24px)] w-7xl rounded-lg border border-custom-black bg-white text-custom-black p-4 z-1000"
+      className="absolute left-0 lg:-translate-x-1/6  xl:-translate-x-1/4 top-[calc(100%_+_24px)] w-7xl max-w-[90vw] rounded-lg border border-custom-black bg-white text-custom-black p-4 z-1000"
     >
       <Bridge />
       <Nub selected={selected} />

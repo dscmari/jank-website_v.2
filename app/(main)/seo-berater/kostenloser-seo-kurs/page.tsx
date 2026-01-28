@@ -122,20 +122,13 @@ export default function page() {
             gewinnen die meisten Kunden
           </h1>
           <p>
-            Du hast viel Geld in Deine Website gesteckt, es kommt aber einfach
-            zu wenig rum? Dann könnte Google Ads für Dich eine gute Möglichkeit
-            sein, um über Google an Neukunden ranzukommen.
+            Dann ist der kostenlose SEO Kurs genau richtig für Dich. Seit 2017 haben wir schon über 500 Firmen-Websites auf Platz 1 bei Google gebracht. Immer mit dem Ziel, dass dadurch mehr Anfragen generiert werden.
           </p>
           <p className="py-4">
-            Firmen, die bei Google und im Internet kaum Sichtbarkeit haben,
-            werden von potentiellen Kunden nicht wahrgenommen. Potentielle
-            Kunden wissen einfach nicht, dass es Dich überhaupt gibt.
+            Zum Beispiel für unseren Kunden Kramer Systems – einem IT Dienstleister aus Bayern. Für das Keyword „IT Dienstleister Landsberg“ rankt die Website unseres Kunden auf Platz 1 bei Google. Allein durch diese Top Position kommen regelmäßig Anfragen von neuen Kunden rein. Genau darum geht es im SEO. Bei Google oben zu stehen und mehr Neukunden zu erreichen.
           </p>
           <p>
-            Im kostenlosen Google Ads Kurs lernst Du, wie Du für wichtige
-            Keywords Anzeigen schalten kannst. Der Kurs richtet sich an
-            Selbstständige, Gründer, Marketing- und Vertriebsverantwortliche
-            sowie an Website-Verantwortliche im Unternehmen.
+            Wir geben unser SEO-Wissen im kostenlosen Kurs gern an Dich weiter. Der Kurs richtet sich an Selbstständige, Marketing- und Vertriebsverantwortliche und Website-Verantwortliche im Unternehmen.
           </p>
           <p className="mt-4">
             Kursanmeldung per Mail unter{" "}

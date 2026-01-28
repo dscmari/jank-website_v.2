@@ -13,6 +13,7 @@ import { GoDiamond } from "react-icons/go";
 import FiveStarRating from "@/app/components/FiveStarRating";
 import references from "@/app/content/referencesList";
 import WebsiteCheck from "@/app/components/website-check/WebsiteCheck";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "SEO Berater für Google Rankings | Jan Krösche",
@@ -50,9 +51,9 @@ export default function page() {
           <p>
             Als SEO Berater helfen wir Firmen, bei Google zu Top Rankings zu
             kommen: Seit 2017 haben wir schon über 500 Firmen auf Platz 1 bei
-            Google katapultiert. Hier findest Du unsere Referenzen. (Link auf
-            Referenz-Seite).
+            Google katapultiert. Hier findest Du unsere <Link href={"/referenzen"} className="underline">Referenzen</Link>.
           </p>
+
           <SEOCheckBtn className="mt-8 lg:max-w-2/3 2xl:w-full" />
         </div>
         <div className="mt-24 lg:mt-12 xl:min-w-1/3">

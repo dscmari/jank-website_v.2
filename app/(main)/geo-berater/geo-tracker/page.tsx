@@ -40,7 +40,7 @@ export default function page() {
         <div className="flex-1">
           <h1 className="text-center hidden lg:block ">
             Der <span className="text-custom-red">Krösche GEO Tracker</span>{" "}
-            misst Deinen Sichtbarkeit in den KI Anbietern
+            misst Deine Sichtbarkeit in den KI Tools
           </h1>
           <InfoBtn
             content="GEO Tracker"

@@ -31,17 +31,13 @@ export default async function Blog() {
   return (
     <div className="">
       <Breadcrumbs className="hidden md:block pt-4 px-4 lg:px-32 font-semibold" />
-      <div className="mt-12 mx-4 md:mx-0 lg:flex md:px-16 lg:px-32 lg:pt-32">
-        <h1 className="mb-4 lg:mb-0 flex-2 lg:!text-3xl/10 tracking-wide">
-          Jansen's Blog (Blog Name)
+      <div className="pt-12 lg:px-32 px-4 lg:pt-32 lg:pb-16 xl:max-w-3/4 2xl:max-w-2/3">
+        <h1 className="text-center md:px-32 lg:px-0 lg:text-start 2xl:!text-5xl/14">
+          SEO – GEO – SEA
         </h1>
-        <p className="flex-1 lg:max-w-96 lg:mr-12">
-          In unserem Blog findest Du aktuelle Ratgeber, Podcast-Folgen und
-          Erklärvideos rund um SEO, GEO und Google Ads.
-        </p>
-      </div>
-      <div className="mx-4 md:mx-16 mt-8 lg:mt-16 lg:mx-32 md:max-w-1/2">
-        <SEOCheckBtn className="" />
+        <h2 className="hidden lg:block">
+          In unserem Blog findest Du Ratgeber, Podcast-Folgen und aktuelle Videos rund um SEO, GEO, Google Ads und KI Ads.
+        </h2>
       </div>
       <div className="grid lg:grid-cols-2 gap-24 lg:gap-12 m-8 mt-24 lg:m-32">
         {posts.map((post) => (

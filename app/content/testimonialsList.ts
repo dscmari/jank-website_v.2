@@ -20,7 +20,7 @@ const kramerIT = {
     "IT Dienstleister Kaufbeuren",
   ],
   voice:
-    "„Wir arbeiten mit Herrn Krösche schon seit 2018 zusammen. Seitdem sind wir in der Region der meistgefundene IT-Dienstleister in der ganzen Region. Die Website ist für unsere Neukundengeschäft nicht mehr wegzudenken.“",
+    "„Wir arbeiten mit Herrn Krösche schon seit 2018 zusammen. Seitdem sind der meistgefundene IT-Dienstleister in der ganzen Region. Die Website ist für unser Neukundengeschäft nicht mehr wegzudenken.“",
   name: "Günter Kramer",
   role: "Inhaber",
 };

@@ -36,7 +36,7 @@ const chatGPT = {
     "Wir optimieren Deine Website, damit Deine Firma in den Antworten der KI-Systeme ChatGPT, Gemini, Perplexity & Copilot erscheint und Du mehr Anfragen generierst.",
   services: [
     "Persönlicher Ansprechpartner",
-    "Fortlaufende PromptRecherchen",
+    "Fortlaufende Prompt Recherchen",
     "Website Optimierung",
     "Schema.org Umsetzung",
     "Mind. ein Backlink im Monat",
@@ -188,7 +188,7 @@ const tenPrompts = {
     "Schnelle Installation",
     "Monatlich kündbar",
   ],
-  price: 35,
+  price: 30,
 };
 const twentyPrompts = {
   title: "20 Prompts",

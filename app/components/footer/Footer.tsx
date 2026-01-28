@@ -44,10 +44,6 @@ export default function Footer() {
           Seit 2017 haben wir schon über 500 Firmen-Websites auf Platz 1 bei
           Google & ChatGPT katapultiert.{" "}
         </p>
-        <p>
-          In den letzten 3 Jahren konnten unsere Kunden über die gesteigerte
-          Google-Präsenz über 23 Millionen Euro Auftragsvolumen erzielen.
-        </p>
       </div>
     </div>
   );

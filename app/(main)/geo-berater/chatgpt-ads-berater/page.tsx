@@ -82,7 +82,7 @@ export default function page() {
       <section className="pt-24 lg:p-32 lg:pb-48 dark:xl:pb-64 relative lg:bg-custom-white dark:lg:py-0">
         <div className="px-4 lg:px-0 xl:max-w-2/3">
           <h2 className="lg:!text-3xl/10 tracking-wide font-semibold">
-            Du willst bei ChatGPT zitiert werden so zum{" "}
+            Du willst bei ChatGPT zitiert werden und so zum{" "}
             <span className="text-custom-red">sichtbarsten Anbieter</span> der
             Branche in deiner Region werden?
           </h2>
@@ -118,7 +118,7 @@ export default function page() {
         <div className="mx-4 lg:mx-0 2xl:max-w-1/2 3xl:max-w-1/3">
           <h1 className="text-center">
             Jan Krösche & Team: Deine{" "}
-            <span className="text-custom-red">ChatGPT Ads Berater</span> aus
+            <span className="text-custom-red">ChatGPT Ads Berater</span> für
             Deutschland, Österreich, Südtirol & der Schweiz
           </h1>
           <InfoBtn
@@ -163,18 +163,13 @@ export default function page() {
         <div className="lg:max-w-2/3">
           <h1>
             Persönliche
-            <span className="text-custom-red"> Microsoft Ads Beratung</span> aus
+            <span className="text-custom-red">ChatGPT Ads Beratung </span> aus
             einer Hand
           </h1>
         </div>
         <div className="lg:text-lg">
           <p>
-            Wir verstehen uns als Dienstleister. Daher betreuen wir alle unsere
-            Kunden persönlich. Bei uns gibt es kein „Ticket-System“ oder
-            kilometerlange SEO-Reportings. Wir sind erreichbar, stimmen uns
-            regelmäßig mit Dir ab und zeigen Dir die Fortschritte Deiner Google
-            Rankings. Neben der fachlichen Expertise wird bei uns der
-            Kundenservice groß geschrieben.
+Sei der erste in Deinem Markt, der Werbeanzeigen auf ChatGPT schaltet! Der Werbekanal ist neu und wird kaum genutzt. Das ist Deine Chance, um günstige Werbeplätze zu „ergattern“ und Dich gut zu positionieren. Damit Du mehr Anfragen generierst.
           </p>
           <TwoBoxLayout
             boxes={chatGPTAdsBeraterTwoBox}

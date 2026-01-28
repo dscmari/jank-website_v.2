@@ -127,7 +127,7 @@ export default function Home() {
             {" "}
             Deine Website wird im Netz nicht gefunden? Dein größter Konkurrent
             erscheint immer vor Dir? Das ist natürlich ärgerlich, weil Dir
-            dadurch natürlich viele Anfragen entgehen und die Neukunden bei
+            dadurch viele Anfragen entgehen und die Neukunden bei
             Deiner Konkurrenz landen. Genau auf diese Problemstellung haben wir
             uns spezialisiert.
           </p>

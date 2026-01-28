@@ -17,21 +17,6 @@ export default function page() {
         <h1 className="lg:!text-5xl/14">
           Aktuelle <span className="text-custom-red">GEO </span> Webinare
         </h1>
-        <h2 className="hidden lg:block">
-          Die KI-Antworten von ChatGPT und Gemini verändern alles: Werden deine
-          Kunden dort noch gefunden? In diesem kostenlosen Webinar erfährst du,
-          was GEO (Generative Engine Optimization) für Agenturen bedeutet und
-          wie du auf komplexe Kundenfragen ab sofort souverän reagierst. Sichere
-          dir jetzt deinen Wissensvorsprung.
-        </h2>
-        <p>
-          {" "}
-          Die KI-Antworten von ChatGPT und Gemini verändern alles: Werden deine
-          Kunden dort noch gefunden? In diesem kostenlosen Webinar erfährst du,
-          was GEO (Generative Engine Optimization) für Agenturen bedeutet und
-          wie du auf komplexe Kundenfragen ab sofort souverän reagierst. Sichere
-          dir jetzt deinen Wissensvorsprung.
-        </p>
       </div>
       <div className="flex flex-col items-center xl:flex-row justify-center gap-16 lg:gap-32 px-4 lg:px-32 mt-24">
         <div className="bg-white max-w-xl rounded-lg dark">
