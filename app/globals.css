@@ -195,3 +195,7 @@ span {
 .sanity-text p {
   line-height: 1.625; /* leading-relaxed */
 }
+
+.sanity-text a {
+  text-decoration: underline;
+}

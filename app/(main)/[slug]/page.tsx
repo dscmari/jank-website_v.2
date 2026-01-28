@@ -26,7 +26,6 @@ export async function generateMetadata({
   }
 
   return {
-    // Hier greifst du auf die Daten zu, die erst jetzt bekannt sind
     title: post.seoTitle,
   };
 }
@@ -56,14 +55,13 @@ export default async function PostPage({
     ? urlFor(post.image)?.width(550).height(310).url()
     : null;
   const postImageUrl_2 = post.image_2
-    ? urlFor(post.image)?.width(550).height(310).url()
+    ? urlFor(post.image_2)?.width(550).height(310).url()
     : null;
   const postImageUrl_3 = post.image_3
-    ? urlFor(post.image)?.width(550).height(310).url()
+    ? urlFor(post.image_3)?.width(550).height(310).url()
     : null;
 
-    console.log(post)
-    console.log(postImageUrl_2)
+    //console.log(post)
   return (
     <main className="">
       <Link
