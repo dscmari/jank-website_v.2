@@ -57,7 +57,7 @@ export default async function Blog() {
               >
                 {post.title}
               </Link>
-              <p className="leading-5 text-slate-600">
+              <p className="text-sm font-light">
                 {post.excerpt?.substring(0, 140)}...
               </p>
               <Link
