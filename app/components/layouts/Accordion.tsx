@@ -34,9 +34,9 @@ export default function FourBoxLayout({ className }: Props) {
                     <div key={faq.id} className="group border border-slate-200 dark:border-none rounded-xl overflow-hidden bg-white">
                         <input type="checkbox" id={faq.id} className="peer hidden" />
 
-                        <label htmlFor={faq.id} className="flex justify-between items-center p-4 cursor-pointer bg-custom-red text-white font-semibold select-none">
+                        <label htmlFor={faq.id} className="flex justify-between items-center p-4 cursor-pointer bg-custom-white font-semibold select-none">
                             <span className="pointer-events-none">{faq.question}</span>
-                            <FiChevronDown className="transition-transform duration-300 group-has-[:checked]:rotate-180" />
+                            <FiChevronDown className="transition-transform duration-300 group-has-[:checked]:rotate-180 group-has-[:checked]:text-custom-red" />
                         </label>
 
                         <div className="grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out group-has-[:checked]:grid-rows-[1fr]">
