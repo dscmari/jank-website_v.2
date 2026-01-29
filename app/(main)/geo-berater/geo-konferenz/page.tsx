@@ -17,25 +17,25 @@ export default function page() {
   return (
     <div>
       <section className="pt-12 lg:pt-0 lg:px-32 px-4 lg:bg-geo-conference bg-cover lg:h-screen flex flex-col lg:justify-center lg:items-start">
-      <div className="xl:max-w-2/3 bg-white lg:p-16 rounded-xl">
-       <h1 className="text-center md:px-32 lg:px-0 lg:text-start 2xl:!text-5xl/14">
-          <span className="text-custom-red">GEO Konferenz</span> im Allgäu am
-          8. Mai 2026
-        </h1>
-        <h2 className="hidden lg:block">
-          Mehr Sichtbarkeit bei ChatGPT, Gemini & Co.: So stellst Dich online
-          auf, damit Dich Deine Kunden in der KI finden können
-        </h2>
-        <p>
-          Auf der GEO Konferenz am 08.05.2026 im Ringhotel Sonneck Bad
-          Wörishofen lernst Du, wie Du Deine Firmen-Website in die KI-Antworten
-          von ChatGPT, Gemini, Perplexity & Copilot bekommst. Damit Dich
-          potenzielle Kunden in Zukunft dort finden, wo sie nach Produkten und
-          Dienstleistungen suchen.
-        </p>
-      </div>
+        <div className="xl:max-w-2/3 bg-white lg:p-16 rounded-xl">
+          <h1 className="text-center md:px-32 lg:px-0 lg:text-start 2xl:!text-5xl/14">
+            <span className="text-custom-red">GEO Konferenz</span> im Allgäu am
+            8. Mai 2026
+          </h1>
+          <h2 className="hidden lg:block">
+            Mehr Sichtbarkeit bei ChatGPT, Gemini & Co.: So stellst Dich online
+            auf, damit Dich Deine Kunden in der KI finden können
+          </h2>
+          <p>
+            Auf der GEO Konferenz am 08.05.2026 im Ringhotel Sonneck Bad
+            Wörishofen lernst Du, wie Du Deine Firmen-Website in die KI-Antworten
+            von ChatGPT, Gemini, Perplexity & Copilot bekommst. Damit Dich
+            potenzielle Kunden in Zukunft dort finden, wo sie nach Produkten und
+            Dienstleistungen suchen.
+          </p>
+        </div>
       </section>
-            <Breadcrumbs className="hidden md:block pt-4 px-4 lg:px-32 font-semibold" />
+      <Breadcrumbs className="hidden md:block pt-4 px-4 lg:px-32 font-semibold" />
       <section>
         <KroescheKonferenzIntroLayout
           workshop={geoKonferenz}

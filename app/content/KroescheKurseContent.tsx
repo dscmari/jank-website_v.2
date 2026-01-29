@@ -311,9 +311,9 @@ const geoKonferenzBullets = [
 ];
 
 const geoKonferenzDates = [
-  "Datum: 17. April 2026 von 09 bis 16 Uhr",
+  "Datum: 8. Mai 2026 von 10 Uhr bis 16.15 Uhr",
   "Ort: Ringhotel Sonneck Tannenbaum 1, 86825 Bad Wörishofen",
-  "Preis: 450 Euro netto ",
+  "Preis: 390 Euro",
   "Verpflegung: Speisen & Getränke im Preis enthalten",
 ];
 

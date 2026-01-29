@@ -33,25 +33,17 @@ export default function page() {
       <section className="flex flex-col 2xl:flex-row 2xl:items-center px-4 md:px-16 pt-8 lg:gap-12 lg:p-32 lg:py-32 2xl:gap-32 2xl:justify-center">
         <div className="flex-1 flex flex-col">
           <h1>
-            Mit unserer <span className="text-custom-red">GEO Beratung</span>{" "}
-            wirst Du bei ChatGPT, Gemini & Co. am häufigsten zitiert
+            Mit unserer Microsoft Ads Beratung wirst Du die Nummer 1 bei <span className="text-custom-red"> Bing </span>und <span className="text-custom-red">Copilot</span>
           </h1>
           <p>
-            Unter „GEO“ versteht man die Optimierung für generative
-            Suchmaschinen. Einfach ausgedrückt: Man optimiert Firmen-Websites
-            dahingehend, dass sie extrem häufig bei ChatGPT, Gemini, Copilot und
-            anderen KI-Chatsystemen auftauchen.
+            Die meisten Firmen schalten Google Ads Werbung, um potentielle Kunden zu erreichen. Nur wenige Firmen haben das Potenzial von Bing erkannt. Günstigere Klickpreise und weniger Wettbewerb. Vor allem im B2B-Geschäft können Microsoft Ads genial sein.
           </p>
           <p className="py-4">
-            Unseren Kunden „Schwabinger Wahrheit“ – ein Hotel in München –
-            optimieren wir seit 2022 mit dem Ziel, in der KI sichtbarer zu sein.
-            Für die Suchphrase (= Prompt) „Bestes Familienhotel in Schwabing“
-            erscheint die Hotel-Website unseres Kunden auf Platz 1 in der
-            Antwort. Genau so funktioniert die Kundengewinnung von Morgen.{" "}
+            Wir helfen Firmen mit Microsoft Ads die Nummer 1 auf Bing und Copilot zu werden. Damit Deine Firma für die Suchbegriffe in der Bing Suche ganz oben erscheint.
           </p>
           <p>
             Wir stehen Unternehmen aus Deutschland, Österreich, Südtirol und der
-            Schweiz als GEO Berater zur Seite. Wir helfen Dir, die Nummer 1 in
+            Schweiz als Microsoft Ads Berater zur Seite. Wir helfen Dir, die Nummer 1 in
             der KI zu werden.
           </p>
           <a

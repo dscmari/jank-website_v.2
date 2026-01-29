@@ -79,7 +79,7 @@ export default function page() {
           </h2>
         </div>
         <div className="lg:text-lg px-4 lg:px-0">
-          <p>
+          <p className="max-w-7xl">
             Viele Unternehmen stehen unter Druck. Die „fetten“ Jahre sind
             vorbei. Gehälter stagnieren, Investitionen werden gestoppt oder gar
             zurückgefahren. Wir sehen einen massiven Stellenabbau. Auch wenn die
@@ -139,9 +139,9 @@ export default function page() {
           <AdsKursBtn className="mt-8 2xl:max-w-2/3" />
         </div>
       </section>
-      <section className="mt-24 lg:mt-32 dark:mt-16 py-12 lg:py-24 px-4 lg:px-32 bg-custom-white">
+      <section className="mt-24 2xl:mt-32 sub-absolute-image  dark:mt-16 py-12 lg:py-24 px-4 lg:px-32 bg-custom-white">
         <div className="lg:max-w-2/3">
-          <h1 className="text-start tracking-wide">
+          <h1 className="">
             Persönliche
             <span className="text-custom-red">
               {" "}
@@ -150,7 +150,7 @@ export default function page() {
             aus einer Hand
           </h1>
         </div>
-        <p>
+        <p className="max-w-7xl">
           Wer schon einmal im Google Ads System eingeloggt war, weiß wie komplex
           das Werbetool sein kann. Was für die Industrie die SAP-Software ist,
           ist für Werbeleute das Google Ads System. Es gibt unzählige
@@ -278,9 +278,9 @@ export default function page() {
           </p>
         </div>
       </section>
-      <section className="mt-24 lg:px-32">
+      <section className="mt-24 lg:px-32 max-w-7xl mx-auto">
         <div className="px-4 lg:px-0 lg:text-center">
-          <h1 className="lg:tracking-wide">
+          <h1 >
             Es ärgert Dich, dass Du{" "}
             <span className="text-custom-red"> bei Google nicht oben </span>{" "}
             stehst?
@@ -299,8 +299,8 @@ export default function page() {
         </div>
         <div className="lg:max-w-2/3 px-4 lg:px-0 mt-12"></div>
       </section>
-      <section className="mx-4 lg:mt-24 lg:mx-32 lg:mt-32">
-        <h1 className="text-center">
+      <section className="px-4 lg:mt-24 lg:px-32 lg:mt-32 max-w-7xl mx-auto lg:text-center">
+        <h1>
           Was bringen <span className="text-custom-red">Google Ads</span>{" "}
           Werbeanzeigen eigentlich?
         </h1>

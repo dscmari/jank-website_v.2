@@ -199,3 +199,9 @@ span {
 .sanity-text a {
   text-decoration: underline;
 }
+
+@media (min-width: 1900px) {
+.sub-absolute-image {
+  margin-top: 20rem;
+}
+}
