@@ -34,6 +34,33 @@ export const standardFourBoxContent = [
   },
 ];
 
+export const seoBeraterContentFourBox = [
+    {
+    icon: <GiArtificialHive color="rgb(231,0,53)" size="3rem" />,
+    title: "Wann brauche ich einen SEO Berater?",
+    text: "Als SEO Berater helfen wir Dir, wenn Du Deine Website und Deine Firma vertriebstechnisch besser aufstellen möchtest. Beim SEO geht es zwar darum, Deine Google Rankings zu steigern. Aber immer mit dem Ziel, dass Du dadurch auch mehr Anfragen generierst. SEO ist kein Selbstzweck, sondern ein Vertriebswerkzeug.",
+    link: "",
+  },
+  {
+    icon: <LuScreenShare color="rgb(231,0,53)" size="3rem" />,
+    title: "Für wen eignet sich die SEO Beratung von Jan Krösche?",
+    text: "Wir arbeiten vor allem für Selbstständige und für technische Unternehmen wie Maschinenbauer, Ingenieure, Software-Firmen. Grundsätzlich sind wir branchenunabhängig.",
+    link: "",
+  },
+  {
+    icon: <PiListMagnifyingGlass color="rgb(231,0,53)" size="3rem" />,
+    title: "Brauche ich Vorkenntnisse?",
+    text: "Nein, unsere Kunden haben in der Regel kaum oder nur wenige Vorkenntnisse im Bereich SEO. Wir sind Dienstleister und kümmern uns um alle SEO-Arbeiten, damit Du Dich auf Dein Geschäft konzentrieren kannst. ",
+    link: "",
+  },
+  {
+    icon: <GiDiscussion color="rgb(231,0,53)" size="3rem" />,
+   title: "Was kostet ein SEO Berater?",
+    text: "Die Kosten variieren von Projekt zu Projekt. In der Regel starten wir bei wenigen Hundert Euro pro Monat. Der SEO Aufwand hängt sowohl vom Optimierungsgrad Deiner Website ab (wo rankst Du schon?) als auch von der SEO-Arbeit Deiner Wettbewerber. Falls Du eine schnelle Preiseinschätzung benötigst, können wir Dir auch kurzfristig einen Kostenvoranschlag per Mail zusenden unter jan@jankroesche.de",
+    link: "",
+  },
+]
+
 // GEO Konferenz
 export const geoKonferenzContent = [
   {

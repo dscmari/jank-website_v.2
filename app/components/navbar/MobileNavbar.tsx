@@ -219,7 +219,7 @@ export default function Navbar({ className }: Props) {
               </AnimatePresence>
 
               <Link
-                href={"/preise"}
+                href={"/preise/"}
                 onClick={() => setIsMenuOpen((prev) => !prev)}
                 className="pt-6 pb-2 mx-8 border-b-2 border-slate-200"
               >

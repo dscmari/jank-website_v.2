@@ -14,6 +14,7 @@ import FiveStarRating from "@/app/components/FiveStarRating";
 import references from "@/app/content/referencesList";
 import WebsiteCheck from "@/app/components/website-check/WebsiteCheck";
 import Link from "next/link";
+import Accordion from "@/app/components/layouts/Accordion";
 
 export const metadata: Metadata = {
   title: "SEO Berater für Google Rankings | Jan Krösche",
@@ -334,6 +335,16 @@ export default function page() {
           <SEOCheckBtn className="mt-8 mx-auto md:max-w-2/3 lg:max-w-full 2xl:mx-0 2xl:max-w-2/3" />
         </div>
       </section>
+      <section className=" pb-12 pt-24 lg:pt-48 px-4 lg:px-32">
+            <h1 className="text-center">
+          Du hast <span className="text-custom-red"> Fragen </span>zum SEO Berater Jan Krösche oder zur Zusammenarbeit?
+        </h1>
+        <Accordion className="mt-12 lg:mt-16" />
+      </section>
+      <section className="pt-24 pb-12 lg:pt-16 px-4 lg:px-32">
+  
+      </section>
+
     </div>
   );
 }
