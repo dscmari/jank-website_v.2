@@ -106,15 +106,7 @@ const seoWorkshop = {
     "Preis: 600 Euro netto",
   ],
   closingText: "",
-  outroText: <div>
-    <span className="mt-4 block text-center font-light">
-      Terminvereinbarung & Rücksprache unter
-    </span>
-    <span className="block text-center text-custom-red">
-      {" "}
-      jan@jankroesche.de
-    </span>
-  </div>
+  contactText: "Terminanfrage unter"
 };
 
 const geoWorkshop = {
@@ -133,15 +125,7 @@ const geoWorkshop = {
     "Preis: 600 Euro netto",
   ],
   closingText: "",
-  outroText: <div>
-    <span className="mt-4 block text-center font-light">
-    Terminvereinbarung & Rücksprache unter
-    </span>
-    <span className="block text-center text-custom-red">
-      {" "}
-      jan@jankroesche.de
-    </span>
-  </div>
+  contactText: "Terminanfrage unter"
 };
 
 const adsWorkshop = {
@@ -160,15 +144,7 @@ const adsWorkshop = {
     "Preis: 600 Euro netto",
   ],
   closingText: "",
-  outroText: <div>
-    <span className="mt-4 block text-center font-light">
-      Terminvereinbarung & Rücksprache unter
-    </span>
-    <span className="block text-center text-custom-red">
-      {" "}
-      jan@jankroesche.de
-    </span>
-  </div>
+  contactText: "Terminanfrage unter"
 
 };
 

@@ -1,6 +1,6 @@
 import Breadcrumbs from "@/app/components/Breadcrumps";
 import Pricing from "@/app/components/pricing/Pricing";
-import { pricingBoxes } from "@/app/content/pricingBoxes";
+import { pricingBoxes } from "@/app/content/pricingBoxesContent";
 
 import { Metadata } from "next";
 

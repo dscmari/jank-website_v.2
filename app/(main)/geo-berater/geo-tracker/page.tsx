@@ -4,7 +4,7 @@ import GEOTrackerInstallBtn from "@/app/components/buttons/GEOTrackerInstallBtn"
 import InfoBtn from "@/app/components/buttons/InfoBtn";
 import SixBoxLayout from "@/app/components/layouts/SixBoxLayout";
 import PricingGEOTracker from "@/app/components/pricing/PricingGEOTracker";
-import { geoTrackerPriceBoxes } from "@/app/content/pricingBoxes";
+import { geoTrackerPriceBoxes } from "@/app/content/pricingBoxesContent";
 import { geoTrackerSixBoxContent } from "@/app/content/SixBoxLayoutContent";
 import { Metadata } from "next";
 import Image from "next/image";

@@ -19,7 +19,7 @@ import { standardFourBoxContent } from "../content/FourBoxLayoutContent";
 import { Metadata } from "next";
 import MiniTestimonals from "../components/MiniTestimonals";
 import WebsiteCheck from "../components/website-check/WebsiteCheck";
-import { pricingBoxes } from "../content/pricingBoxes";
+import { pricingBoxes } from "../content/pricingBoxesContent";
 
 export const metadata: Metadata = {
   title: "Platz 1 bei Google & ChatGPT | SEO – GEO – Ads Berater",

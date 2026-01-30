@@ -53,7 +53,7 @@ export default function PricingGEOTracker({ className, pricingBoxes }: Props) {
               <span className="text-sm font-ligth"> / Monat</span>
             </div>
             <div className="mt-8">
-              <p className="pb-8 text-sm font-light border-b-1 border-slate-700">
+              <p className="pb-8 text-sm font-light border-b-1 border-black/30">
                 Falls du unsicher bist, welche Prompts du tracken möchtest, dann
                 schick uns einfach deine Website und wir beraten dich.
               </p>

@@ -7,7 +7,8 @@ type PricingBox = {
   introText: string;
   services: string[];
   closingText: string;
-  outroText: React.ReactNode
+  outroText: React.ReactNode;
+  contactText?: string;
 }
 
 type Props = {
@@ -46,12 +47,12 @@ export default function Pricing({ className, pricingBoxes }: Props) {
               </div>
             </div>
             <div className="mt-8">
-              <p className="pb-8 text-sm font-light border-b-1 border-slate-700">
+              <p className="pb-8 text-sm font-light border-b-1 border-black/20">
                 {e.closingText}
               </p>
               <div>
                 <span className="mt-4 block text-center font-light">
-                  Preisanfrage unter
+                    {e.contactText ? e.contactText : "Preisanfrage unter"}
                 </span>
                 <span className="block text-center text-custom-red">
                   {" "}
