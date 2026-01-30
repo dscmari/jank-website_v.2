@@ -24,7 +24,7 @@ export default function Timetable({ className }: Props) {
             className="w-[100px] lg:w-[200px]"
           />
         </div>
-        <h1 className="text-center pt-24 lg:pt-32">
+        <h1 className="lg:text-center pt-24 lg:pt-32">
           Ablauf der GEO Konferenz am 8. Mai 2026
         </h1>
         <div className="flex flex-col gap-4 lg:gap-2 my-16 text-xl">
