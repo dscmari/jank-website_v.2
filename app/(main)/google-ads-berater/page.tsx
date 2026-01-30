@@ -12,6 +12,8 @@ import references from "@/app/content/referencesList";
 import FiveStarRating from "@/app/components/FiveStarRating";
 import { GoDiamond } from "react-icons/go";
 import AdsKursBtn from "@/app/components/buttons/AdsKursBtn";
+import { faqsAdsBerater } from "@/app/content/faqsContent";
+import Accordion from "@/app/components/layouts/Accordion";
 
 export const metadata: Metadata = {
   title: "Google Ads Berater Jan Krösche | Experte für Google Werbung",
@@ -352,6 +354,12 @@ export default function page() {
           </p>
           <AdsKursBtn className="mt-8 2xl:max-w-2/3" />
         </div>
+      </section>
+      <section className=" pb-12 pt-24 lg:pt-48 px-4 lg:px-32">
+        <h1 className="lg:text-center">
+          Du hast <span className="text-custom-red"> Fragen </span>zum Google Ads Berater Jan Krösche oder zur Zusammenarbeit?
+        </h1>
+        <Accordion faqs={faqsAdsBerater} className="mt-12 lg:mt-16" />
       </section>
     </div>
   );

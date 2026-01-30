@@ -13,6 +13,8 @@ import FiveStarRating from "@/app/components/FiveStarRating";
 import TwoBoxLayout from "@/app/components/layouts/TwoBoxLayout";
 import { geoBeraterTwoBox } from "@/app/content/TwoBoxLayoutContent";
 import GEOCheckBtn from "@/app/components/buttons/GEOCheckBtn";
+import Accordion from "@/app/components/layouts/Accordion";
+import { faqsGeoBerater } from "@/app/content/faqsContent";
 
 export const metadata: Metadata = {
   title: "GEO Berater für KI Sichtbarkeit | GEO Agentur Jan Krösche",
@@ -347,6 +349,12 @@ export default function GEOBerater() {
           </p>
           <GEOCheckBtn className="mt-8" />
         </div>
+      </section>
+      <section className=" pb-12 pt-24 lg:pt-48 px-4 lg:px-32">
+        <h1 className="lg:text-center">
+          Du hast <span className="text-custom-red"> Fragen </span>zum GEO Berater Jan Krösche oder zur Zusammenarbeit?
+        </h1>
+        <Accordion faqs={faqsGeoBerater} className="mt-12 lg:mt-16" />
       </section>
     </div>
   );
