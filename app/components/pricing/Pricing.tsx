@@ -7,7 +7,7 @@ type PricingBox = {
   introText: string;
   services: string[];
   closingText: string;
-  outroText: React.ReactNode;
+  outroText?: React.ReactNode;
   contactText?: string;
 }
 
