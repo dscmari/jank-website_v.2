@@ -59,11 +59,11 @@ export default function GEOConferenceOverview({ className, conference }: Props) 
           <span className="font-semibold tracking-tight">Eckdaten</span>
           <div className="flex flex-col gap-2 mt-2">
             {conference.content.dates.map((e, index) => (
-              <div key={index} className="flex items-center gap-2">
+              <div key={index} className="flex items-start gap-2">
                 <GoDiamond
                   color="rgb(231,0,53)"
                   size={16}
-                  className="shrink-0 flex items-center"
+                  className="shrink-0 mt-1"
                 />
                 <span>{e}</span>
               </div>

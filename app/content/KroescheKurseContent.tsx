@@ -306,12 +306,12 @@ export const geoWorkshopFuerAgenturen = {
 // GEO Konferenz
 const geoKonferenzBullets = [
   "Du lernst „GEO“ kennen und bekommst Praxistipps, wie Du in der KI besser gefunden werden kannst.",
-  "Du lernst von echten Profis: Beide GEO Referenten haben über 10 Jahre Erfahrung.",
+  "Du lernst von echten Profis: Die GEO Referenten haben über 10 Jahre Erfahrung",
   "Du hast auf der Konferenz die Möglichkeit, Dich mit den anderen Teilnehmern auszutauschen",
 ];
 
 const geoKonferenzDates = [
-  "Datum: 8. Mai 2026 von 10 Uhr bis 16.15 Uhr",
+  "Datum: 8. Mai 2026 von 10 Uhr bis 16.00 Uhr",
   "Ort: Ringhotel Sonneck Tannenbaum 1, 86825 Bad Wörishofen",
   "Preis: 390 Euro",
   "Verpflegung: Speisen & Getränke im Preis enthalten",

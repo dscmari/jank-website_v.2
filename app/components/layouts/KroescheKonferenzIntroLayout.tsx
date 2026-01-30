@@ -34,9 +34,9 @@ export default function KroescheWorkshopIntroLayout({
   return (
     <div>
       <section
-        className={`flex flex-col lg:flex-row gap-16 lg:px-32 lg:mt-24 ${className}`}
+        className={`flex flex-col xl:flex-row gap-16 xl:px-32 xl:mt-24 ${className}`}
       >
-        <div className="px-4 lg:p-8 flex-1">
+        <div className="px-4 xl:p-8 flex-1">
           <div className="hidden lg:block">{workshop.introduction.title}
             </div>
           <InfoBtn

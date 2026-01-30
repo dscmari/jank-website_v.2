@@ -16,8 +16,8 @@ export default function Breadcrumbs({ className }: Props) {
     <div className={` ${className}`}>
       <ul className="flex flex-wrap lg:gap-4 text-custom-black items-center dark:text-custom-white">
         {/* Home Icon ist immer der Start */}
-        <Link href="/" className="flex gap-2 items-center p-2 pl-0 cursor-pointer group inline-flex">
-          <FiHome className="hover:text-custom-red"/> <span className="hover:text-custom-red">HOME</span>
+        <Link href="/" className="flex gap-2 items-center p-2 pl-0">
+          <FiHome className="hover:text-custom-red"/> <span className="hover:text-custom-red !cursor-pointer">HOME</span>
         </Link>
         {pathnames.map((value, index) => {
           // 2. Den Link für dieses Segment zusammenbauen

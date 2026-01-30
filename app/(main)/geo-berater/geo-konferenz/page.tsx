@@ -1,10 +1,8 @@
 import Breadcrumbs from "@/app/components/Breadcrumps";
 import InfoBtn from "@/app/components/buttons/InfoBtn";
 import GEOConferenceOverview from "@/app/components/GEOConferenceOverview";
-import FourBoxLayout from "@/app/components/layouts/FourBoxLayout";
 import KroescheKonferenzIntroLayout from "@/app/components/layouts/KroescheKonferenzIntroLayout";
 import Timetable from "@/app/components/Timetable";
-import { geoKonferenzContent } from "@/app/content/FourBoxLayoutContent";
 import { geoKonferenz } from "@/app/content/KroescheKurseContent";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -17,13 +15,13 @@ export default function page() {
   return (
     <div>
       <section className="pt-12 lg:pt-0 lg:px-32 px-4 lg:bg-geo-conference bg-cover lg:h-screen flex flex-col lg:justify-center lg:items-start">
-        <div className="xl:max-w-2/3 bg-white lg:p-16 rounded-xl">
+        <div className="xl:max-w-2/3 bg-white lg:p-16 rounded-xl dark dark:p-4 dark:lg:p-16">
           <h1 className="text-center md:px-32 lg:px-0 lg:text-start 2xl:!text-5xl/14">
             <span className="text-custom-red">GEO Konferenz</span> im Allgäu am
             8. Mai 2026
           </h1>
           <h2 className="hidden lg:block">
-            Mehr Sichtbarkeit bei ChatGPT, Gemini & Co.: So stellst Dich online
+            Mehr Sichtbarkeit bei ChatGPT, Gemini & Co.: So stellst Du Dich online
             auf, damit Dich Deine Kunden in der KI finden können
           </h2>
           <p>
@@ -35,6 +33,14 @@ export default function page() {
           </p>
         </div>
       </section>
+      <Image
+        src="/images/hotel_sonneck_panorama.jpg"
+        style={{ width: "600px" }}
+        alt="Screenshot eines Prompts in einer KI Suchmaschine"
+        height={300}
+        width={500}
+        className="lg:hidden mx-auto mt-12"
+      />
       <Breadcrumbs className="hidden md:block pt-4 px-4 lg:px-32 font-semibold" />
       <section>
         <KroescheKonferenzIntroLayout
@@ -42,6 +48,14 @@ export default function page() {
           className="dark:pt-12"
         />
       </section>
+            <Image
+        src="/images/hotel_sonneck_meetingroom.jpg"
+        style={{ width: "600px" }}
+        alt="Bild des Meetingsraums im Hotel Sonneck"
+        height={300}
+        width={500}
+        className="lg:hidden mx-auto mt-24"
+      />
       <section className="flex flex-col 2xl:flex-row 2xl:items-center px-4 pt-24 lg:gap-12 lg:p-32 2xl:gap-32 2xl:justify-center">
         <div className="flex-1 flex flex-col">
           <h1>
@@ -83,12 +97,12 @@ export default function page() {
           </p>
         </div>
       </section>
-      <section className="px-4 md:px-8 lg:px-32 bg-custom-white ">
+      <section className="px-4 md:px-8 lg:px-32 bg-custom-white pb-24 lg:pb-48">
         <Timetable className="pt-24 lg:pt-32" />
       </section>
-      <section className="bg-custom-white pt-24 px-4 md:px-8 lg:p-32 lg:pb-48">
+      {/* <section className="bg-custom-white pt-24 px-4 md:px-8 lg:p-32 lg:pb-48">
         <FourBoxLayout boxes={geoKonferenzContent} className="pb-24" />
-      </section>
+      </section> */}
       <section className="lg:hidden mt-24 dark:mt-0 lg:dark:mt-24 p-8 mx-4 bg-custom-white rounded-xl dark">
         <InfoBtn className="dark:bg-black" content="Seit 2017 im Geschäft" />
         <h1 className="mt-4">
@@ -158,10 +172,7 @@ export default function page() {
               von über 300 Firmen aus dem deutschsprachigen Raum.
             </p>
             <p>
-              In den vergangenen Jahren habe ich eine der größten
-              Onlinemarketing Agenturen in Süddeutschland geleitet. Mit ca. 50
-              festangestellten Mitarbeitenden betreuten wir einen Kundenstamm
-              von über 300 Firmen aus dem deutschsprachigen Raum.
+              Ich veröffentliche regelmäßig Fachartikel im Magazin „Website Boosting“ und halte Vorträge beim Verband Deutscher Ingenieure. Zudem berate ich derzeit Firmen in den drei Bereichen SEO, GEO und Ads und schule Firmen und Agenturen, um ihr Wissen aufzufrischen.
             </p>
           </div>
         </div>
