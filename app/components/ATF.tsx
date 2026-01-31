@@ -37,10 +37,10 @@ export default function ATF({
           width={500}
           height={500}
           alt="Portrait von Jan Kroesche"
-          className="mx-auto"
+          className="w-full h-auto min-h-[300px]"
           priority
+          sizes="100vw"
         />
-        {/* <Breadcrumbs className="lg:hidden pl-4 pt-4" /> */}
         <h1 className="!text-3xl p-4 text-center">{title}</h1>
       </div>
       <div

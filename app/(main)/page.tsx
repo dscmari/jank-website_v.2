@@ -2,7 +2,6 @@ import Image from "next/image";
 import { LuNotebookText } from "react-icons/lu";
 import { FaGears } from "react-icons/fa6";
 import { HiMagnifyingGlass } from "react-icons/hi2";
-import LinkSeoCheck from "../components/links/LinkSeoCheck";
 import ATF from "../components/ATF";
 import Contact from "../components/Contact";
 import Testimonials from "../components/Testimonials";
@@ -59,6 +58,7 @@ export default function Home() {
           width={400}
           height={600}
           className="w-full"
+          priority
         />
         <p className="mx-4 mt-2 text-sm font-light text-center dark:text-custom-white">
           Jan Krösche hat bis 2025 eine der größten Onlinemarketing-Agenturen in
