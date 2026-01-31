@@ -28,7 +28,7 @@ export default function page() {
         title={atf.seoBeraterATF.title}
         subtitle={atf.seoBeraterATF.subtitle}
         text={atf.seoBeraterATF.text}
-        LinkComponent={<LinkSeoCheck className="w-full text-left" />}
+        button={<SEOCheckBtn className="" />}
         imgPathMobile="/images/portraits/39321-3994.jpg"
         imgPathDesktop="/images/portraits/39321-4118_01.jpg"
       />

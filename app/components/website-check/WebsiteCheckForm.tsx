@@ -3,7 +3,7 @@ import { submitWebsiteCheck } from "@/actions/submit-webiste-check-action";
 
 export default async function ContactForm() {
   return (
-   <form
+    <form
       action={submitWebsiteCheck}
       className="my-4 lg:mb-0 flex flex-col gap-4"
     >
@@ -41,20 +41,20 @@ export default async function ContactForm() {
           />
         </div> */}
       </div>
-
-      <div className="flex items-start gap-4 lg:mb-8">
-        <input type="checkbox" className="min-w-6" required />
-        <p className="text-xs">
-          Ich stimme zu, dass meine Angaben aus diesem Formular zur Beantwortung
-          meiner Anfrage erhoben und verarbeitet werden. Mehr Informationen in
-          der Datenschutzerklärung. Die habe ich gelesen und akzeptiert.
-        </p>
-      </div>
-
+      <label className="cursor-pointer">
+        <div className="flex items-start gap-4 lg:mb-8">
+          <input type="checkbox" className="min-w-6 cursor-pointer" required />
+          <p className="text-xs !cursor-pointer">
+            Ich stimme zu, dass meine Angaben aus diesem Formular zur Beantwortung
+            meiner Anfrage erhoben und verarbeitet werden. Mehr Informationen in
+            der Datenschutzerklärung. Die habe ich gelesen und akzeptiert.
+          </p>
+        </div>
+      </label>
       <div>
         <button
           type="submit"
-          className="cursor-pointer leading-8 mt-4 px-4 py-2 text-center bg-custom-white lg:bg-custom-red text-custom-black lg:text-custom-white rounded-xl w-full "
+          className="cursor-pointer leading-8 mt-4 px-4 py-2 text-center bg-custom-white lg:bg-custom-red text-custom-black lg:text-white rounded-xl w-full "
         >
           Website abschicken
         </button>

@@ -33,7 +33,7 @@ export default function Home() {
         title={atf.homeATF.title}
         subtitle={atf.homeATF.subtitle}
         text={atf.homeATF.text}
-        LinkComponent={<LinkSeoCheck className="w-full text-left" />}
+        button={<SEOCheckBtn className="" />}
         imgPathMobile="/images/portraits/39321-4133web.jpg"
         imgPathDesktop="/images/portraits/39321-4000_02.jpg"
       />

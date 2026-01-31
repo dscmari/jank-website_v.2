@@ -265,7 +265,7 @@ export default function Navbar({ className }: Props) {
           </div>
           <div className="mx-8 my-12">
             <button
-              className="px-4 py-4 bg-custom-red text-custom-white w-full flex items-center justify-between tracking-wider rounded"
+              className="px-4 py-4 bg-custom-red text-white w-full flex items-center justify-between tracking-wider rounded"
               onClick={() => setIsMenuOpen((prev) => !prev)}
             >
               <LinkSeoCheck />

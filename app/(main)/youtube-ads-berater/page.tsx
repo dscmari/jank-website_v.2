@@ -7,6 +7,7 @@ import Contact from "@/app/components/Contact";
 import InfoBtn from "@/app/components/buttons/InfoBtn";
 import TwoBoxLayout from "@/app/components/layouts/TwoBoxLayout";
 import { youtubeAdsBeraterTwoBox } from "@/app/content/TwoBoxLayoutContent";
+import MailBtn from "@/app/components/buttons/MailBtn";
 
 export const metadata: Metadata = {
   title: "YouTube Ads Berater Jan Krösche | YouTube Werbung schalten",
@@ -19,14 +20,7 @@ export default function page() {
         title={atf.youtubeAdsBeraterATF.title}
         subtitle={atf.youtubeAdsBeraterATF.subtitle}
         text={atf.youtubeAdsBeraterATF.text}
-        LinkComponent={
-          <div className="flex gap-4 items-center">
-            <FiMail />
-            <a href="mailto:max.mustermann@ihre-domain.de">
-              jan@jankroesche.de
-            </a>
-          </div>
-        }
+        button={<MailBtn />}
         imgPathMobile="/images/portraits/39321-4190.jpg"
         imgPathDesktop="/images/portraits/39321-4127_01.jpg"
       />

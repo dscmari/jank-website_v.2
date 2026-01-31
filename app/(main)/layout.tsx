@@ -8,8 +8,8 @@ import ScrollToTopBtn from "../components/ScrollToTopBtn";
 
 const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-inter",
   display: "swap",
-  variable: "--font-inter"
 });
 
  const poppins = Poppins({

@@ -10,7 +10,7 @@ type Props = {
 export default function WebsiteCheck({ isGeo, className }: Props) {
   return (
     <section
-      className={`bg-custom-red lg:bg-white text-custom-white lg:text-custom-black p-8 pt-12 dark ${className}`}
+      className={`bg-custom-red lg:bg-white text-white lg:text-custom-black p-8 pt-12 dark ${className}`}
     >
       <div className="xl:flex xl:gap-16">
         <div className="hidden xl:block">
@@ -22,7 +22,7 @@ export default function WebsiteCheck({ isGeo, className }: Props) {
               width={400}
               height={200}
             />
-            <div className="xl:absolute p-8 text-custom-white bottom-0 leading-8 font-semibold">
+            <div className="xl:absolute p-8 text-white bottom-0 leading-8 font-semibold">
               <Image
                 src="/images/logo_white_bg_transparent.png"
                 alt="Jan Krösche Logo"

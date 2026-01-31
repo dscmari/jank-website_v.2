@@ -7,6 +7,7 @@ import Contact from "@/app/components/Contact";
 import InfoBtn from "@/app/components/buttons/InfoBtn";
 import TwoBoxLayout from "@/app/components/layouts/TwoBoxLayout";
 import { msAdsBeraterTwoBox } from "@/app/content/TwoBoxLayoutContent";
+import MailBtn from "@/app/components/buttons/MailBtn";
 
 export const metadata: Metadata = {
   title: "Microsoft Ads Berater Jan Krösche | Bing Ads schalten",
@@ -19,14 +20,7 @@ export default function page() {
         title={atf.msAdsBeraterATF.title}
         subtitle={atf.msAdsBeraterATF.subtitle}
         text={atf.msAdsBeraterATF.text}
-        LinkComponent={
-          <div className="flex gap-4 items-center">
-            <FiMail />
-            <a href="mailto:max.mustermann@ihre-domain.de">
-              jan@jankroesche.de
-            </a>
-          </div>
-        }
+        button={<MailBtn className="" />}
         imgPathMobile="/images/portraits/39321-4194.jpg"
         imgPathDesktop="/images/portraits/39321-4118_01.jpg"
       />

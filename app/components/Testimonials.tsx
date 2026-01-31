@@ -1,5 +1,6 @@
 import testimonals from "../content/testimonialsList";
 import FiveStarRating from "./FiveStarRating";
+import Image from "next/image";
 
 type Props = {
   className?: string;
@@ -25,10 +26,12 @@ export default function Testimonials({ className }: Props) {
             </div>
             <p className="mt-4">{e.voice}</p>
             <div className="flex items-center gap-4 mt-4">
-              <img
+              <Image
                 src="/images/suit_avatar.svg"
                 alt="Neutraler Avatar"
-                style={{ width: "40px" }}
+                width={40}
+                height={40}
+                style={{ width: "40px", height: "40px" }}
               />
               <div className="pt-2">
                 <span className="font-semibold block">{e.name}</span>

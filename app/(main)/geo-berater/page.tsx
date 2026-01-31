@@ -27,7 +27,7 @@ export default function GEOBerater() {
         title={atf.geoBeraterATF.title}
         subtitle={atf.geoBeraterATF.subtitle}
         text={atf.geoBeraterATF.text}
-        LinkComponent={<LinkGeoCheck className="w-full text-left" />}
+        button={<GEOCheckBtn className="" />}
         imgPathMobile="/images/portraits/39321-4194.jpg"
         imgPathDesktop="/images/portraits/39321-4127_01.jpg"
       />

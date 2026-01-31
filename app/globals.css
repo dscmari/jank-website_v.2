@@ -23,7 +23,7 @@ body {
 
 @theme {
   --color-custom-darkblue: #0c2461;
-  --color-custom-red: rgb(231, 0, 53); /* tricor red */
+  --color-custom-red: #E70035; /* tricor red */
   --color-custom-red-op: rgb(231, 0, 53, 0.1);
   --color-custom-black: #2d3436; /* us pallete */
   --color-custom-white: #f5f6fa;

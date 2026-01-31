@@ -5,7 +5,7 @@ type Props = {
 };
 
 export default function Contact({ className}: Props) {
-  const classes = `flex flex-col items-center gap-4 bg-custom-red font-semibold text-lg text-custom-white ${className}`;
+  const classes = `flex flex-col items-center gap-4 bg-custom-red font-semibold text-lg text-white ${className}`;
   return (
     <div className={classes}>
       <p className="text-center">Schnelle Kontaktaufnahme</p>
