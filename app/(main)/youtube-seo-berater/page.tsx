@@ -7,6 +7,7 @@ import Contact from "@/app/components/Contact";
 import InfoBtn from "@/app/components/buttons/InfoBtn";
 import TwoBoxLayout from "@/app/components/layouts/TwoBoxLayout";
 import { youtubeSEOBeraterTwoBox } from "@/app/content/TwoBoxLayoutContent";
+import MailBtn from "@/app/components/buttons/MailBtn";
 
 export const metadata: Metadata = {
   title: "YouTube SEO Berater Jan Krösche | YouTube Sichtbarkeit steigern",
@@ -19,14 +20,7 @@ export default function page() {
         title={atf.youtubeSeoBeraterATF.title}
         subtitle={atf.youtubeSeoBeraterATF.subtitle}
         text={atf.youtubeSeoBeraterATF.text}
-        LinkComponent={
-          <div className="flex gap-4 items-center">
-            <FiMail />
-            <a href="mailto:max.mustermann@ihre-domain.de">
-              jan@jankroesche.de
-            </a>
-          </div>
-        }
+        button={<MailBtn />}
         imgPathMobile="/images/portraits/39321-4194.jpg"
         imgPathDesktop="/images/portraits/39321-4118_01.jpg"
       />

@@ -26,7 +26,7 @@ export default function page() {
         title={atf.adsBeraterATF.title}
         subtitle={atf.adsBeraterATF.subtitle}
         text={atf.adsBeraterATF.text}
-        LinkComponent={<LinkAdsKurs className="w-full text-left" />}
+             button={<AdsKursBtn className="" />}
         imgPathMobile={"/images/portraits/39321-4190.jpg"}
         imgPathDesktop={"/images/portraits/39321-4211_02.jpg"}
       />

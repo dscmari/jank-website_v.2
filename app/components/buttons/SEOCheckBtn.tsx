@@ -1,6 +1,5 @@
 
 import Link from "next/link";
-import LinkSeoCheck from "../links/LinkSeoCheck";
 import { FiArrowRight } from "react-icons/fi";
 
 type Props = {

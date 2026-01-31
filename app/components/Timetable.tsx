@@ -131,7 +131,7 @@ export default function Timetable({ className }: Props) {
             <div className="flex items-center justify-between py-1">
               <div className="flex items-center">
                 <span className="lg:min-w-60 text-neutral-400 font-bold text-4xl"></span>{" "}
-                <span className="dark:text-custom-white">Mittagspause inkl. gemeinsames Essen im Hotel</span>
+                <span className="dark:text-white">Mittagspause inkl. gemeinsames Essen im Hotel</span>
               </div>
               <span className=""></span>{" "}
             </div>

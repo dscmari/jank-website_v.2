@@ -7,6 +7,7 @@ import Contact from "@/app/components/Contact";
 import InfoBtn from "@/app/components/buttons/InfoBtn";
 import TwoBoxLayout from "@/app/components/layouts/TwoBoxLayout";
 import { chatGPTAdsBeraterTwoBox } from "@/app/content/TwoBoxLayoutContent";
+import MailBtn from "@/app/components/buttons/MailBtn";
 
 export const metadata: Metadata = {
   title: "ChatGPT Ads Berater Jan Krösche | Werbung auf ChatGPT",
@@ -19,14 +20,7 @@ export default function page() {
         title={atf.chatGPTAdsBeraterATF.title}
         subtitle={atf.chatGPTAdsBeraterATF.subtitle}
         text={atf.chatGPTAdsBeraterATF.text}
-        LinkComponent={
-          <div className="flex gap-4 items-center">
-            <FiMail />
-            <a href="mailto:max.mustermann@ihre-domain.de">
-              jan@jankroesche.de
-            </a>
-          </div>
-        }
+        button={<MailBtn />}
         imgPathMobile="/images/portraits/39321-4194.jpg"
         imgPathDesktop="/images/portraits/39321-4118_01.jpg"
       />
@@ -169,7 +163,7 @@ export default function page() {
         </div>
         <div className="lg:text-lg">
           <p>
-Sei der erste in Deinem Markt, der Werbeanzeigen auf ChatGPT schaltet! Der Werbekanal ist neu und wird kaum genutzt. Das ist Deine Chance, um günstige Werbeplätze zu „ergattern“ und Dich gut zu positionieren. Damit Du mehr Anfragen generierst.
+            Sei der erste in Deinem Markt, der Werbeanzeigen auf ChatGPT schaltet! Der Werbekanal ist neu und wird kaum genutzt. Das ist Deine Chance, um günstige Werbeplätze zu „ergattern“ und Dich gut zu positionieren. Damit Du mehr Anfragen generierst.
           </p>
           <TwoBoxLayout
             boxes={chatGPTAdsBeraterTwoBox}
