@@ -90,20 +90,9 @@ export default function page() {
       <div>
         <h2 className="mt-4">2. Hosting</h2>
         <p>Wir hosten die Inhalte unserer Website bei folgendem Anbieter:</p>
-        <p>IONOS</p>
+        <p>Vercel Inc.</p>
         <p>
-          Anbieter ist die IONOS SE, Elgendorfer Str. 57, 56410 Montabaur
-          (nachfolgend IONOS). Wenn Sie unsere Website besuchen, erfasst IONOS
-          verschiedene Logfiles inklusive Ihrer IP-Adressen. Details entnehmen
-          Sie der Datenschutzerklärung von IONOS:
-        </p>
-        <p>https://www.ionos.de/terms-gtc/terms-privacy.</p>
-        <p>
-          Die Verwendung von IONOS erfolgt auf Grundlage von Art. 6 Abs. 1 lit.
-          f DSGVO. Wir haben ein berechtigtes Interesse an einer möglichst
-          zuverlässigen Darstellung unserer Website. Sofern eine entsprechende
-          Einwilligung abgefragt wurde, erfolgt die Verarbeitung ausschließlich
-          auf Grundlage von Art.
+          Wir hosten unsere Website bei der Vercel Inc. (440 N Barranca Ave #4133, Covina, CA 91723, USA). Wenn Sie unsere Website besuchen, werden personenbezogene Daten (z. B. IP-Adresse, Datum/Uhrzeit des Zugriffs, Browsertyp) auf den Servern von Vercel verarbeitet, um die Anzeige der Website zu ermöglichen. Vercel ist Empfänger Ihrer Daten und als Auftragsverarbeiter für uns tätig. Die Datenübertragung in die USA erfolgt auf Grundlage von Standardvertragsklauseln der EU-Kommission.
         </p>
         <p>
           6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG, soweit die Einwilligung
@@ -111,6 +100,8 @@ export default function page() {
           Endgerät des Nutzers (z. B. Device-Fingerprinting) im Sinne des TDDDG
           umfasst. Die Einwilligung ist jederzeit widerrufbar.
         </p>
+        <h2 className="mt-4">Content-Management</h2>
+        <p>Zur Verwaltung und Bereitstellung unserer Website-Inhalte (Blogartikel, Texte, Bilder) nutzen wir das Content-Management-System (CMS) der Sanity.io AS (Thorvald Meyers gate 9, 0555 Oslo, Norwegen). Beim Abruf dieser Inhalte können Metadaten und IP-Adressen an Sanity übertragen werden, um die Inhalte korrekt an Ihren Browser auszuliefern. Da Sanity seinen Sitz in Norwegen (EWR) hat, erfolgt die Verarbeitung auf Basis des europäischen Datenschutzniveaus.</p>
       </div>
       <div>
         <h2 className="mt-4">
@@ -402,6 +393,8 @@ export default function page() {
             Ihres Anliegens). Zwingende gesetzliche Bestimmungen insbesondere
             gesetzliche Aufbewahrungsfristen – bleiben unberührt.
           </p>
+          <h2 className="mt-4">E-Mail-Versand</h2>
+          <p>Für den Versand von E-Mails (z. B. Bestätigungen aus Kontaktformularen) nutzen wir den Dienst Resend (Resend Labs Inc., 2261 Market St #4038, San Francisco, CA 94114, USA). Die von Ihnen im Formular eingegebenen Daten (z. B. E-Mail-Adresse, Name, Nachrichtentext) werden an Resend übertragen und dort verarbeitet, um die Zustellung der Nachricht sicherzustellen. Standardvertragsklauseln der EU dienen als Absicherung für den Datentransfer in Drittstaaten.</p>
         </div>
       </div>
       <div>
