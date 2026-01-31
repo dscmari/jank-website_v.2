@@ -48,7 +48,7 @@ export default function page() {
           className="dark:pt-12"
         />
       </section>
-            <Image
+      <Image
         src="/images/hotel_sonneck_meetingroom.jpg"
         style={{ width: "600px" }}
         alt="Bild des Meetingsraums im Hotel Sonneck"
@@ -110,28 +110,17 @@ export default function page() {
           <span className="text-custom-red">Jan Krösche</span>
         </h1>
         <h2>
-          Taten sprechen bekanntlich lauter als Worte. Drei Beispiele von meinen
-          betreuten Kunden:
+          Seit 2017 bin ich als SEO, Ads und GEO Dienstleister und Kundenberater unterwegs
         </h2>
         <div className="flex flex-col gap-4">
           <p>
-            Eine Firma aus der Baubranche konnte durch die gesteigerte Google
-            Sichtbarkeit über 500 Anfragen über die Website generieren.
-            Auftragsvolumen mehr als 8 Millionen Euro. Allein über Google!
+            In den vergangenen Jahren habe ich eine der größten
+            Onlinemarketing Agenturen in Süddeutschland geleitet. Mit ca. 50
+            festangestellten Mitarbeitenden betreuten wir einen Kundenstamm
+            von über 300 Firmen aus dem deutschsprachigen Raum.
           </p>
           <p>
-            Eine Firma aus dem IT-Bereich gewinnt jede Woche mehr als zwei neue
-            Kunden durch die Google Rankings. Mit durchschnittlichem
-            Auftragswert von 7.000 Euro.
-          </p>
-          <p>
-            Eine Firma aus dem Werbemittel-Bereich hat letztes Jahr 9 neue große
-            Firmenkunden allein über ChatGPT gewonnen: Gesamt-Auftragsvolumen
-            von über 200.000 Euro.
-          </p>
-          <p>
-            Du siehst: Google Rankings sind kein Selbstzweck, sondern ein
-            Treiber für Neukunden und Umsatz.
+            Ich veröffentliche regelmäßig Fachartikel im Magazin „Website Boosting“ und halte Vorträge beim Verband Deutscher Ingenieure. Zudem berate ich derzeit Firmen in den drei Bereichen SEO, GEO und Ads und schule Firmen und Agenturen, um ihr Wissen aufzufrischen.
           </p>
         </div>
       </section>
@@ -186,23 +175,20 @@ export default function page() {
         <h2>Mein Hintergrund ist redaktionell - mein Blick strategisch.</h2>
         <div className="flex flex-col gap-4">
           <p>
-            Eine Firma aus der Baubranche konnte durch die gesteigerte Google
-            Sichtbarkeit über 500 Anfragen über die Website generieren.
-            Auftragsvolumen mehr als 8 Millionen Euro. Allein über Google!
+            Ich arbeite seit vielen Jahren im Bereich SEO und Content mit dem
+            Fokus darauf, wie Sichtbarkeit tatsächlich entsteht – und warum
+            sie oft ausbleibt.
           </p>
           <p>
-            Eine Firma aus dem IT-Bereich gewinnt jede Woche mehr als zwei neue
-            Kunden durch die Google Rankings. Mit durchschnittlichem
-            Auftragswert von 7.000 Euro.
+            Mit der ConversionSchmiede berate ich Unternehmen dabei, online
+            als relevante Quelle wahrgenommen zu werden – in Suchmaschinen
+            ebenso wie in KI-Antwortsystemen. Dabei geht es nicht um Taktiken,
+            sondern um saubere Strukturen, Inhalte und Einordnung.
           </p>
           <p>
-            Eine Firma aus dem Werbemittel-Bereich hat letztes Jahr 9 neue große
-            Firmenkunden allein über ChatGPT gewonnen: Gesamt-Auftragsvolumen
-            von über 200.000 Euro.
-          </p>
-          <p>
-            Du siehst: Google Rankings sind kein Selbstzweck, sondern ein
-            Treiber für Neukunden und Umsatz.
+            Mein Schwerpunkt liegt auf SEO, GEO und der Verbindung aus
+            Technik, Content und Autorität. Dieses Wissen vermittle ich
+            praxisnah in Beratung, Workshops und Vorträgen.
           </p>
         </div>
       </section>
@@ -264,7 +250,7 @@ export default function page() {
             className="mx-auto mt-12 dark:bg-darkmode-blue"
           />
           <h2 className="text-center mt-4">
-            Du kannst dich per Mail für die GEO Konferent anmelden
+            Du kannst dich per Mail für die GEO Konferenz anmelden
           </h2>
           <div className="flex flex-col gap-4 mt-12">
             <p>
@@ -274,7 +260,7 @@ export default function page() {
               zugeschickt.
             </p>
             <p>
-              Hast Du Fragen zur Veranstaltung? Dann kontaktieren uns gern
+              Hast Du Fragen zur Veranstaltung? Dann kontaktiere uns gern
               persönlich. Wir stehen Dir per Mail oder per Telefon gern zur
               Seite.
             </p>

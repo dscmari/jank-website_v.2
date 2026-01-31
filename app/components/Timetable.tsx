@@ -96,7 +96,7 @@ export default function Timetable({ className }: Props) {
                   02
                 </span>{" "}
                 <span className="font-semibold">
-                  GEO in der Umsetzung: Inhalte der Firmenwebsite bei ChatGPT u.a. sichtbar machen
+                  GEO in der Umsetzung: Inhalte der Firmenwebsite bei ChatGPT sichtbar machen
                 </span>
               </div>
               <span className="pt-2 lg:pt-0 min-w-48 w-full lg:w-auto text-left lg:text-right">
