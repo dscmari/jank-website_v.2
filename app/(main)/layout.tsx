@@ -12,12 +12,12 @@ const inter = Inter({
   display: "swap",
 });
 
- const poppins = Poppins({
-   variable: "--font-poppins",
-   subsets: ["latin"],
-   weight: ["400", "600", "700"],
-   display: "swap",
- });
+const poppins = Poppins({
+  variable: "--font-poppins",
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -30,15 +30,17 @@ export default function MainLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="de">
       <body
         className={`${inter.variable} ${poppins.variable} antialiased`}
       >
-        <Navbar/>
-        {children}
-        <PreFooter/>
-        <Footer/>
-        <ScrollToTopBtn/>
+        <Navbar />
+        <main>
+          {children}
+        </main>
+        <PreFooter />
+        <Footer />
+        <ScrollToTopBtn />
       </body>
     </html>
   );

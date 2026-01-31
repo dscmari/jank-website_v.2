@@ -46,7 +46,7 @@ export default function Navbar({ className }: Props) {
         </div>
 
         <div className="">
-          <ol>
+          <div>
             <div
               className={`pt-4 rounded-t flex items-center justify-between ${isSelected
                   ? "border-t border-slate-200 px-8"
@@ -254,7 +254,7 @@ export default function Navbar({ className }: Props) {
                  GEO Konferenz im Allgäu am 8. Mai
               </Link>
             </div>
-          </ol>
+          </div>
           <div className="pt-8 pl-8 flex items-center gap-4">
             <FiPhone />
             <span>+49 176 55109383</span>

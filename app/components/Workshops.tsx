@@ -21,14 +21,14 @@ export default function Workshops({ className }: Props) {
             SEO, GEO, Google Ads und Kundengewinnung im Internet.
           </p>
         </div>
-        <h1 className="hidden lg:block pb-8 tracking-wide font-semibold text-center">
+        <h1 className="hidden lg:block pb-8">
           Wir geben unsere <span className="text-custom-red">Expertise </span>
           weiter und schulen Firmen aus der ganzen DACH-Region.
           Suchmaschinenmarketing ist ein schnelllebiges Feld. Seit 2017 halten wir Schulungen im {" "}
-          <span className="text-red-500">SEO</span>, {" "}
-          <span className="text-red-500">GEO</span>, {" "}
-          <span className="text-red-500"> Google Ads</span> und {" "}
-          <span className="text-red-500"> Kundengewinnung im Internet</span>.
+          <span className="text-custom-red">SEO</span>, {" "}
+          <span className="text-custom-red">GEO</span>, {" "}
+          <span className="text-custom-red"> Google Ads</span> und {" "}
+          <span className="text-custom-red"> Kundengewinnung im Internet</span>.
         </h1>
         <InfoBtn content="Workshops" className="mx-auto mt-4 mb-8 lg:mb-16 dark:bg-darkmode-blue" />
       </div>
