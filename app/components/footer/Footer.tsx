@@ -25,7 +25,7 @@ export default function Footer() {
             <Link className="underline" href={"https://www.youtube.com/@jankroesche"}>Jan Krösche auf YouTube</Link>
           </div>
           <div className="flex flex-col items-center lg:items-start gap-2">
-            <Link href={"/allgemeine-geschaeftsbedingungen/"} className="underline">
+            <Link href={"/agb/"} className="underline">
               Allgemeine Geschäftsbedingungen
             </Link>
             <Link href={"/datenschutz/"} className="underline">
