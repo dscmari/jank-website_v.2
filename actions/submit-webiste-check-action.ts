@@ -4,12 +4,9 @@ import { redirect } from "next/navigation";
 import { Resend } from "resend";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export async function submitWebsiteCheck(formData: FormData) {
-  const website = formData.get("website");
-  const email = formData.get("email");
-
+export async function submitWebsiteCheck(data: { website: string, email: string }) {
   try {
-    const { data, error } = await resend.emails.send({
+    const { error } = await resend.emails.send({
       from: "Website Formular <webform@jankroesche.de>",
       to: "jan@jankroesche.de",
       subject: "Website Check Anfrage",
@@ -17,8 +14,8 @@ export async function submitWebsiteCheck(formData: FormData) {
       `<div>
         <h3>Website Check</h3>
         <p>
-            <strong>URL:</strong> ${website}<br />
-            <strong>Mail:</strong> ${email}
+            <strong>URL:</strong> ${data.website}<br />
+            <strong>Mail:</strong> ${data.email}
         </p>
        </div> 
     `,
@@ -32,6 +29,5 @@ export async function submitWebsiteCheck(formData: FormData) {
     // Hier keinen Wert zurückgeben, sondern den Fehler für das System bestehen lassen
     throw new Error("Mail-Versand fehlgeschlagen");
   }
-
   redirect("/danke");
 }

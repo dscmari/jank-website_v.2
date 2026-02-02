@@ -1,10 +1,30 @@
-"use server";
+"use client";
+import { useForm, SubmitHandler } from "react-hook-form";
 import { submitWebsiteCheck } from "@/actions/submit-webiste-check-action";
 
-export default async function ContactForm() {
+type Inputs = {
+  website: string;
+  email: string;
+  checkbox: boolean;
+};
+
+export default function WebsiteCheckForm() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<Inputs>({
+    defaultValues: {
+      checkbox: false,
+      website: "",
+      email: "",
+    },
+  });
+  const onSubmit: SubmitHandler<Inputs> = (data) => submitWebsiteCheck(data);
+
   return (
     <form
-      action={submitWebsiteCheck}
+      onSubmit={handleSubmit(onSubmit)}
       className="my-4 lg:mb-0 flex flex-col gap-4"
     >
       <div className="flex flex-col gap-4">
@@ -14,42 +34,52 @@ export default async function ContactForm() {
           </label>
           <input
             type="text"
-            name="website"
             className="rounded text-custom-black bg-slate-200 p-2 w-full"
-            placeholder="www.deineSeite.de"
-            required
+            {...register("website", { required: true })}
           />
+          {errors.website && (
+            <span className="text-sm text-black lg:text-custom-red font-light">
+              Bitte eine gültige URL angeben.
+            </span>
+          )}
         </div>
         <div className="flex flex-col gap-4 font-semibold">
           <label htmlFor="email">
             Deine Email-Adresse<span className="lg:text-custom-red">*</span>
           </label>
           <input
-            required
-            type="email"
-            name="email"
+            {...register("email", {
+              required: true,
+              pattern: /^\S+@\S+\.\S+$/,
+            })}
             className="rounded text-custom-black bg-slate-200 p-2 w-full"
-            placeholder="mustermann@office.de"
           />
+          {errors.email && (
+            <span className="text-sm text-black lg:text-custom-red font-light">
+              Bitte eine gültige Mailadresse angeben.
+            </span>
+          )}
         </div>
-        {/* <div className="flex flex-col gap-4 font-semibold">
-          <label htmlFor="message">Deine Nachricht</label>
-          <textarea
-            name="message"
-            className="rounded text-custom-black bg-slate-200 p-2 w-full min-h-24"
-            placeholder="Hast du konkrete Fragen?"
-          />
-        </div> */}
       </div>
-      <label className="cursor-pointer">
-        <div className="flex items-start gap-4 lg:mb-8">
-          <input type="checkbox" className="min-w-6 cursor-pointer" required />
+      <label className="cursor-pointer lg:mb-8">
+        <div className="flex items-start gap-4 ">
+          <input
+            type="checkbox"
+            className="min-w-6 cursor-pointer"
+            {...register("checkbox", { required: true })}
+          />
           <p className="text-xs !cursor-pointer">
-            Ich stimme zu, dass meine Angaben aus diesem Formular zur Beantwortung
-            meiner Anfrage erhoben und verarbeitet werden. Mehr Informationen in
-            der Datenschutzerklärung. Die habe ich gelesen und akzeptiert.
+            Ich stimme zu, dass meine Angaben aus diesem Formular zur
+            Beantwortung meiner Anfrage erhoben und verarbeitet werden. Mehr
+            Informationen in der Datenschutzerklärung. Die habe ich gelesen und
+            akzeptiert.
           </p>
         </div>
+        {errors.checkbox && (
+          <span className="text-sm text-black lg:text-custom-red font-light mt-4 block">
+            Bitte der Datenschutzvereinbarung der zustimmen.
+          </span>
+        )}
       </label>
       <div>
         <button

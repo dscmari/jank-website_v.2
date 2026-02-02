@@ -13,7 +13,7 @@ export default function WebsiteCheck({ isGeo, className }: Props) {
       className={`bg-custom-red lg:bg-white text-white lg:text-custom-black p-8 pt-12 dark ${className}`}
     >
       <div className="xl:flex xl:gap-16">
-        <div className="hidden xl:block">
+        <div className="hidden xl:block mx-auto">
           <div className="xl:relative">
             <Image
               src="/images/portraits/portrait_turned_side.jpg"
