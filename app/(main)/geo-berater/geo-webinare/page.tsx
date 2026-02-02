@@ -137,7 +137,7 @@ export default function page() {
           </div>
         </div>
 
-        {/* <div className="bg-white max-w-xl rounded-lg dark">
+        <div className="bg-white max-w-xl rounded-lg dark">
           <div className="relative">
             <Image
               src="/images/portraits/39321-4127_01.jpg"
@@ -253,7 +253,7 @@ export default function page() {
               </button>
             </form>
           </div>
-        </div> */}
+        </div>
       </div>
     </section>
   );
