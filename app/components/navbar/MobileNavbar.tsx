@@ -106,14 +106,14 @@ export default function Navbar({ className }: Props) {
                           GEO Berater für KI Sichtbarkeit
                         </Link>
                       </div>
-                      <div
+                      {/* <div
                         className="pb-1 text-neutral-400 border-b-2 border-slate-200"
                         onClick={() => setIsMenuOpen((prev) => !prev)}
                       >
                         <Link href="/geo-berater/geo-tracker/">
                           GEO Tracker
                         </Link>
-                      </div>
+                      </div> */}
                       {/* <div
                         className="pb-1 text-neutral-400 border-b-2 border-slate-200"
                         onClick={() => setIsMenuOpen((prev) => !prev)}

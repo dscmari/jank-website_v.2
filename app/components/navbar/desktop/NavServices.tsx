@@ -25,9 +25,9 @@ const NavServices = () => {
           <Link href="/geo-berater/" className="text-neutral-400">
             GEO Berater für KI Sichtbarkeit
           </Link>
-          <Link href="/geo-berater/geo-tracker/" className="text-neutral-400">
+          {/* <Link href="/geo-berater/geo-tracker/" className="text-neutral-400">
             GEO Tracker
-          </Link>
+          </Link> */}
           {/* <Link 
             href="/geo-berater/geo-webinare/" 
             className="text-neutral-400"
