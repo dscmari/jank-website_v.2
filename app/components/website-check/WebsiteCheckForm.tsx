@@ -34,7 +34,7 @@ export default function WebsiteCheckForm() {
           </label>
           <input
             type="text"
-            className="rounded text-custom-black bg-slate-200 p-2 w-full"
+            className={`rounded text-custom-black bg-slate-200 p-2 w-full ${errors.email ? "border-2 border-red-500 outline-none" : ""}`}
             {...register("website", { required: true })}
           />
           {errors.website && (
@@ -52,7 +52,7 @@ export default function WebsiteCheckForm() {
               required: true,
               pattern: /^\S+@\S+\.\S+$/,
             })}
-            className="rounded text-custom-black bg-slate-200 p-2 w-full"
+            className={`rounded text-custom-black bg-slate-200 p-2 w-full ${errors.email ? "border-2 border-red-500 outline-none" : ""}`}
           />
           {errors.email && (
             <span className="text-sm text-black lg:text-custom-red font-light">
@@ -77,7 +77,7 @@ export default function WebsiteCheckForm() {
         </div>
         {errors.checkbox && (
           <span className="text-sm text-black lg:text-custom-red font-light mt-4 block">
-            Bitte der Datenschutzvereinbarung der zustimmen.
+            Bitte der Datenschutzvereinbarung zustimmen.
           </span>
         )}
       </label>
