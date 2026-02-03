@@ -12,7 +12,7 @@ export default function page() {
         <span>Jan Krösche - SEO & Google Ads Beratung</span>
         <span>Obere Mühlstraße 6</span>
         <span>86825 Bad Wörishofen</span>
-        <span>Umsatzsteuer ID: 138 / 241 / 20581</span>
+        <span>Steuernummer: 138 / 241 / 20581</span>
       </div>
       <div className="flex flex-col">
         <h2 className="mt-4">Kontakt</h2>
