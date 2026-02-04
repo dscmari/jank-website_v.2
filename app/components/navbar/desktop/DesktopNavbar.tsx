@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { ShiftingDropDown } from "./ShiftingDropDown";
 import { FiMail, FiPhone } from "react-icons/fi";
-// import Breadcrumbs from "../../Breadcrumps";
 
 type Props = {
   className?:string
@@ -19,7 +18,7 @@ export default function DesktopNavbar({className} : Props) {
         </div>
         <div className="flex gap-2 items-center">
           <FiMail />
-          <a href="mailto:max.mustermann@ihre-domain.de">jan@jankroesche.de</a>
+          <a href="mailto:jan@jankroesche.de">jan@jankroesche.de</a>
         </div>
       </div>
       <div className="flex items-center justify-around pt-4">
@@ -35,7 +34,6 @@ export default function DesktopNavbar({className} : Props) {
         </Link>
         <ShiftingDropDown />
       </div>
-      {/* <Breadcrumbs /> */}
     </div>
   );
 }
