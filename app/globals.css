@@ -200,6 +200,11 @@ span {
   text-decoration: underline;
 }
 
+.sanity-container ul {
+  list-style: disc;
+  padding-left: 1rem;
+}
+
 @media (min-width: 1900px) {
 .sub-absolute-image {
   margin-top: 20rem;

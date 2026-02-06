@@ -64,7 +64,7 @@ export default async function PostPage({
 
     //console.log(post)
   return (
-    <main className="">
+    <main className="sanity-container">
       <Link
         href="/blog/"
         className="hidden lg:block mt-4 px-4  md:mt-8 md:px-8 lg:px-16 lg:px-32 font-light text-sm dark:text-custom-white"
