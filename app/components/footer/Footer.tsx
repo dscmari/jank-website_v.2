@@ -22,7 +22,8 @@ export default function Footer() {
             <LinkSEOCheck className="underline" />
             <LinkGeoCheck className="underline" />
             <LinkAdsKurs className="underline" />
-            <Link className="underline" href={"https://www.youtube.com/@jankroesche"}>Jan Krösche auf YouTube</Link>
+            <Link className="underline" target="_blank" href={"https://www.youtube.com/@jankroesche"}>Jan Krösche auf YouTube</Link>
+            <Link className="underline" target="_blank" href={"https://open.spotify.com/show/4d5VQHbtxZGoaWLlp1zCaY"}>Huber & Krösche: GEO Podcast</Link>
           </div>
           <div className="flex flex-col items-center lg:items-start gap-2">
             <Link href={"/agb/"} className="underline">
