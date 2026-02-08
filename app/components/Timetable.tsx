@@ -124,7 +124,7 @@ export default function Timetable({ className }: Props) {
             </div>
             <div className="flex flex-items gap-2 lg:gap-0 pt-2">
               <span className="lg:min-w-60">Referentinnen</span>{" "}
-              <span>Lisa Bachmann & Jessica Feneberg</span>
+              <span>Lisa Bachmann & Jessica F.</span>
             </div>
           </div>
           <div className="p-4">
