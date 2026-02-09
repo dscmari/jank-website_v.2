@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import LinkSEOCheck from "../links/LinkSeoCheck";
 import LinkGeoCheck from "../links/LinkGeoCheck";
 import LinkAdsKurs from "../links/LinkAdsKurs";
@@ -7,7 +8,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="p-8 lg:p-16 bg-custom-black text-white grid grid-cols-1 gap-12 lg:grid-cols-4">
-        <div className="flex flex-col items-center lg:items-start gap-2 mt-12 lg:mt-0">
+        <div className="flex flex-col items-center lg:items-start gap-2 order-2 lg:order-1">
           <div className="flex flex-col mb-4">
             <span>Jan Krösche & Team</span>
             <span>www.jankroesche.de</span>
@@ -17,13 +18,25 @@ export default function Footer() {
           <span>Obere Mühlstraße 6</span>
           <span>86825 Bad Wörishofen</span>
         </div>
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8 order-3 mb-12 lg:mb-0 lg:order-2">
           <div className="flex flex-col items-center lg:items-start gap-2">
             <LinkSEOCheck className="underline" />
             <LinkGeoCheck className="underline" />
             <LinkAdsKurs className="underline" />
-            <Link className="underline" target="_blank" href={"https://www.youtube.com/@jankroesche"}>Jan Krösche auf YouTube</Link>
-            <Link className="underline" target="_blank" href={"https://open.spotify.com/show/4d5VQHbtxZGoaWLlp1zCaY"}>Huber & Krösche: GEO Podcast</Link>
+            <Link
+              className="underline"
+              target="_blank"
+              href={"https://www.youtube.com/@jankroesche"}
+            >
+              Jan Krösche auf YouTube
+            </Link>
+            <Link
+              className="underline"
+              target="_blank"
+              href={"https://open.spotify.com/show/4d5VQHbtxZGoaWLlp1zCaY"}
+            >
+              Huber & Krösche: GEO Podcast
+            </Link>
           </div>
           <div className="flex flex-col items-center lg:items-start gap-2">
             <Link href={"/agb/"} className="underline">
@@ -37,26 +50,31 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-        <div className="lg:col-span-2">
-          <h1>Jan Krösche & Team sind Deine Berater für SEO, GEO & Google Ads</h1>
+        <div className="lg:col-span-2 order-1 lg:order-3 mt-12 lg:mt-0">
+          <h1>
+            Jan Krösche & Team sind Deine Berater für SEO, GEO & Google Ads
+          </h1>
           <p className="mb-2">
             Seit 2017 haben wir schon über 500 Firmen-Websites auf Platz 1 bei
-            Google & ChatGPT katapultiert.{" "}
+            Google & ChatGPT katapultiert. Mit Firmensitz im Allgäu helfen wir
+            Unternehmen aus Deutschland, Österreich, Norditalien & der Schweiz.
+            Wir arbeiten branchenunabhängig und sind für IT-Firmen, Makler,
+            Industriebetriebe, Ärzte und Handwerker und andere Branchen aktiv.
           </p>
         </div>
-
       </div>
       <div className="border-t border-gray-800 px-8 py-6 text-sm text-gray-400 flex flex-col md:flex-row justify-between items-center gap-4">
         <span>© 2026 Jan Krösche & Team</span>
         <span>
           Design & Entwicklung von{" "}
-          <a href="https://namaste-websites.de" className="hover:text-white transition-colors underline">
+          <a
+            href="https://namaste-websites.de"
+            className="hover:text-white transition-colors underline"
+          >
             Marian Nökel
           </a>
         </span>
       </div>
     </footer>
-
-
   );
 }
