@@ -190,8 +190,8 @@ export default function Navbar({ className }: Props) {
                       </div>
                     </div>
                           <div className="flex flex-col gap-1 mr-8">
-                      <h3 className="font-semibold mt-2">YouTube Werbung</h3>
-                      <div
+                      <h3 className="font-semibold mt-2">Social Media</h3>
+                      {/* <div
                         className="pb-1 border-b-2 border-slate-200"
                         onClick={() => setIsMenuOpen((prev) => !prev)}
                       >
@@ -201,7 +201,7 @@ export default function Navbar({ className }: Props) {
                         >
                           YouTube SEO Berater
                         </Link>
-                      </div>
+                      </div> */}
                       <div
                         className="pb-1 border-b-2 border-slate-200"
                         onClick={() => setIsMenuOpen((prev) => !prev)}

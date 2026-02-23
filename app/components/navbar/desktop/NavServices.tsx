@@ -70,10 +70,10 @@ const NavServices = () => {
           </Link>
         </div>
                 <div className="flex flex-col gap-2">
-          <h3 className="text-xl font-semibold mb-2">YouTube Werbung</h3>
-          <Link href="/youtube-seo-berater/" className="text-neutral-400">
+          <h3 className="text-xl font-semibold mb-2">Social Media</h3>
+          {/* <Link href="/youtube-seo-berater/" className="text-neutral-400">
             YouTube SEO Berater
-          </Link>
+          </Link> */}
              <Link href="/youtube-ads-berater/" className="text-neutral-400">
             YouTube Ads Berater
           </Link>

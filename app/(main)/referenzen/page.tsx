@@ -67,7 +67,7 @@ export default function page() {
                 <Image
                   src={s.image}
                   style={{ width: "600px" }}
-                  alt="Screenshot einer ChatGPT Suche"
+                  alt="Screenshot einer ChatGPT- oder Googlesuche"
                   height={300}
                   width={500}
                 />

@@ -117,6 +117,36 @@ const references = [
   //   aiResults: `Platz 1 in der KI-Antwort von ChatGPT für „Pflegesessel Hersteller“`,
   //   company: `Steinmann Selection`,
   // },
+    {
+    title: `Platz 1 Ranking für „Inertiale Navigationssysteme“`,
+    text: `Die DTC Navigation Solutions GmbH & Co. KG aus Krailling bietet Lösungen rund um Inertiale Navigationssysteme, Messtechnik im Automotive-Bereich und RTK Dienste. Wir haben die Website www.dtc-solutions.de so optimiert, dass sie von potentiellen Kunden aus der Automotive-Branche besser gefunden werden kann.`,
+    googleResults: `Platz 1 bei Google für „Inertiale Navigationssysteme“`,
+    aiResults: `Platz 1 bei Google für „Inertialnavigation ADAS“`,
+    company: `DTC Navigation Solutions`,
+    subtext:
+      "Durch die gesteigerte Sichtbarkeit bei Google erhält die Firma konstant mehr Anfragen über die Website.",
+    image: "/images/screenshots/reference_11.png",
+  },
+      {
+    title: `Platz 1 Ranking für den Suchbegriff „Ferienwohnungen Comer See"`,
+    text: `Wir optimieren die Website labreva.com mit dem Ziel, für viele wichtige Suchbegriffe bei Google und ChatGPT auffindbar zu sein. Für das wichtige Keyword „Ferienwohnungen Comer See“ rankt unser Kunde auf Platz 1 bei Google. Sogar vor TUI!`,
+    googleResults: `Platz 1 bei Google für „Ferienwohnungen Comer See“`,
+    aiResults: `Platz 1 bei Google für „Feriendomizil Comer See“`,
+    company: `LABREVA`,
+    subtext:
+      "Durch die gesteigerte Google-Sichtbarkeit kann unser Kunde deutlich mehr Buchungen über die Website verzeichnen.",
+    image: "/images/screenshots/reference_12.png",
+  },
+        {
+    title: `Platz 1 Ranking bei Google & ChatGPT für „Elektriker München“`,
+    text: `Mit unseren Website-Optimierungen helfen wir der Firma Pittroff Elektrotechnik München GmbH, um als Elektriker in München mehr Neukunden über die Website zu gewinnen. Wir konnten die Firma für viele wichtige Suchbegriffe sowohl bei Google als auch bei ChatGPT ganz oben platzieren.`,
+    googleResults: `Platz 1 bei Google für „Elektriker München“`,
+    aiResults: `Platz 1 bei ChatGPT für „Bester Elektriker in München“`,
+    company: `Pittroff Elektrotechnik München`,
+    subtext:
+      "Die Firma gewinnt mehrere Neukunden pro Woche durch die gesteigerte Sichtbarkeit bei Google und in den KI-Systemen.",
+    image: "/images/screenshots/reference_13.png",
+  },
 ];
 
 export default references;
