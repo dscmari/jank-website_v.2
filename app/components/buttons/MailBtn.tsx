@@ -9,7 +9,7 @@ type Props = {
 export default function MailBtn({ className }: Props) {
     return (
         <Link href={"mailto:jan@jankroesche.de"}
-            className={`md:w-1/2 lg:w-full p-4 lg:max-w-2/3 bg-custom-red text-lg text-white font-semibold tracking-tight rounded-xl flex items-center justify-between ${className}`}
+            className={`md:w-1/2 lg:w-full px-4 py-2 lg:max-w-2/3 bg-custom-red text-lg text-white font-semibold tracking-tight rounded-xl flex items-center justify-between ${className}`}
         >
             <div className="flex items-center gap-4">
                 <FiMail />
