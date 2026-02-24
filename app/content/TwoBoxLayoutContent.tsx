@@ -262,7 +262,7 @@ export const instagramWerbungTwoBox = [
     iconText: "Angebot",
     title: "Unser Preispaket für Dich",
     subtitle: "Für die Steigerung deiner Sichtbarkeit bei Instagram",
-    text: "Langfristige Steigerung Deines Kanals und Deiner Präsens auf Instagram, um mehr Neukunden zu erreichen.",
+    text: "Langfristige Steigerung Deines Kanals und Deiner Präsenz auf Instagram, um mehr Neukunden zu erreichen.",
     services: [
       "Persönlicher Ansprechpartner",
       "Einrichtung Deiner Instagram Werbeanzeigen",

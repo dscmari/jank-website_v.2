@@ -108,7 +108,7 @@ export default function page() {
           <h2 className="text-center mt-4">
             Wir machen Unternehmen bei YouTube sichtbar
           </h2>
-          <div className="flex flex-col gap-4 mt-12">
+          <div className="flex flex-col gap-4 mt-12 dark:pb-8 lg:dark:pb-0 ">
             <p>
               Viele Firmen setzen mehr Fokus auf Videoproduktion. Doch was
               bringt ein Video, wenn es von niemandem gefunden werden kann?

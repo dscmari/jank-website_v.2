@@ -67,7 +67,7 @@ export default function page() {
         <div className="px-4 lg:px-0 xl:max-w-2/3">
           <h2 className="lg:!text-3xl/10 tracking-wide font-semibold">
             Damit Du auf Instagram die
-            <span className="text-custom-red">sichtbarste Firma</span> wirst!
+            <span className="text-custom-red"> sichtbarste Firma </span> wirst!
           </h2>
         </div>
         <div className="lg:text-lg px-4 lg:px-0">
@@ -99,6 +99,7 @@ export default function page() {
           <h1 className="text-center">
             Jan Krösche & Team: Deine Berater für
             <span className="text-custom-red">
+              {" "}
               Instagram Werbung für Firmen
             </span>{" "}
             aus Deutschland, Österreich, Südtirol & der Schweiz
@@ -111,7 +112,7 @@ export default function page() {
             Wir beraten Dich nicht nur, sondern setzen Dir Deine Werbung auf
             Instagram komplett auf
           </h2>
-          <div className="flex flex-col gap-4 mt-12">
+          <div className="flex flex-col gap-4 mt-12 dark:pb-8 lg:dark:pb-0 ">
             <p>
               Wir richten die Instagram Kampagne so ein, dass die der richtigen
               Zielgruppe ausgespielt wird. Damit Du nicht nur mehr Neukunden
@@ -128,29 +129,26 @@ export default function page() {
           </div>
         </div>
       </section>
-            <section className="mt-24 px-4 py-24 xl:m-0 xl:p-32 relative bg-custom-white dark:pt-0 dark:xl:pt-32">
-              <div className="lg:max-w-2/3">
-                <h1>
-                  Persönliche
-                  <span className="text-custom-red"> YouTube Ads Beratung</span> aus
-                  einer Hand
-                </h1>
-              </div>
-              <div className="lg:text-lg">
-                <p>
-                  Wir verstehen uns als Dienstleister und kümmern uns persönlich um
-                  Dich. Wir helfen Dir dabei, eine perfekte YouTube Ads Strategie zu
-                  finden und aufzusetzen, damit Du auf der Plattform maximal sichtbar
-                  wirst. Wir recherchieren die Themen, die Deine potentiellen Kunden
-                  auf YouTube konsumieren und legen einen Plan fest, um bei YouTube
-                  Sichtbarkeit zu gewinnen.
-                </p>
-                <TwoBoxLayout
-                  boxes={instagramWerbungTwoBox}
-                  className="mt-12 lg:mt-24"
-                />
-              </div>
-            </section>
+      <section className="mt-24 px-4 py-24 xl:m-0 xl:p-32 relative bg-custom-white dark:pt-0 dark:xl:pt-32">
+        <div className="lg:max-w-2/3">
+          <h1>
+            Persönliche
+            <span className="text-custom-red"> YouTube Ads Beratung</span> aus
+            einer Hand
+          </h1>
+        </div>
+        <div className="lg:text-lg">
+          <p>
+            Du möchtest mehr Neukunden übers Internet gewinnen? Dann bist Du bei
+            uns genau richtig. Wir helfen Dir, bei Google und bei Instagram die
+            Nummer 1 Deiner Branche zu werden.
+          </p>
+          <TwoBoxLayout
+            boxes={instagramWerbungTwoBox}
+            className="mt-12 lg:mt-24"
+          />
+        </div>
+      </section>
     </div>
   );
 }
