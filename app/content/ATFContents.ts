@@ -43,5 +43,11 @@ const youtubeAdsBeraterATF = {
   subtitle: "Wir schalten Deine YouTube Ads, damit Deine Videos von potentiellen Kunden gesehen werden.",
   text:"YouTube zählt zu den beliebtesten Internetplattformen weltweit. Wir schalten Deine YouTube Ads für mehr Sichtbarkeit bei YouTube."
 }
+const beraterInstagramWerbung = {
+  title: "Dein Berater für Instagram Werbung",
+  subtitle: "Wir schalten Werbung auf Instagram, damit Deine Firma im Internet besser gefunden werden kann.",
+  text:"Instagram zählt zu den meistgenutzten Social Media Kanälen weltweit. Nutze den Kanal, um mehr Kunden zu gewinnen."
+}
 
-export default {homeATF, seoBeraterATF, geoBeraterATF, adsBeraterATF, msAdsBeraterATF, chatGPTAdsBeraterATF, youtubeSeoBeraterATF, youtubeAdsBeraterATF }
+
+export default {homeATF, seoBeraterATF, geoBeraterATF, adsBeraterATF, msAdsBeraterATF, chatGPTAdsBeraterATF, youtubeSeoBeraterATF, youtubeAdsBeraterATF, beraterInstagramWerbung }

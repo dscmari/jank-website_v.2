@@ -48,16 +48,18 @@ export default function Navbar({ className }: Props) {
         <div className="">
           <div>
             <div
-              className={`pt-4 rounded-t flex items-center justify-between ${isSelected
+              className={`pt-4 rounded-t flex items-center justify-between ${
+                isSelected
                   ? "border-t border-slate-200 px-8"
                   : "mx-8 border-b-2 border-slate-200"
-                }`}
+              }`}
               onClick={() => setIsSelected((prev) => !prev)}
             >
               <span className="font-semibold pb-2">Leistungen</span>
               <FiChevronDown
-                className={`transition-transform size-6 ${isSelected ? "rotate-180 text-custom-red" : ""
-                  }`}
+                className={`transition-transform size-6 ${
+                  isSelected ? "rotate-180 text-custom-red" : ""
+                }`}
               />
             </div>
             <div className="flex flex-col font-semibold ">
@@ -68,8 +70,9 @@ export default function Navbar({ className }: Props) {
                     animate={{ height: "auto", opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3, ease: "easeInOut" }}
-                    className={`pl-8 pb-8 flex flex-col gap-4 !font-medium  ${isSelected ? "" : ""
-                      }`}
+                    className={`pl-8 pb-8 flex flex-col gap-4 !font-medium  ${
+                      isSelected ? "" : ""
+                    }`}
                   >
                     <div className="flex flex-col gap-1 mr-8">
                       <h3 className="font-semibold mt-2">Google Platz 1</h3>
@@ -189,7 +192,7 @@ export default function Navbar({ className }: Props) {
                         </Link>
                       </div>
                     </div>
-                          <div className="flex flex-col gap-1 mr-8">
+                    <div className="flex flex-col gap-1 mr-8">
                       <h3 className="font-semibold mt-2">Social Media</h3>
                       {/* <div
                         className="pb-1 border-b-2 border-slate-200"
@@ -213,6 +216,17 @@ export default function Navbar({ className }: Props) {
                           YouTube Ads Berater
                         </Link>
                       </div>
+                      <div
+                        className="pb-1 border-b-2 border-slate-200"
+                        onClick={() => setIsMenuOpen((prev) => !prev)}
+                      >
+                        <Link
+                          href="/berater-instagram-werbung/"
+                          className="text-neutral-400 "
+                        >
+                          Instagram Werbung
+                        </Link>
+                      </div>
                     </div>
                   </motion.ol>
                 )}
@@ -232,7 +246,7 @@ export default function Navbar({ className }: Props) {
               >
                 Referenzen
               </Link>
-                           <Link
+              <Link
                 href={"/seo-geo-ads-workshops/"}
                 onClick={() => setIsMenuOpen((prev) => !prev)}
                 className="pt-4 pb-2 mx-8 border-b-2 border-slate-200"
@@ -251,7 +265,7 @@ export default function Navbar({ className }: Props) {
                 onClick={() => setIsMenuOpen((prev) => !prev)}
                 className="pt-4 pb-2 mx-8 border-b-2 border-slate-200"
               >
-                 GEO Konferenz im Allgäu am 8. Mai
+                GEO Konferenz im Allgäu am 8. Mai
               </Link>
             </div>
           </div>

@@ -13,7 +13,7 @@ export default function MailBtn({ className }: Props) {
         >
             <div className="flex items-center gap-4">
                 <FiMail />
-                <span>jan@jankroesche.de</span>
+                <span className="!cursor-pointer">jan@jankroesche.de</span>
             </div>
             <FiArrowRight color="white" />
         </Link>

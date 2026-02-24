@@ -69,13 +69,16 @@ const NavServices = () => {
             Kostenloser Google Ads Kurs
           </Link>
         </div>
-                <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2">
           <h3 className="text-xl font-semibold mb-2">Social Media</h3>
           {/* <Link href="/youtube-seo-berater/" className="text-neutral-400">
             YouTube SEO Berater
           </Link> */}
-             <Link href="/youtube-ads-berater/" className="text-neutral-400">
+          <Link href="/youtube-ads-berater/" className="text-neutral-400">
             YouTube Ads Berater
+          </Link>
+          <Link href="/berater-instagram-werbung/" className="text-neutral-400">
+            Instagram Werbung
           </Link>
         </div>
       </div>

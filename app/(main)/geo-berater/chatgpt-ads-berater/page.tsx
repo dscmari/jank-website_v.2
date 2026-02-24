@@ -48,15 +48,7 @@ export default function page() {
             Wir setzen Deine ChatGPT Werbung auf, damit Du in der KI sichtbarer
             bist.
           </p>
-          <a
-            href="mailto:max.mustermann@ihre-domain.de"
-            className="flex gap-4 items-center bg-custom-red text-white p-4 lg:max-w-2/3 mt-8 rounded-xl"
-          >
-            <FiMail />
-            <span className="font-semibold tracking-wider">
-              jan@jankroesche.de
-            </span>
-          </a>
+          <MailBtn className="mt-8 lg:max-w-2/3 2xl:w-full" />
         </div>
         <div className="mt-24 lg:mt-12 xl:min-w-1/3">
           <Image
@@ -163,7 +155,10 @@ export default function page() {
         </div>
         <div className="lg:text-lg">
           <p>
-            Sei der erste in Deinem Markt, der Werbeanzeigen auf ChatGPT schaltet! Der Werbekanal ist neu und wird kaum genutzt. Das ist Deine Chance, um günstige Werbeplätze zu „ergattern“ und Dich gut zu positionieren. Damit Du mehr Anfragen generierst.
+            Sei der erste in Deinem Markt, der Werbeanzeigen auf ChatGPT
+            schaltet! Der Werbekanal ist neu und wird kaum genutzt. Das ist
+            Deine Chance, um günstige Werbeplätze zu „ergattern“ und Dich gut zu
+            positionieren. Damit Du mehr Anfragen generierst.
           </p>
           <TwoBoxLayout
             boxes={chatGPTAdsBeraterTwoBox}

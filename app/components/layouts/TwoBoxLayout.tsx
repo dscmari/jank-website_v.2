@@ -58,10 +58,9 @@ export default function FourBoxLayout({ className, boxes }: Props) {
             </div>
             <div className="mt-8 lg:mt-12">
               {index === 0 ? (
-                <button className="mt-8 lg:text-xl p-4 w-full bg-custom-red text-white rounded-lg flex items-center justify-between">
+                <div className="mt-8 w-full">
                   {e.linkComponent}
-                  <FiArrowRight />
-                </button>
+                </div>
               ) : (
                 <div className="mt-8">
                   <p className="pb-8 text-base/5 font-light border-b-1 border-slate-700">

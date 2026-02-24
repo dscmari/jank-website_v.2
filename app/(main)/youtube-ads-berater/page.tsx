@@ -45,15 +45,7 @@ export default function page() {
             Marketingkanälen im deutschsprachigen Raum. Die „View-Preise“ sind
             meist immer noch sehr gering. Das Potenzial ist riesig.
           </p>
-          <a
-            href="mailto:max.mustermann@ihre-domain.de"
-            className="flex gap-4 items-center bg-custom-red text-white p-4 lg:max-w-2/3 mt-8 rounded-xl"
-          >
-            <FiMail />
-            <span className="font-semibold tracking-wider">
-              jan@jankroesche.de
-            </span>
-          </a>
+          <MailBtn className="mt-8 w-full lg:max-w-2/3 2xl:w-full" />
         </div>
         <div className="mt-24 lg:mt-12 xl:min-w-1/3">
           <Image
@@ -133,15 +125,7 @@ export default function page() {
               Videos zu finden oder helfen Dir dabei, dass Du die Videos einfach
               selbst drehst.
             </p>
-            <a
-              href="mailto:max.mustermann@ihre-domain.de"
-              className="flex gap-4 items-center lg:max-w-2/3 bg-custom-red text-white p-4 mt-8 rounded-xl mb-8"
-            >
-              <FiMail />
-              <span className="font-semibold tracking-wider">
-                jan@jankroesche.de
-              </span>
-            </a>
+            <MailBtn className="mt-8 w-full lg:max-w-2/3 2xl:w-full" />
           </div>
         </div>
       </section>
@@ -155,7 +139,12 @@ export default function page() {
         </div>
         <div className="lg:text-lg">
           <p>
-Wir verstehen uns als Dienstleister und kümmern uns persönlich um Dich. Wir helfen Dir dabei, eine perfekte YouTube Ads Strategie zu finden und aufzusetzen, damit Du auf der Plattform maximal sichtbar wirst. Wir recherchieren die Themen, die Deine potentiellen Kunden auf YouTube konsumieren und legen einen Plan fest, um bei YouTube Sichtbarkeit zu gewinnen.
+            Wir verstehen uns als Dienstleister und kümmern uns persönlich um
+            Dich. Wir helfen Dir dabei, eine perfekte YouTube Ads Strategie zu
+            finden und aufzusetzen, damit Du auf der Plattform maximal sichtbar
+            wirst. Wir recherchieren die Themen, die Deine potentiellen Kunden
+            auf YouTube konsumieren und legen einen Plan fest, um bei YouTube
+            Sichtbarkeit zu gewinnen.
           </p>
           <TwoBoxLayout
             boxes={youtubeAdsBeraterTwoBox}

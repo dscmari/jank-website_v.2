@@ -2,6 +2,7 @@ import { FiMail } from "react-icons/fi";
 import LinkAdsKurs from "../components/links/LinkAdsKurs";
 import LinkGEOKurs from "../components/links/LinkGEOKurs";
 import LinkSEOKurs from "../components/links/LinkSEOKurs";
+import MailBtn from "../components/buttons/MailBtn";
 
 export const adsBerater = [
   {
@@ -120,15 +121,7 @@ export const msAdsBeraterTwoBox = [
       "Du erhältst mehr Anfragen über die Website",
       "Du bestehst langfristig am Markt",
     ],
-    linkComponent: (
-      <a
-        href="mailto:max.mustermann@ihre-domain.de"
-        className="flex gap-4 items-center w-full "
-      >
-        <FiMail />
-        <span className="font-semibold tracking-wider">jan@jankroesche.de</span>
-      </a>
-    ),
+ linkComponent: <MailBtn className="mt-8 !w-full md:!w-full lg:!w-full lg:max-w-full" />,
   },
   {
     iconText: "Angebot",
@@ -162,15 +155,7 @@ export const chatGPTAdsBeraterTwoBox = [
       "Du erhältst mehr Anfragen über die Website",
       "Du bestehst langfristig am Markt",
     ],
-    linkComponent: (
-      <a
-        href="mailto:max.mustermann@ihre-domain.de"
-        className="flex gap-4 items-center w-full "
-      >
-        <FiMail />
-        <span className="font-semibold tracking-wider">jan@jankroesche.de</span>
-      </a>
-    ),
+ linkComponent: <MailBtn className="mt-8 !w-full md:!w-full lg:!w-full lg:max-w-full" />,
   },
   {
     iconText: "Angebot",
@@ -204,15 +189,7 @@ export const youtubeSEOBeraterTwoBox = [
       "Du erhältst mehr Anfragen über die Website",
       "Du bestehst langfristig am Markt",
     ],
-    linkComponent: (
-      <a
-        href="mailto:max.mustermann@ihre-domain.de"
-        className="flex gap-4 items-center w-full "
-      >
-        <FiMail />
-        <span className="font-semibold tracking-wider">jan@jankroesche.de</span>
-      </a>
-    ),
+ linkComponent: <MailBtn className="mt-8 !w-full md:!w-full lg:!w-full lg:max-w-full" />,
   },
   {
     iconText: "Angebot",
@@ -246,15 +223,7 @@ export const youtubeAdsBeraterTwoBox = [
       "Du erhältst mehr Anfragen über die Website",
       "Du bestehst langfristig am Markt",
     ],
-    linkComponent: (
-      <a
-        href="mailto:max.mustermann@ihre-domain.de"
-        className="flex gap-4 items-center w-full "
-      >
-        <FiMail />
-        <span className="font-semibold tracking-wider">jan@jankroesche.de</span>
-      </a>
-    ),
+    linkComponent: <MailBtn className="mt-8 !w-full md:!w-full lg:!w-full lg:max-w-full" />,
   },
   {
     iconText: "Angebot",
@@ -268,6 +237,38 @@ export const youtubeAdsBeraterTwoBox = [
       "Zielgruppen Einstellungen",
       "Fortlaufende Kampagnen Optimierung",
       "Ideengeber für mehr YouTube Sichtbarkeit ",
+      "Wettbewerbsanalysen",
+      "Strategische Anpassungen",
+    ],
+  },
+];
+
+export const instagramWerbungTwoBox = [
+  {
+    iconText: "Instagram Ads",
+    title: "Wir schalten deine Instagram Ads",
+    subtitle: "Neukunden sehen die Inhalte Deiner Firma",
+    text: "Wir kümmern uns um die komplette Ads Strategie Deines Instagram Kanals. Von der Themenrecherche bis zur Optimierung der Anzeigen.",
+    services: [
+      "Du wirst auf Instagram gefunden",
+      "Du bekommst eine hohe Sichtbarkeit auf Instagram",
+      "Du erreichst über Instagram die richtigen Websitebesucher",
+      "Du erhältst mehr Anfragen über die Website",
+      "Du bestehst langfristig am Markt",
+    ],
+    linkComponent: <MailBtn className="mt-8 !w-full md:!w-full lg:!w-full lg:max-w-full" />,
+  },
+  {
+    iconText: "Angebot",
+    title: "Unser Preispaket für Dich",
+    subtitle: "Für die Steigerung deiner Sichtbarkeit bei Instagram",
+    text: "Langfristige Steigerung Deines Kanals und Deiner Präsens auf Instagram, um mehr Neukunden zu erreichen.",
+    services: [
+      "Persönlicher Ansprechpartner",
+      "Einrichtung Deiner Instagram Werbeanzeigen",
+      "Zielgruppen Einstellungen",
+      "Fortlaufende Kampagnen Optimierung",
+      "Ideengeber für mehr Instagram Sichtbarkeit ",
       "Wettbewerbsanalysen",
       "Strategische Anpassungen",
     ],
