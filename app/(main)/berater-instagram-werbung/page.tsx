@@ -133,7 +133,7 @@ export default function page() {
         <div className="lg:max-w-2/3">
           <h1>
             Persönliche
-            <span className="text-custom-red"> YouTube Ads Beratung</span> aus
+            <span className="text-custom-red"> Instagram Ads Beratung</span> aus
             einer Hand
           </h1>
         </div>
