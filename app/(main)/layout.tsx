@@ -5,6 +5,8 @@ import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
 import PreFooter from "../components/footer/PreFooter";
 import ScrollToTopBtn from "../components/ScrollToTopBtn";
+import GTMBodyScript from "../components/google/GTMBodyScript";
+import GTMHeadScript from "../components/google/GTMHeadScript";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -31,9 +33,13 @@ export default function MainLayout({
 }>) {
   return (
     <html lang="de">
+      <head>
+        <GTMHeadScript/>
+      </head>
       <body
         className={`${inter.variable} ${poppins.variable} antialiased`}
       >
+        <GTMBodyScript/>
         <Navbar />
         <main>
           {children}
