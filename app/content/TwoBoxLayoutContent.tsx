@@ -3,6 +3,9 @@ import LinkAdsKurs from "../components/links/LinkAdsKurs";
 import LinkGEOKurs from "../components/links/LinkGEOKurs";
 import LinkSEOKurs from "../components/links/LinkSEOKurs";
 import MailBtn from "../components/buttons/MailBtn";
+import AdsKursBtn from "../components/buttons/AdsKursBtn";
+import SEOKursBtn from "../components/buttons/SEOKursBtn";
+import GEOKursBtn from "../components/buttons/GEOKursBtn";
 
 export const adsBerater = [
   {
@@ -18,7 +21,7 @@ export const adsBerater = [
       "Du bekommst die richtigen Menschen auf die Seite",
       "Du bestehst langfristig am Markt",
     ],
-    linkComponent: <LinkAdsKurs />,
+    linkComponent: <AdsKursBtn />,
   },
   {
     iconText: "Angebot",
@@ -53,7 +56,7 @@ export const geoBeraterTwoBox = [
       "Du erhältst mehr Anfragen",
       "Du bestehst langfristig am Markt",
     ],
-    linkComponent: <LinkGEOKurs />,
+    linkComponent: <GEOKursBtn />,
   },
   {
     iconText: "Angebot",
@@ -87,7 +90,7 @@ export const seoBeraterTwoBox = [
       "Du erhältst mehr Anfragen über die Website",
       "Du bestehst langfristig am Markt",
     ],
-    linkComponent: <LinkSEOKurs className="w-full text-left" />,
+    linkComponent: <SEOKursBtn />,
   },
   {
     iconText: "Angebot",
@@ -121,7 +124,9 @@ export const msAdsBeraterTwoBox = [
       "Du erhältst mehr Anfragen über die Website",
       "Du bestehst langfristig am Markt",
     ],
- linkComponent: <MailBtn className="mt-8 !w-full md:!w-full lg:!w-full lg:max-w-full" />,
+    linkComponent: (
+      <MailBtn className="mt-8 !w-full md:!w-full lg:!w-full lg:max-w-full" />
+    ),
   },
   {
     iconText: "Angebot",
@@ -155,7 +160,9 @@ export const chatGPTAdsBeraterTwoBox = [
       "Du erhältst mehr Anfragen über die Website",
       "Du bestehst langfristig am Markt",
     ],
- linkComponent: <MailBtn className="mt-8 !w-full md:!w-full lg:!w-full lg:max-w-full" />,
+    linkComponent: (
+      <MailBtn className="mt-8 !w-full md:!w-full lg:!w-full lg:max-w-full" />
+    ),
   },
   {
     iconText: "Angebot",
@@ -189,7 +196,9 @@ export const youtubeSEOBeraterTwoBox = [
       "Du erhältst mehr Anfragen über die Website",
       "Du bestehst langfristig am Markt",
     ],
- linkComponent: <MailBtn className="mt-8 !w-full md:!w-full lg:!w-full lg:max-w-full" />,
+    linkComponent: (
+      <MailBtn className="mt-8 !w-full md:!w-full lg:!w-full lg:max-w-full" />
+    ),
   },
   {
     iconText: "Angebot",
@@ -223,7 +232,9 @@ export const youtubeAdsBeraterTwoBox = [
       "Du erhältst mehr Anfragen über die Website",
       "Du bestehst langfristig am Markt",
     ],
-    linkComponent: <MailBtn className="mt-8 !w-full md:!w-full lg:!w-full lg:max-w-full" />,
+    linkComponent: (
+      <MailBtn className="mt-8 !w-full md:!w-full lg:!w-full lg:max-w-full" />
+    ),
   },
   {
     iconText: "Angebot",
@@ -256,7 +267,9 @@ export const instagramWerbungTwoBox = [
       "Du erhältst mehr Anfragen über die Website",
       "Du bestehst langfristig am Markt",
     ],
-    linkComponent: <MailBtn className="mt-8 !w-full md:!w-full lg:!w-full lg:max-w-full" />,
+    linkComponent: (
+      <MailBtn className="mt-8 !w-full md:!w-full lg:!w-full lg:max-w-full" />
+    ),
   },
   {
     iconText: "Angebot",

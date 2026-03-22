@@ -5,12 +5,12 @@ type Props = {
   className?: string;
 };
 
-export default function AdsKursBtn({ className }: Props) {
+export default function SEOKursBtn({ className }: Props) {
   return (
-    <Link href={"/google-ads-berater/kostenloser-google-ads-kurs/"}
+    <Link href={"/seo-berater/kostenloser-seo-kurs/"}
       className={`md:w-1/2 lg:w-full p-4 bg-custom-red text-lg text-white font-semibold tracking-tight rounded-xl flex items-center justify-between ${className}`}
     >
-      Kostenloser Google Ads Kurs
+      Kostenloser SEO Kurs
       <FiArrowRight color="white" />
     </Link>
   );
