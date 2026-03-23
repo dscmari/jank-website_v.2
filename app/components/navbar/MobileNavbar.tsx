@@ -90,14 +90,14 @@ export default function Navbar({ className }: Props) {
                       >
                         <LinkSeoCheck />
                       </div>
-                      <div
+                      {/* <div
                         className="pb-1 text-neutral-400 border-b-2 border-slate-200"
                         onClick={() => setIsMenuOpen((prev) => !prev)}
                       >
                         <Link href="/seo-berater/kostenloser-seo-kurs/">
                           Kostenloser SEO Kurs
                         </Link>
-                      </div>
+                      </div> */}
                     </div>
                     <div className="flex flex-col gap-1 mr-8">
                       <h3 className="font-semibold mt-2">ChatGPT Platz 1</h3>
@@ -141,14 +141,14 @@ export default function Navbar({ className }: Props) {
                           ChatGPT Ads Berater
                         </Link>
                       </div>
-                      <div
+                      {/* <div
                         className="pb-1 text-neutral-400 border-b-2 border-slate-200"
                         onClick={() => setIsMenuOpen((prev) => !prev)}
                       >
                         <Link href="/geo-berater/kostenloser-geo-kurs/">
                           Kostenloser GEO Kurs
                         </Link>
-                      </div>
+                      </div> */}
                       <div
                         className="pb-1 text-neutral-400 border-b-2 border-slate-200"
                         onClick={() => setIsMenuOpen((prev) => !prev)}
@@ -180,7 +180,7 @@ export default function Navbar({ className }: Props) {
                           Microsoft Ads Berater
                         </Link>
                       </div>
-                      <div
+                      {/* <div
                         className="pb-1 border-b-2 border-slate-200"
                         onClick={() => setIsMenuOpen((prev) => !prev)}
                       >
@@ -190,7 +190,7 @@ export default function Navbar({ className }: Props) {
                         >
                           Kostenloser Google Ads Kurs
                         </Link>
-                      </div>
+                      </div> */}
                     </div>
                     <div className="flex flex-col gap-1 mr-8">
                       <h3 className="font-semibold mt-2">Social Media</h3>

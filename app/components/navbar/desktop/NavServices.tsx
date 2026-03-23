@@ -13,12 +13,12 @@ const NavServices = () => {
             SEO Berater für Google Rankings
           </Link>
           <LinkSeoCheck className="text-neutral-400" />
-          <Link
+          {/* <Link
             href="/seo-berater/kostenloser-seo-kurs/"
             className="text-neutral-400"
           >
             Kostenloser SEO Kurs
-          </Link>
+          </Link> */}
         </div>
         <div className="flex flex-col gap-2">
           <h3 className="text-xl mb-2 font-medium">ChatGPT Platz 1</h3>
@@ -46,12 +46,12 @@ const NavServices = () => {
           >
             ChatGPT Ads Berater
           </Link>
-          <Link
+          {/* <Link
             href="/geo-berater/kostenloser-geo-kurs/"
             className="text-neutral-400"
           >
             Kostenloser GEO Kurs
-          </Link>
+          </Link> */}
           <LinkGeoCheck className="text-neutral-400" />
         </div>
         <div className="flex flex-col gap-2">
@@ -62,12 +62,12 @@ const NavServices = () => {
           <Link href="/microsoft-ads-berater/" className="text-neutral-400">
             Microsoft Ads Berater
           </Link>
-          <Link
+          {/* <Link
             href="/google-ads-berater/kostenloser-google-ads-kurs"
             className="text-neutral-400"
           >
             Kostenloser Google Ads Kurs
-          </Link>
+          </Link> */}
         </div>
         <div className="flex flex-col gap-2">
           <h3 className="text-xl font-semibold mb-2">Social Media</h3>
