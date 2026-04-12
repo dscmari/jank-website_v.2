@@ -146,7 +146,7 @@ export default function Timetable({ className }: Props) {
                   04
                 </span>{" "}
                 <span className="font-semibold">
-                  ChatGPT Shopping: Produkte über KI Systeme verkaufen
+                  Agentic Commerce: Optimierung für autonome KI-Agenten
                 </span>
               </div>
               <span className="pt-2 lg:pt-0 min-w-48 w-full lg:w-auto text-left lg:text-right">
@@ -154,8 +154,8 @@ export default function Timetable({ className }: Props) {
               </span>{" "}
             </div>
             <div className="flex flex-items gap-2 lg:gap-0 pt-2">
-              <span className="lg:min-w-60">Referent</span>{" "}
-              <span>Jan Krösche</span>
+              <span className="lg:min-w-60">Referenten</span>{" "}
+              <span>Fabio Ratte & Christian Wolf von 14Agency</span>
             </div>
           </div>
           <div className="bg-slate-300 p-4">
