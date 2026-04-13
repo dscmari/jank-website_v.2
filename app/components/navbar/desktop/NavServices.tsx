@@ -1,18 +1,36 @@
-import { FiArrowRight } from "react-icons/fi";
-import LinkSeoCheck from "../../links/LinkSeoCheck";
-import LinkGeoCheck from "../../links/LinkGeoCheck";
+
 import Link from "next/link";
 
 const NavServices = () => {
   return (
     <div>
       <div className="flex gap-8 p-8">
-        <div className="flex flex-col gap-2">
-          <h3 className="text-xl  mb-2 font-medium">Google Platz 1</h3>
-          <Link href="/seo-berater/" className="text-neutral-400">
-            SEO Berater für Google Rankings
+        <div className="flex flex-col gap-4">
+          {/* <h3 className="text-xl  mb-2 font-medium">Google Platz 1</h3> */}
+          <Link href="/seo-berater/" className="font-bold text-lg hover:underline">
+            Google SEO
           </Link>
-          <LinkSeoCheck className="text-neutral-400" />
+          <Link href="/google-ads-berater/" className="font-bold text-lg hover:underline">
+            Google Ads
+          </Link>
+          <Link href="/geo-berater/" className="font-bold text-lg hover:underline">
+            ChatGPT GEO
+          </Link>
+          <Link
+            href="/geo-berater/chatgpt-ads-berater/"
+          className="font-bold text-lg hover:underline">
+            ChatGPT Ads
+          </Link>
+          <Link href="/microsoft-ads-berater/" className="font-bold text-lg hover:underline">
+            Microsoft Ads
+          </Link>
+          <Link href="/youtube-ads-berater/" className="font-bold text-lg hover:underline">
+            YouTube Ads
+          </Link>
+          <Link href="/berater-instagram-werbung/" className="font-bold text-lg hover:underline">
+            Instagram Ads
+          </Link>
+          {/* <LinkSeoCheck className="text-neutral-400" /> */}
           {/* <Link
             href="/seo-berater/kostenloser-seo-kurs/"
             className="text-neutral-400"
@@ -20,72 +38,72 @@ const NavServices = () => {
             Kostenloser SEO Kurs
           </Link> */}
         </div>
-        <div className="flex flex-col gap-2">
+        {/* <div className="flex flex-col gap-2">
           <h3 className="text-xl mb-2 font-medium">ChatGPT Platz 1</h3>
           <Link href="/geo-berater/" className="text-neutral-400">
             GEO Berater für KI Sichtbarkeit
           </Link>
-          {/* <Link href="/geo-berater/geo-tracker/" className="text-neutral-400">
+           <Link href="/geo-berater/geo-tracker/" className="text-neutral-400">
             GEO Tracker
-          </Link> */}
-          {/* <Link 
+          </Link> 
+           <Link 
             href="/geo-berater/geo-webinare/" 
             className="text-neutral-400"
           >
             GEO Webinare
-          </Link> */}
-          {/* <Link
+          </Link> 
+          <Link
             href="/geo-berater/geo-workshop-fuer-werbeagenturen/"
             className="text-neutral-400"
           >
             GEO Workshop für Werbeagenturen
-          </Link> */}
+          </Link> 
           <Link
             href="/geo-berater/chatgpt-ads-berater/"
             className="text-neutral-400"
           >
             ChatGPT Ads Berater
           </Link>
-          {/* <Link
+           <Link
             href="/geo-berater/kostenloser-geo-kurs/"
             className="text-neutral-400"
           >
             Kostenloser GEO Kurs
-          </Link> */}
+          </Link> 
           <LinkGeoCheck className="text-neutral-400" />
-        </div>
-        <div className="flex flex-col gap-2">
-          <h3 className="text-xl font-semibold mb-2">Google Werbung</h3>
+        </div> */}
+        {/* <div className="flex flex-col gap-2">
+          <h3 className="text-xl font-bold mb-2">Google Werbung</h3>
           <Link href="/google-ads-berater/" className="text-neutral-400">
             Google Ads Berater für Google-Klicks
           </Link>
           <Link href="/microsoft-ads-berater/" className="text-neutral-400">
             Microsoft Ads Berater
           </Link>
-          {/* <Link
+          <Link
             href="/google-ads-berater/kostenloser-google-ads-kurs"
             className="text-neutral-400"
           >
             Kostenloser Google Ads Kurs
-          </Link> */}
-        </div>
-        <div className="flex flex-col gap-2">
-          <h3 className="text-xl font-semibold mb-2">Social Media</h3>
-          {/* <Link href="/youtube-seo-berater/" className="text-neutral-400">
+          </Link> 
+        </div> */}
+        {/* <div className="flex flex-col gap-2">
+          <h3 className="text-xl font-bold mb-2">Social Media</h3>
+           <Link href="/youtube-seo-berater/" className="text-neutral-400">
             YouTube SEO Berater
-          </Link> */}
+          </Link> 
           <Link href="/youtube-ads-berater/" className="text-neutral-400">
             YouTube Ads Berater
           </Link>
           <Link href="/berater-instagram-werbung/" className="text-neutral-400">
             Instagram Werbung
           </Link>
-        </div>
+        </div> */}
       </div>
       {/* <button className="ml-auto mt-4 flex items-center gap-1 text-sm text-indigo-300">
         <span>View more</span>
         <FiArrowRight />
-      </button> */}
+      </button>  */}
     </div>
   );
 };

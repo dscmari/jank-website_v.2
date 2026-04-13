@@ -7,7 +7,6 @@ import { FiArrowRight, FiChevronDown, FiMail, FiPhone } from "react-icons/fi";
 import LinkSeoCheck from "../links/LinkSeoCheck";
 import { SlClose } from "react-icons/sl";
 import { AnimatePresence, motion } from "framer-motion";
-import LinkGeoCheck from "../links/LinkGeoCheck";
 
 type Props = {
   className?: string;
@@ -74,22 +73,78 @@ export default function Navbar({ className }: Props) {
                       isSelected ? "" : ""
                     }`}
                   >
-                    <div className="flex flex-col gap-1 mr-8">
-                      <h3 className="font-semibold mt-2">Google Platz 1</h3>
+                    <div className="flex flex-col gap-4 mr-8 mt-4">
+                      {/* <h3 className="font-semibold mt-2">Google Platz 1</h3> */}
                       <div
                         className="pb-1 text-neutral-400 border-b-2 border-slate-200"
                         onClick={() => setIsMenuOpen((prev) => !prev)}
                       >
-                        <Link href="/seo-berater/">
-                          SEO Berater für Google Rankings
+                        <Link href="/seo-berater/">Google SEO</Link>
+                      </div>
+                      <div
+                        className="pb-1 border-b-2 border-slate-200"
+                        onClick={() => setIsMenuOpen((prev) => !prev)}
+                      >
+                        <Link
+                          href="/google-ads-berater/"
+                          className="text-neutral-400 "
+                        >
+                          Google Ads
                         </Link>
                       </div>
                       <div
                         className="pb-1 text-neutral-400 border-b-2 border-slate-200"
                         onClick={() => setIsMenuOpen((prev) => !prev)}
                       >
-                        <LinkSeoCheck />
+                        <Link href="/geo-berater/">ChatGPT GEO</Link>
                       </div>
+                      <div
+                        className="pb-1 text-neutral-400 border-b-2 border-slate-200"
+                        onClick={() => setIsMenuOpen((prev) => !prev)}
+                      >
+                        <Link href="/geo-berater/chatgpt-ads-berater/">
+                          ChatGPT Ads
+                        </Link>
+                      </div>
+                      <div
+                        className="pb-1 border-b-2 border-slate-200"
+                        onClick={() => setIsMenuOpen((prev) => !prev)}
+                      >
+                        <Link
+                          href="/microsoft-ads-berater/"
+                          className="text-neutral-400 "
+                        >
+                          Microsoft Ads
+                        </Link>
+                      </div>
+                      <div
+                        className="pb-1 border-b-2 border-slate-200"
+                        onClick={() => setIsMenuOpen((prev) => !prev)}
+                      >
+                        <Link
+                          href="/youtube-ads-berater/"
+                          className="text-neutral-400 "
+                        >
+                          YouTube Ads
+                        </Link>
+                      </div>
+                      <div
+                        className="pb-1 border-b-2 border-slate-200"
+                        onClick={() => setIsMenuOpen((prev) => !prev)}
+                      >
+                        <Link
+                          href="/berater-instagram-werbung/"
+                          className="text-neutral-400 "
+                        >
+                          Instagram Ads
+                        </Link>
+                      </div>
+                      {/* <div
+                        className="pb-1 text-neutral-400 border-b-2 border-slate-200"
+                        onClick={() => setIsMenuOpen((prev) => !prev)}
+                      >
+                        <LinkSeoCheck />
+                      </div> */}
                       {/* <div
                         className="pb-1 text-neutral-400 border-b-2 border-slate-200"
                         onClick={() => setIsMenuOpen((prev) => !prev)}
@@ -99,7 +154,7 @@ export default function Navbar({ className }: Props) {
                         </Link>
                       </div> */}
                     </div>
-                    <div className="flex flex-col gap-1 mr-8">
+                    {/* <div className="flex flex-col gap-1 mr-8">
                       <h3 className="font-semibold mt-2">ChatGPT Platz 1</h3>
                       <div
                         className="pb-1 text-neutral-400 border-b-2 border-slate-200"
@@ -109,30 +164,30 @@ export default function Navbar({ className }: Props) {
                           GEO Berater für KI Sichtbarkeit
                         </Link>
                       </div>
-                      {/* <div
+                      <div
                         className="pb-1 text-neutral-400 border-b-2 border-slate-200"
                         onClick={() => setIsMenuOpen((prev) => !prev)}
                       >
                         <Link href="/geo-berater/geo-tracker/">
                           GEO Tracker
                         </Link>
-                      </div> */}
-                      {/* <div
+                      </div>
+                      <div
                         className="pb-1 text-neutral-400 border-b-2 border-slate-200"
                         onClick={() => setIsMenuOpen((prev) => !prev)}
                       >
                         <Link href="/geo-berater/geo-webinare/">
                           GEO Webinare
                         </Link>
-                      </div> */}
-                      {/* <div
+                      </div>
+                      <div
                         className="pb-1 text-neutral-400 border-b-2 border-slate-200"
                         onClick={() => setIsMenuOpen((prev) => !prev)}
                       >
                         <Link href="/geo-berater/geo-workshop-fuer-werbeagenturen/">
                           GEO Workshop für Werbeagenturen
                         </Link>
-                      </div> */}
+                      </div>
                       <div
                         className="pb-1 text-neutral-400 border-b-2 border-slate-200"
                         onClick={() => setIsMenuOpen((prev) => !prev)}
@@ -141,22 +196,22 @@ export default function Navbar({ className }: Props) {
                           ChatGPT Ads Berater
                         </Link>
                       </div>
-                      {/* <div
+                      <div
                         className="pb-1 text-neutral-400 border-b-2 border-slate-200"
                         onClick={() => setIsMenuOpen((prev) => !prev)}
                       >
                         <Link href="/geo-berater/kostenloser-geo-kurs/">
                           Kostenloser GEO Kurs
                         </Link>
-                      </div> */}
+                      </div>
                       <div
                         className="pb-1 text-neutral-400 border-b-2 border-slate-200"
                         onClick={() => setIsMenuOpen((prev) => !prev)}
                       >
                         <LinkGeoCheck />
                       </div>
-                    </div>
-                    <div className="flex flex-col gap-1 mr-8">
+                    </div> */}
+                    {/* <div className="flex flex-col gap-1 mr-8">
                       <h3 className="font-semibold mt-2">Google Werbung</h3>
                       <div
                         className="pb-1 border-b-2 border-slate-200"
@@ -180,7 +235,7 @@ export default function Navbar({ className }: Props) {
                           Microsoft Ads Berater
                         </Link>
                       </div>
-                      {/* <div
+                       <div
                         className="pb-1 border-b-2 border-slate-200"
                         onClick={() => setIsMenuOpen((prev) => !prev)}
                       >
@@ -190,11 +245,11 @@ export default function Navbar({ className }: Props) {
                         >
                           Kostenloser Google Ads Kurs
                         </Link>
-                      </div> */}
-                    </div>
-                    <div className="flex flex-col gap-1 mr-8">
+                      </div> 
+                    </div> */}
+                    {/* <div className="flex flex-col gap-1 mr-8">
                       <h3 className="font-semibold mt-2">Social Media</h3>
-                      {/* <div
+                       <div
                         className="pb-1 border-b-2 border-slate-200"
                         onClick={() => setIsMenuOpen((prev) => !prev)}
                       >
@@ -204,7 +259,7 @@ export default function Navbar({ className }: Props) {
                         >
                           YouTube SEO Berater
                         </Link>
-                      </div> */}
+                      </div> 
                       <div
                         className="pb-1 border-b-2 border-slate-200"
                         onClick={() => setIsMenuOpen((prev) => !prev)}
@@ -227,7 +282,7 @@ export default function Navbar({ className }: Props) {
                           Instagram Werbung
                         </Link>
                       </div>
-                    </div>
+                    </div> */}
                   </motion.ol>
                 )}
               </AnimatePresence>
@@ -235,7 +290,7 @@ export default function Navbar({ className }: Props) {
               <Link
                 href={"/preise/"}
                 onClick={() => setIsMenuOpen((prev) => !prev)}
-                className="pt-6 pb-2 mx-8 border-b-2 border-slate-200"
+                className="pt-4 pb-2 mx-8 border-b-2 border-slate-200"
               >
                 Preispakete
               </Link>
