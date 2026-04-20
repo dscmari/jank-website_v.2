@@ -97,13 +97,13 @@ const seoWorkshop = {
   introText:
     "Im SEO Workshop lernst Du im ersten Teil die theoretischen Grundlagen von SEO. In der zweiten Hälfte des Workshops zeigen wir Dir konkrete SEO für Deine Seite.",
   services: [
-    "Dauer: 2,5 h + 0,5h Q&A",
+    "Dauer: 2 Stunden",
     "Hälfte 1: Theoretische Grundlagen von SEO",
     "Hälfte 2: Konkrete Tipps für Deine Seite",
     "Im Vorfeld des Workshops analysieren wir Deine Website und Deine Keywords",
     "Unbegrenzte Teilnehmerzahl",
     "Der Workshop findet über Teams statt",
-    "Preis: 600 Euro netto",
+    "Preis: 420 Euro netto",
   ],
   closingText: "",
   contactText: "Terminanfrage unter"
@@ -116,13 +116,13 @@ const geoWorkshop = {
   introText:
     "Im GEO Workshop lernst Du, wie KI Suchmaschinen funktionieren und die Grundlagen von Generative Engine Optimization. Zudem bekommst Du konkrete Tipps für Deine Seite.",
   services: [
-    "Dauer: 2,5 h + 0,5h Q&A",
+    "Dauer: 2 Stunden",
     "Hälfte 1: Theoretische Grundlagen von GEO",
     "Hälfte 2: Konkrete Tipps für Deine Seite",
     "Im Vorfeld des Workshops analysieren wir Deine Website und Deine Prompts (Keywords)",
     "Unbegrenzte Teilnehmerzahl",
     "Der Workshop findet über Teams statt",
-    "Preis: 600 Euro netto",
+    "Preis: 420 Euro netto",
   ],
   closingText: "",
   contactText: "Terminanfrage unter"
@@ -135,20 +135,58 @@ const adsWorkshop = {
   introText:
     "Im Google Ads Workshop lernst Du die Grundlagen, wie man Google Werbung schalten kann. Zudem analysieren wir Deine Keywords und schauen uns eine mögliche Kampagnenstrategie an.",
   services: [
-    "Dauer: 2,5 h + 0,5h Q&A",
+    "Dauer: 2 Stunden",
     "Hälfte 1: Theoretische Grundlagen von Google Ads",
     "Hälfte 2: Praktische Umsetzung von Google Ads",
     "Im Vorfeld des Workshops analysieren wir Deine Keywords und die Klickpreise",
     "Unbegrenzte Teilnehmerzahl",
     "Der Workshop findet über Teams statt",
-    "Preis: 600 Euro netto",
+    "Preis: 420 Euro netto",
   ],
   closingText: "",
   contactText: "Terminanfrage unter"
 
 };
 
-const workshops = [seoWorkshop, geoWorkshop, adsWorkshop]
+const metaAdsWorkshop = {
+  icon: "Facebook & Instagram",
+  title: "Meta Ads Workshop",
+  subTitle: "Werbung bei Facebook & Instagram schalten",
+  introText:
+    "Im Meta Ads Workshop lernst Du, wie Du ein Meta Business Konto für Deine Firma richtig anlegst und verknüpfst. Zudem lernst Du, wie Du Anzeigen bei Facebook und Instagram schalten kannst.",
+  services: [
+    "Dauer: 2 Stunden",
+    "Einrichtung des Meta Business Kontos",
+    "Korrekte Verknüpfung der Accounts",
+    "Wichtige Einstellungsthemen",
+    "Erstellen von Werbeanzeigen",
+    "Der Workshop findet über Teams statt",
+    "Preis: 420 Euro netto",
+  ],
+  closingText: "",
+  contactText: "Terminanfrage unter"
+};
+
+const googleTagManagerWorkshop = {
+  icon: "Website Tracking",
+  title: "Google Tag Manager Workshop",
+  subTitle: "Werbemaßnahmen richtig tracken",
+  introText:
+    "Im Google Tag Manager Workshop zeige ich Dir, wie Du das Tracking auf Deiner Website professioneller gestaltest. Du lernst, wie Du den Tag Manager installieren kannst und die ersten Trackings implementierst.",
+  services: [
+    "Dauer: 2 Stunden",
+    "Installation des Tag Managers",
+    "Verknüpfung mit Google Analytics 4",
+    "Einrichten von Tags & Triggern",
+    "Test des Trackings",
+    "Der Workshop findet über Teams statt",
+    "Preis: 420 Euro netto",
+  ],
+  closingText: "",
+  contactText: "Terminanfrage unter"
+};
+
+const workshops = [seoWorkshop, geoWorkshop, adsWorkshop, metaAdsWorkshop, googleTagManagerWorkshop]
 
 // geo-tracker Preisboxen
 const tenPrompts = {

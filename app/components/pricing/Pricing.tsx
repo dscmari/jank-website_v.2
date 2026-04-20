@@ -19,11 +19,11 @@ type Props = {
 export default function Pricing({ className, pricingBoxes }: Props) {
   return (
     <section className={`${className}`}>
-      <div className="flex flex-col xl:flex-row gap-8 xl:gap-4 xl:justify-around">
+      <div className="grid grids-cols-1 xl:grid-cols-2 gap-12">
         {pricingBoxes.map((e, index) => (
           <div
             key={index}
-            className="bg-white flex flex-col justify-between xl:flex-1 xl:m-0 p-8 rounded-lg dark"
+            className="bg-white flex flex-col justify-between xl:m-0 p-8 rounded-lg dark"
           >
             <div>
               <div className="flex flex-col items-start gap-2">
