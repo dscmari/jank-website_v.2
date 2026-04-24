@@ -33,13 +33,13 @@ export default function MainLayout({
 }>) {
   return (
     <html lang="de">
-      <head>
+      {/* <head>
         <GTMHeadScript/>
-      </head>
+      </head> */}
       <body
         className={`${inter.variable} ${poppins.variable} antialiased`}
       >
-        <GTMBodyScript/>
+        {/* <GTMBodyScript/> */}
         <Navbar />
         <main>
           {children}
