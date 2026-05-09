@@ -19,13 +19,13 @@ import { Metadata } from "next";
 import MiniTestimonals from "../components/MiniTestimonals";
 import WebsiteCheck from "../components/website-check/WebsiteCheck";
 import { pricingBoxes } from "../content/pricingBoxesContent";
+import MailBtn from "../components/buttons/MailBtn";
 
 export const metadata: Metadata = {
   title: "Platz 1 bei Google & ChatGPT | SEO – GEO – Ads Berater",
 };
 
 export default function Home() {
-
   return (
     <>
       <ATF
@@ -88,7 +88,34 @@ export default function Home() {
         circles={processCircles}
       />
       <Contact className="p-8 mt-24 lg:mt-0" />
-      <section className="bg-custom-white px-4 pt-24 md:pt-32 lg:px-32 lg:py-32 dark:bg-black">
+      <section className="flex flex-col 2xl:flex-row 2xl:items-center md:px-16 pt-8 md:pt-24 lg:gap-12 lg:p-32 lg:py-32 2xl:gap-32 2xl:justify-center">
+        <div className="flex-1 flex flex-col px-4 md:px-0">
+          <h1>GEO Konferenz im Allgäu</h1>
+          <p>
+            Jan Krösche hält regelmäßig Vorträge zu Themen wie Sichtbarkeit,
+            SEO, GEO, Google Ads und ChatGPT Ads.
+          </p>
+          <p className="py-4">
+            Zudem tritt er als Veranstalter der GEO Konferenz im Allgäu auf, bei
+            dem Firmen und Agenturen aus ganz Süddeutschland teilnehmen.
+          </p>
+          <MailBtn className="mt-8 w-full lg:max-w-2/3 2xl:w-full" />
+        </div>
+        <div className="mt-24 lg:mt-12 xl:min-w-1/3">
+          <Image
+            src="/images/geo_conference_05_26.jpg"
+            style={{ width: "600px" }}
+            alt="Screenshot einer Suche bei YouTube"
+            height={400}
+            width={600}
+            className="mx-auto"
+          />
+          <p className="text-sm font-light p-8 max-w-xl mx-auto text-center">
+            Geo-Konferenz in Bad Wörishofen vom 8. Mai 2026
+          </p>
+        </div>
+      </section>
+      <section className="bg-custom-white px-4 pt-24 md:pt-32 lg:px-32 lg:py-32 dark:bg-black mt-24 lg:mt-0 dark:mt-0">
         <h1 className="text-center">
           Wir haben über 500 Firmenwebsites{" "}
           <span className="text-custom-red"> auf Platz 1</span> optimiert
@@ -127,9 +154,9 @@ export default function Home() {
             {" "}
             Deine Website wird im Netz nicht gefunden? Dein größter Konkurrent
             erscheint immer vor Dir? Das ist natürlich ärgerlich, weil Dir
-            dadurch viele Anfragen entgehen und die Neukunden bei
-            Deiner Konkurrenz landen. Genau auf diese Problemstellung haben wir
-            uns spezialisiert.
+            dadurch viele Anfragen entgehen und die Neukunden bei Deiner
+            Konkurrenz landen. Genau auf diese Problemstellung haben wir uns
+            spezialisiert.
           </p>
           <div className="flex flex-col lg:gap-4 lg:pl-4 pt-8">
             <div className="lg:hidden flex items-end gap-4">
