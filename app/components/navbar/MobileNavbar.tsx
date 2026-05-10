@@ -292,7 +292,7 @@ export default function Navbar({ className }: Props) {
                 onClick={() => setIsMenuOpen((prev) => !prev)}
                 className="pt-4 pb-2 mx-8 border-b-2 border-slate-200"
               >
-                Preispakete
+                Angebot
               </Link>
               <Link
                 href={"/referenzen"}
