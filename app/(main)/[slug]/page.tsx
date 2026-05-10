@@ -82,7 +82,7 @@ export default async function PostPage({
           />
         )}
         <InfoBtn content="Blog" className="mt-4 md:mt-8 lg:mt-16 dark" />
-        <h1 className="mt-4 lg:mt-8">{post.title}</h1>
+        <h1 className="mt-4 lg:mt-8 text-center">{post.title}</h1>
         <p className="text-sm font-light text-center">
           {new Date(post.publishedAt).toLocaleDateString("de-DE", {
             day: "2-digit",
@@ -90,7 +90,7 @@ export default async function PostPage({
             year: "numeric",
           }) || "Datum unbekannt"}
         </p>
-        <div className="mt-4 lg:mt-8 lg:px-16 xl:px-32 sanity-text">
+        <div className="mt-4 lg:mt-8 lg:px-16 sanity-text">
           {Array.isArray(post.body) && <PortableText value={post.body} />}
         </div>
         {postImageUrl_2 && (
@@ -102,7 +102,7 @@ export default async function PostPage({
             className=" rounded-xl mt-16 "
           />
         )}
-        <div className="mt-4 lg:mt-8 lg:px-16 xl:px-32 sanity-text">
+        <div className="mt-4 lg:mt-8 lg:px-16 sanity-text">
           {Array.isArray(post.body_2) && <PortableText value={post.body_2} />}
         </div>
         {postImageUrl_3 && (
@@ -114,7 +114,7 @@ export default async function PostPage({
             className=" rounded-xl mt-16 "
           />
         )}
-        <div className="mt-4 lg:mt-8 lg:px-16 xl:px-32 sanity-text">
+        <div className="mt-4 lg:mt-8 lg:px-16 sanity-text">
           {Array.isArray(post.body_3) && <PortableText value={post.body_3} />}
         </div>
       </div>

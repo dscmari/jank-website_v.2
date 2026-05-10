@@ -23,7 +23,7 @@ body {
 
 @theme {
   --color-custom-darkblue: #0c2461;
-  --color-custom-red: #E70035; /* tricor red */
+  --color-custom-red: #e70035; /* tricor red */
   --color-custom-red-op: rgb(231, 0, 53, 0.1);
   --color-custom-black: #2d3436; /* us pallete */
   --color-custom-white: #f5f6fa;
@@ -34,7 +34,7 @@ body {
   --font-poppins: var(--font-poppins);
   --font-inter: var(--font-inter);
 
-  --background-image-geo-conference: url('/images/hotel_sonneck_panorama.jpg');
+  --background-image-geo-conference: url("/images/hotel_sonneck_panorama.jpg");
 }
 
 @media (prefers-color-scheme: dark) {
@@ -91,7 +91,9 @@ p,
 h1,
 h2,
 h3,
-span {
+h4,
+h5,
+h6 span {
   cursor: default;
 }
 
@@ -192,6 +194,14 @@ span {
 .sanity-text h2 {
   margin-top: 2rem;
 }
+/* withing sanity all headers default to h2 to prevent user using different headers */
+.sanity-text h3, .sanity-text h4, .sanity-text h5, .sanity-text h6 { 
+  margin-top: 12rem;
+  font-size: 1.25rem; /*text-xl*/
+  line-height: calc(1.75 / 1.25);
+  margin-bottom: 0.5rem;
+}
+
 .sanity-text p {
   line-height: 1.625; /* leading-relaxed */
 }
@@ -203,10 +213,12 @@ span {
 .sanity-container ul {
   list-style: disc;
   padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 @media (min-width: 1900px) {
-.sub-absolute-image {
-  margin-top: 20rem;
-}
+  .sub-absolute-image {
+    margin-top: 20rem;
+  }
 }
