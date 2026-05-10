@@ -13,7 +13,7 @@ export default function page() {
     <div className="bg-custom-white dark:bg-black">
       <Breadcrumbs className="hidden md:block pt-4 px-4 lg:px-32 font-semibold" />
       <h1 className="text-center lg:text-start px-4 lg:px-32 pt-24 pb-4 lg:pb-8">
-        Unsere Preispakete
+        Unser Angebot
       </h1>
       <Pricing
         pricingBoxes={pricingBoxes}

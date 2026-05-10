@@ -1,8 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
-import LinkSEOCheck from "../links/LinkSeoCheck";
-import LinkGeoCheck from "../links/LinkGeoCheck";
-import LinkAdsKurs from "../links/LinkAdsKurs";
 
 export default function Footer() {
   return (
@@ -20,9 +16,9 @@ export default function Footer() {
         </div>
         <div className="flex flex-col gap-8 order-3 mb-12 lg:mb-0 lg:order-2">
           <div className="flex flex-col items-center lg:items-start gap-2">
-            <LinkSEOCheck className="underline" />
+            {/* <LinkSEOCheck className="underline" />
             <LinkGeoCheck className="underline" />
-            <LinkAdsKurs className="underline" />
+            <LinkAdsKurs className="underline" /> */}
             <Link
               className="underline"
               target="_blank"

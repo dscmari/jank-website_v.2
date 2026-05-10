@@ -288,7 +288,7 @@ export default function Navbar({ className }: Props) {
               </AnimatePresence>
 
               <Link
-                href={"/preise/"}
+                href={"/angebot"}
                 onClick={() => setIsMenuOpen((prev) => !prev)}
                 className="pt-4 pb-2 mx-8 border-b-2 border-slate-200"
               >
@@ -315,13 +315,13 @@ export default function Navbar({ className }: Props) {
               >
                 Blog
               </Link>
-              <Link
+              {/* <Link
                 href={"/geo-berater/geo-konferenz/"}
                 onClick={() => setIsMenuOpen((prev) => !prev)}
                 className="pt-4 pb-2 mx-8 border-b-2 border-slate-200"
               >
                 GEO Konferenz im Allgäu am 8. Mai
-              </Link>
+              </Link> */}
             </div>
           </div>
           <div className="pt-8 pl-8 flex items-center gap-4">

@@ -7,7 +7,6 @@ import NavVideos from "./NavVideos";
 import NavReferences from "./NavReferences";
 import NavContent from "./NavContent";
 import NavServices from "./NavServices";
-import NavKITracker from "./NavKITracker";
 import NavWorkshops from "./NavWorkshops";
 
 const Tabs = () => {
@@ -29,9 +28,9 @@ const Tabs = () => {
       Component: NavServices,
     },
     {
-      title: "Preispakete",
+      title: "Angebot",
       Component: NavPricing,
-      link: "/preise/",
+      link: "/angebot/",
     },
     {
       title: "Referenzen",
@@ -47,11 +46,6 @@ const Tabs = () => {
       title: "Blog",
       Component: NavVideos,
       link: "/blog/",
-    },
-    {
-      title: "GEO Konferenz 8. Mai",
-      Component: NavKITracker,
-      link: "/geo-berater/geo-konferenz/",
     },
   ].map((n, idx) => ({ ...n, id: idx + 1 }));
 
