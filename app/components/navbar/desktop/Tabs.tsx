@@ -37,7 +37,12 @@ const Tabs = () => {
       Component: NavReferences,
       link: "/referenzen/",
     },
-        {
+    {
+      title: "ChatGPT Ads",
+      Component: NavReferences,
+      link: "/geo-berater/chatgpt-ads-berater/",
+    },
+    {
       title: "Workshops",
       Component: NavWorkshops,
       link: "/seo-geo-ads-workshops/",

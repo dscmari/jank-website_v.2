@@ -288,18 +288,25 @@ export default function Navbar({ className }: Props) {
               </AnimatePresence>
 
               <Link
-                href={"/angebot"}
+                href={"/angebot/"}
                 onClick={() => setIsMenuOpen((prev) => !prev)}
                 className="pt-4 pb-2 mx-8 border-b-2 border-slate-200"
               >
                 Angebot
               </Link>
               <Link
-                href={"/referenzen"}
+                href={"/referenzen/"}
                 onClick={() => setIsMenuOpen((prev) => !prev)}
                 className="pt-4 pb-2 mx-8 border-b-2 border-slate-200"
               >
                 Referenzen
+              </Link>
+              <Link
+                href={"/geo-berater/chatgpt-ads-berater/"}
+                onClick={() => setIsMenuOpen((prev) => !prev)}
+                className="pt-4 pb-2 mx-8 border-b-2 border-slate-200"
+              >
+                ChatGPT Ads
               </Link>
               <Link
                 href={"/seo-geo-ads-workshops/"}
