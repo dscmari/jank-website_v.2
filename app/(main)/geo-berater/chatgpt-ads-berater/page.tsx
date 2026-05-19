@@ -8,6 +8,8 @@ import InfoBtn from "@/app/components/buttons/InfoBtn";
 import TwoBoxLayout from "@/app/components/layouts/TwoBoxLayout";
 import { chatGPTAdsBeraterTwoBox } from "@/app/content/TwoBoxLayoutContent";
 import MailBtn from "@/app/components/buttons/MailBtn";
+import Accordion from "@/app/components/layouts/Accordion";
+import { faqsChatGPTAds } from "@/app/content/faqsContent";
 
 export const metadata: Metadata = {
   title: "ChatGPT Ads Berater Jan Krösche | Werbung auf ChatGPT",
@@ -165,6 +167,13 @@ export default function page() {
             className="mt-12 lg:mt-24"
           />
         </div>
+      </section>
+      <section className=" pb-12 pt-24 lg:pt-48 px-4 lg:px-32">
+        <h1 className="lg:text-center">
+          Du hast <span className="text-custom-red"> Fragen </span>zum ChatGPT
+          Ads?
+        </h1>
+        <Accordion faqs={faqsChatGPTAds} className="mt-12 lg:mt-16" />
       </section>
     </div>
   );
