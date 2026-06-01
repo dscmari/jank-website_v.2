@@ -19,6 +19,9 @@ export default function Footer() {
             {/* <LinkSEOCheck className="underline" />
             <LinkGeoCheck className="underline" />
             <LinkAdsKurs className="underline" /> */}
+            <Link className="underline" href={"/ueber-jan-kroesche/"}>
+              Über Jan Krösche
+            </Link>
             <Link
               className="underline"
               target="_blank"

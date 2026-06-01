@@ -26,7 +26,8 @@ export default function Breadcrumbs({ className }: Props) {
           const last = index === pathnames.length - 1;
           const to = `/${pathnames.slice(0, index + 1).join("/")}`;
           // 3. Namen verschönern (Dashes entfernen & Großschreibung)
-          const displayName = value.replace(/-/g, " ").toUpperCase();
+          let displayName = value.replace(/-/g, " ").toUpperCase();
+          displayName = displayName === "UEBER JAN KROESCHE" ? "ÜBER JAN KRÖSCHE" : displayName
           return (
             <div key={to} className="flex items-center lg:gap-4">
               <FiChevronRight />

@@ -24,9 +24,9 @@ const NavServices = () => {
           <Link href="/microsoft-ads-berater/" className="font-bold text-lg hover:underline">
             Microsoft Ads
           </Link>
-          <Link href="/youtube-ads-berater/" className="font-bold text-lg hover:underline">
+          {/* <Link href="/youtube-ads-berater/" className="font-bold text-lg hover:underline">
             YouTube Ads
-          </Link>
+          </Link> */}
           <Link href="/berater-instagram-werbung/" className="font-bold text-lg hover:underline">
             Instagram Ads
           </Link>

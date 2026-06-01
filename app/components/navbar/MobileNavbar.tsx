@@ -117,7 +117,7 @@ export default function Navbar({ className }: Props) {
                           Microsoft Ads
                         </Link>
                       </div>
-                      <div
+                      {/* <div
                         className="pb-1 border-b-2 border-slate-200"
                         onClick={() => setIsMenuOpen((prev) => !prev)}
                       >
@@ -127,7 +127,7 @@ export default function Navbar({ className }: Props) {
                         >
                           YouTube Ads
                         </Link>
-                      </div>
+                      </div> */}
                       <div
                         className="pb-1 border-b-2 border-slate-200"
                         onClick={() => setIsMenuOpen((prev) => !prev)}
