@@ -40,7 +40,7 @@ const Tabs = () => {
     {
       title: "ChatGPT Ads",
       Component: NavReferences,
-      link: "/geo-berater/chatgpt-ads-berater/",
+      link: "https://www.jankroesche.de/chatgpt-ads-agentur/",
     },
     {
       title: "Workshops",

@@ -302,7 +302,7 @@ export default function Navbar({ className }: Props) {
                 Referenzen
               </Link>
               <Link
-                href={"/geo-berater/chatgpt-ads-berater/"}
+                href={"https://www.jankroesche.de/chatgpt-ads-agentur/"}
                 onClick={() => setIsMenuOpen((prev) => !prev)}
                 className="pt-4 pb-2 mx-8 border-b-2 border-slate-200"
               >

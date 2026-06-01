@@ -51,7 +51,7 @@ export default function Footer() {
         </div>
         <div className="lg:col-span-2 order-1 lg:order-3 mt-12 lg:mt-0">
           <h1>
-            Jan Krösche & Team sind Deine Berater für SEO, GEO & Google Ads
+            Jan Krösche & Team sind Deine Berater für SEO, GEO, Google Ads & ChatGPT Ads
           </h1>
           <p className="mb-2">
             Seit 2017 haben wir schon über 500 Firmen-Websites auf Platz 1 bei

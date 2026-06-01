@@ -227,11 +227,11 @@ h6 span {
 }
 
 @media (prefers-color-scheme: dark) {
-  p,
-  h1,
-  h2,
-  h3,
-  a {
+  .sanity p,
+  .sanity h1,
+  .sanity h2,
+  .sanity h3,
+  .sanity a {
     color: var(--color-custom-white);
   }
 
