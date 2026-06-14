@@ -27,9 +27,9 @@ const NavServices = () => {
           {/* <Link href="/youtube-ads-berater/" className="font-bold text-lg hover:underline">
             YouTube Ads
           </Link> */}
-          <Link href="/berater-instagram-werbung/" className="font-bold text-lg hover:underline">
+          {/* <Link href="/berater-instagram-werbung/" className="font-bold text-lg hover:underline">
             Instagram Ads
-          </Link>
+          </Link> */}
           {/* <LinkSeoCheck className="text-neutral-400" /> */}
           {/* <Link
             href="/seo-berater/kostenloser-seo-kurs/"
