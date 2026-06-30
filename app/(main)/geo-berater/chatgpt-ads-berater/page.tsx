@@ -135,15 +135,7 @@ export default function page() {
               IT-Dienstleister. Wir betreuen Firmen aus Deutschland, Österreich,
               Südtirol und der Schweiz.
             </p>
-            <a
-              href="mailto:max.mustermann@ihre-domain.de"
-              className="flex gap-4 items-center lg:max-w-2/3 bg-custom-red text-white p-4 mt-8 rounded-xl mb-8"
-            >
-              <FiMail />
-              <span className="font-semibold tracking-wider">
-                jan@jankroesche.de
-              </span>
-            </a>
+            <MailBtn className="mt-8"/>
           </div>
         </div>
       </section>

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import SEOCheckBtn from "./buttons/SEOCheckBtn";
 import InfoBtn from "./buttons/InfoBtn";
+import MailBtn from "./buttons/MailBtn";
 
 type Props = {
   className?: string;
@@ -39,7 +40,7 @@ export default function MiniTestimonals({ className }: Props) {
             Treiber für Neukunden und Umsatz.
           </p>
         </div>
-        <SEOCheckBtn className="mt-12" />
+        <MailBtn className="mt-12" />
       </section>
       <section className="hidden lg:flex flex-col lg:flex-row gap-12 mt-64 lg:bg-custom-white px-32 pt-24 pb-48 2xl:gap-32 2xl:justify-center dark">
         <div className="lg:min-w-1/2 2xl:min-w-1/3 lg:relative">
@@ -87,7 +88,7 @@ export default function MiniTestimonals({ className }: Props) {
               Treiber für Neukunden und Umsatz.
             </p>
           </div>
-          <SEOCheckBtn className="mt-12" />
+          <MailBtn className="mt-12" />
         </div>
       </section>
     </div>

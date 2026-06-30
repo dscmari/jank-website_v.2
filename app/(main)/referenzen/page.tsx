@@ -29,7 +29,7 @@ export default function page() {
         {sections.map((s, index) => (
           <section
             key={index}
-            className="flex flex-col 2xl:flex-row items-center lg:gap-12 bg-custom-white p-8 lg:p-12 rounded-xl dark"
+            className="flex flex-col 2xl:flex-row items-center lg:gap-12 bg-custom-white p-4 mx-4 lg:mx-0 lg:p-12 rounded-xl dark"
           >
             <div className="flex-1 flex flex-col ">
               <div className="flex flex-col items-start gap-2">

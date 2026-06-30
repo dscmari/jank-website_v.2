@@ -9,7 +9,6 @@ import Pricing from "../components/pricing/Pricing";
 import Process from "../components/layouts/Process";
 import { GiAirplaneDeparture } from "react-icons/gi";
 import FourBoxLayout from "../components/layouts/FourBoxLayout";
-import SEOCheckBtn from "../components/buttons/SEOCheckBtn";
 import InfoBtn from "../components/buttons/InfoBtn";
 import Workshops from "../components/Workshops";
 import { colabCircles, processCircles } from "../content/processUi";
@@ -32,7 +31,7 @@ export default function Home() {
         title={atf.homeATF.title}
         subtitle={atf.homeATF.subtitle}
         text={atf.homeATF.text}
-        button={<SEOCheckBtn className="" />}
+        button={<MailBtn/>}
         imgPathMobile="/images/portraits/39321-4133web.jpg"
         imgPathDesktop="/images/portraits/39321-4000_02.jpg"
       />
@@ -48,7 +47,7 @@ export default function Home() {
           bei Google und ChatGPT die sichtbarste Firma Deiner Branche wirst. Und
           endlich mehr Neukunden-Anfragen über die Website erhälst.
         </p>
-        <SEOCheckBtn className="mt-12" />
+        <MailBtn className="mt-12" />
       </section>
       <MiniTestimonals /> {/* lg:hidden */}
       <section className="mt-24 lg:hidden">
@@ -270,7 +269,7 @@ export default function Home() {
             Wir arbeiten ohne Branchenfokus und sind in Deutschland, Österreich,
             Norditalien & der Schweiz für unsere Kunden unterwegs.
           </p>
-          <SEOCheckBtn className="mt-12" />
+          <MailBtn className="mt-12" />
         </div>
       </section>
       <section className="bg-custom-white">

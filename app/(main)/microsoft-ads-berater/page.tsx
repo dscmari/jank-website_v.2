@@ -27,28 +27,27 @@ export default function page() {
       <section className="flex flex-col 2xl:flex-row 2xl:items-center px-4 md:px-16 pt-8 lg:gap-12 lg:p-32 lg:py-32 2xl:gap-32 2xl:justify-center">
         <div className="flex-1 flex flex-col">
           <h1>
-            Mit unserer Microsoft Ads Beratung wirst Du die Nummer 1 bei <span className="text-custom-red"> Bing </span>und <span className="text-custom-red">Copilot</span>
+            Mit unserer Microsoft Ads Beratung wirst Du die Nummer 1 bei{" "}
+            <span className="text-custom-red"> Bing </span>und{" "}
+            <span className="text-custom-red">Copilot</span>
           </h1>
           <p>
-            Die meisten Firmen schalten Google Ads Werbung, um potentielle Kunden zu erreichen. Nur wenige Firmen haben das Potenzial von Bing erkannt. Günstigere Klickpreise und weniger Wettbewerb. Vor allem im B2B-Geschäft können Microsoft Ads genial sein.
+            Die meisten Firmen schalten Google Ads Werbung, um potentielle
+            Kunden zu erreichen. Nur wenige Firmen haben das Potenzial von Bing
+            erkannt. Günstigere Klickpreise und weniger Wettbewerb. Vor allem im
+            B2B-Geschäft können Microsoft Ads genial sein.
           </p>
           <p className="py-4">
-            Wir helfen Firmen mit Microsoft Ads die Nummer 1 auf Bing und Copilot zu werden. Damit Deine Firma für die Suchbegriffe in der Bing Suche ganz oben erscheint.
+            Wir helfen Firmen mit Microsoft Ads die Nummer 1 auf Bing und
+            Copilot zu werden. Damit Deine Firma für die Suchbegriffe in der
+            Bing Suche ganz oben erscheint.
           </p>
           <p>
             Wir stehen Unternehmen aus Deutschland, Österreich, Südtirol und der
-            Schweiz als Microsoft Ads Berater zur Seite. Wir helfen Dir, die Nummer 1 in
-            der KI zu werden.
+            Schweiz als Microsoft Ads Berater zur Seite. Wir helfen Dir, die
+            Nummer 1 in der KI zu werden.
           </p>
-          <a
-            href="mailto:max.mustermann@ihre-domain.de"
-            className="flex gap-4 items-center bg-custom-red text-white p-4 lg:max-w-2/3 mt-8 rounded-xl"
-          >
-            <FiMail />
-            <span className="font-semibold tracking-wider">
-              jan@jankroesche.de
-            </span>
-          </a>
+          <MailBtn className="mt-8" />
         </div>
         <div className="mt-24 lg:mt-12 xl:min-w-1/3">
           <Image
@@ -136,15 +135,7 @@ export default function page() {
               IT-Dienstleister. Wir betreuen Firmen aus Deutschland, Österreich,
               Südtirol und der Schweiz.
             </p>
-            <a
-              href="mailto:max.mustermann@ihre-domain.de"
-              className="flex gap-4 items-center lg:max-w-2/3 bg-custom-red text-white p-4 mt-8 rounded-xl mb-8"
-            >
-              <FiMail />
-              <span className="font-semibold tracking-wider">
-                jan@jankroesche.de
-              </span>
-            </a>
+            <MailBtn className="mt-8" />
           </div>
         </div>
       </section>

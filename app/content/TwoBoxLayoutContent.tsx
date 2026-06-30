@@ -21,7 +21,7 @@ export const adsBerater = [
       "Du bekommst die richtigen Menschen auf die Seite",
       "Du bestehst langfristig am Markt",
     ],
-    linkComponent: <AdsKursBtn />,
+    linkComponent: <MailBtn/>,
   },
   {
     iconText: "Angebot",
@@ -56,7 +56,7 @@ export const geoBeraterTwoBox = [
       "Du erhältst mehr Anfragen",
       "Du bestehst langfristig am Markt",
     ],
-    linkComponent: <GEOKursBtn />,
+    linkComponent: <MailBtn />,
   },
   {
     iconText: "Angebot",
@@ -90,7 +90,7 @@ export const seoBeraterTwoBox = [
       "Du erhältst mehr Anfragen über die Website",
       "Du bestehst langfristig am Markt",
     ],
-    linkComponent: <SEOKursBtn />,
+    linkComponent: <MailBtn />,
   },
   {
     iconText: "Angebot",

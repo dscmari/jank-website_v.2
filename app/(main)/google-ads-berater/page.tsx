@@ -2,7 +2,6 @@ import Image from "next/image";
 import ATF from "@/app/components/ATF";
 import { Metadata } from "next";
 import atf from "../../content/ATFContents";
-import LinkAdsKurs from "@/app/components/links/LinkAdsKurs";
 import Contact from "@/app/components/Contact";
 import TwoBoxLayout from "@/app/components/layouts/TwoBoxLayout";
 import { adsBerater } from "@/app/content/TwoBoxLayoutContent";
@@ -11,9 +10,9 @@ import { adsBeraterSixBox } from "@/app/content/SixBoxLayoutContent";
 import references from "@/app/content/referencesList";
 import FiveStarRating from "@/app/components/FiveStarRating";
 import { GoDiamond } from "react-icons/go";
-import AdsKursBtn from "@/app/components/buttons/AdsKursBtn";
 import { faqsAdsBerater } from "@/app/content/faqsContent";
 import Accordion from "@/app/components/layouts/Accordion";
+import MailBtn from "@/app/components/buttons/MailBtn";
 
 export const metadata: Metadata = {
   title: "Google Ads Berater Jan Krösche | Experte für Google Werbung",
@@ -26,7 +25,7 @@ export default function page() {
         title={atf.adsBeraterATF.title}
         subtitle={atf.adsBeraterATF.subtitle}
         text={atf.adsBeraterATF.text}
-             button={<AdsKursBtn className="" />}
+             button={<MailBtn className="" />}
         imgPathMobile={"/images/portraits/39321-4190.jpg"}
         imgPathDesktop={"/images/portraits/39321-4211_02.jpg"}
       />
@@ -54,7 +53,7 @@ export default function page() {
             Schweiz als Google Ads Berater zur Seite. Wir helfen Dir, die Nummer
             1 auf Google zu werden und mehr Neukundenumsatz zu machen.
           </p>
-          <AdsKursBtn className="mt-8 2xl:max-w-2/3" />
+          <MailBtn className="mt-8 2xl:max-w-2/3" />
         </div>
         <div className="mt-12 md:mt-24 xl:mt-0 xl:min-w-1/3">
           <Image
@@ -138,7 +137,7 @@ export default function page() {
             Als Google Ads Berater helfen wir Firmen, die Reichweite bei Google
             zu steigern und mehr Neukunden zu gewinnen.
           </p>
-          <AdsKursBtn className="mt-8 2xl:max-w-2/3" />
+          <MailBtn className="mt-8 2xl:max-w-2/3" />
         </div>
       </section>
       <section className="mt-24 2xl:mt-32 sub-absolute-image  dark:mt-16 py-12 lg:py-24 px-4 lg:px-32 bg-custom-white">
@@ -263,7 +262,7 @@ export default function page() {
             kannst, wie Du möchtest. Dann hast Du später eine bessere
             Entscheidungsgrundlage.
           </p>
-          <AdsKursBtn className="mt-8" />
+          <MailBtn className="mt-8" />
         </div>
         <div className="min-w-1/2 2xl:min-w-1/3 relative">
           <Image
@@ -352,7 +351,7 @@ export default function page() {
             Deiner Google Ads Kampagne verbessert hat. Wir halten Dich immer auf
             dem Laufenden und stehen Dir persönlich zur Seite.
           </p>
-          <AdsKursBtn className="mt-8 2xl:max-w-2/3" />
+          <MailBtn className="mt-8 2xl:max-w-2/3" />
         </div>
       </section>
       <section className=" pb-12 pt-24 lg:pt-48 px-4 lg:px-32">

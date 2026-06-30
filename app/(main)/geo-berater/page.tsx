@@ -4,7 +4,6 @@ import WebsiteCheck from "@/app/components/website-check/WebsiteCheck";
 import { GoDiamond } from "react-icons/go";
 import ATF from "@/app/components/ATF";
 import Contact from "@/app/components/Contact";
-import LinkGeoCheck from "@/app/components/links/LinkGeoCheck";
 import { Metadata } from "next";
 import atf from "../../content/ATFContents";
 import SixBoxLayout from "@/app/components/layouts/SixBoxLayout";
@@ -12,7 +11,7 @@ import { geoBeraterSixBox } from "../../content/SixBoxLayoutContent";
 import FiveStarRating from "@/app/components/FiveStarRating";
 import TwoBoxLayout from "@/app/components/layouts/TwoBoxLayout";
 import { geoBeraterTwoBox } from "@/app/content/TwoBoxLayoutContent";
-import GEOCheckBtn from "@/app/components/buttons/GEOCheckBtn";
+import MailBtn from "@/app/components/buttons/MailBtn";
 import Accordion from "@/app/components/layouts/Accordion";
 import { faqsGeoBerater } from "@/app/content/faqsContent";
 
@@ -27,7 +26,7 @@ export default function GEOBerater() {
         title={atf.geoBeraterATF.title}
         subtitle={atf.geoBeraterATF.subtitle}
         text={atf.geoBeraterATF.text}
-        button={<GEOCheckBtn className="" />}
+        button={<MailBtn />}
         imgPathMobile="/images/portraits/39321-4194.jpg"
         imgPathDesktop="/images/portraits/39321-4127_01.jpg"
       />
@@ -55,7 +54,7 @@ export default function GEOBerater() {
             Schweiz als GEO Berater zur Seite. Wir helfen Dir, die Nummer 1 in
             der KI zu werden.
           </p>
-          <GEOCheckBtn className="mt-8" />
+          <MailBtn className="mt-8" />
         </div>
         <div className="mt-24 lg:mt-12 xl:min-w-1/3">
           <Image
@@ -135,7 +134,7 @@ export default function GEOBerater() {
             helfen Dir, dass Deine Firmen-Website am häufigsten in den
             KI-Antworten auftauchen.
           </p>
-          <GEOCheckBtn className="mt-8" />
+          <MailBtn className="mt-8" />
         </div>
       </section>
       <section className="mt-24 px-4 py-24 xl:m-0 xl:p-32 relative bg-custom-white">
@@ -248,7 +247,7 @@ export default function GEOBerater() {
             Deine Website an und schickt Dir ein paar Tipps als pdf-Datei per
             Mail zu. Komplett kostenlos.
           </p>
-          <GEOCheckBtn className="mt-8" />
+          <MailBtn className="mt-8" />
         </div>
         <div className="mt-24 lg:mt-12 xl:min-w-1/3">
           <Image
@@ -347,7 +346,7 @@ export default function GEOBerater() {
             in Kontakt und erhältst immer einen Überblick, welche Arbeiten
             anstehen.
           </p>
-          <GEOCheckBtn className="mt-8" />
+          <MailBtn className="mt-8" />
         </div>
       </section>
       <section className=" pb-12 pt-24 lg:pt-48 px-4 lg:px-32">

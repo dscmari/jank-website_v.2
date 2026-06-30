@@ -2,8 +2,6 @@ import { Metadata } from "next";
 import Image from "next/image";
 import ATF from "@/app/components/ATF";
 import atf from "../../content/ATFContents";
-import LinkSeoCheck from "@/app/components/links/LinkSeoCheck";
-import SEOCheckBtn from "@/app/components/buttons/SEOCheckBtn";
 import Contact from "@/app/components/Contact";
 import TwoBoxLayout from "@/app/components/layouts/TwoBoxLayout";
 import { seoBeraterTwoBox } from "@/app/content/TwoBoxLayoutContent";
@@ -16,6 +14,7 @@ import WebsiteCheck from "@/app/components/website-check/WebsiteCheck";
 import Link from "next/link";
 import Accordion from "@/app/components/layouts/Accordion";
 import { faqsSeoBerater } from "@/app/content/faqsContent";
+import MailBtn from "@/app/components/buttons/MailBtn";
 
 export const metadata: Metadata = {
   title: "SEO Berater für Google Rankings | Jan Krösche",
@@ -28,7 +27,7 @@ export default function page() {
         title={atf.seoBeraterATF.title}
         subtitle={atf.seoBeraterATF.subtitle}
         text={atf.seoBeraterATF.text}
-        button={<SEOCheckBtn className="" />}
+        button={<MailBtn />}
         imgPathMobile="/images/portraits/39321-3994.jpg"
         imgPathDesktop="/images/portraits/39321-4118_01.jpg"
       />
@@ -56,7 +55,7 @@ export default function page() {
             Google katapultiert. Hier findest Du unsere <Link href={"/referenzen"} className="underline">Referenzen</Link>.
           </p>
 
-          <SEOCheckBtn className="mt-8 lg:max-w-2/3 2xl:w-full" />
+          <MailBtn className="mt-8 lg:max-w-2/3 2xl:w-full" />
         </div>
         <div className="mt-24 lg:mt-12 xl:min-w-1/3">
           <Image
@@ -134,7 +133,7 @@ export default function page() {
             IT-Dienstleister. Wir betreuen Firmen aus Deutschland, Österreich,
             Südtirol und der Schweiz.
           </p>
-          <SEOCheckBtn className="mt-8 2xl:max-w-2/3" />
+          <MailBtn className="mt-8 2xl:max-w-2/3" />
         </div>
       </section>
       <section className="mt-24 px-4 py-24 xl:m-0 xl:p-32 relative bg-custom-white">
@@ -239,7 +238,7 @@ export default function page() {
             Deine Website an und schickt Dir ein paar Tipps als pdf-Datei per
             Mail zu. Komplett kostenlos.
           </p>
-          <SEOCheckBtn className="mt-8 md:max-w-2/3" />
+          <MailBtn className="mt-8 md:max-w-2/3" />
         </div>
         <div className="mt-24 lg:mt-12 xl:min-w-1/3">
           <Image
@@ -333,7 +332,7 @@ export default function page() {
             Fachchinesisch und ballern Dich auch nicht mit sinnlosen Reportings
             zu.
           </p>
-          <SEOCheckBtn className="mt-8 mx-auto md:max-w-2/3 lg:max-w-full 2xl:mx-0 2xl:max-w-2/3" />
+          <MailBtn className="mt-8 mx-auto md:max-w-2/3 lg:max-w-full 2xl:mx-0 2xl:max-w-2/3" />
         </div>
       </section>
       <section className=" pb-12 pt-24 lg:pt-48 px-4 lg:px-32">

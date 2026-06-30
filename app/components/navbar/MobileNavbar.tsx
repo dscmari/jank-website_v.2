@@ -7,6 +7,7 @@ import { FiArrowRight, FiChevronDown, FiMail, FiPhone } from "react-icons/fi";
 import LinkSeoCheck from "../links/LinkSeoCheck";
 import { SlClose } from "react-icons/sl";
 import { AnimatePresence, motion } from "framer-motion";
+import MailBtn from "../buttons/MailBtn";
 
 type Props = {
   className?: string;
@@ -335,11 +336,8 @@ export default function Navbar({ className }: Props) {
             <FiPhone />
             <span>+49 176 55109383</span>
           </div>
-          <div className="mt-4 pl-8 flex items-center gap-4">
-            <FiMail />
-            <span>jan@jankroesche.de</span>
-          </div>
-          <div className="mx-8 my-12">
+          <MailBtn className="mt-8 mx-8" />
+          {/* <div className="mx-8 my-12">
             <button
               className="px-4 py-4 bg-custom-red text-white w-full flex items-center justify-between tracking-wider rounded"
               onClick={() => setIsMenuOpen((prev) => !prev)}
@@ -347,7 +345,7 @@ export default function Navbar({ className }: Props) {
               <LinkSeoCheck />
               <FiArrowRight />
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="flex items-center justify-between p-4 dark:bg-custom-white">
