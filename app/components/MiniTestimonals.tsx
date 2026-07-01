@@ -12,14 +12,14 @@ export default function MiniTestimonals({ className }: Props) {
     <div className={`${className}`}>
       <section className="lg:hidden mt-12 p-8 mx-4 bg-custom-white rounded-xl dark">
         <InfoBtn className="dark:bg-black" content="Erfolge" />
-        <h1 className="mt-4">
-          Hey Jan, was bringt es mir denn, bei Google oben zu stehen?
-        </h1>
-        <h2>
+        <h2 className="mt-4">
+          Hey Jan, was bringt es mir denn, bei <span className="text-custom-red">Google</span>  oben zu stehen?
+        </h2>
+        <p>
           Taten sprechen bekanntlich lauter als Worte. Drei Beispiele von meinen
           betreuten Kunden:
-        </h2>
-        <div className="flex flex-col gap-4">
+        </p>
+        <div className="flex flex-col gap-4 mt-4">
           <p>
             Eine Firma aus der Baubranche konnte durch die gesteigerte Google
             Sichtbarkeit über 500 Anfragen über die Website generieren.

@@ -19,6 +19,7 @@ import MiniTestimonals from "../components/MiniTestimonals";
 import WebsiteCheck from "../components/website-check/WebsiteCheck";
 import { pricingBoxes } from "../content/pricingBoxesContent";
 import MailBtn from "../components/buttons/MailBtn";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Platz 1 bei Google & ChatGPT | SEO – GEO – Ads Berater",
@@ -31,7 +32,7 @@ export default function Home() {
         title={atf.homeATF.title}
         subtitle={atf.homeATF.subtitle}
         text={atf.homeATF.text}
-        button={<MailBtn/>}
+        button={<MailBtn />}
         imgPathMobile="/images/portraits/39321-4133web.jpg"
         imgPathDesktop="/images/portraits/39321-4000_02.jpg"
       />
@@ -49,7 +50,7 @@ export default function Home() {
         </p>
         <MailBtn className="mt-12" />
       </section>
-      <MiniTestimonals /> {/* lg:hidden */}
+      <MiniTestimonals />
       <section className="mt-24 lg:hidden">
         <Image
           src="/images/portraits/39321-3981.jpg"
@@ -64,6 +65,119 @@ export default function Home() {
           Deutschland aufgebaut und geleitet. Seit 2025 arbeitet er mit einem
           spezialisierten Team selbständig.
         </p>
+      </section>
+      <section className="mt-24 lg:mt-32 mx-4 md:mx-16 lg:mx-32">
+        <h1>
+          <span className="text-custom-red">Kundenreferenzen</span> von Jan
+          Krösche
+        </h1>
+        <p className="max-w-4xl">
+          Wir unterstützen Unternehmen dabei, in den Suchergebnissen bei Google
+          sichtbarer zu werden und so nachhaltig mehr Kunden zu gewinnen.
+        </p>
+        <div className="mt-12 lg:mt-24 flex flex-col  2xl:flex-row 2xl:items-center lg:gap-12 2xl:gap-16">
+          <div className="flex flex-col">
+            <div className="flex flex-col items-start gap-2">
+              <InfoBtn content="Referenz" className="dark:bg-darkmode-blue" />
+              <span className="font-semibold tracking-tight dark:text-custom-white">
+                EM-Technologie Zentrum-Süd GmbH
+              </span>
+            </div>
+            <h2 className="text-xl font-semibold tracking-wide mt-8 mb-4">
+              Platz 1 bei Google für „Effektive Mikroorganismen“ mit EM Süd
+            </h2>
+            <div className="flex flex-col gap-4 max-w-4xl">
+              <p>
+                Die Firma EM-Technologie Zentrum-Süd GmbH aus dem Allgäu
+                verkauft auf dem eigenen Onlineshop em-sued.de Produkte rund um
+                „Effektive Mikroorganismen“.{" "}
+              </p>
+              <p>
+                Es gibt viele Onlineshops in diesem Bereich. Der Wettbewerb ist
+                extrem hoch. Das Keyword wird fast 10.000 Mal im Monat bei
+                Google gesucht. Die Nachfrage ist extrem hoch.{" "}
+              </p>
+              <p>
+                Durch unsere Optimierungsarbeit auf der Website haben wir es
+                geschafft, die Firma auf Platz 1 für das wichtige Keyword
+                „Effektive Mikroorganismen“ zu platzieren. Sowohl die
+                Sichtbarkeit als auch die Verkäufe im Shop konnten dadurch
+                deutlich gesteigert werden.
+              </p>
+              <p className="text-sm">
+                Weitere Referenzen findest du{" "}
+                <Link
+                  href={"/referenzen"}
+                  className="text-custom-red underline"
+                  target="_blank"
+                >
+                  hier
+                </Link>
+                .
+              </p>
+            </div>
+          </div>
+          <div className="mt-12 lg:mt-0 xl:min-w-1/3">
+            <Image
+              src="/images/screenshots/reference_17.png"
+              style={{ width: "600px" }}
+              alt="Screenshot einer Googlesuche"
+              height={300}
+              width={500}
+            />
+          </div>
+        </div>
+        <div className="mt-12 lg:mt-24 flex flex-col  2xl:flex-row 2xl:items-center lg:gap-12 2xl:gap-16">
+          <div className="flex flex-col">
+            <div className="flex flex-col items-start gap-2">
+              <InfoBtn content="Referenz" className="dark:bg-darkmode-blue" />
+              <span className="font-semibold tracking-tight dark:text-custom-white">
+                Kramer Systems GmbH
+              </span>
+            </div>
+            <h2 className="text-xl font-semibold tracking-wide mt-8 mb-4">
+              Ganz oben bei Google für „Schulserver Einrichtung“ mit Kramer
+              Systems
+            </h2>
+            <div className="flex flex-col gap-4 max-w-4xl">
+              <p>
+                Unser Kunde Kramer Systems GmbH ist ein IT-Dienstleister aus der
+                Region Landsberg, der sich auf Unternehmen und Schulen
+                spezialisiert hat.
+              </p>
+              <p>
+                Seit einigen Jahren helfen dem Inhaber Herrn Günter Kramer
+                dabei, seine Website-Sichtbarkeit für die Zielgruppe „Schulen“
+                zu steigern.
+              </p>
+              <p>
+                Mit dem wichtigen Suchbegriff „Schulserver Einrichtung“ haben
+                wir seine Seite bei Google ganz oben platziert, damit ihn
+                potentielle Kunden finden können.
+              </p>
+              <p className="text-sm">
+                Weitere Referenzen findest du{" "}
+                <Link
+                  href={"/referenzen"}
+                  className="text-custom-red underline"
+                  target="_blank"
+                >
+                  hier
+                </Link>
+                .
+              </p>
+            </div>
+          </div>
+          <div className="mt-12 lg:mt-0 xl:min-w-1/3">
+            <Image
+              src="/images/screenshots/reference_16.png"
+              style={{ width: "600px" }}
+              alt="Screenshot einer Googlesuche"
+              height={300}
+              width={500}
+            />
+          </div>
+        </div>
       </section>
       <section>
         <div className="hidden lg:block max-w-2/3 mx-auto text-center mt-32">
