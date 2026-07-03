@@ -1,5 +1,5 @@
 const references = [
-    {
+  {
     title: `Platz 1 Ranking bei Google für den Suchbegriff „Gleitlager Hersteller“`,
     text: `Unser Kunde ttv wird von uns seit einigen Jahren bei der Website-Optimierung (SEO) begleitet. Durch die umgesetzten Maßnahmen konnten wir die Sichtbarkeit der Website deutlich steigern. Unser Kunde erscheint bei Google für Keywords wie „Gleitlager Hersteller“, „Gleitringdichtungen“, „Massivgleitlager Hersteller“.`,
     googleResults: `Platz 1 bei Google für „Gleitlager Hersteller“`,
@@ -10,7 +10,7 @@ const references = [
       "Die Firma erhält nun mehr Anfragen von potentiellen Kunden aus dem B2B Bereich, die nach Dichtungen und Gleitlagern im Internet suchen.",
     image: "/images/screenshots/reference_14.png",
   },
-    {
+  {
     title: `Platz 1 Ranking bei Google für den Suchbegriff „Kunststoffkoffer Hersteller“`,
     text: `Seit mehreren Jahren helfen wir der Firma B&W PolyEngineering Türkheim GmbH durch gezielte Optimierungen auf der Seite, das Ranking und die Sichtbarkeit bei Google und ChatGPT zu steigern. Die Website rankt mittlerweile für über 50 Suchbegriffe auf Seite 1 bei Google.`,
     googleResults: `Platz 1 bei Google für „Kunststoffkoffer Hersteller“`,
@@ -139,7 +139,7 @@ const references = [
   //   aiResults: `Platz 1 in der KI-Antwort von ChatGPT für „Pflegesessel Hersteller“`,
   //   company: `Steinmann Selection`,
   // },
-    {
+  {
     title: `Platz 1 Ranking für „Inertiale Navigationssysteme“`,
     text: `Die DTC Navigation Solutions GmbH & Co. KG aus Krailling bietet Lösungen rund um Inertiale Navigationssysteme, Messtechnik im Automotive-Bereich und RTK Dienste. Wir haben die Website www.dtc-solutions.de so optimiert, dass sie von potentiellen Kunden aus der Automotive-Branche besser gefunden werden kann.`,
     googleResults: `Platz 1 bei Google für „Inertiale Navigationssysteme“`,
@@ -149,7 +149,7 @@ const references = [
       "Durch die gesteigerte Sichtbarkeit bei Google erhält die Firma konstant mehr Anfragen über die Website.",
     image: "/images/screenshots/reference_11.png",
   },
-      {
+  {
     title: `Platz 1 Ranking für den Suchbegriff „Ferienwohnungen Comer See"`,
     text: `Wir optimieren die Website labreva.com mit dem Ziel, für viele wichtige Suchbegriffe bei Google und ChatGPT auffindbar zu sein. Für das wichtige Keyword „Ferienwohnungen Comer See“ rankt unser Kunde auf Platz 1 bei Google. Sogar vor TUI!`,
     googleResults: `Platz 1 bei Google für „Ferienwohnungen Comer See“`,
@@ -159,7 +159,7 @@ const references = [
       "Durch die gesteigerte Google-Sichtbarkeit kann unser Kunde deutlich mehr Buchungen über die Website verzeichnen.",
     image: "/images/screenshots/reference_12.png",
   },
-        {
+  {
     title: `Platz 1 Ranking bei Google & ChatGPT für „Elektriker München“`,
     text: `Mit unseren Website-Optimierungen helfen wir der Firma Pittroff Elektrotechnik München GmbH, um als Elektriker in München mehr Neukunden über die Website zu gewinnen. Wir konnten die Firma für viele wichtige Suchbegriffe sowohl bei Google als auch bei ChatGPT ganz oben platzieren.`,
     googleResults: `Platz 1 bei Google für „Elektriker München“`,
@@ -171,4 +171,49 @@ const references = [
   },
 ];
 
-export default references;
+const referencesHome = [
+  {
+    companyName: "EM-Technologie Zentrum-Süd GmbH",
+    title: `Platz 1 bei Google für „Effektive Mikroorganismen“ mit EM Süd“`,
+    textTop: `Die Firma EM-Technologie Zentrum-Süd GmbH aus dem Allgäu verkauft auf dem eigenen Onlineshop em-sued.de Produkte rund um „Effektive Mikroorganismen“.`,
+    textMid: `Es gibt viele Onlineshops in diesem Bereich. Der Wettbewerb ist extrem hoch. Das Keyword wird fast 10.000 Mal im Monat bei Google gesucht. Die Nachfrage ist extrem hoch.`,
+    textBotom: `Durch unsere Optimierungsarbeit auf der Website haben wir es geschafft, die Firma auf Platz 1 für das wichtige Keyword „Effektive Mikroorganismen“ zu platzieren. Sowohl die Sichtbarkeit als auch die Verkäufe im Shop konnten dadurch deutlich gesteigert werden.`,
+    image: "/images/screenshots/reference_17.png",
+  },
+  {
+    companyName: "Kramer Systems GmbH",
+    title: `Ganz oben bei Google für „Schulserver Einrichtung“ mit Kramer Systems`,
+    textTop: `Unser Kunde Kramer Systems GmbH ist ein IT-Dienstleister aus der Region Landsberg, der sich auf Unternehmen und Schulen spezialisiert hat.`,
+    textMid: `Seit einigen Jahren helfen dem Inhaber Herrn Günter Kramer dabei, seine Website-Sichtbarkeit für die Zielgruppe „Schulen“ zu steigern.`,
+    textBotom: `Mit dem wichtigen Suchbegriff „Schulserver Einrichtung“ haben wir seine Seite bei Google ganz oben platziert, damit ihn potentielle Kunden finden können.`,
+    image: "/images/screenshots/reference_16.png",
+  },
+  {
+    companyName: "M. H. Preis GmbH",
+    title: `Platz 1 in der ChatGPT-Antwort für „Bester Kanalbauer in München“`,
+    textTop: `Für die Firma M. H. Preis GmbH führen wir seit mehreren Jahren Website-Optimierungen durch mit dem Ziel, sowohl bei Google als auch in den gängigen KI-Systemen sichtbar zu sein.`,
+    textMid: `Für die geschäftsentscheidende Phrase „Kanalbau München“ rankt die Website bei Google auf Platz 1. Auch bei ChatGPT wird die Firma sehr häufig in den KI-Antworten zitiert. Beispielsweise wenn man nach „Bester Kanalbauer in München“ sucht.`,
+    textBotom: `Die starke Sichtbarkeit haben wir durch Strukturänderungen auf der Seite, optimierte Inhalte, Anpassungen der Meta-Tags und dem Aufbau von externen Verlinkungen erreicht. `,
+    image: "/images/screenshots/reference_18.png",
+  },
+
+  {
+    companyName: "Hydrauliktechnik24 GmbH",
+    title: `Sogar vor Wikipedia! Platz 1 bei Google für das Keyword „Hydraulikzylinder“`,
+    textTop: `Die Hydrauliktechnik24 GmbH betreibt einen großen Hydraulik-Onlineshop. Zur wichtigsten Produktkategorie zählen die Hydraulikzylinder mit einem monatlichen Suchvolumen von 33.000. `,
+    textMid: `Durch unsere SEO-Maßnahmen haben wir es geschafft, die Firma auf Platz 1 bei Google für das Keyword „Hydraulikzylinder“ zu bringen. Die Website ist sogar vor Wikipedia gelistet. Zusätzlich wird ein Produkt des Shops ganz oben im organischen Produkt-Listing (Google Organic Grid) angezeigt. Die Positionierung ist natürlich ideal, da die Firma dadurch gleich zweimal organisch oben gerankt wird.
+`,
+    textBotom: `Die wichtigsten Hebel in der Optimierung bestanden darin, die Website SEO-konform auszurichten: sprechende URLs, 301-Redirects, Keyword-Platzierung in den Title Tags und h1-Tags, interne Linkstruktur, etc.`,
+    image: "/images/screenshots/reference_19.png",
+  },
+  {
+    companyName: "Luminara Living GmbH",
+    title: `62 Cent Klickpreis bei Google Ads und 1.450 Website-Klicks in 2 Monaten`,
+    textTop: `Die Luminara Living GmbH verkauft Immobilien in Norditalien an deutsche und österreichische Interessenten. `,
+    textMid: `Um die Zielgruppe der Firma zu erreichen, setzen wir auf gezielte SEO- und Google Ads Maßnahmen für wichtige Keywords wie „Haus kaufen Norditalien“, „Immobilie kaufen Norditalien“, „Hauskauf Italien“. Die Ads Kampagne läuft extrem gut: Der Klickpreis liegt durchschnittlich bei 62 Cent – trotz des hohen Wettbewerbs. Die Google Werbung wird effizient nur an Interessenten ausgespielt und hat innerhalb von 2 Monaten 1.450 Nutzer auf die Website gelenkt`,
+    textBotom: `Die Ergebnisse der Ads Kampagne haben wir durch folgende Maßnahmen erzielt: Einrichtung des Google Kontos und der Ads Kampagne. Keyword-Recherche. Erstellen der Anzeigen-Texte. Targeting-Einstellungen`,
+    image: "/images/screenshots/reference_20.png",
+  },
+];
+
+export default { references, referencesHome };

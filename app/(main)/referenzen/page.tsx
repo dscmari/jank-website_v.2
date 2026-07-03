@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { GoDiamond } from "react-icons/go";
-import sections from "../../content/referencesList";
+import referencesList from "@/app/content/referencesList";
 import Breadcrumbs from "@/app/components/Breadcrumps";
 import { Metadata } from "next";
 
@@ -8,8 +8,8 @@ export const metadata: Metadata = {
   title: "Referenzen von Jan Krösche | SEO – GEO – Google Ads",
 };
 
-
 export default function page() {
+  const { references } = referencesList;
   return (
     <div>
       <Breadcrumbs className="hidden md:block pt-4 px-4 lg:px-32 font-semibold" />
@@ -26,7 +26,7 @@ export default function page() {
       </div>
 
       <div className="flex flex-col gap-24 lg:gap-32 mt-12 lg:mt-24 lg:px-32">
-        {sections.map((s, index) => (
+        {references.map((s, index) => (
           <section
             key={index}
             className="flex flex-col 2xl:flex-row items-center lg:gap-12 bg-custom-white p-4 mx-4 lg:mx-0 lg:p-12 rounded-xl dark"
