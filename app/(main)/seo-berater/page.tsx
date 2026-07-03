@@ -9,7 +9,7 @@ import SixBoxLayout from "@/app/components/layouts/SixBoxLayout";
 import { seoBeraterSixBox } from "@/app/content/SixBoxLayoutContent";
 import { GoDiamond } from "react-icons/go";
 import FiveStarRating from "@/app/components/FiveStarRating";
-import references from "@/app/content/referencesList";
+import referencesList from "@/app/content/referencesList";
 import WebsiteCheck from "@/app/components/website-check/WebsiteCheck";
 import Link from "next/link";
 import Accordion from "@/app/components/layouts/Accordion";
@@ -21,6 +21,7 @@ export const metadata: Metadata = {
 };
 
 export default function page() {
+  const {references} = referencesList
   return (
     <div>
       <ATF

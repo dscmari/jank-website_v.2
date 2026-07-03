@@ -7,7 +7,7 @@ import TwoBoxLayout from "@/app/components/layouts/TwoBoxLayout";
 import { adsBerater } from "@/app/content/TwoBoxLayoutContent";
 import SixBoxLayout from "@/app/components/layouts/SixBoxLayout";
 import { adsBeraterSixBox } from "@/app/content/SixBoxLayoutContent";
-import references from "@/app/content/referencesList";
+import referencesList from "@/app/content/referencesList";
 import FiveStarRating from "@/app/components/FiveStarRating";
 import { GoDiamond } from "react-icons/go";
 import { faqsAdsBerater } from "@/app/content/faqsContent";
@@ -19,13 +19,14 @@ export const metadata: Metadata = {
 };
 
 export default function page() {
+  const { references } = referencesList;
   return (
     <div>
       <ATF
         title={atf.adsBeraterATF.title}
         subtitle={atf.adsBeraterATF.subtitle}
         text={atf.adsBeraterATF.text}
-             button={<MailBtn className="" />}
+        button={<MailBtn className="" />}
         imgPathMobile={"/images/portraits/39321-4190.jpg"}
         imgPathDesktop={"/images/portraits/39321-4211_02.jpg"}
       />
@@ -281,7 +282,7 @@ export default function page() {
       </section>
       <section className="mt-24 lg:px-32 max-w-7xl mx-auto">
         <div className="px-4 lg:px-0 lg:text-center">
-          <h1 >
+          <h1>
             Es ärgert Dich, dass Du{" "}
             <span className="text-custom-red"> bei Google nicht oben </span>{" "}
             stehst?
@@ -356,7 +357,8 @@ export default function page() {
       </section>
       <section className=" pb-12 pt-24 lg:pt-48 px-4 lg:px-32">
         <h1 className="lg:text-center">
-          Du hast <span className="text-custom-red"> Fragen </span>zum Google Ads Berater Jan Krösche oder zur Zusammenarbeit?
+          Du hast <span className="text-custom-red"> Fragen </span>zum Google
+          Ads Berater Jan Krösche oder zur Zusammenarbeit?
         </h1>
         <Accordion faqs={faqsAdsBerater} className="mt-12 lg:mt-16" />
       </section>
