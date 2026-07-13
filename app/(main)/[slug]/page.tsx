@@ -61,15 +61,21 @@ export default async function PostPage({
   const postImageUrl_3 = post.image_3
     ? urlFor(post.image_3)?.width(550).height(310).url()
     : null;
+  const postImageUrl_4 = post.image_4
+    ? urlFor(post.image_4)?.width(550).height(310).url()
+    : null;
+  const postImageUrl_5 = post.image_5
+    ? urlFor(post.image_5)?.width(550).height(310).url()
+    : null;
 
-    //console.log(post)
+  //console.log(post)
   return (
     <main className="sanity-container">
       <Link
         href="/blog/"
         className="hidden lg:block mt-4 px-4  md:mt-8 md:px-8 lg:px-16 lg:px-32 font-light text-sm dark:text-custom-white"
       >
-        <IoArrowBack className="size-10 text-neutral-500"/>
+        <IoArrowBack className="size-10 text-neutral-500" />
       </Link>
       <div className="flex flex-col items-center max-w-4xl mx-4 lg:mx-auto">
         {postImageUrl && (
@@ -116,6 +122,30 @@ export default async function PostPage({
         )}
         <div className="mt-4 lg:mt-8 lg:px-16 sanity-text">
           {Array.isArray(post.body_3) && <PortableText value={post.body_3} />}
+        </div>
+        {postImageUrl_4 && (
+          <Image
+            src={postImageUrl_4}
+            alt={post.title}
+            width={600}
+            height={400}
+            className=" rounded-xl mt-16 "
+          />
+        )}
+        <div className="mt-4 lg:mt-8 lg:px-16 sanity-text">
+          {Array.isArray(post.body_4) && <PortableText value={post.body_5} />}
+        </div>
+        {postImageUrl_5 && (
+          <Image
+            src={postImageUrl_5}
+            alt={post.title}
+            width={600}
+            height={400}
+            className=" rounded-xl mt-16 "
+          />
+        )}
+        <div className="mt-4 lg:mt-8 lg:px-16 sanity-text">
+          {Array.isArray(post.body_5) && <PortableText value={post.body_5} />}
         </div>
       </div>
     </main>
