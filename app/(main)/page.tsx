@@ -79,7 +79,7 @@ export default function Home() {
           sichtbarer zu werden und so nachhaltig mehr Kunden zu gewinnen.
         </p>
         {referencesHome.map((references, index) => (
-          <div className="mt-12 lg:mt-24 flex flex-col  2xl:flex-row 2xl:items-center lg:gap-12 2xl:gap-16">
+          <div key={index} className="mt-12 lg:mt-24 flex flex-col  2xl:flex-row 2xl:items-center lg:gap-12 2xl:gap-16">
             <div className="flex flex-col">
               <div className="flex flex-col items-start gap-2">
                 <InfoBtn content="Referenz" className="dark:bg-darkmode-blue" />

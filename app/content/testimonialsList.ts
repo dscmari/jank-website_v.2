@@ -37,7 +37,19 @@ const hofbauerKunststoff = {
   name: "Helmut Schmalix",
   role: "Vertriebsleiter",
 };
+const physiotherapeutUmbach = {
+  title: "Physiotherapeut Thomas Umbach in Heidelberg",
+  text: "Thomas Umbach betreibt eine Physiotherapie-Praxis in Westend in Heidelberg und kam über eine Empfehlung einer Partneragentur mit dem Anliegen auf uns zu, bei Google sichtbarer zu sein. Innerhalb weniger Wochen konnten wir die Website für alle wichtigen Suchbegriffe auf Seite 1 bei Google platzieren.",
+  keywords: [
+    "Physiotherapie Heidelberg",
+    "Physiotherapeut Heidelberg",
+  ],
+  voice:
+    "„Der Markt für Physiotherapie ist in meiner Stadt hart umkämpft. Meine Nachfrage war stark schwankend und ließ sich in manchen Phasen nur über Google Ads halten. Dank Jan ist meine Website heute auf Seite 1 bei Google. Nach drei Monaten habe ich eine stabile Nachfrage, und zwar genau in meinem Schwerpunkt Orthopädie. Zur Zusammenarbeit selbst: Jan war jederzeit erreichbar, hat immer innerhalb kurzer Zeit geantwortet und bringt eine locker-unkomplizierte Art mit. Klare Empfehlung.“",
+  name: "Thomas Umbach - www.physiotherapie-tu.de",
+  role: "Inhaber",
+};
 
-const testimonals = [schwabingWahrheitHotel, kramerIT, hofbauerKunststoff];
+const testimonals = [schwabingWahrheitHotel, kramerIT, hofbauerKunststoff, physiotherapeutUmbach];
 
 export default testimonals
