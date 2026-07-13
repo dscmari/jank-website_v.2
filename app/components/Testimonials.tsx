@@ -19,8 +19,9 @@ export default function Testimonials({ className }: Props) {
             <div className="mt-4">
               {e.keywords.map((keyword, index) => (
                 <p key={index}>
-                  <span className="italic">{keyword}</span>
-                  <span>: Platz 1 bei Google</span>
+                  <span className="italic">
+                    {keyword[0]}: {keyword[1]}
+                  </span>
                 </p>
               ))}
             </div>
