@@ -1,5 +1,15 @@
 const references = [
   {
+    title: `Platz 1 Zitierung bei ChatGPT`,
+    text: `Die Huber Präzisionstechnik GmbH ist Spezialist für Präzisionsteile nach Maß. Anfang des Jahres wurde der Relaunch der neuen Seite durchgeführt. SEO-technisch haben wir die wichtigen Keywords recherchiert und eine SEO-konforme Website-Struktur geplant und skizziert. Die Resultate bei Google und ChatGPT können sich sehen lassen.`,
+    googleResults: `Platz 1 bei Google für „Präzisionsteile nach Maß“`,
+    aiResults: `Platz 1 bei ChatGPT für „Bester Anbieter für Präzisionsteile aus Bayern“`,
+    company: `Huber Präzisionstechnik GmbH aus Geretsried `,
+    subtext:
+      "Die Firma ist durch unsere fortlaufende SEO- und GEO-Betreuung endlich sichtbar und kann von Neukunden besser gefunden werden",
+    image: "/images/screenshots/reference_21.png",
+  },
+  {
     title: `Platz 1 Ranking bei Google für den Suchbegriff „Gleitlager Hersteller“`,
     text: `Unser Kunde ttv wird von uns seit einigen Jahren bei der Website-Optimierung (SEO) begleitet. Durch die umgesetzten Maßnahmen konnten wir die Sichtbarkeit der Website deutlich steigern. Unser Kunde erscheint bei Google für Keywords wie „Gleitlager Hersteller“, „Gleitringdichtungen“, „Massivgleitlager Hersteller“.`,
     googleResults: `Platz 1 bei Google für „Gleitlager Hersteller“`,
