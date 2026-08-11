@@ -19,9 +19,11 @@ export default function WebsiteBoostingBox() {
           height={300}
         />
       </div>
-       <p className="mx-4 mt-2 text-sm font-light text-center mt-8">
-        Jan Krösche veröffentlicht regelmäßig im Fachmagazin „Website Boosting“
-        und hält Vorträge beim Verein Deutscher Ingenieure.
+      <p className="mx-4 mt-2 text-sm font-light text-center mt-8">
+        Jan Krösche veröffentlicht im Fachmagazin „Website Boosting“ und hält
+        Vorträge beim Verein Deutscher Ingenieure. Zudem ist er der Veranstalter
+        der einzigen GEO-Konferenz in Süddeutschland und zählt zu den ersten
+        Agenturen, die ChatGPT Ads für Firmen anbieten.
       </p>
     </div>
   );

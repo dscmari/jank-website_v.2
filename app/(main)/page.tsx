@@ -21,7 +21,6 @@ import { pricingBoxes } from "../content/pricingBoxesContent";
 import MailBtn from "../components/buttons/MailBtn";
 import Link from "next/link";
 import referencesList from "../content/referencesList";
-import { div } from "framer-motion/client";
 
 export const metadata: Metadata = {
   title: "Platz 1 bei Google & ChatGPT | SEO – GEO – Ads Berater",
