@@ -9,6 +9,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import InfoBtn from "@/app/components/buttons/InfoBtn";
 import { IoArrowBack } from "react-icons/io5";
+import Breadcrumbs from "@/app/components/Breadcrumps";
 
 export async function generateMetadata({
   params,
@@ -71,6 +72,7 @@ export default async function PostPage({
   //console.log(post)
   return (
     <main className="sanity-container">
+      <Breadcrumbs className="hidden md:block pt-4 px-4 lg:px-32 font-semibold" />
       <Link
         href="/blog/"
         className="hidden lg:block mt-4 px-4  md:mt-8 md:px-8 lg:px-16 lg:px-32 font-light text-sm dark:text-custom-white"
