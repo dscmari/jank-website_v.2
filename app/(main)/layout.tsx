@@ -7,6 +7,7 @@ import PreFooter from "../components/footer/PreFooter";
 import ScrollToTopBtn from "../components/ScrollToTopBtn";
 import GTMBodyScript from "../components/google/GTMBodyScript";
 import GTMHeadScript from "../components/google/GTMHeadScript";
+import BreadcrumbsJsonLd from "../components/BreadcrumpsJasonLd";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -42,6 +43,7 @@ export default function MainLayout({
         {/* <GTMBodyScript/> */}
         <Navbar />
         <main>
+          <BreadcrumbsJsonLd />
           {children}
         </main>
         <PreFooter />
