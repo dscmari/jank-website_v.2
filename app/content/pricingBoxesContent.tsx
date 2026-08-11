@@ -1,4 +1,3 @@
-
 // default preisboxen (ohne zahlen)
 const google = {
   icon: "Paket 1",
@@ -17,16 +16,19 @@ const google = {
     "Wettbewerbsanalysen",
     "Strategische Anpassungen",
   ],
-  closingText: "Wir sind keine Webdesigner und führen keine technischen Änderungen durch. Natürlich passen wir die Strategie an Deine Firma individuell an.",
-  outroText: <div>
-    <span className="mt-4 block text-center font-light">
-      Preisanfrage unter
-    </span>
-    <span className="block text-center text-custom-red">
-      {" "}
-      jan@jankroesche.de
-    </span>
-  </div>
+  closingText:
+    "Wir sind keine Webdesigner und führen keine technischen Änderungen durch. Natürlich passen wir die Strategie an Deine Firma individuell an.",
+  outroText: (
+    <div>
+      <span className="mt-4 block text-center font-light">
+        Preisanfrage unter
+      </span>
+      <span className="block text-center text-custom-red">
+        {" "}
+        jan@jankroesche.de
+      </span>
+    </div>
+  ),
 };
 const chatGPT = {
   icon: "Paket 2",
@@ -45,17 +47,19 @@ const chatGPT = {
     "Mind. eine digitale PR Aktion im Monat",
     "Strategische Anpassungen",
   ],
-  closingText: "Wir sind keine Webdesigner und führen keine technischen Änderungen durch. Natürlich passen wir die Strategie an Deine Firma individuell an.",
-  outroText: <div>
-    <span className="mt-4 block text-center font-light">
-      Preisanfrage unter
-    </span>
-    <span className="block text-center text-custom-red">
-      {" "}
-      jan@jankroesche.de
-    </span>
-  </div>
-
+  closingText:
+    "Wir sind keine Webdesigner und führen keine technischen Änderungen durch. Natürlich passen wir die Strategie an Deine Firma individuell an.",
+  outroText: (
+    <div>
+      <span className="mt-4 block text-center font-light">
+        Preisanfrage unter
+      </span>
+      <span className="block text-center text-custom-red">
+        {" "}
+        jan@jankroesche.de
+      </span>
+    </div>
+  ),
 };
 
 const googleAds = {
@@ -75,19 +79,57 @@ const googleAds = {
     "Wettbewerbsanalysen",
     "Strategische Anpassungen",
   ],
-  closingText: "Wir sind keine Webdesigner und führen keine technischen Änderungen durch. Natürlich passen wir die Strategie an Deine Firma individuell an.",
-  outroText: <div>
-    <span className="mt-4 block text-center font-light">
-      Preisanfrage unter
-    </span>
-    <span className="block text-center text-custom-red">
-      {" "}
-      jan@jankroesche.de
-    </span>
-  </div>
+  closingText:
+    "Wir sind keine Webdesigner und führen keine technischen Änderungen durch. Natürlich passen wir die Strategie an Deine Firma individuell an.",
+  outroText: (
+    <div>
+      <span className="mt-4 block text-center font-light">
+        Preisanfrage unter
+      </span>
+      <span className="block text-center text-custom-red">
+        {" "}
+        jan@jankroesche.de
+      </span>
+    </div>
+  ),
 };
 
-const pricingBoxes = [google, chatGPT, googleAds];
+const chatGPTAds = {
+  icon: "Paket 4",
+  title: "ChatGPT Ads",
+  subTitle: "Werbung auf ChatGPT schalten",
+  introText:
+    " Wir steuern Deine ChatGPT Werbeanzeigen, damit Deine Firma in den KI-Antworten erscheint & Du mehr Neukunden gewinnst.",
+  services: [
+    "Dein Ansprechpartner ist Jan Krösche",
+    "Einrichtung des ChatGPT Ads Werbekontos",
+    "Gemeinsamer Kick Off Termin per Teams",
+    "Prompt-Recherche",
+    "Einrichtung der ChatGPT Werbekampagne",
+    "Erstellung des Zielgruppen-Targetings",
+    "Texten der Werbeanzeigen",
+    "Fortlaufende Optimierung der Anzeigen",
+    "Regelmäßiger Austausch",
+  ],
+
+  closingText:
+    "Wir sind keine Webdesigner und führen keine technischen Änderungen durch. Natürlich passen wir die Strategie an Deine Firma individuell an.",
+
+  outroText: (
+    <div>
+      <span className="mt-4 block text-center font-light">
+        Preisanfrage unter
+      </span>
+
+      <span className="block text-center text-custom-red">
+        {" "}
+        jan@jankroesche.de
+      </span>
+    </div>
+  ),
+};
+
+const pricingBoxes = [google, chatGPT, googleAds, chatGPTAds];
 
 //workshops
 const seoWorkshop = {
@@ -106,7 +148,7 @@ const seoWorkshop = {
     "Preis: 420 Euro netto",
   ],
   closingText: "",
-  contactText: "Terminanfrage unter"
+  contactText: "Terminanfrage unter",
 };
 
 const geoWorkshop = {
@@ -125,7 +167,7 @@ const geoWorkshop = {
     "Preis: 420 Euro netto",
   ],
   closingText: "",
-  contactText: "Terminanfrage unter"
+  contactText: "Terminanfrage unter",
 };
 
 const adsWorkshop = {
@@ -144,8 +186,7 @@ const adsWorkshop = {
     "Preis: 420 Euro netto",
   ],
   closingText: "",
-  contactText: "Terminanfrage unter"
-
+  contactText: "Terminanfrage unter",
 };
 
 const metaAdsWorkshop = {
@@ -164,7 +205,7 @@ const metaAdsWorkshop = {
     "Preis: 420 Euro netto",
   ],
   closingText: "",
-  contactText: "Terminanfrage unter"
+  contactText: "Terminanfrage unter",
 };
 
 const googleTagManagerWorkshop = {
@@ -183,10 +224,16 @@ const googleTagManagerWorkshop = {
     "Preis: 420 Euro netto",
   ],
   closingText: "",
-  contactText: "Terminanfrage unter"
+  contactText: "Terminanfrage unter",
 };
 
-const workshops = [seoWorkshop, geoWorkshop, adsWorkshop, metaAdsWorkshop, googleTagManagerWorkshop]
+const workshops = [
+  seoWorkshop,
+  geoWorkshop,
+  adsWorkshop,
+  metaAdsWorkshop,
+  googleTagManagerWorkshop,
+];
 
 // geo-tracker Preisboxen
 const tenPrompts = {
@@ -235,8 +282,6 @@ const thirtyPrompts = {
   price: 80,
 };
 
-const geoTrackerPriceBoxes = [tenPrompts, twentyPrompts, thirtyPrompts]
+const geoTrackerPriceBoxes = [tenPrompts, twentyPrompts, thirtyPrompts];
 
-
-
-export { pricingBoxes, geoTrackerPriceBoxes, workshops }
+export { pricingBoxes, geoTrackerPriceBoxes, workshops };
