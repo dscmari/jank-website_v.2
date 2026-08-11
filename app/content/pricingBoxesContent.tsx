@@ -2,7 +2,7 @@
 // default preisboxen (ohne zahlen)
 const google = {
   icon: "Paket 1",
-  title: "Google Platz 1",
+  title: "Google SEO",
   subTitle: "Website Optimierungen",
   introText:
     " Wir optimieren Deine Website, damit Du in der Google-Suche & bei Google Maps zu vielen Suchbegriffen oben rankst. Und mehr Anfragen generierst.",
@@ -30,7 +30,7 @@ const google = {
 };
 const chatGPT = {
   icon: "Paket 2",
-  title: "ChatGPT Platz 1",
+  title: "ChatGPT GEO",
   subTitle: "Website Optimierungen",
   introText:
     "Wir optimieren Deine Website, damit Deine Firma in den Antworten der KI-Systeme ChatGPT, Gemini, Perplexity & Copilot erscheint und Du mehr Anfragen generierst.",
