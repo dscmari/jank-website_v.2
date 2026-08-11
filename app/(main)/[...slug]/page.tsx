@@ -10,16 +10,19 @@ import Image from "next/image";
 import InfoBtn from "@/app/components/buttons/InfoBtn";
 import { IoArrowBack } from "react-icons/io5";
 import Breadcrumbs from "@/app/components/Breadcrumps";
+import { notFound } from "next/navigation"; // Wichtig für 404 Handling
 
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ slug?: string[] }>;
 }): Promise<Metadata> {
   const { slug } = await params;
+  const slugPath = slug ? slug.join('/') : '';
+  
   const post = await client.fetch<SanityDocument>(
     POST_QUERY,
-    { slug },
+    { slug: slugPath },
     options,
   );
 
@@ -45,13 +48,26 @@ const options = { next: { revalidate: 30 } };
 export default async function PostPage({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ slug?: string[] }>; // 1. Typ angepasst
 }) {
+  const { slug } = await params;
+  const slugPath = slug ? slug.join('/') : ''; // 2. Slug wie in generateMetadata zu String zusammenfügen!
+
+  // System-Dateien wie Favicon abfangen
+  if (slugPath === 'favicon.ico') {
+    notFound();
+  }
+
   const post = await client.fetch<SanityDocument>(
     POST_QUERY,
-    await params,
+    { slug: slugPath }, // 3. Jetzt schicken wir den korrekten String an Sanity
     options,
   );
+
+  // 4. Falls kein Post existiert, sauber auf 404 leiten
+  if (!post) {
+    notFound();
+  }
 
   const postImageUrl = post.image
     ? urlFor(post.image)?.width(550).height(310).url()
@@ -69,7 +85,6 @@ export default async function PostPage({
     ? urlFor(post.image_5)?.width(550).height(310).url()
     : null;
 
-  //console.log(post)
   return (
     <main className="sanity-container">
       <Breadcrumbs className="hidden md:block pt-4 px-4 lg:px-32 font-semibold" />
@@ -135,7 +150,7 @@ export default async function PostPage({
           />
         )}
         <div className="mt-4 lg:mt-8 lg:px-16 sanity-text">
-          {Array.isArray(post.body_4) && <PortableText value={post.body_5} />}
+          {Array.isArray(post.body_4) && <PortableText value={post.body_4} />}
         </div>
         {postImageUrl_5 && (
           <Image
