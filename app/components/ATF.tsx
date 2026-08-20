@@ -44,7 +44,7 @@ export default function ATF({
             sizes="100vw"
           />
           {/* banner */}
-          <Banner />
+          <Banner className="lg:bg-green-500 xl:bg-yellow-500 2xl:bg-blue-500" />
         </div>
 
         <h1 className="!text-3xl p-4 text-center">{title}</h1>
@@ -59,7 +59,7 @@ export default function ATF({
           <p className="mb-8">{text}</p>
           {button}
         </div>
-        <Banner className="lg:bg-green-500 xl:bg-yellow-500 2xl:bg-blue-500" />
+        <Banner />
       </div>
       {!isHome && (
         <Breadcrumbs className="hidden md:flex pt-4 px-4 lg:px-32 font-semibold" />
