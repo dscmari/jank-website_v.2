@@ -1,9 +1,10 @@
 "use client";
 import Image from "next/image";
-import { FiArrowRight } from "react-icons/fi";
 import Breadcrumbs from "./Breadcrumps";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import Link from "next/link";
+import Banner from "./Banner";
 
 type Props = {
   title?: React.ReactNode;
@@ -26,25 +27,30 @@ export default function ATF({
   const [isHome, setIsHome] = useState(false);
 
   useEffect(() => {
-    routePath === "/" ? setIsHome(true) : setIsHome(false)
+    routePath === "/" ? setIsHome(true) : setIsHome(false);
   }, [routePath]);
 
   return (
     <div>
-      <div className="md:hidden">
-        <Image
-          src={imgPathMobile}
-          width={500}
-          height={500}
-          alt="Portrait von Jan Kroesche"
-          className="w-full h-auto min-h-[300px]"
-          priority
-          sizes="100vw"
-        />
+      <div className="md:hidden relative">
+        <div>
+          <Image
+            src={imgPathMobile}
+            width={500}
+            height={500}
+            alt="Portrait von Jan Kroesche"
+            className="w-full h-auto min-h-[300px]"
+            priority
+            sizes="100vw"
+          />
+          {/* banner */}
+          <Banner />
+        </div>
+
         <h1 className="!text-3xl p-4 text-center">{title}</h1>
       </div>
       <div
-        className="hidden md:block h-screen relative bg-cover bg-center"
+        className="hidden md:block h-screen relative bg-cover bg-center relative"
         style={{ backgroundImage: `url(${imgPathDesktop})` }}
       >
         <div className="p-8 rounded text-white max-w-4/5 xl:max-w-2/5 absolute top-1/2 -translate-y-1/2 left-1/8">
@@ -53,9 +59,10 @@ export default function ATF({
           <p className="mb-8">{text}</p>
           {button}
         </div>
+        <Banner />
       </div>
       {!isHome && (
-        <Breadcrumbs className="hidden md:block pt-4 px-4 lg:px-32 font-semibold" />
+        <Breadcrumbs className="hidden md:flex pt-4 px-4 lg:px-32 font-semibold" />
       )}
     </div>
   );

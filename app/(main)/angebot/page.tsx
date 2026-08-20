@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function page() {
   return (
     <div className="bg-custom-white dark:bg-black">
-      <Breadcrumbs className="hidden md:block pt-4 px-4 lg:px-32 font-semibold" />
+      <Breadcrumbs className="hidden md:flex pt-4 px-4 lg:px-32 font-semibold" />
       <h1 className="text-center lg:text-start px-4 lg:px-32 pt-24 pb-4 lg:pb-8">
         Unser Angebot
       </h1>
