@@ -59,7 +59,7 @@ export default function ATF({
           <p className="mb-8">{text}</p>
           {button}
         </div>
-        <Banner />
+        <Banner className="lg:bg-green-500 xl:bg-yellow-500 2xl:bg-blue-500" />
       </div>
       {!isHome && (
         <Breadcrumbs className="hidden md:flex pt-4 px-4 lg:px-32 font-semibold" />
