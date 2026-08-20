@@ -12,7 +12,7 @@ export default function page() {
   const { references } = referencesList;
   return (
     <div>
-      <Breadcrumbs className="hidden md:block pt-4 px-4 lg:px-32 font-semibold" />
+      <Breadcrumbs className="hidden md:flex pt-4 px-4 lg:px-32 font-semibold" />
       <div className="mx-4 lg:mx-32 lg:max-w-2/3 lg:mb-8 lg:mt-32">
         <h1 className="hidden lg:block !text-5xl/14"> Unsere Referenzen</h1>
         <h2 className="mt-12 lg:mt-0">

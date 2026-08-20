@@ -29,7 +29,7 @@ export default async function Blog() {
 
   return (
     <div className="">
-      <Breadcrumbs className="hidden md:block pt-4 px-4 lg:px-32 font-semibold" />
+      <Breadcrumbs className="hidden md:flex pt-4 px-4 lg:px-32 font-semibold" />
       <div className="pt-12 lg:px-32 px-4 lg:pt-32 lg:pb-16 xl:max-w-3/4 2xl:max-w-2/3">
         <h1 className="text-center md:px-32 lg:px-0 lg:text-start 2xl:!text-5xl/14">
           Mehr <span className="text-custom-red"> Sichtbarkeit </span>  auf (KI) Suchmaschinen: Blog zu <span className="text-custom-red"> SEO</span>, <span className="text-custom-red"> GEO </span> und <span className="text-custom-red"> Google Ads </span>
