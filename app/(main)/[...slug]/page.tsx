@@ -69,6 +69,23 @@ export default async function PostPage({
     notFound();
   }
 
+  function getImageUrl(image: any, width: number, height: number) {
+    if (!image) return null;
+    let builder = urlFor(image)?.width(width).auto("format").quality(90);
+    if (builder) {
+      builder = builder.height(height).fit("max");
+      return builder.url();
+    }
+    else return null
+  }
+
+const postImageUrl = getImageUrl(post.image, 800, 500);
+const postImageUrl_2 = getImageUrl(post.image_2, 800, 500);
+const postImageUrl_3 = getImageUrl(post.image_3, 800, 500);
+const postImageUrl_4 = getImageUrl(post.image_4, 800, 500);
+const postImageUrl_5 = getImageUrl(post.image_5, 800, 500);
+
+/*
   const postImageUrl = post.image
     ? urlFor(post.image)?.width(550).height(310).url()
     : null;
@@ -84,7 +101,7 @@ export default async function PostPage({
   const postImageUrl_5 = post.image_5
     ? urlFor(post.image_5)?.width(550).height(310).url()
     : null;
-
+*/
   return (
     <main className="sanity-container">
       <Breadcrumbs className="hidden md:flex pt-4 px-4 lg:px-32 font-semibold" />
@@ -99,8 +116,8 @@ export default async function PostPage({
           <Image
             src={postImageUrl}
             alt={post.title}
-            width={600}
-            height={400}
+            width={800}
+            height={500}
             className="rounded-xl mt-16 "
           />
         )}
@@ -120,8 +137,8 @@ export default async function PostPage({
           <Image
             src={postImageUrl_2}
             alt={post.title}
-            width={600}
-            height={400}
+            width={800}
+            height={500}
             className=" rounded-xl mt-16 "
           />
         )}
