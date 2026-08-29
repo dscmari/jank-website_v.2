@@ -18,8 +18,8 @@ export async function generateMetadata({
   params: Promise<{ slug?: string[] }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const slugPath = slug ? slug.join('/') : '';
-  
+  const slugPath = slug ? slug.join("/") : "";
+
   const post = await client.fetch<SanityDocument>(
     POST_QUERY,
     { slug: slugPath },
@@ -51,10 +51,10 @@ export default async function PostPage({
   params: Promise<{ slug?: string[] }>; // 1. Typ angepasst
 }) {
   const { slug } = await params;
-  const slugPath = slug ? slug.join('/') : ''; // 2. Slug wie in generateMetadata zu String zusammenfügen!
+  const slugPath = slug ? slug.join("/") : ""; // 2. Slug wie in generateMetadata zu String zusammenfügen!
 
   // System-Dateien wie Favicon abfangen
-  if (slugPath === 'favicon.ico') {
+  if (slugPath === "favicon.ico") {
     notFound();
   }
 
@@ -87,7 +87,7 @@ export default async function PostPage({
 
   return (
     <main className="sanity-container">
-      <Breadcrumbs className="hidden md:block pt-4 px-4 lg:px-32 font-semibold" />
+      <Breadcrumbs className="hidden md:flex pt-4 px-4 lg:px-32 font-semibold" />
       <Link
         href="/blog/"
         className="hidden lg:block mt-4 px-4  md:mt-8 md:px-8 lg:px-16 lg:px-32 font-light text-sm dark:text-custom-white"
