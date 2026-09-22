@@ -21,6 +21,8 @@ import { pricingBoxes } from "../content/pricingBoxesContent";
 import MailBtn from "../components/buttons/MailBtn";
 import Link from "next/link";
 import referencesList from "../content/referencesList";
+import { FiArrowUpRight } from "react-icons/fi";
+import { IoIosCheckmarkCircle } from "react-icons/io";
 
 export const metadata: Metadata = {
   title: "Platz 1 bei Google & ChatGPT | SEO – GEO – Ads Berater",
@@ -78,7 +80,10 @@ export default function Home() {
           sichtbarer zu werden und so nachhaltig mehr Kunden zu gewinnen.
         </p>
         {referencesHome.map((references, index) => (
-          <div key={index} className="mt-12 lg:mt-24 flex flex-col  2xl:flex-row 2xl:items-center lg:gap-12 2xl:gap-16">
+          <div
+            key={index}
+            className="mt-12 lg:mt-24 flex flex-col pb-8 lg:pb-16 border-b border-slate-300 2xl:flex-row 2xl:items-center lg:gap-12 2xl:gap-16"
+          >
             <div className="flex flex-col">
               <div className="flex flex-col items-start gap-2">
                 <InfoBtn content="Referenz" className="dark:bg-darkmode-blue" />
@@ -140,7 +145,93 @@ export default function Home() {
         circles={processCircles}
       />
       <Contact className="p-8 mt-24 lg:mt-0" />
-      <section className="flex flex-col 2xl:flex-row 2xl:items-center md:px-16 pt-8 md:pt-24 lg:gap-12 lg:p-32 lg:py-32 2xl:gap-32 2xl:justify-center">
+      <section className="md:px-16 pt-24 lg:gap-12 lg:p-32 lg:py-32 2xl:gap-32 2xl:justify-center">
+        <div className="px-4 md:px-0 flex flex-col items-start gap-8">
+          <InfoBtn content="ChatGPT Ads" className="dark:bg-darkmode-blue" />
+          <div className="w-full flex flex-col gap-8 lg:gap-0 lg:flex-row justify-between">
+            <div>
+              <p className="max-w-3xl text-base/8">
+                Das renommierte Reisemagazin fvw hat mit Jan Krösche ein
+                Interview zum neuen Marketingkanal ChatGPT Ads durchgeführt. In
+                dem Interview spricht Jan Krösche über das Potenzial und die
+                Funktionsweise von ChatGPT-Werbeanzeigen und wie touristische
+                Betriebe das neue Werbeformat anwenden können.
+              </p>
+            </div>
+            <div>
+              <Link
+                href={"/chatgpt-ads-agentur/"}
+                className={`px-4 py-2 bg-custom-red text-white font-semibold tracking-tight rounded-xl flex items-center justify-between`}
+              >
+                ChatGPT Ads Agentur
+                <FiArrowUpRight color="white" className="ml-4" />
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col xl:flex-row gap-16 mt-12 lg:mt-16">
+          <Image
+            src="/images/screenshots/chat-gpt-ads-in-der-reisebranche.png"
+            style={{ width: "600px" }}
+            alt="Screenshot einer Suche bei YouTube"
+            height={400}
+            width={600}
+            className="lg:flex-1"
+          />
+          <div className="xl:flex-1 xl:border-l border-slate-300 px-4 md:px-0 xl:pl-16">
+            <div className="">
+              <h1 className="lg:max-w-lg">
+                ChatGPT Ads Berater Jan Krösche in der Presse
+              </h1>
+              <h2 className="!font-light">Fachgebiete:</h2>
+              <div className="grid gap-y-4 mt-8 md:grid-cols-2 xl:grid-cols-1 dark:text-white">
+                <div className="flex items-center gap-4">
+                  <IoIosCheckmarkCircle
+                    className="text-custom-red shrink-0"
+                    size={20}
+                  />
+                  <span>ChatGPT Ads</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <IoIosCheckmarkCircle
+                    className="text-custom-red shrink-0"
+                    size={20}
+                  />
+                  <span>Google Ads</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <IoIosCheckmarkCircle
+                    className="text-custom-red shrink-0"
+                    size={20}
+                  />
+                  <span>Search Engine Optimization (SEO)</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <IoIosCheckmarkCircle
+                    className="text-custom-red shrink-0"
+                    size={20}
+                  />
+                  <span>Generative Engine Optimization (GEO)</span>
+                </div>
+
+                <p className="font-semibold mt-4 md:col-span-2 xl:col-span-1">
+                  Das ganze Interview mit fvw finden Sie{" "}
+                  <Link
+                    target="_blank"
+                    href={
+                      "https://www.fvw.de/traveltech/daten/ki-jetzt-mit-reklameoption-werben-in-chatgpt--was-berater-kroesche-touristikern-raet-264441"
+                    }
+                    className="text-custom-red underline"
+                  >
+                    hier.
+                  </Link>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="flex flex-col 2xl:flex-row 2xl:items-center md:px-16 pt-24 lg:gap-12 lg:p-32 lg:py-32 2xl:gap-32 2xl:justify-center">
         <div className="flex-1 flex flex-col px-4 md:px-0">
           <h1>GEO Konferenz im Allgäu</h1>
           <p>
