@@ -75,17 +75,17 @@ const references = [
     company: `Crossing Mind aus Bad Tölz`,
     image: "/images/screenshots/reference_4.png",
   },
-  {
-    title: `Platz 1 Ranking bei Google für „Statiker Wolfratshausen“`,
-    text: `Die Eisenhut-Statik GmbH realisiert Bauprojekte in Wolfratshausen, München und dem ganzen Oberland. Wir haben die Website so optimiert, dass sie bei Google für wichtige Suchbegriffe oben gefunden werden kann. Die Firma gewinnt nun laufend neue Kunden über die Homepage. Für „Statiker Wolfratshausen“ rankt die Seite auf Platz 1 bei Google.`,
-    googleResults: `Platz 1 bei Google für „Statiker Wolfratshausen“`,
-    preAIresults: "KI: ",
-    aiResults: `Platz 1 in der KI-Antwort von ChatGPT für „Bester Statiker in Wolfratshausen“`,
-    subtext:
-      " Der Statik-Firma Eisenhut-Statik rankt für viele Suchbegriffe (Prompts) ganz oben in den KI Antworten von ChatGPT. Dadurch erhält die Firma immer mehr Anfragen von potentiellen Kunden aus der Zielregion.",
-    company: `Eisenhut-Statik GmbH`,
-    image: "/images/screenshots/reference_5.png",
-  },
+  // {
+  //   title: `Platz 1 Ranking bei Google für „Statiker Wolfratshausen“`,
+  //   text: `Die Eisenhut-Statik GmbH realisiert Bauprojekte in Wolfratshausen, München und dem ganzen Oberland. Wir haben die Website so optimiert, dass sie bei Google für wichtige Suchbegriffe oben gefunden werden kann. Die Firma gewinnt nun laufend neue Kunden über die Homepage. Für „Statiker Wolfratshausen“ rankt die Seite auf Platz 1 bei Google.`,
+  //   googleResults: `Platz 1 bei Google für „Statiker Wolfratshausen“`,
+  //   preAIresults: "KI: ",
+  //   aiResults: `Platz 1 in der KI-Antwort von ChatGPT für „Bester Statiker in Wolfratshausen“`,
+  //   subtext:
+  //     " Der Statik-Firma Eisenhut-Statik rankt für viele Suchbegriffe (Prompts) ganz oben in den KI Antworten von ChatGPT. Dadurch erhält die Firma immer mehr Anfragen von potentiellen Kunden aus der Zielregion.",
+  //   company: `Eisenhut-Statik GmbH`,
+  //   image: "/images/screenshots/reference_5.png",
+  // },
   {
     title: `Platz 1 Ranking bei Google für „EDV Firma Geretsried“`,
     text: `Mit unserer SEO-Arbeit haben wir die IT-Firma infoteQ aus Geretsried-Gelting bei Google für „EDV Firma Geretsried“ auf Platz 1 katapultiert. Der IT-Dienstleister bekommt nun immer mehr Anfragen über die Website und kann die Seite als Vertriebskanal nutzen.`,
