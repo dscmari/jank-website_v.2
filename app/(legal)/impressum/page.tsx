@@ -10,7 +10,7 @@ export default function page() {
       <h1 className="!mb-8">Impressum</h1>
       <div className="flex flex-col">
         <span className="dark:text-white">Jan Krösche - SEO & Google Ads Beratung</span>
-        <span className="dark:text-white">Obere Mühlstraße 6</span>
+        <span className="dark:text-white">Kegelkopfweg 4</span>
         <span className="dark:text-white">86825 Bad Wörishofen</span>
         <span className="dark:text-white">USt-IdNr.: DE459678767</span>
       </div>

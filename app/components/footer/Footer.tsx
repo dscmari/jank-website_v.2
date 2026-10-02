@@ -11,7 +11,7 @@ export default function Footer() {
           </div>
           <span>+49 176 55 10 93 83</span>
           <span>jan@jankroesche.de</span>
-          <span>Obere Mühlstraße 6</span>
+          <span>Kegelkopfweg 4</span>
           <span>86825 Bad Wörishofen</span>
         </div>
         <div className="flex flex-col gap-8 order-3 mb-12 lg:mb-0 lg:order-2">

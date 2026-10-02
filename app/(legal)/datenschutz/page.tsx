@@ -135,7 +135,7 @@ export default function page() {
           </p>
           <div className="flex flex-col">
             <span>Jan Krösche</span>
-            <span>Obere Mühlstraße 6</span>
+            <span>Kegelkopfweg 4</span>
             <span>86825 Bad Wörishofen</span>
             <span>Telefon: 017655109383</span>
             <span>E-Mail: jan@jankroesche.de</span>

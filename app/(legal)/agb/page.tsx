@@ -15,7 +15,7 @@ export default function page() {
         zwischen
       </p>
       <p>
-        Jan Krösche, Obere Mühlstraße 6, 86825 Bad Wörishofen, Deutschland –
+        Jan Krösche, Kegelkopfweg 4, 86825 Bad Wörishofen, Deutschland –
         nachfolgend „Dienstleister“ – und seinen Kunden – nachfolgend „Kunde“.
         Entgegenstehende oder abweichende Einkaufsbedingungen oder sonstige
         Einschränkungen des Kunden werden nicht anerkannt, es sei denn Jan
