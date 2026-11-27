@@ -32,10 +32,21 @@ export default function page() {
             className="flex flex-col 2xl:flex-row items-center lg:gap-12 bg-custom-white p-4 mx-4 lg:mx-0 lg:p-12 rounded-xl dark"
           >
             <div className="flex-1 flex flex-col ">
-              <div className="flex flex-col items-start gap-2">
-                <span className="text-white bg-custom-red font-semibold tracking-tight py-2 px-4 rounded-lg">
-                  Referenz
-                </span>
+              <div className="flex flex-col items-start gap-4">
+                <div className="grid grid-cols-2 md:grid-cols-4  gap-4">
+                  <span className="text-white bg-custom-red font-semibold tracking-tight py-2 px-4 rounded-lg">
+                    Referenz
+                  </span>
+                  {s.services?.map((service, index) => (
+                    <a key={index}
+                      href={service.link}
+                      className="text-white bg-custom-red font-semibold tracking-tight py-2 px-4 rounded-lg"
+                    >
+                      {service.text}
+                    </a>
+                  ))}
+                </div>
+
                 <span className="font-semibold tracking-tight">
                   {s.company}
                 </span>

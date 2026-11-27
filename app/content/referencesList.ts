@@ -1,5 +1,9 @@
 const references = [
   {
+    services: [
+      { text: "ChatGPT GEO", link: "/geo-berater/" },
+      { text: "Google SEO", link: "/seo-berater/" },
+    ],
     title: `Platz 1 Zitierung bei ChatGPT`,
     text: `Die Huber Präzisionstechnik GmbH ist Spezialist für Präzisionsteile nach Maß. Anfang des Jahres wurde der Relaunch der neuen Seite durchgeführt. SEO-technisch haben wir die wichtigen Keywords recherchiert und eine SEO-konforme Website-Struktur geplant und skizziert. Die Resultate bei Google und ChatGPT können sich sehen lassen.`,
     googleResults: `Platz 1 bei Google für „Präzisionsteile nach Maß“`,
@@ -10,6 +14,11 @@ const references = [
     image: "/images/screenshots/reference_21.png",
   },
   {
+    services: [
+      { text: "Google SEO", link: "/seo-berater/" },
+      { text: "ChatGPT GEO", link: "/geo-berater/" },
+      { text: "Microsoft Ads", link: "/microsoft-ads-berater/" },
+    ],
     title: `Platz 1 Ranking bei Google für den Suchbegriff „Gleitlager Hersteller“`,
     text: `Unser Kunde ttv wird von uns seit einigen Jahren bei der Website-Optimierung (SEO) begleitet. Durch die umgesetzten Maßnahmen konnten wir die Sichtbarkeit der Website deutlich steigern. Unser Kunde erscheint bei Google für Keywords wie „Gleitlager Hersteller“, „Gleitringdichtungen“, „Massivgleitlager Hersteller“.`,
     googleResults: `Platz 1 bei Google für „Gleitlager Hersteller“`,
@@ -21,6 +30,11 @@ const references = [
     image: "/images/screenshots/reference_14.png",
   },
   {
+    services: [
+      { text: "Google SEO", link: "/seo-berater/" },
+      { text: "ChatGPT GEO", link: "/geo-berater/" },
+      { text: "Google Ads", link: "/google-ads-berater/" },
+    ],
     title: `Platz 1 Ranking bei Google für den Suchbegriff „Kunststoffkoffer Hersteller“`,
     text: `Seit mehreren Jahren helfen wir der Firma B&W PolyEngineering Türkheim GmbH durch gezielte Optimierungen auf der Seite, das Ranking und die Sichtbarkeit bei Google und ChatGPT zu steigern. Die Website rankt mittlerweile für über 50 Suchbegriffe auf Seite 1 bei Google.`,
     googleResults: `Platz 1 bei Google für „Kunststoffkoffer Hersteller“`,
@@ -32,6 +46,11 @@ const references = [
     image: "/images/screenshots/reference_15.jpg",
   },
   {
+    services: [
+      { text: "Google SEO", link: "/seo-berater/" },
+      { text: "ChatGPT GEO", link: "/geo-berater/" },
+      { text: "ChatGPT Ads", link: "/chatgpt-ads-berater/" },
+    ],
     title: `Platz 1 Ranking bei Google für den Suchbegriff „Familienhotel Schwabing“`,
     text: `Seit mehreren Jahren optimieren wir die Website des Stadthotels „Schwabinger Wahrheit“ aus München mit dem Ziel, das Hotel bei Google ganz oben zu positionieren, um mehr Hotelgäste zu gewinnen. Das Hotel rankt durch die Optimierungen für viele wichtige Suchbegriffe auf Platz 1 bei Google.`,
     googleResults: `Platz 1 bei Google für „Familienhotel Schwabing“`,
@@ -42,39 +61,39 @@ const references = [
       "Das Hotel Schwabinger Wahrheit erscheint in der Google Suche ganz oben. Durch die gezielten Website Optimierungen erhält das Hotel nun laufend Anfragen von neuen Gästen.",
     image: "/images/screenshots/reference.png",
   },
-  {
-    title: `Platz 1 Ranking bei Google für den Suchbegriff „Immobilienberatung für Investoren“`,
-    text: `Der Ergoneon Management GmbH aus München helfen wir seit mehreren Jahren dabei, bei Google und ChatGPT sichtbarer zu werden. Ziel ist es, über starke Google-Positionierungen mehr Investoren zu gewinnen. Für das wettbewerbsintensive Keyword „Immobilienberatung München“ rankt Ergoneon auf Platz 2 bei Google.`,
-    googleResults: `Platz 2 bei Google für „Immobilienberatung München“`,
-    preAIresults: "Google: ",
-    aiResults: `Platz 1 bei Google für „Immobilienberatung für Investoren“`,
-    company: `Ergoneon Management GmbH`,
-    subtext:
-      "Ergoneon rankt durch unsere SEO-Maßnahmen für viele Suchbegriffe auf Platz 1 bei Google. Die Website ist daher für potentielle Kunden sichtbar und generiert deutlich mehr Leads.",
-    image: "/images/screenshots/reference_2.png",
-  },
-  {
-    title: `Platz 1 Ranking bei Google für das Keyword „Immobilienbetreuung Griechenland“`,
-    text: `Um mehr Immobilienkäufer aus Deutschland zu erreichen, haben wir die Website greco-immobilien.com (Spezialist für Immobilien im Süden von Griechenland) so optimiert, dass sie eine hohe Google Sichtbarkeit hat. Für das Keyword „Immobilienbetreuung Griechenland“ rankt die Seite auf Platz 1 bei Google.`,
-    googleResults: `Platz 1 bei Google für „Immobilienbetreuung Griechenland“`,
-    preAIresults: "KI: ",
-    aiResults: `Platz 2 in der ChatGPT-Antwort für „Deutscher Makler für Immobilienkauf in Griechenland“`,
-    subtext:
-      "Durch die gesteigerte Sichtbarkeit bei Google und ChatGPT wird die Website unseres Kunden von viel mehr Neukunden gefunden. Die Anfragen konnten dadurch deutlich gesteigert werden.",
-    company: `greco-immobilien.com`,
-    image: "/images/screenshots/reference_3.png",
-  },
-  {
-    title: `Platz 1 Ranking bei Google für das Keyword „Eventagentur Bad Tölz“`,
-    text: `Für die Werbe- und Eventagentur Crossing Mind aus Bad Tölz haben wir geschäftsrelevante Unterseiten gebaut, um mit der Website mehr Firmenkunden erreichen zu können und mehr Neukundenumsatz zu machen. Für das Keyword „Eventagentur Bad Tölz“ rankt die Firma auf Platz 1 bei Google.`,
-    googleResults: `Platz 1 bei Google für „Eventagentur Bad Tölz“`,
-    preAIresults: "KI: ",
-    aiResults: `Platz 1 in der ChatGPT-Antwort für „Eventagentur für Weihnachtsfeier in Bad Tölz“`,
-    subtext:
-      "Die Eventagentur Crossing Mind ist für viele geschäftsrelevante Keywords auf Platz 1 bei Google. Durch die Rankings kann die Eventagentur deutlich mehr Anfragen von Geschäftskunden verzeichnen.",
-    company: `Crossing Mind aus Bad Tölz`,
-    image: "/images/screenshots/reference_4.png",
-  },
+  // {
+  //   title: `Platz 1 Ranking bei Google für den Suchbegriff „Immobilienberatung für Investoren“`,
+  //   text: `Der Ergoneon Management GmbH aus München helfen wir seit mehreren Jahren dabei, bei Google und ChatGPT sichtbarer zu werden. Ziel ist es, über starke Google-Positionierungen mehr Investoren zu gewinnen. Für das wettbewerbsintensive Keyword „Immobilienberatung München“ rankt Ergoneon auf Platz 2 bei Google.`,
+  //   googleResults: `Platz 2 bei Google für „Immobilienberatung München“`,
+  //   preAIresults: "Google: ",
+  //   aiResults: `Platz 1 bei Google für „Immobilienberatung für Investoren“`,
+  //   company: `Ergoneon Management GmbH`,
+  //   subtext:
+  //     "Ergoneon rankt durch unsere SEO-Maßnahmen für viele Suchbegriffe auf Platz 1 bei Google. Die Website ist daher für potentielle Kunden sichtbar und generiert deutlich mehr Leads.",
+  //   image: "/images/screenshots/reference_2.png",
+  // },
+  // {
+  //   title: `Platz 1 Ranking bei Google für das Keyword „Immobilienbetreuung Griechenland“`,
+  //   text: `Um mehr Immobilienkäufer aus Deutschland zu erreichen, haben wir die Website greco-immobilien.com (Spezialist für Immobilien im Süden von Griechenland) so optimiert, dass sie eine hohe Google Sichtbarkeit hat. Für das Keyword „Immobilienbetreuung Griechenland“ rankt die Seite auf Platz 1 bei Google.`,
+  //   googleResults: `Platz 1 bei Google für „Immobilienbetreuung Griechenland“`,
+  //   preAIresults: "KI: ",
+  //   aiResults: `Platz 2 in der ChatGPT-Antwort für „Deutscher Makler für Immobilienkauf in Griechenland“`,
+  //   subtext:
+  //     "Durch die gesteigerte Sichtbarkeit bei Google und ChatGPT wird die Website unseres Kunden von viel mehr Neukunden gefunden. Die Anfragen konnten dadurch deutlich gesteigert werden.",
+  //   company: `greco-immobilien.com`,
+  //   image: "/images/screenshots/reference_3.png",
+  // },
+  // {
+  //   title: `Platz 1 Ranking bei Google für das Keyword „Eventagentur Bad Tölz“`,
+  //   text: `Für die Werbe- und Eventagentur Crossing Mind aus Bad Tölz haben wir geschäftsrelevante Unterseiten gebaut, um mit der Website mehr Firmenkunden erreichen zu können und mehr Neukundenumsatz zu machen. Für das Keyword „Eventagentur Bad Tölz“ rankt die Firma auf Platz 1 bei Google.`,
+  //   googleResults: `Platz 1 bei Google für „Eventagentur Bad Tölz“`,
+  //   preAIresults: "KI: ",
+  //   aiResults: `Platz 1 in der ChatGPT-Antwort für „Eventagentur für Weihnachtsfeier in Bad Tölz“`,
+  //   subtext:
+  //     "Die Eventagentur Crossing Mind ist für viele geschäftsrelevante Keywords auf Platz 1 bei Google. Durch die Rankings kann die Eventagentur deutlich mehr Anfragen von Geschäftskunden verzeichnen.",
+  //   company: `Crossing Mind aus Bad Tölz`,
+  //   image: "/images/screenshots/reference_4.png",
+  // },
   // {
   //   title: `Platz 1 Ranking bei Google für „Statiker Wolfratshausen“`,
   //   text: `Die Eisenhut-Statik GmbH realisiert Bauprojekte in Wolfratshausen, München und dem ganzen Oberland. Wir haben die Website so optimiert, dass sie bei Google für wichtige Suchbegriffe oben gefunden werden kann. Die Firma gewinnt nun laufend neue Kunden über die Homepage. Für „Statiker Wolfratshausen“ rankt die Seite auf Platz 1 bei Google.`,
@@ -86,40 +105,46 @@ const references = [
   //   company: `Eisenhut-Statik GmbH`,
   //   image: "/images/screenshots/reference_5.png",
   // },
+  // {
+  //   title: `Platz 1 Ranking bei Google für „EDV Firma Geretsried“`,
+  //   text: `Mit unserer SEO-Arbeit haben wir die IT-Firma infoteQ aus Geretsried-Gelting bei Google für „EDV Firma Geretsried“ auf Platz 1 katapultiert. Der IT-Dienstleister bekommt nun immer mehr Anfragen über die Website und kann die Seite als Vertriebskanal nutzen.`,
+  //   googleResults: `Platz 1 bei Google für „EDV Firma Geretsried“`,
+  //   preAIresults: "KI: ",
+  //   aiResults: `Platz 1 in der KI-Antwort von ChatGPT für „EDV Firma Geretsried“`,
+  //   company: `InfoteQ EDV Service GmbH`,
+  //   subtext:
+  //     "Für „EDV Firma Geretsried“ und andere Keywords erscheint die Website des IT Dienstleisters ganz oben bei Google. Mit der Top Platzierung konnte die Anfragenqualität stark verbessert werden.",
+  //   image: "/images/screenshots/reference_6.png",
+  // },
+  // {
+  //   title: `Platz 1 Ranking bei Google für „Unternehmensberater Wolfratshausen“`,
+  //   text: `Mit unseren Google-Optimierungen für die Beratungsfirma „Fröhlich und Partner“ haben wir es geschafft, die Website auf Platz 1 bei Google festzusetzen. Für das Keyword „Unternehmensberater Wolfratshausen“ rankt die Seite auf Platz 1 bei Google. Um die Präsenz zusätzlich zu erhöhen, schalten wir Google Ads für wichtige Suchbegriffe.`,
+  //   googleResults: `Platz 1 bei Google für „Unternehmensberater Wolfratshausen“`,
+  //   preAIresults: "KI: ",
+  //   aiResults: `Platz 1 in der KI-Antwort von ChatGPT für „Unternehmensberater Wolfratshausen“`,
+  //   company: `Unternehmensberater Wilfried Fröhlich`,
+  //   subtext:
+  //     "Die gesteigerte Auffindbarkeit bei Google und der KI führt dazu, dass die Unternehmensberatung mehr Neukunden aus der Region bekommt.",
+  //   image: "/images/screenshots/reference_7.png",
+  // },
+  // {
+  //   title: `Platz 3 Ranking bei Google für „Erodiertechnik“`,
+  //   text: `Der Firma „SR Erodiertechnik“ aus Ergertshausen helfen wir dabei, die Sichtbarkeit bei Google und im Internet zu steigern, um mehr Neukunden gewinnen zu können. Für das Keyword „Erodiertechnik“ rankt die Website mittlerweile auf Platz 3 bei Google.`,
+  //   googleResults: `Platz 3 bei Google für „Erodiertechnik“`,
+  //   preAIresults: "KI: ",
+  //   aiResults: `Platz 1 in der KI-Antwort von ChatGPT für „Erodiertechnik Firma Bayern“`,
+  //   company: `SR-Erodiertechnik Repert & Leppmeier GmbH`,
+  //   subtext:
+  //     "Unser Job war es, die Firma zum Thema „Erodiertechnik“ zur Nummer 1 in der KI zu machen. Das haben wir geschafft.",
+  //   image: "/images/screenshots/reference_8.png",
+  // },
   {
-    title: `Platz 1 Ranking bei Google für „EDV Firma Geretsried“`,
-    text: `Mit unserer SEO-Arbeit haben wir die IT-Firma infoteQ aus Geretsried-Gelting bei Google für „EDV Firma Geretsried“ auf Platz 1 katapultiert. Der IT-Dienstleister bekommt nun immer mehr Anfragen über die Website und kann die Seite als Vertriebskanal nutzen.`,
-    googleResults: `Platz 1 bei Google für „EDV Firma Geretsried“`,
-    preAIresults: "KI: ",
-    aiResults: `Platz 1 in der KI-Antwort von ChatGPT für „EDV Firma Geretsried“`,
-    company: `InfoteQ EDV Service GmbH`,
-    subtext:
-      "Für „EDV Firma Geretsried“ und andere Keywords erscheint die Website des IT Dienstleisters ganz oben bei Google. Mit der Top Platzierung konnte die Anfragenqualität stark verbessert werden.",
-    image: "/images/screenshots/reference_6.png",
-  },
-  {
-    title: `Platz 1 Ranking bei Google für „Unternehmensberater Wolfratshausen“`,
-    text: `Mit unseren Google-Optimierungen für die Beratungsfirma „Fröhlich und Partner“ haben wir es geschafft, die Website auf Platz 1 bei Google festzusetzen. Für das Keyword „Unternehmensberater Wolfratshausen“ rankt die Seite auf Platz 1 bei Google. Um die Präsenz zusätzlich zu erhöhen, schalten wir Google Ads für wichtige Suchbegriffe.`,
-    googleResults: `Platz 1 bei Google für „Unternehmensberater Wolfratshausen“`,
-    preAIresults: "KI: ",
-    aiResults: `Platz 1 in der KI-Antwort von ChatGPT für „Unternehmensberater Wolfratshausen“`,
-    company: `Unternehmensberater Wilfried Fröhlich`,
-    subtext:
-      "Die gesteigerte Auffindbarkeit bei Google und der KI führt dazu, dass die Unternehmensberatung mehr Neukunden aus der Region bekommt.",
-    image: "/images/screenshots/reference_7.png",
-  },
-  {
-    title: `Platz 3 Ranking bei Google für „Erodiertechnik“`,
-    text: `Der Firma „SR Erodiertechnik“ aus Ergertshausen helfen wir dabei, die Sichtbarkeit bei Google und im Internet zu steigern, um mehr Neukunden gewinnen zu können. Für das Keyword „Erodiertechnik“ rankt die Website mittlerweile auf Platz 3 bei Google.`,
-    googleResults: `Platz 3 bei Google für „Erodiertechnik“`,
-    preAIresults: "KI: ",
-    aiResults: `Platz 1 in der KI-Antwort von ChatGPT für „Erodiertechnik Firma Bayern“`,
-    company: `SR-Erodiertechnik Repert & Leppmeier GmbH`,
-    subtext:
-      "Unser Job war es, die Firma zum Thema „Erodiertechnik“ zur Nummer 1 in der KI zu machen. Das haben wir geschafft.",
-    image: "/images/screenshots/reference_8.png",
-  },
-  {
+    services: [
+      { text: "Google SEO", link: "/seo-berater/" },
+      { text: "ChatGPT GEO", link: "/geo-berater/" },
+      { text: "ChatGPT Ads", link: "/chatgpt-ads-berater/" },
+      { text: "Google Ads", link: "/google-ads-berater/" },
+    ],
     title: `Platz 1 Ranking bei Google für „Antriebstechnik München“`,
     text: `Die Firma JBW GmbH haben wir bei Google für viele Suchbegriffe nach oben optimiert. Für das Keyword „Antriebstechnik München“ rankt die Website auf Platz 1 bei Google. Und bekommt laufend neue Anfragen von potentiellen Neukunden.`,
     googleResults: `Platz 1 bei Google für „Antriebstechnik München“`,
@@ -131,6 +156,10 @@ const references = [
     image: "/images/screenshots/reference_9.png",
   },
   {
+    services: [
+      { text: "Google SEO", link: "/seo-berater/" },
+      { text: "ChatGPT GEO", link: "/geo-berater/" },
+    ],
     title: `Platz 1 Ranking für „Tiefgaragensanierung“`,
     text: `Die Website der HBS Bau optimieren wir dahingehend, dass sie bei Google für viele Suchbegriffe besser gefunden werden kann. Mit dem Ziel mehr Website Besucher zu bekommen und mehr Anfragen zu generieren. Für „Tiefgaragensanierung“ rankt die Seite auf Platz 1 bei Google.`,
     googleResults: `Platz 1 bei Google für „Tiefgaragensanierung“`,
@@ -149,27 +178,31 @@ const references = [
   //   aiResults: `Platz 1 in der KI-Antwort von ChatGPT für „Pflegesessel Hersteller“`,
   //   company: `Steinmann Selection`,
   // },
+  // {
+  //   title: `Platz 1 Ranking für „Inertiale Navigationssysteme“`,
+  //   text: `Die DTC Navigation Solutions GmbH & Co. KG aus Krailling bietet Lösungen rund um Inertiale Navigationssysteme, Messtechnik im Automotive-Bereich und RTK Dienste. Wir haben die Website www.dtc-solutions.de so optimiert, dass sie von potentiellen Kunden aus der Automotive-Branche besser gefunden werden kann.`,
+  //   googleResults: `Platz 1 bei Google für „Inertiale Navigationssysteme“`,
+  //   aiResults: `Platz 1 bei Google für „Inertialnavigation ADAS“`,
+  //   company: `DTC Navigation Solutions`,
+  //   subtext:
+  //     "Durch die gesteigerte Sichtbarkeit bei Google erhält die Firma konstant mehr Anfragen über die Website.",
+  //   image: "/images/screenshots/reference_11.png",
+  // },
+  // {
+  //   title: `Platz 1 Ranking für den Suchbegriff „Ferienwohnungen Comer See"`,
+  //   text: `Wir optimieren die Website labreva.com mit dem Ziel, für viele wichtige Suchbegriffe bei Google und ChatGPT auffindbar zu sein. Für das wichtige Keyword „Ferienwohnungen Comer See“ rankt unser Kunde auf Platz 1 bei Google. Sogar vor TUI!`,
+  //   googleResults: `Platz 1 bei Google für „Ferienwohnungen Comer See“`,
+  //   aiResults: `Platz 1 bei Google für „Feriendomizil Comer See“`,
+  //   company: `LABREVA`,
+  //   subtext:
+  //     "Durch die gesteigerte Google-Sichtbarkeit kann unser Kunde deutlich mehr Buchungen über die Website verzeichnen.",
+  //   image: "/images/screenshots/reference_12.png",
+  // },
   {
-    title: `Platz 1 Ranking für „Inertiale Navigationssysteme“`,
-    text: `Die DTC Navigation Solutions GmbH & Co. KG aus Krailling bietet Lösungen rund um Inertiale Navigationssysteme, Messtechnik im Automotive-Bereich und RTK Dienste. Wir haben die Website www.dtc-solutions.de so optimiert, dass sie von potentiellen Kunden aus der Automotive-Branche besser gefunden werden kann.`,
-    googleResults: `Platz 1 bei Google für „Inertiale Navigationssysteme“`,
-    aiResults: `Platz 1 bei Google für „Inertialnavigation ADAS“`,
-    company: `DTC Navigation Solutions`,
-    subtext:
-      "Durch die gesteigerte Sichtbarkeit bei Google erhält die Firma konstant mehr Anfragen über die Website.",
-    image: "/images/screenshots/reference_11.png",
-  },
-  {
-    title: `Platz 1 Ranking für den Suchbegriff „Ferienwohnungen Comer See"`,
-    text: `Wir optimieren die Website labreva.com mit dem Ziel, für viele wichtige Suchbegriffe bei Google und ChatGPT auffindbar zu sein. Für das wichtige Keyword „Ferienwohnungen Comer See“ rankt unser Kunde auf Platz 1 bei Google. Sogar vor TUI!`,
-    googleResults: `Platz 1 bei Google für „Ferienwohnungen Comer See“`,
-    aiResults: `Platz 1 bei Google für „Feriendomizil Comer See“`,
-    company: `LABREVA`,
-    subtext:
-      "Durch die gesteigerte Google-Sichtbarkeit kann unser Kunde deutlich mehr Buchungen über die Website verzeichnen.",
-    image: "/images/screenshots/reference_12.png",
-  },
-  {
+    services: [
+      { text: "Google SEO", link: "/seo-berater/" },
+      { text: "ChatGPT GEO", link: "/geo-berater/" },
+    ],
     title: `Platz 1 Ranking bei Google & ChatGPT für „Elektriker München“`,
     text: `Mit unseren Website-Optimierungen helfen wir der Firma Pittroff Elektrotechnik München GmbH, um als Elektriker in München mehr Neukunden über die Website zu gewinnen. Wir konnten die Firma für viele wichtige Suchbegriffe sowohl bei Google als auch bei ChatGPT ganz oben platzieren.`,
     googleResults: `Platz 1 bei Google für „Elektriker München“`,
